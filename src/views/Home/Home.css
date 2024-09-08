@@ -26,13 +26,13 @@
     width: 100px;
     border-radius: 10px;
     border: none;
-    background-color: #00246b;
+    background-color: #7676FA;
     color: #fff;
     margin: 10px;
 }
 
 .content button:hover {
-    background-color: #0036b1;
+    background-color: #4444ed;
 }
 
 .content-image img {
@@ -40,4 +40,9 @@
     width: 550px;
     margin-top: 60px;
     margin-right: 90px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 30px;
 }

@@ -1,11 +1,18 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 import "./Home.css"
 import Navbar from '../../components/Navbar/Navbar'
 import Footer from '../../components/Footer/Footer'
 import job from './img/job.webp'
-
+import { toast } from 'react-hot-toast';
 
 function Home() {
+  useEffect(() => {
+    toast.loading('Loading content...');
+    setTimeout(() => {
+      toast.dismiss(); 
+      toast.success('Content loaded successfully!');
+    }, 100); 
+  }, []);
   return (
     <div className='main'>
       <Navbar />
@@ -20,9 +27,13 @@ function Home() {
         </div>
 
         <div className='content-img'>
-        <img src={job}/>
-
+          <img src={job} alt='Content-Img'/>
         </div>
+      </div>
+      <div>
+        <h3>High-Demanded Jobs..</h3>
+        
+
       </div>
       <Footer />
     </div >
