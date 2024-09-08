@@ -12,6 +12,10 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    text-decoration: none;
+}
+.link{
+    text-decoration: none;
 }
 
 .sidebar-iteams{
