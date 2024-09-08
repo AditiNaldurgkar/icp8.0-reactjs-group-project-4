@@ -4,6 +4,7 @@ import './index.css';
 import Home from './views/Home/Home';
 import Search from './views/Search/Search';
 import 'remixicon/fonts/remixicon.css'
+import { Toaster } from 'react-hot-toast';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -18,7 +19,11 @@ const router = createBrowserRouter([
       element:<Search/>,
     }
 ])
-root.render(<RouterProvider router={router}/>);
+root.render(
+<>
+<RouterProvider router={router}/> 
+<Toaster/>
+</>);
 
 
 

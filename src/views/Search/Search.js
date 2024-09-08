@@ -3,11 +3,14 @@ import Sidebar from '../../components/Sidebar/Sidebar'
 import './search.css'
 import { jobNames } from '../../config/searchData'
 import axios from 'axios'
-
+import toast from 'react-hot-toast'
 
 
 const searchJob = async (jobname)=>{
-    
+  
+
+  toast.loading(`searching jobs for ${jobname}`)
+
 const options = {
     method: 'GET',
     url: 'https://job-search-api1.p.rapidapi.com/v1/job-description-search',
@@ -22,7 +25,7 @@ const options = {
       'x-rapidapi-host': 'job-search-api1.p.rapidapi.com'
     }
   };
-  
+
   try {
       const response = await axios.request(options);
       console.log(response.data);
