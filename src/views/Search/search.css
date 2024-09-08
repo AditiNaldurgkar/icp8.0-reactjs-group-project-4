@@ -73,5 +73,17 @@
     .search-container{
         margin-left: 0px;
     }
+    .search-input{
+        height: 30px;
+        outline: none;
+        width:60vw;
+    }
+    .search-btn{  
+        width: 30vw;
+        background-color: #6565fce1;
+        height: 34px;
+        font-size: 25px;
+    }
+    
     
 }
