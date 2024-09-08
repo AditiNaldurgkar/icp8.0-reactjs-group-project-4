@@ -41,3 +41,37 @@
     box-shadow: 2px 2px 4px gray;
     cursor: pointer;
 }
+
+.job-types-container{
+    height: 10vh;
+    width: 100vw;
+    margin-top: 9vh;
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.job-types-container::-webkit-scrollbar{
+    display: none;
+}
+
+.job-titles{
+    height: 23px;
+    display: inline-block;
+    padding: auto;
+    margin-left: 20px;
+    background-color: #6969ffc7;
+    padding: 4px 8px;
+    border-radius: 24px;
+    font-size: 15px;
+    color: whitesmoke;
+    cursor: pointer;
+    font-weight: 400;
+    box-shadow: 2px 2px 4px #5a5959;
+}
+
+@media screen and (max-width:500px) {
+    .search-container{
+        margin-left: 0px;
+    }
+    
+}
