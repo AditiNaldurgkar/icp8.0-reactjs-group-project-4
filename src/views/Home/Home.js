@@ -8,7 +8,16 @@ function Home() {
   return (
     <div>
       <Navbar />
-      <h1>Home</h1>
+
+      <div>
+        <div>
+          <h1>Empower Your Future - </h1>Explore Jobs, Apply, and Advance
+        </div>
+        <div>
+          <button type='button'></button>
+        </div>
+      </div>
+
       <Footer />
     </div>
   )
