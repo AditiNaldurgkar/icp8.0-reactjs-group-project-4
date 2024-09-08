@@ -1,7 +1,11 @@
+.main{
+    background-color: white;
+}
 .content-container {
     display: flex;
-    justify-content: space-between;
-    background-color: #7676FA;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    padding: 16px;
 }
 
 .content {
@@ -9,9 +13,12 @@
     margin-left: 90px;
 }
 
-.content h3 {
-    font-size: 30px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+.content h1 {
+    font-size: 50px;
+}
+
+.content h4 {
+    font-size: 25px;
 }
 
 .content button {
