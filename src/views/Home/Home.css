@@ -1,0 +1,36 @@
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #7676FA;
+}
+
+.content {
+    margin-top: 70px;
+    margin-left: 90px;
+}
+
+.content h3 {
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.content button {
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    border: none;
+    background-color: #00246b;
+    color: #fff;
+    margin: 10px;
+}
+
+.content button:hover {
+    background-color: #0036b1;
+}
+
+.content-image img {
+    height: 550px;
+    width: 550px;
+    margin-top: 60px;
+    margin-right: 90px;
+}
