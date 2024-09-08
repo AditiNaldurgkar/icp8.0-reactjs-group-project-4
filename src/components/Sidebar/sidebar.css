@@ -5,6 +5,7 @@
     backdrop-filter: blur(1px);
     position: fixed;
     left: 0;
+    z-index: 9999999999;
 }
 .icon-list{
     list-style: none;
