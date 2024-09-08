@@ -19,6 +19,7 @@ const Search = () => {
                  value={jobTittle} 
                  onChange={(e)=>{setjobTittle(e.target.value)}}>
                  </input>
+                 <button className='search-btn'><i class="ri-find-replace-line"></i></button>
              </div>
         </div>
     </div>
