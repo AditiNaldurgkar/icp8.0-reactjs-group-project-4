@@ -5,6 +5,15 @@ import Footer from '../../components/Footer/Footer'
 import job from './img/job.webp'
 import { toast } from 'react-hot-toast';
 
+const highDemandJobs = [
+  { title: 'Software Engineer', location: 'San Francisco, CA' },
+  { title: 'Data Scientist', location: 'New York, NY' },
+  { title: 'Product Manager', location: 'Remote' },
+  { title: 'UX Designer', location: 'Austin, TX' },
+  { title: 'Digital Marketer', location: 'Seattle, WA' },
+];
+
+
 function Home() {
   useEffect(() => {
     toast.loading('Loading content...');
@@ -13,6 +22,7 @@ function Home() {
       toast.success('Content loaded successfully!');
     }, 100); 
   }, []);
+
   return (
     <div className='main'>
       <Navbar />
@@ -32,8 +42,13 @@ function Home() {
       </div>
       <div>
         <h3>High-Demanded Jobs..</h3>
-        
-
+        {highDemandJobs.map((job, index) => (
+          <div key={index} className='job-item'>
+          <h4>{job.title}</h4>
+          <p>{job.location}</p>
+          </div>
+        ))}
+      
       </div>
       <Footer />
     </div >
