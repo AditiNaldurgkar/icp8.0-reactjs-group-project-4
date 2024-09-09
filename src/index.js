@@ -4,6 +4,7 @@ import './index.css';
 import Home from './views/Home/Home';
 import Search from './views/Search/Search';
 import JobInfo from  './views/JobInfo/JobInfo';
+import News from './views/News/News';
 import 'remixicon/fonts/remixicon.css'
 import { Toaster } from 'react-hot-toast';
 
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
   {
     path: "/job/:id",
     element: <JobInfo />,
+  },
+  {
+    path: "/news",
+    element: <News />,
   },
   {
     path: "*",
