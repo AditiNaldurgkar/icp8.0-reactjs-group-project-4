@@ -47,6 +47,12 @@ h3 {
     font-size: 30px;
 }
 
+.job-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
 .job-list {
     display: flex; 
     flex-wrap: wrap; 
