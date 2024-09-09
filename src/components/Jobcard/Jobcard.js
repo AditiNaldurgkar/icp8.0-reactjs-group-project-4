@@ -10,10 +10,10 @@ const Jobcard = ({jobInfo}) => {
           <div className='company-name'>{jobInfo.company.display_name.split("-","1")}</div>
        </div>
        <div className='info-container'>
-        <span className='job-info'><i class="ri-bard-fill"></i> ROLE : {jobInfo.title}</span>
-        <spam className="job-info"><i class="ri-arrow-right-down-line"></i> MIN-SALARAY : {jobInfo.salary_min} $</spam>
-        <spam className="job-info"><i class="ri-arrow-right-up-line"></i> MIN-SALARAY : {jobInfo.salary_max} $</spam>
-        <button className='job-btn'>Know more</button>
+        <span className='job-info '><i className="ri-bard-fill star"></i> ROLE : {jobInfo.title}</span>
+        <spam className="job-info"><i className="ri-arrow-right-down-line"></i> MIN-SALARAY : {jobInfo.salary_min} $</spam>
+        <spam className="job-info"><i className="ri-arrow-right-up-line"></i> MIN-SALARAY : {jobInfo.salary_max} $</spam>
+        <button className='job-btn'>know more</button>
        </div>
     </div>
   )
