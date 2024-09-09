@@ -114,6 +114,11 @@
         width: 100%;
         height: 100%;
     }
+
+    .cards-cobtainer{
+        width: 90vw;
+        margin:8vh 5vw;
+    }
     
     
 }
