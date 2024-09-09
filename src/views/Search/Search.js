@@ -57,9 +57,11 @@ const Search = () => {
             <span className='job-titles' key={index} onClick={() => { setjobTittle(jobTitle) }}>{jobTitle} <i className="ri-arrow-right-up-line"></i></span>
           ))}
         </div>
+        <div className='cards-cobtainer'>
          {!jobs.length ? <span className='search-img-container'><img src={serchimg} alt='searcing img'></img></span>: jobs.map((job,index)=>(
           <Jobcard  jobInfo={job} />
          ))}
+         </div>
       </div>
     </div>
   )

@@ -82,6 +82,15 @@
     cursor: pointer; 
 }
 
+
+.cards-cobtainer{
+    width: 98vw;
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
 @media screen and (max-width:500px) {
     .search-container{
         margin-left: 0px;

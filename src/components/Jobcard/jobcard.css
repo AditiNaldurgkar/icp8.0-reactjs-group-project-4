@@ -1,0 +1,56 @@
+.job-card-body{
+   min-height: 200px;
+    width: 300px;
+    background-color: red;
+    margin: 15px 2px;
+    padding: 4px 2px;
+    border-radius: 4px;
+    background: white;
+    color: black;
+     box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+}
+
+.job-headings{
+    min-height: 55px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-shrink:nowrap;
+    gap: 4px;
+}
+.job-intial-logo{
+    height:40px;
+    width: 40px;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.company-name{
+    font-size: 20px;
+}
+
+.info-container{
+    margin-left: 10px;
+    width: 95%;
+     color: #000000;
+     margin-top: 10px;
+     display: flex;
+     flex-direction: column;
+     gap: 6px;
+}
+.job-info{
+    font-size: 18px;
+    font-weight: 400;
+}
+.job-btn{
+    padding:7px 8px;
+
+}
