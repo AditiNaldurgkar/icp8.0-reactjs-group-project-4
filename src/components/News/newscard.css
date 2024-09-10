@@ -1,6 +1,12 @@
 
 a{
     cursor: pointer;
+    text-decoration: none;
+    color: whitesmoke;
+    background-color: #9f9ffa;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 20px;
 }
 .newscard {
     width: 400px;
