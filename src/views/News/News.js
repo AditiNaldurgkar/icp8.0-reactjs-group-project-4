@@ -11,7 +11,13 @@ const newsData = [{
   headline : 'Trifold Phone unvieled by Huawei',
   caption :'The Mate XT combines a 10-inch tablet and a smartphone in one' ,
 },{
-
+  url: 'https://img.freepik.com/premium-photo/robotic-process-automation-automation-business-concept_33805-1600.jpg?w=740',
+  headline: "Google's AI Breakthrough in Automation",
+  caption: 'Learn about the latest advancements in AI-powered business solutions.'
+},{
+  url: 'https://img.freepik.com/free-photo/tech-startup-concept_23-2148588122.jpg?uid=R160163945&ga=GA1.1.1856927002.1722677193&semt=ais_hybrid',
+    headline: "Tech Startups Surge in 2024",
+    caption: 'Discover the top emerging startups making waves this year.'
 }];
 
 function News() {
