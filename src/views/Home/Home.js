@@ -83,6 +83,9 @@ function Home() {
             </article>
           ))}
         </div>
+        <div className='view-news-button-container'>
+          <button className='view-news-button' type='button'>View News</button>
+        </div>
       </div>
 
       <div className='faq-section'>
