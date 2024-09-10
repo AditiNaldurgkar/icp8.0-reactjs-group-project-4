@@ -16,7 +16,7 @@ function Login() {
 					Have an account ?
 				</h3>
 				<h6>
-					Login to access data and information
+					Login to access  information
 				</h6>
 			</div>
 			<form action="">
@@ -28,7 +28,11 @@ function Login() {
 							alt="password icon"
 							className="icon"
 						/>
-						<input type="text" name="email" id="email" className="email" placeholder="Type your username" />
+						<input type="text" 
+						       name="email" 
+						       id="email"
+							    className="email" 
+								placeholder="Type your email" />
 					</div>
 				</div>
 				<div>
@@ -39,7 +43,11 @@ function Login() {
 							alt="password icon"
 							className="icon"
 						/>
-					<input type="password" name="passw" id="passw" className="passw" placeholder="Type your password" img src={userimg} />
+					<input type="password" 
+					       name="passw" 
+						   id="passw" 
+						   className="passw" 
+						   placeholder="Type your password" />
 
 				</div>
 				</div>
