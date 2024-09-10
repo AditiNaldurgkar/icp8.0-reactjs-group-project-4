@@ -8,4 +8,6 @@ const jobNames = [
     "UX/UI Designer"
 ];
 
-export {jobNames}
+
+
+export {jobNames }

@@ -1,64 +1,79 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Sidebar from '../../components/Sidebar/Sidebar'
 import './search.css'
 import { jobNames } from '../../config/searchData'
 import axios from 'axios'
 import toast from 'react-hot-toast'
-
-
-const searchJob = async (jobname)=>{
-  
-
-  toast.loading(`searching jobs for ${jobname}`)
-
-const options = {
-    method: 'GET',
-    url: 'https://job-search-api1.p.rapidapi.com/v1/job-description-search',
-    params: {
-      q: `${jobname}`,
-      page: '1',
-      country: 'us',
-      city: 'Seattle'
-    },
-    headers: {
-      'x-rapidapi-key': '81c0752aabmshd6f144b0b338b61p1ea32ejsn9eedaf578ced',
-      'x-rapidapi-host': 'job-search-api1.p.rapidapi.com'
-    }
-  };
-
-  try {
-      const response = await axios.request(options);
-      console.log(response.data);
-  } catch (error) {
-      console.error(error);
-  }
-  
-}
+import serchimg from './searchImg.png'
+import Jobcard from '../../components/Jobcard/Jobcard'
 
 const Search = () => {
 
-    const [jobTittle, setjobTittle] = useState(null)     
+  const [jobTittle, setjobTittle] = useState('')
+  const [jobs, setjobs] = useState([])
+
+
+  const searchJob = async (jobname) => {
+
+    jobname = jobname.replace(" ", "%20")
+    const URL = `https://api.adzuna.com/v1/api/jobs/gb/search/1?app_id=02117e2a&app_key=b73e530e58b3da362a5bfe0f0ce5f79e&results_per_page=18&what=${jobname}&where=london&content-type=application/json`
+
+    let tid = toast.loading('loading.....')
+
+    try {
+      let responce = await axios.request(URL)
+      setjobs(responce.data.results)
+      localStorage.setItem("searchedJobs",JSON.stringify(responce.data.results))
+     // console.log(responce.data.results)
+      toast.dismiss(tid)
+      toast.success('jobs load sucessfully')
+      setjobTittle('')
+    } catch (error) {
+     // console.log(error)
+      toast.dismiss(tid)
+      toast.error(error.message)
+    }
+  }
+
+  //set jobs in local storage after load the jobs....
+    
+  useEffect(()=>{
+     let localSToragesaveJobs= JSON.parse(localStorage.getItem("searchedJobs"))
+      if(!localSToragesaveJobs){
+        return
+      }else{
+        setjobs(localSToragesaveJobs)
+      }
+  },[])
+  
+
+  // return the component....
 
   return (
     <div>
-       <Sidebar/>
-        <div className='search-container'>
-             <div className='search-input-container'> 
-                 <input 
-                 className='search-input'
-                 type='text' 
-                 placeholder='enter the job tittle' 
-                 value={jobTittle} 
-                 onChange={(e)=>{setjobTittle(e.target.value)}}>
-                 </input>
-                 <button className='search-btn' onClick={()=>searchJob(jobTittle)}><i class="ri-find-replace-line"></i></button>
-             </div>
-             <div className='job-types-container'>
-                 {jobNames.map((jobTitle)=>(
-                    <span className='job-titles' onClick={()=>{setjobTittle(jobTitle)}}>{jobTitle} <i class="ri-arrow-right-up-line"></i></span>
-                 ))}
-             </div>
+      <Sidebar />
+      <div className='search-container'>
+        <div className='search-input-container'>
+          <input
+            className='search-input'
+            type='text'
+            placeholder='enter the job tittle'
+            value={jobTittle}
+            onChange={(e) => { setjobTittle(e.target.value) }}>
+          </input>
+          <button className='search-btn' onClick={() => searchJob(jobTittle)}><i className="ri-find-replace-line"></i></button>
         </div>
+        <div className='job-types-container'>
+          {jobNames.map((jobTitle, index) => (
+            <span className='job-titles' key={index} onClick={() => { setjobTittle(jobTitle) }}>{jobTitle} <i className="ri-arrow-right-up-line"></i></span>
+          ))}
+        </div>
+        <div className='cards-cobtainer'>
+         {!jobs.length ? <span className='search-img-container'><img src={serchimg} alt='searcing img'></img></span>: jobs.map((job,index)=>(
+          <Jobcard  jobInfo={job} />
+         ))}
+         </div>
+      </div>
     </div>
   )
 }
