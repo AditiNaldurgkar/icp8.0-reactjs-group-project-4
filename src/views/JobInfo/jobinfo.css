@@ -5,27 +5,45 @@
 
 
 .job-tittle-info{
-    height: 40vh;
+   min-height: 20vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
+    margin-left: 10px;
 }
 
 .liner-text{
     display:inline;
-    background:linear-gradient(to left,#062fff,#0ce3ff);
+    background:linear-gradient(to left,#002aff,#0ce3ff);
     color: transparent;
     background-clip: text;
 }
 .job-tittle{
     font-size: 2.3em;
-    margin-left: 10px;
 }
 
 .back-btn{
     font-size: 35px;
     margin: 0;
     padding: 0;
+}
+
+.job-discription-info{
+    width: 90vw;
+    font-size: 19px;
+    font-weight: 400;
+    color: #4f4e4e;
+    margin-left: 10px;
+    border-bottom: 2px solid #0ce3ff;
+    padding-bottom  : 10px;
+}
+
+.company-info{
+
+}
+
+.company-info{
+  font-size:2em;
 }
 
 

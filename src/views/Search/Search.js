@@ -16,14 +16,14 @@ const Search = () => {
   const searchJob = async (jobname) => {
 
     jobname = jobname.replace(" ", "%20")
-
     const URL = `https://api.adzuna.com/v1/api/jobs/gb/search/1?app_id=02117e2a&app_key=b73e530e58b3da362a5bfe0f0ce5f79e&results_per_page=18&what=${jobname}&where=london&content-type=application/json`
 
     let tid = toast.loading('loading.....')
 
     try {
       let responce = await axios.request(URL)
-       setjobs(responce.data.results)
+      setjobs(responce.data.results)
+      localStorage.setItem("searchedJobs",JSON.stringify(responce.data.results))
      // console.log(responce.data.results)
       toast.dismiss(tid)
       toast.success('jobs load sucessfully')
@@ -35,10 +35,17 @@ const Search = () => {
     }
   }
 
-
+  //set jobs in local storage after load the jobs....
+    
   useEffect(()=>{
-    localStorage.setItem("searchedJobs",JSON.stringify(jobs))
-  },[jobs])
+     let localSToragesaveJobs= JSON.parse(localStorage.getItem("searchedJobs"))
+      if(!localSToragesaveJobs){
+        return
+      }else{
+        setjobs(localSToragesaveJobs)
+      }
+  },[])
+  
 
   // return the component....
 

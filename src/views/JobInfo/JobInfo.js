@@ -13,11 +13,17 @@ function Jobinfo() {
   return (<>
       <Sidebar/>
       <div className='jobs-info-container'>
-    <Link to='/search'><span className='back-btn'><i class="ri-arrow-left-line"></i></span></Link>
-      <div className='job-tittle-info'>
+       <Link to='/search'><span className='back-btn'><i class="ri-arrow-left-line"></i></span></Link>
+       <div className='job-tittle-info'>
           <h2 className='liner-text job-tittle'>{result.company.display_name}</h2>
           <span>#{result.category.tag}</span>
-      </div>
+       </div>
+       <div className='job-discription-info'>
+         {result.description}
+       </div>
+       <div className='company-info'>
+          <h4 className='liner-text'>know more</h4>
+       </div>
       </div>
     </>
   )
