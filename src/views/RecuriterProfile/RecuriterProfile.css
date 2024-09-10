@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.main{
+    /* border: 3px solid red; */
+    height: 100vh;
+}
+
+.heading{
+    width: 35%;
+    margin: auto;
+    margin-top: 1vw;
+    /* border: 1px solid red; */
+}
+
+.main-heading{
+    font-size: 2.7vw;
+    font-weight: 700;
+    /* border: 1px solid yellow; */
+    margin-bottom: 1vw;
+}
+
+.sub-heading{
+    font-size: 1.2vw;
+}

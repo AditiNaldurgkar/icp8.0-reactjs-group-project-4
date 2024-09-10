@@ -1,0 +1,52 @@
+form{
+    border: 1px solid yellow;
+    width: 60%;
+    display: block;
+    margin: auto;
+}
+
+.frm-holder{
+    border: 1px solid red;
+    width: 80%;
+    margin: auto;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.fileupload{
+    width: 50%;
+    height: 20%;
+    border-radius: 50%;
+    border: 1px solid red;
+    margin: 1vw;
+}
+
+label{
+    display: block;
+    width: 100%;
+    
+}
+
+.input-gup{
+    display: block;
+    width: 100%;
+    margin: 1vw;
+    /* border: 1px solid rgb(238, 255, 0); */
+}
+
+.input, textarea {
+    width: 60%;
+    padding: .2vw;
+    border-radius: 5px;
+    
+}
+
+.btn{
+    padding: 1vw;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+    border: none;
+}
