@@ -69,6 +69,3 @@ root.render(
 <RouterProvider router={router}/> 
 <Toaster/>
 </>);
-
-
-
