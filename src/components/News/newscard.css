@@ -2,8 +2,11 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    align-items: end;
+    justify-content: space-around;
+}
+a{
+    cursor: pointer;
 }
 .newscard {
     width: 400px;

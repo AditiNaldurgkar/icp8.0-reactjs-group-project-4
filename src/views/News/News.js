@@ -17,7 +17,12 @@ const newsData = [{
 },{
   url: 'https://img.freepik.com/free-photo/tech-startup-concept_23-2148588122.jpg?uid=R160163945&ga=GA1.1.1856927002.1722677193&semt=ais_hybrid',
     headline: "Tech Startups Surge in 2024",
-    caption: 'Discover the top emerging startups making waves this year.'
+    caption: 'Discover the top emerging startups making waves this year.',
+    url2 :'https://economictimes.indiatimes.com/tech/startups/economic-survey-india-saw-tech-startup-surge-post-covid-pandemic/articleshow/111931855.cms?from=mdr'
+},{
+  url: 'https://img.freepik.com/free-photo/business-team-using-laptop-computer_1150-12568.jpg?uid=R160163945&ga=GA1.1.1856927002.1722677193&semt=ais_hybrid',
+  headline: "Microsoft's New Cloud Services Expansion",
+  caption: "Explore Microsoft's latest offerings in cloud computing."
 }];
 
 function News() {
