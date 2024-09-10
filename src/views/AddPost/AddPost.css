@@ -1,0 +1,96 @@
+.job-post-container {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+  height: 100vh;
+  background-color: #f4f4f9;
+  overflow-y: auto;
+}
+
+/* Card-like appearance */
+.job-post-card {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto; 
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Form label styling */
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+/* Text input, textarea, and select styling */
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="url"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+/* Textarea */
+textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+/* Checkbox inline label */
+.inline-label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.inline-label input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* Salary range input */
+.salary-range {
+  display: flex;
+  align-items: center;
+}
+
+.salary-range input[type="number"] {
+  width: 45%;
+}
+
+.salary-range span {
+  margin: 0 10px;
+}
+
+/* Button styling */
+button[type="submit"] {
+  background-color: #28a745;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}
+
+button[type="submit"]:hover {
+  background-color: #218838;
+}
