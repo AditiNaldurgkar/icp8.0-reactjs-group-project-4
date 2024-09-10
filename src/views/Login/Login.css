@@ -10,12 +10,14 @@
 .left-container
 {
     width: 300px;
-    padding: 10px 100px;
+    padding: 10px 50px;
 
 }
 h1
 {
     font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 h3
 {
@@ -23,6 +25,9 @@ h3
 }
 h6{
     font-size: 15px;
+    margin-left: 55px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .text-feild
 {
@@ -78,12 +83,13 @@ h6{
 .login-btn
 {
     font-size: 20px;
-    width: 220px;
+    width: 280px;
     height: 30px;
-    border-radius: 15px;
+    border-radius: 30px;
     background-color: #dab5e5;
     color: white;
     border: 0.5px solid rgb(79, 7, 79);
+    font-weight: bolder;
 }
 .right-container
 {
@@ -95,11 +101,11 @@ h6{
 {
     width: 300px;
     height: 340px;
-    margin: 100px 30px;
+    margin: 150px 50px;
 }
 .text
 {
-    margin-left: 100px;
+    margin-left: 150px;
     margin-top: 10px;
     margin-bottom: 30px;
 }
