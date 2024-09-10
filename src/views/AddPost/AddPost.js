@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import "./AddPost.css"
 import toast, { Toaster } from 'react-hot-toast';
+import Sidebar from '../../components/Sidebar/Sidebar';
+import Navbar from '../../components/Navbar/Navbar';
 
 function Add() {
     const [jobTitle, setJobTitle] = useState("");
@@ -44,7 +46,13 @@ function Add() {
 
     return (
         <div>
+            <Navbar/>
+            <Sidebar />
+            <div className='heading'>
+            
             <h2>Add Job Post</h2>
+            </div>
+            
             <div className="job-post-container">
                 <div className="job-post-card">
                     <form>
