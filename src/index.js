@@ -8,6 +8,9 @@ import News from './views/News/News';
 import Login from './views/Login/Login';
 import Setting from './views/Setting/Setting';
 import RecuriterProfile from './views/RecuriterProfile/RecuriterProfile';
+import AddPost from './views/AddPost/AddPost';
+import ViewPost from './views/ViewPost/ViewPost';
+import UserProfile from './views/UserProfile/UserProfile';
 import 'remixicon/fonts/remixicon.css'
 import { Toaster } from 'react-hot-toast';
 
@@ -42,6 +45,18 @@ const router = createBrowserRouter([
   {
     path: "/profile",
     element: <RecuriterProfile />,
+  },
+  {
+    path: "/addpost",
+    element: <AddPost />,
+  },
+  {
+    path: "/viewpost",
+    element: <ViewPost />,
+  },
+  {
+    path: "/userprofile",
+    element: <UserProfile />,
   },
   {
     path: "*",
