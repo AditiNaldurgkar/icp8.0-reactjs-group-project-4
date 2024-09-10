@@ -1,8 +1,9 @@
 import React from 'react'
-
+import "./News.css"
 function News() {
   return (
-    <div>News</div>
+    <div className='maindiv'> <h1 className='heading'> News </h1></div>
+    
   )
 }
 
