@@ -1,0 +1,37 @@
+
+.jobs-info-container{
+    margin-left: 50px;
+}
+
+
+.job-tittle-info{
+    height: 40vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.liner-text{
+    display:inline;
+    background:linear-gradient(to left,#062fff,#0ce3ff);
+    color: transparent;
+    background-clip: text;
+}
+.job-tittle{
+    font-size: 2.3em;
+    margin-left: 10px;
+}
+
+.back-btn{
+    font-size: 35px;
+    margin: 0;
+    padding: 0;
+}
+
+
+@media screen and (max-width:500px) {
+    .jobs-info-container{
+    margin-left: 0px;
+ }
+
+}

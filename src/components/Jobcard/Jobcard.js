@@ -1,5 +1,6 @@
 import React from 'react'
 import './jobcard.css'
+import { Link } from 'react-router-dom'
 
 const Jobcard = ({jobInfo}) => {
 
@@ -10,7 +11,6 @@ const Jobcard = ({jobInfo}) => {
 
   return (
     <div className='job-card-body'>
-       {console.log(jobInfo)}
        <div className='job-headings'>
           <span className='job-intial-logo'>{jobInfo.company.display_name[0]}</span>
           <div className='company-name'>{jobInfo.company.display_name.split("-","1")}</div>
@@ -21,7 +21,7 @@ const Jobcard = ({jobInfo}) => {
         <span className='job-info'><i class="ri-calendar-2-fill"></i> ADD ON : {getaddDate(jobInfo.created)}</span>
         <spam className="job-info"><i className="ri-arrow-right-down-line"></i> MIN-SALARAY : {jobInfo.salary_min} $</spam>
         <spam className="job-info"><i className="ri-arrow-right-up-line"></i> MAX-SALARAY : {jobInfo.salary_max} $</spam>
-        <button className='job-btn'>know more</button>
+      <Link to={`/job/${jobInfo.id}`}><button className='job-btn'>know more</button></Link>
        </div>
     </div>
   )

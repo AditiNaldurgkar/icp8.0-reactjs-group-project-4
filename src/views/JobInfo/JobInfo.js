@@ -1,8 +1,25 @@
 import React from 'react'
+import { Link, useParams } from 'react-router-dom'
+import Sidebar from '../../components/Sidebar/Sidebar'
+import './jobinfo.css'
 
 function Jobinfo() {
-  return (
-    <div>jobinfo</div>
+  
+     const ALL_JOBS = JSON.parse(localStorage.getItem('searchedJobs'))
+     const {id} = useParams()
+     let result =  ALL_JOBS.filter((JOB)=>{return(JOB.id===id)}); 
+     result=result[0]
+     console.log(result)
+  return (<>
+      <Sidebar/>
+      <div className='jobs-info-container'>
+    <Link to='/search'><span className='back-btn'><i class="ri-arrow-left-line"></i></span></Link>
+      <div className='job-tittle-info'>
+          <h2 className='liner-text job-tittle'>{result.company.display_name}</h2>
+          <span>#{result.category.tag}</span>
+      </div>
+      </div>
+    </>
   )
 }
 
