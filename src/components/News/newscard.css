@@ -2,11 +2,12 @@
 a{
     cursor: pointer;
     text-decoration: none;
-    color: whitesmoke;
+    color: white;
     background-color: #9f9ffa;
     font-weight: bold;
     padding: 4px 8px;
-    border-radius: 20px;
+    border-radius: 15px;
+    padding-top: 2px;
 }
 .newscard {
     width: 400px;
