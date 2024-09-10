@@ -1,0 +1,34 @@
+
+.newscard {
+    width: 400px;
+    height: 300px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f9f9f9; 
+  }
+  .cardimg {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 10px; }
+  .title {
+    color: black;
+    font-size: 1.5rem;
+    margin: 10px 0;
+    text-align: center;
+    font-weight: bold; 
+  }
+  .caption {
+    color: black;
+    font-size: 1rem;
+    margin: 10px 0;
+    text-align: center;
+  }
+  
