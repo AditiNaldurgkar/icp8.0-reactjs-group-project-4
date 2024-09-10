@@ -6,6 +6,8 @@ import Search from './views/Search/Search';
 import JobInfo from  './views/JobInfo/JobInfo';
 import News from './views/News/News';
 import Login from './views/Login/Login';
+import Setting from './views/Setting/Setting';
+import RecuriterProfile from './views/RecuriterProfile/RecuriterProfile';
 import 'remixicon/fonts/remixicon.css'
 import { Toaster } from 'react-hot-toast';
 
@@ -32,6 +34,14 @@ const router = createBrowserRouter([
   {
     path: "/login",
     element: <Login />,
+  },
+  {
+    path: "/setting",
+    element: <Setting />,
+  },
+  {
+    path: "/profile",
+    element: <RecuriterProfile />,
   },
   {
     path: "*",
