@@ -13,6 +13,13 @@ const highDemandJobs = [
   { imgSrc: './img/digital-marketing.png', alt: 'Digital Marketer', title: 'Digital Marketer', description: 'Digital Marketers develop and implement online marketing strategies to drive traffic and sales. They use various digital channels, including social media, email, and search engine marketing, to reach and engage target audiences.' },
 ];
 
+const newsArticles = [
+  { title: 'New Job Trends for 2024', description: 'Explore the latest job market trends for 2024 and how they might affect your career planning.', date: 'September 1, 2024' },
+  { title: 'Top Skills in Demand', description: 'Find out which skills are most sought after by employers in today’s job market.', date: 'August 25, 2024' },
+  { title: 'How to Ace a Job Interview', description: 'Get tips and tricks on how to prepare for and succeed in your next job interview.', date: 'August 10, 2024' },
+  { title: 'Remote Work: The Future of Employment', description: 'Learn about the rise of remote work and what it means for the future of employment across various industries.', date: 'September 15, 2024' }
+];
+
 const FAQ = [
   { head: 'How do I create an account?', description: 'To create an account, click the "Sign Up" button on the top right of the homepage. Enter your email, create a password, and complete your profile with relevant information.' },
   { head: 'How do I search for jobs?', description: 'Use the search bar on the homepage to enter keywords and select your desired location. You can filter results by job type, salary, and more.' },
@@ -38,6 +45,9 @@ function Home() {
         <div className='content'>
           <h1>Empower Your Future -</h1>
           <h4>Explore Jobs, Apply, and Advance</h4>
+          <p className='intro-paragraph'>
+            Discover a wide range of job opportunities and resources designed to help you achieve your career goals. Whether you’re looking for a new position or want to enhance your skills, we provide tools and guidance to support your journey. Start exploring today and take the first step towards a brighter future.
+          </p>
           <div className='buttons'>
             <button type='button'>Login</button>
             <button type='button'>Sign up</button>
@@ -62,6 +72,22 @@ function Home() {
         </div>
       </div>
 
+      <div className='news-section'>
+        <h3>Latest News</h3>
+        <div className='news-list'>
+          {newsArticles.map((news, index) => (
+            <article key={index} className='news-item'>
+              <h4>{news.title}</h4>
+              <p>{news.description}</p>
+              <span className='news-date'>{news.date}</span>
+            </article>
+          ))}
+        </div>
+        <div className='view-news-button-container'>
+          <button className='view-news-button' type='button'>View News</button>
+        </div>
+      </div>
+
       <div className='faq-section'>
         <h3>Frequently Asked Questions..</h3>
         <div className='faq-list'>
@@ -73,6 +99,9 @@ function Home() {
           ))}
         </div>
       </div>
+
+
+
 
       <Footer />
     </div>
