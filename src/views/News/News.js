@@ -5,7 +5,7 @@ import Display from '../../components/News/newscards';
 const newsData = [{
   url: 'https://img.freepik.com/free-photo/hiring-career-employment-human-resources-concept_53876-121273.jpg?uid=R160163945&ga=GA1.1.1856927002.1722677193&semt=ais_hybrid',
   headline: "Major Recruitment Drives Ahead!!!",
-  caption: 'Check Now',
+  caption: 'Check Now to grab best oppurtunity',
   url2:"https://economictimes.indiatimes.com/jobs/hr-policies-trends/indian-job-market-likely-to-get-busy-and-bustling/articleshow/111295088.cms?from=mdr"
 },{
   url :'https://img.freepik.com/premium-photo/person-is-using-phone-with-colorful-display_987366-63062.jpg?w=740',
@@ -30,7 +30,7 @@ const newsData = [{
 },{
   url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKVxv9yAJuGd971hsq8Pm055YVbZnXSlTx4g&s",
   headline :"Tata Sons' sees 74% surge ",
-  caption:"a 74 percent increase in consolidated net profit",
+  caption:"74 percent increase in consolidated net profit",
   url2:"https://www.businesstoday.in/latest/corporate/story/tata-sons-sees-74-surge-in-consolidated-net-profit-at-rs-49000-crore-aviation-business-narrows-loss-in-fy24-444884-2024-09-07"
 }];
 
