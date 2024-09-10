@@ -24,3 +24,64 @@ h3
 h6{
     font-size: 15px;
 }
+.text-feild
+{
+    font-size: 20px;
+    margin: 50px 0px;
+    font-weight: bolder;
+    color: rgb(44, 6, 80);
+}
+.input-with-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .input-with-icon img.icon {
+    position: absolute;
+    left: 10px;
+    width: 24px; 
+    height: 20px;
+  }
+  
+.user-img
+{
+    height: 20px;
+    width: 50px;
+}
+.user-container
+{
+    display: flex;
+}
+.email
+{
+    font-size: 15px;
+    margin: 30px 0px;
+    border-radius: 20px;
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid purple;
+    padding: 0px 40px;
+}
+.passw
+{
+    font-size: 15px;
+    margin: 30px 0px;
+    border-radius: 20px;
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid purple;
+    padding: 0px 40px;
+}
+.login-btn
+{
+    font-size: 20px;
+    width: 220px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #dab5e5;
+    color: white;
+    border: 0.5px solid rgb(79, 7, 79);
+}
