@@ -2,6 +2,7 @@ import React from 'react'
 import './Login.css'
 import userimg from './user.png'
 import passwordimg from './padlock.png'
+import IMG from './img.PNG'
 function Login() {
   return (
     <>
@@ -47,7 +48,13 @@ function Login() {
 				</div>
 				<button type="submit" className="login-btn">Login</button>
 			</form>
-      </div>
+			<div className="last-line">
+				Don't have an account ?        Sign up
+			</div>
+		</div>
+		<div className="right-container">
+			<img src={IMG} className="image" />
+		</div>
       </div>
     </>
   )
