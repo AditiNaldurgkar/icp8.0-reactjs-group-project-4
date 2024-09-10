@@ -1,0 +1,26 @@
+.main-container
+{
+    width: 800px;
+    height: 600px;
+    display: flex;
+    margin: 30px auto;
+    border: 0.5px solid rgb(79, 7, 79);
+    border-radius: 30px;
+}
+.left-container
+{
+    width: 300px;
+    padding: 10px 100px;
+
+}
+h1
+{
+    font-size: 25px;
+}
+h3
+{
+    font-size: 20px;
+}
+h6{
+    font-size: 15px;
+}
