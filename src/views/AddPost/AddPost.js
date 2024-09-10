@@ -41,114 +41,117 @@ function Add() {
         setApplicationDeadline("");
         setCompanyName("");
     };
-    
+
     return (
-        <div className="job-post-container">
-            <div className="job-post-card">
-                <form>
-                    <label>Job Title</label>
-                    <input
-                        type="text"
-                        name="jobTitle"
-                        value={jobTitle}
-                        onChange={(e) => {
-                            setJobTitle(e.target.value);
-                        }}
-                        required
-                    />
-
-
-                    <label>Job Description</label>
-                    <textarea
-                        name="jobDescription"
-                        value={jobDescription}
-                        onChange={(e) => {
-                            setJobDescription(e.target.value);
-                        }}
-                        required
-                    />
-
-                    <label>Location</label>
-                    <input
-                        type="text"
-                        name="location"
-                        value={location}
-                        onChange={(e) => {
-                            setLocation(e.target.value);
-                        }}
-                    />
-
-                    <label>Employment Type</label>
-                    <select
-                        name="employmentType"
-                        value={employmentType}
-                        onChange={(e) => {
-                            setEmploymentType(e.target.value);
-                        }}
-                        required
-                    >
-                        <option value="">Select</option>
-                        <option value="full-time">Full-Time</option>
-                        <option value="part-time">Part-Time</option>
-                        <option value="contract">Contract</option>
-                        <option value="internship">Internship</option>
-                    </select>
-
-
-                    <label>Salary Range</label>
-                    <div className="salary-range">
+        <div>
+            <h2>Add Job Post</h2>
+            <div className="job-post-container">
+                <div className="job-post-card">
+                    <form>
+                        <label>Job Title</label>
                         <input
-                            type="number"
-                            name="salaryMin"
-                            value={salaryMin}
+                            type="text"
+                            name="jobTitle"
+                            value={jobTitle}
                             onChange={(e) => {
-                                setSalaryMin(e.target.value);
+                                setJobTitle(e.target.value);
                             }}
-                            placeholder="Min"
+                            required
                         />
-                        <span>-</span>
+
+
+                        <label>Job Description</label>
+                        <textarea
+                            name="jobDescription"
+                            value={jobDescription}
+                            onChange={(e) => {
+                                setJobDescription(e.target.value);
+                            }}
+                            required
+                        />
+
+                        <label>Location</label>
                         <input
-                            type="number"
-                            name="salaryMax"
-                            value={salaryMax}
+                            type="text"
+                            name="location"
+                            value={location}
                             onChange={(e) => {
-                                setSalaryMax(e.target.value);
+                                setLocation(e.target.value);
                             }}
-                            placeholder="Max"
                         />
-                    </div>
 
-                    <label>Application Deadline</label>
-                    <input
-                        type="date"
-                        name="applicationDeadline"
-                        value={applicationDeadline}
-                        onChange={(e) => {
-                            setApplicationDeadline(e.target.value);
-                        }}
-                    />
+                        <label>Employment Type</label>
+                        <select
+                            name="employmentType"
+                            value={employmentType}
+                            onChange={(e) => {
+                                setEmploymentType(e.target.value);
+                            }}
+                            required
+                        >
+                            <option value="">Select</option>
+                            <option value="full-time">Full-Time</option>
+                            <option value="part-time">Part-Time</option>
+                            <option value="contract">Contract</option>
+                            <option value="internship">Internship</option>
+                        </select>
 
-                    <label>Company Name</label>
-                    <input
-                        type="text"
-                        name="companyName"
-                        value={companyName}
-                        onChange={(e) => {
-                            setCompanyName(e.target.value);
-                        }}
-                        required
-                    />
 
-                    <button
-                        type="submit"
-                        onClick={addPost}>
-                        Submit
-                    </button>
-                </form>
+                        <label>Salary Range</label>
+                        <div className="salary-range">
+                            <input
+                                type="number"
+                                name="salaryMin"
+                                value={salaryMin}
+                                onChange={(e) => {
+                                    setSalaryMin(e.target.value);
+                                }}
+                                placeholder="Min"
+                            />
+                            <span>-</span>
+                            <input
+                                type="number"
+                                name="salaryMax"
+                                value={salaryMax}
+                                onChange={(e) => {
+                                    setSalaryMax(e.target.value);
+                                }}
+                                placeholder="Max"
+                            />
+                        </div>
+
+                        <label>Application Deadline</label>
+                        <input
+                            type="date"
+                            name="applicationDeadline"
+                            value={applicationDeadline}
+                            onChange={(e) => {
+                                setApplicationDeadline(e.target.value);
+                            }}
+                        />
+
+                        <label>Company Name</label>
+                        <input
+                            type="text"
+                            name="companyName"
+                            value={companyName}
+                            onChange={(e) => {
+                                setCompanyName(e.target.value);
+                            }}
+                            required
+                        />
+
+                        <button
+                            type="submit"
+                            onClick={addPost}>
+                            Submit
+                        </button>
+                    </form>
+                </div>
             </div>
-        </div>
-    );
+        </div>    
+            );
 };
 
-// export default AddPost;
-export default Add
+            // export default AddPost;
+            export default Add
