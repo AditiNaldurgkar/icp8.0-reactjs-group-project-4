@@ -85,3 +85,25 @@ h6{
     color: white;
     border: 0.5px solid rgb(79, 7, 79);
 }
+.right-container
+{
+    width:500px;
+    background-color: #dab5e5;
+    border-radius: 20px;
+}
+.image
+{
+    width: 300px;
+    height: 340px;
+    margin: 100px 30px;
+}
+.text
+{
+    margin-left: 100px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.last-line
+{
+    margin-top: 30px;
+}
