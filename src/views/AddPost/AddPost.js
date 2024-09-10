@@ -15,6 +15,12 @@ function Add() {
     const [companyName, setCompanyName] = useState("");
 
     const addPost = () => {
+        
+        if (!jobTitle || !jobDescription || !employmentType || !companyName) {
+            toast.error("Please fill in all required fields.");
+            return;
+        }
+
         const postData = JSON.parse(localStorage.getItem("postData")) || [];
 
         const postDataObject = {
@@ -161,5 +167,4 @@ function Add() {
             );
 };
 
-            // export default AddPost;
-            export default Add
+            export default Add;
