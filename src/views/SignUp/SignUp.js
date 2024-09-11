@@ -1,15 +1,15 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
+import toast, { Toaster } from 'react-hot-toast';
+import './SignUp.css';
 
-const userData = JSON.parse(localStorage.getItem("userData"));
-console.log(userData);
-
-
-function SignUp() {
-  const [formData, setFormData] = useState({
-    username: "",
-    email: "",
-    password: "",
-  });
+const Signup = () => {
+    const [role, setRole] = useState('Job Seeker');
+    const [username, setUsername] = useState('');
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const [confirmPassword, setConfirmPassword] = useState('');
+    const [jobRole, setJobRole] = useState('');
+    const [companyName, setCompanyName] = useState('');
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
