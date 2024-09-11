@@ -9,6 +9,7 @@ function ViewPost() {
       <Navbar/>
       <Sidebar/>
     <h1>ViewPost</h1>
+    
     </div>
   )
 }

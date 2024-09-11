@@ -52,7 +52,6 @@ function Add() {
 
     return (
         <div>
-            <Navbar/>
             <Sidebar />
             <div className='heading'>
             
