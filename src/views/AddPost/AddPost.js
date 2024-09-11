@@ -52,7 +52,7 @@ function Add() {
     return (
         <div>
             <Sidebar />
-            <div className='heading'>
+            <div className='liner-text'>
             
             <h2>Add Job Post</h2>
             </div>
