@@ -1,5 +1,5 @@
 .setting-container{
-    min-height: 100vh;
+    min-height: 200vh;
     margin-left: 60px;
     display: flex;
     flex-direction: column;
@@ -91,6 +91,18 @@
 .user-set-box div{
     cursor: pointer;
 }
+
+.serhces-res-box{
+    height: 20px;
+    width: 80px;
+    outline:none;
+}
+
+.serhces-res-box[type=number]::-webkit-inner-spin-button, 
+.serhces-res-box[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+}
+
 
 @media screen and (max-width:500px) {
   .setting-container{

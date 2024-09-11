@@ -62,7 +62,7 @@ const Setting = () => {
            <div className='them-btn-container'>
              <span className='seting-name'> <i class="ri-notification-fill"></i> result no.</span>
                   <div>
-                      <input type='number'></input>
+                      <input type='number' className='serhces-res-box'></input>
                   </div>
            </div>
       </div>
