@@ -90,3 +90,13 @@ button[type="submit"]:hover {
   background-color: #8484f4e1;
   color: #333;
 }
+
+
+@media screen and (max-width:500px) {
+  .job-post-container{
+    padding: 10px 5px;
+  }
+  .job-post-card{
+    padding-bottom: px;
+  }
+}
