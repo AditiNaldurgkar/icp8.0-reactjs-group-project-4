@@ -57,6 +57,7 @@
   display: flex;
   flex-direction: column;
   margin-top: 4vh;
+  margin-bottom: 2vh;
 }
 
 .setting-heading{
@@ -83,6 +84,8 @@
     align-items: center;
     gap: 4vw;
     flex-wrap: wrap;
+    margin-left: 20px;
+    white-space: nowrap;
 }
 
 .user-set-box div{

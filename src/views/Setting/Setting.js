@@ -41,6 +41,32 @@ const Setting = () => {
            </div>
       </div>
 
+
+      <div className='setting-box'>
+           <span className='setting-heading'>notification</span>
+           <div className='them-btn-container'>
+             <span className='seting-name'> <i class="ri-notification-fill"></i> notification</span>
+                  <div>
+                     <label className="switch">
+                     <input type="checkbox"></input>
+                     <span className="slider round"></span>
+                    </label>
+                  </div>
+           </div>
+      </div>
+
+
+
+      <div className='setting-box'>
+           <span className='setting-heading'>searches</span>
+           <div className='them-btn-container'>
+             <span className='seting-name'> <i class="ri-notification-fill"></i> result no.</span>
+                  <div>
+                      <input type='number'></input>
+                  </div>
+           </div>
+      </div>
+
       </div>
   </>
   )
