@@ -43,7 +43,7 @@ function Home() {
       <Navbar />
       <div className='content-container'>
         <div className='content'>
-          <h1>Empower Your Future -</h1>
+          <h1 className='liner-text'>Empower Your Future -</h1>
           <h4>Explore Jobs, Apply, and Advance</h4>
           <p className='intro-paragraph'>
             Discover a wide range of job opportunities and resources designed to help you achieve your career goals. Whether you’re looking for a new position or want to enhance your skills, we provide tools and guidance to support your journey. Start exploring today and take the first step towards a brighter future.
