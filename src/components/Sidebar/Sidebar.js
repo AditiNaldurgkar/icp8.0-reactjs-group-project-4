@@ -8,7 +8,7 @@ const Sidebar = () => {
     <div className='sidebar-container'>
        <ul className='icon-list'>
        <Link to="/" className='link'><li className='sidebar-iteams'><i className="ri-home-8-line"></i></li></Link>
-          <li className='sidebar-iteams'><i className="ri-search-eye-line"></i></li>
+        <Link to="/search"  className='link'><li className='sidebar-iteams'><i className="ri-search-eye-line"></i></li></Link>
           <li className='sidebar-iteams'><i className="ri-home-fill"></i></li>
           <li className='sidebar-iteams'><i className="ri-account-circle-line"></i></li>
           <li className='sidebar-iteams'><i className="ri-settings-5-line"></i></li>
