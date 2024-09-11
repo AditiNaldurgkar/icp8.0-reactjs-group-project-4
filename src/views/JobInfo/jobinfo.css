@@ -40,7 +40,7 @@
     color: #4f4e4e;
     margin-left: 10px;
     border-bottom: 2px solid #0ce3ff;
-    padding-bottom  : 10px;
+    padding-bottom  : 40px;
 }
 
 .company-info{
@@ -50,6 +50,7 @@
 
 .company-info{
   font-size:2em;
+  margin-top: 20px;
 }
 
 .job-all-info{
@@ -57,6 +58,9 @@
     gap: 15px;
     flex-wrap: wrap;
     flex-direction: column;
+}
+.job-all-info{
+    margin-top: 20px;
 }
 
 .info-text{
@@ -68,7 +72,6 @@
     width: 200px;
     background-color:#6969ffc7;
     border: none;
-    letter-spacing:5px;
     display: block;
     font-size: 20px;
     font-weight: 400;
@@ -92,6 +95,8 @@
 @media screen and (max-width:500px) {
     .jobs-info-container{
     margin-left: 0px;
+    width: 100vw;
+    overflow-x: hidden;
  }
 
 }

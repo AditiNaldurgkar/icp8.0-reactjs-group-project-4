@@ -1,11 +1,30 @@
 import React from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { Link, useNavigate, useParams } from 'react-router-dom'
 import Sidebar from '../../components/Sidebar/Sidebar'
 import './jobinfo.css'
+import toast from 'react-hot-toast'
 
 function Jobinfo() {
+ 
+
+  
+ const navigate = useNavigate()
 
 
+ const savejob =()=>{
+    try {
+           let savedjobs = JSON.parse(localStorage.getItem('appliedjobs')) || []
+           savedjobs.unshift(result)
+           localStorage.setItem('appliedjobs',JSON.stringify(savedjobs))
+           toast.success('applied successfully...')
+           navigate('/search')
+    } catch (error) {
+       toast.error(error)
+    }
+ }
+
+
+  // get date
   const getaddDate = (date) => {
     let adddate = date.split("T")
     return (adddate[0])
@@ -40,7 +59,7 @@ function Jobinfo() {
           <span className='job-info'><a target='__blank' href={`${result.redirect_url}`}>check more</a></span>
         </div>
       </div>
-      <button className="apply-btn">apply now</button>
+      <button className="apply-btn" onClick={()=>{savejob(result)}}>apply now</button>
       <span className='note'><i class="ri-alarm-warning-fill"> </i> please read all information before apply.</span>
     </div>
   </>

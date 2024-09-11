@@ -1,0 +1,18 @@
+.maindiv{
+    margin: 0px;
+    padding: 0px;
+    background-color: whitesmoke;
+}
+.heading{
+    text-align: center;
+    color: #7676FA;
+    font-size: 70px;
+
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
