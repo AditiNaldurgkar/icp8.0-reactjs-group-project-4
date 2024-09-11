@@ -14,18 +14,6 @@ import UserProfile from './views/UserProfile/UserProfile';
 import 'remixicon/fonts/remixicon.css'
 import { Toaster } from 'react-hot-toast';
 
-const NOTIFICATION = localStorage.getItem('NOTIFICATION') || true
-
-let body= document.querySelector("#root")
-window.addEventListener('load', ()=> {
-  const darkTheme = localStorage.getItem('DARKTHEME') || true
-  if(darkTheme){
-    body.classList.add("dark-theme")
-  }
-  else{
-    body.classList.add("white-theme")
-  }
-});
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -80,5 +68,5 @@ root.render(
 <>
 
 <RouterProvider router={router}/> 
-{NOTIFICATION ? <Toaster/> : null}
+<Toaster/>
 </>);
