@@ -8,7 +8,7 @@
 
 .set-txt{
     font-size: 2em;
-    font-weight: 300;
+    font-weight: 700;
 }
 
 .setting-user-profile{
@@ -53,8 +53,28 @@
 }
 
 
+.theam-setting{
+  display: flex;
+  flex-direction: column;
+  margin-top: 4vh;
+}
+
+.setting-heading{
+    font-size:1.5em;
+    font-weight: 600;
+}
+
+.them-btn-container{
+    height: 7vh;
+    width: 100vw;
+    display: flex;
+    margin-top: 3vh;
+    margin-left: 20px;
+    gap: 40px;
+}
+
 @media screen and (max-width:500px) {
-    .setting-container{
+  .setting-container{
     margin-left: 0px;
     width: 100vw;
     overflow-x: hidden;
