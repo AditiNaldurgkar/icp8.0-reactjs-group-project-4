@@ -163,7 +163,8 @@ function Add() {
 
                         <button
                             type="submit"
-                            onClick={addPost}>
+                            onClick={addPost}
+                            className='submit-btn'>
                             Submit
                         </button>
                     </form>

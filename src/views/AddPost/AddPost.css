@@ -70,7 +70,7 @@ textarea {
   margin: 0 10px;
 }
 
-button[type="submit"] {
+.submit-btn[type="submit"] {
   background-color: #6565fce1;
   color: aliceblue;
   padding: 12px;
@@ -81,7 +81,7 @@ button[type="submit"] {
   width: 100%;
 }
 
-button[type="submit"]:hover {
+.submit-btn[type="submit"]:hover {
   background-color: #8484f4e1;
   color: #333;
 }
