@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 import "./AddPost.css"
 import toast, { Toaster } from 'react-hot-toast';
 import Sidebar from '../../components/Sidebar/Sidebar';
-import Navbar from '../../components/Navbar/Navbar';
 
 function Add() {
     const [jobTitle, setJobTitle] = useState("");
@@ -63,6 +62,7 @@ function Add() {
                     <form>
                         <label>Job Title</label>
                         <input
+                            className='post-input'
                             type="text"
                             name="jobTitle"
                             value={jobTitle}
@@ -75,6 +75,7 @@ function Add() {
 
                         <label>Job Description</label>
                         <textarea
+                            className='post-input'
                             name="jobDescription"
                             value={jobDescription}
                             onChange={(e) => {
@@ -85,6 +86,7 @@ function Add() {
 
                         <label>Location</label>
                         <input
+                        className='post-input'
                             type="text"
                             name="location"
                             value={location}
@@ -95,6 +97,7 @@ function Add() {
 
                         <label>Employment Type</label>
                         <select
+                        className='post-input'
                             name="employmentType"
                             value={employmentType}
                             onChange={(e) => {
@@ -113,6 +116,7 @@ function Add() {
                         <label>Salary Range</label>
                         <div className="salary-range">
                             <input
+                            className='post-input'
                                 type="number"
                                 name="salaryMin"
                                 value={salaryMin}
@@ -123,6 +127,7 @@ function Add() {
                             />
                             <span>-</span>
                             <input
+                            className='post-input'
                                 type="number"
                                 name="salaryMax"
                                 value={salaryMax}
@@ -135,6 +140,7 @@ function Add() {
 
                         <label>Application Deadline</label>
                         <input
+                        className='post-input'
                             type="date"
                             name="applicationDeadline"
                             value={applicationDeadline}
@@ -145,6 +151,7 @@ function Add() {
 
                         <label>Company Name</label>
                         <input
+                        className='post-input'
                             type="text"
                             name="companyName"
                             value={companyName}
