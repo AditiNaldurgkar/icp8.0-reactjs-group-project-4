@@ -9,6 +9,9 @@
     flex-direction: column;
     border-radius: 12px;
     gap: 15px;
+    position: absolute;
+    top: 20%;
+    overflow: hidden;
 }
 .seting-in{
     height: 7vh;
@@ -23,4 +26,17 @@
 
 .chng-note{
     margin-top: 10px;
+    text-align: justify;
+}
+
+@media screen and (max-width:500px) {
+    .pop-body{
+        height: 50vh;
+        width:90vw;
+    }
+
+    .seting-in{
+        height: 7vh;
+        width:90%;
+    }
 }

@@ -128,7 +128,14 @@
     justify-content: center;
 }
 
-
+.close-popup{
+    font-size: 40px;
+    position: absolute;
+    top: 0;
+    right: 15%;
+    cursor: pointer;
+    color: #65d2fa;
+}
 
 
 

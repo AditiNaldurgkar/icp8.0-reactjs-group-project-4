@@ -1,14 +1,16 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Sidebar from '../../components/Sidebar/Sidebar'
 import './setting.css'
 import BoyProfileImg from './boy-profile-pic.svg'
 import './toggle.css'
-import { Passpopup } from '../../components/popup/Popup'
+import { Passpopup ,Profilepopup} from '../../components/popup/Popup'
+import toast from 'react-hot-toast'
 
 const Setting = () => {
 
   const [popup,setpopup] = useState(false)
   const [opration , setopration] = useState(``)
+  const [serchresultNumber,setSerchresultNumber] = useState(18)
 
   return (
     <>
@@ -70,7 +72,7 @@ const Setting = () => {
            <div className='them-btn-container'>
              <span className='seting-name'> <i class="ri-notification-fill"></i> result no.</span>
                   <div>
-                      <input type='number' className='serhces-res-box'></input>
+                      <input type='number' className='serhces-res-box'  value={serchresultNumber} ></input>
                   </div>
            </div>
       </div>
@@ -78,9 +80,10 @@ const Setting = () => {
       <div className='setting-box'>
             <span className='log-out'><i class="ri-arrow-left-fill"></i> log out</span>
       </div>
- 
+
           {popup ? <div className='overlay'>
-             <Passpopup/>
+              { opration === "chng-passs" ? <Passpopup/> : <Profilepopup/>}
+        <span className='close-popup' onClick={()=>{setpopup(false)}}><i class="ri-close-line"></i></span>
         </div>:null}
     </div>
   </>
