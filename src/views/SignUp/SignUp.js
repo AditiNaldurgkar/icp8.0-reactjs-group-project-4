@@ -11,17 +11,15 @@ const Signup = () => {
     const [jobRole, setJobRole] = useState('');
     const [companyName, setCompanyName] = useState('');
 
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
+    const handleSignup = () => {
+      if (password !== confirmPassword) {
+          toast.error('Password do not match ❤️');
+          return;
+      }
 
-  const handleSignUp = (e) => {
-    e.preventDefault();
-
-    localStorage.setItem("userData", JSON.stringify(formData));
-
-    console.log("User signed up and data stored in localStorage:", formData);
+      const userData = { username, email, password, role, jobRole, companyName };
+      localStorage.setItem(username, JSON.stringify(userData));
+      toast.success(`${role.charAt(0).toUpperCase() + role.slice(1)} Signed up successfully 💚`);
   };
 
   return (
