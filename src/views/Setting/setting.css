@@ -1,0 +1,159 @@
+.setting-container{
+    min-height: 100vh;
+    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+    width: 95vw;
+    position: relative;
+}
+
+.set-txt{
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.setting-user-profile{
+    margin-top: 30px;
+    height:60px;
+    width: 90vw;
+    display: flex;
+    align-items: end;
+    justify-content: start;
+    gap:20px;
+    overflow: hidden;
+}
+
+.setting-profile-pic{
+    display: block;
+    height:100%;
+    width: 60px;
+    background-color: red;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.setting-profile-pic img{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+
+.user-info{
+    display: block;
+    height: 100%;
+    width: 50vw;
+    text-align: left;
+    font-size: 1.2em;
+    white-space: nowrap;
+    font-weight: 300;
+}
+
+.setting-user-name{
+    font-size: 0.9em;
+    color: gray;
+}
+
+
+.setting-box{
+  display: flex;
+  flex-direction: column;
+  margin-top: 4vh;
+  margin-bottom: 2vh;
+  padding-bottom:10px ;
+}
+
+.setting-heading{
+    font-size:1.5em;
+    font-weight: 600;
+    color: #787777;
+}
+
+.them-btn-container{
+    height: 7vh;
+    width: 90vw;
+    display: flex;
+    margin-top: 3vh;
+    margin-left: 20px;
+    gap: 40px;
+    white-space: nowrap;
+}
+.seting-name{
+    font-size: 1.3em;
+}
+
+.user-set-box{
+    margin-top: 3vh;
+    display: flex;
+    align-items: center;
+    gap: 4vw;
+    flex-wrap: wrap;
+    margin-left: 20px;
+    white-space: nowrap;
+}
+
+.user-set-box div{
+    cursor: pointer;
+}
+
+.serhces-res-box{
+    height: 25px;
+    width: 100px;
+    outline:none;
+    border: none;
+    border-bottom: 4px solid #65d2fa;
+    border-radius: 4px;
+}
+
+.serhces-res-box[type=number]::-webkit-inner-spin-button, 
+.serhces-res-box[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+}
+
+.log-out{
+    font-size: 1.4em;
+    color: #ff4949;
+    cursor: pointer;
+}
+
+.overlay{
+    height: 100%;
+    width: 120%;
+    position: absolute;
+    top: 0;
+    left: -10%;
+    background-color: #e0e0e0c0;
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-popup{
+    font-size: 40px;
+    position: absolute;
+    top: 0;
+    right: 15%;
+    cursor: pointer;
+    color: #65d2fa;
+}
+
+
+
+
+
+@media screen and (max-width:500px) {
+  .setting-container{
+    margin-left: 0px;
+    width: 100vw;
+    overflow-x: hidden;
+    margin-bottom: 15vh;
+ }
+ .them-btn-container{
+    width: 100vw;
+    margin-left: 10px;
+    gap: 20px;
+    white-space: nowrap;
+}
+ 
+
+}
