@@ -15,3 +15,11 @@ function SignUp() {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
+
+  const handleSignUp = (e) => {
+    e.preventDefault();
+
+    localStorage.setItem("userData", JSON.stringify(formData));
+
+    console.log("User signed up and data stored in localStorage:", formData);
+  };
