@@ -32,7 +32,9 @@ const Setting = () => {
              <span className='seting-name'> <i class="ri-moon-clear-fill"></i> Dark mode</span>
                   <div>
                      <label className="switch">
-                     <input type="checkbox"></input>
+                     <input type="checkbox"  onChange={(e)=>{
+                        localStorage.setItem("DARKTHEME",e.target.checked)
+                     }}></input>
                      <span className="slider round"></span>
                     </label>
                   </div>
