@@ -11,28 +11,36 @@
 {
     width: 300px;
     padding: 10px 50px;
-
+    
 }
-h1
+.welcome-heading
+{
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    text-align: center;
+}
+.welcome-heading h1
 {
     font-size: 25px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
-h3
+.welcome-heading h3
 {
     font-size: 20px;
 }
-h6{
+.welcome-heading h6
+{
     font-size: 15px;
-    margin-left: 55px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 .text-feild
 {
     font-size: 20px;
-    margin: 50px 0px;
+    margin: 10px 0px;
     font-weight: bolder;
     color: rgb(44, 6, 80);
 }
