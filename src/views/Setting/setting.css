@@ -1,9 +1,10 @@
 .setting-container{
-    min-height: 200vh;
+    min-height: 100vh;
     margin-left: 60px;
     display: flex;
     flex-direction: column;
     width: 95vw;
+    position: relative;
 }
 
 .set-txt{
@@ -58,11 +59,13 @@
   flex-direction: column;
   margin-top: 4vh;
   margin-bottom: 2vh;
+  padding-bottom:10px ;
 }
 
 .setting-heading{
     font-size:1.5em;
     font-weight: 600;
+    color: #787777;
 }
 
 .them-btn-container{
@@ -93,9 +96,12 @@
 }
 
 .serhces-res-box{
-    height: 20px;
-    width: 80px;
+    height: 25px;
+    width: 100px;
     outline:none;
+    border: none;
+    border-bottom: 4px solid #65d2fa;
+    border-radius: 4px;
 }
 
 .serhces-res-box[type=number]::-webkit-inner-spin-button, 
@@ -103,12 +109,37 @@
   -webkit-appearance: none; 
 }
 
+.log-out{
+    font-size: 1.4em;
+    color: #ff4949;
+    cursor: pointer;
+}
+
+.overlay{
+    height: 100%;
+    width: 120%;
+    position: absolute;
+    top: 0;
+    left: -10%;
+    background-color: #e0e0e0c0;
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
 
 @media screen and (max-width:500px) {
   .setting-container{
     margin-left: 0px;
     width: 100vw;
     overflow-x: hidden;
+    margin-bottom: 15vh;
  }
  .them-btn-container{
     width: 100vw;

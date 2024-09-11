@@ -1,10 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Sidebar from '../../components/Sidebar/Sidebar'
 import './setting.css'
 import BoyProfileImg from './boy-profile-pic.svg'
 import './toggle.css'
+import { Passpopup } from '../../components/popup/Popup'
 
 const Setting = () => {
+
+  const [popup,setpopup] = useState(false)
+  const [opration , setopration] = useState(``)
+
   return (
     <>
       <Sidebar/>
@@ -36,8 +41,13 @@ const Setting = () => {
       <div className='setting-box'>
            <span className='setting-heading'>profile</span>
            <div className='user-set-box'>
-             <div className='seting-name'><i className="ri-group-fill"></i> edit profile  <i class="ri-arrow-drop-right-line"></i></div>
-             <div className='seting-name'><i class="ri-key-2-fill"></i> change password  <i class="ri-arrow-drop-right-line"></i></div>
+             <div className='seting-name' onClick={()=>{
+              setpopup(true) 
+              setopration("chng-profile")
+              }}><i className="ri-group-fill"></i> edit profile  <i class="ri-arrow-drop-right-line"></i></div>
+             <div className='seting-name' onClick={()=>{setpopup(true)
+              setopration("chng-passs")
+             }}><i class="ri-key-2-fill"></i> change password  <i class="ri-arrow-drop-right-line"></i></div>
            </div>
       </div>
 
@@ -55,8 +65,6 @@ const Setting = () => {
            </div>
       </div>
 
-
-
       <div className='setting-box'>
            <span className='setting-heading'>searches</span>
            <div className='them-btn-container'>
@@ -66,8 +74,15 @@ const Setting = () => {
                   </div>
            </div>
       </div>
-
+    
+      <div className='setting-box'>
+            <span className='log-out'><i class="ri-arrow-left-fill"></i> log out</span>
       </div>
+ 
+          {popup ? <div className='overlay'>
+             <Passpopup/>
+        </div>:null}
+    </div>
   </>
   )
 }
