@@ -53,7 +53,7 @@
 }
 
 
-.theam-setting{
+.setting-box{
   display: flex;
   flex-direction: column;
   margin-top: 4vh;
@@ -66,11 +66,27 @@
 
 .them-btn-container{
     height: 7vh;
-    width: 100vw;
+    width: 90vw;
     display: flex;
     margin-top: 3vh;
     margin-left: 20px;
     gap: 40px;
+    white-space: nowrap;
+}
+.seting-name{
+    font-size: 1.3em;
+}
+
+.user-set-box{
+    margin-top: 3vh;
+    display: flex;
+    align-items: center;
+    gap: 4vw;
+    flex-wrap: wrap;
+}
+
+.user-set-box div{
+    cursor: pointer;
 }
 
 @media screen and (max-width:500px) {
@@ -79,6 +95,12 @@
     width: 100vw;
     overflow-x: hidden;
  }
+ .them-btn-container{
+    width: 100vw;
+    margin-left: 10px;
+    gap: 20px;
+    white-space: nowrap;
+}
  
 
 }
