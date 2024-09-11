@@ -1,5 +1,5 @@
 import React from 'react'
-import "./ViewPost.cc"
+import "./ViewPost.css"
 
 function ViewPost() {
   return (
