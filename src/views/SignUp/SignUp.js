@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-onst userData = JSON.parse(localStorage.getItem("userData"));
+const userData = JSON.parse(localStorage.getItem("userData"));
 console.log(userData);
 
 
@@ -10,3 +10,8 @@ function SignUp() {
     email: "",
     password: "",
   });
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
