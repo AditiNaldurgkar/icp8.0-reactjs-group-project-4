@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import "./ViewPost.css";
-import Navbar from '../../components/Navbar/Navbar';
 import Sidebar from '../../components/Sidebar/Sidebar';
+import ViewJobCards from '../../components/ViewJobCards/ViewJobCards';
 
 function ViewPost() {
+  const [postData,setpostData] = useState([]);
+
+  useEffect(()=>{
+    const savedJobDetails = JSON.parse(localStorage.getItem("postData"))||[];
+    setpostData(savedJobDetails);
+  },[]);
+
+  
   return (
     <div>
       <Sidebar />
