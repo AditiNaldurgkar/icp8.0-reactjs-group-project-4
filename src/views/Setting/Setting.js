@@ -61,6 +61,22 @@ const Setting = () => {
                   </div>
            </div>
       </div>
+
+
+            
+      <div className='setting-box'>
+           <span className='setting-heading'>link social media</span>
+           <div className='user-set-box socialmedia'>
+              <span><i class="ri-github-fill"></i> <input type='text' className='seting-in'></input></span> 
+              <span><i class="ri-linkedin-box-fill"></i> <input type='text' className='seting-in'></input></span>
+              <span><i class="ri-instagram-fill"></i> <input type='text' className='seting-in'></input></span> 
+              <span><i class="ri-facebook-box-fill"></i> <input type='text' className='seting-in'></input></span>    
+
+           </div>
+           <div className='save-btn-div'>
+           <button className='job-btn save-btn'>save</button>
+           </div>
+      </div>
     
       <div className='setting-box'>
             <span className='log-out'><i class="ri-arrow-left-fill"></i> log out</span>
