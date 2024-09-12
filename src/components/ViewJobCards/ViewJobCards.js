@@ -1,5 +1,5 @@
-import React from 'react'
-import PropTypes from "prop-types"
+import React, { useState } from 'react'
+
 import "./ViewJobCards.css"
 
 function removePost(index) {
@@ -42,7 +42,14 @@ function ViewJobCards({ index,
     applicationDeadline,
     companyName,
     onRemove
-}) {
+}) 
+{ 
+    const [isExpanded, setIsExpanded] = useState(false);
+
+    const toggleDescription = ()=>{
+        setIsExpanded(!isExpanded);
+    };
+
     return (
         <div className='job-post-cards'>
 
@@ -59,7 +66,11 @@ function ViewJobCards({ index,
                         {jobTitle}
                     </h4>
                     <p className='job-post-decription'>
-                        {jobDescription}
+                        {isExpanded? jobDescription: `${jobDescription.slice(0,200)}...`}
+                        <button className='read-more-btn' onClick={toggleDescription}>
+                            {isExpanded?"Read Less":"Read More"}
+                        </button>
+                        {/* {jobDescription} */}
                     </p>
                 </div>
                 <div className='employmentType'>
