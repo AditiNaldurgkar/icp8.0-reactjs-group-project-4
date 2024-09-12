@@ -45,3 +45,11 @@ code {
   color: transparent;
   background-clip: text;
 }
+
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
