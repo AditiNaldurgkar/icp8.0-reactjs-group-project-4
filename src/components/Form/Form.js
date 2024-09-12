@@ -64,8 +64,7 @@ const Form = () => {
     return (
         <>
             <form onSubmit>
-                <div>
-                    <div className="frm-holder">
+                <div className="frm-holder">
 
                         <div className="profile">
 
@@ -187,9 +186,6 @@ const Form = () => {
                             </div>
                         </div>
                     </div>
-
-
-                </div>
             </form>
 
 
