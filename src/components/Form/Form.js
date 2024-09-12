@@ -17,6 +17,7 @@ const Form = () => {
     const [keyskill, setkeyskill] = useState('');
     const [linkedIn, setLinkedIn] = useState('');
     const [file, setFile] = useState('');
+    const [gender, setGender] = useState('male')
 
     function Add() {
 
@@ -35,7 +36,8 @@ const Form = () => {
             job,
             keyskill,
             linkedIn,
-            file
+            file,
+            gender
         }
 
         items.push(itmsobj);
@@ -57,6 +59,7 @@ const Form = () => {
         setJob('');
         setkeyskill('');
         setLinkedIn('');
+        setGender('');
     }
 
 
@@ -137,6 +140,28 @@ const Form = () => {
                                 placeholder="Email id"
                                 required
                                 onChange={(e) => { setEmail(e.target.value) }} />
+                        </div>
+
+                        <div className="input-gup">
+                            <label>Selected Gender</label>
+
+                            <input type="radio" name="gender" value="male" 
+                            onChange={(e) => {
+                                    if (e.target.checked) {
+                                        setGender(e.target.value)
+                                    }
+                                }}
+                            checked={gender === "male"} />Male
+                            
+
+                            <input type="radio" name="gender" value="female"
+                                onChange={(e) => {
+                                    if (e.target.checked) {
+                                        setGender(e.target.value)
+                                    }
+                                }}
+                            checked={gender === "female"} />Female
+                            
                         </div>
 
                         <div className="input-gup">
