@@ -12,6 +12,23 @@ const Setting = () => {
   const [opration , setopration] = useState(``)
   const serchNum = localStorage.getItem("RESULTNUMBER")
   const [serchresultNumber,setSerchresultNumber] = useState(serchNum || 18)
+  const [githuburl,setgithuburl] = useState("")
+  const [instaurl,setinstaurl] = useState("")
+  const [linkdinurl,setlinkdinurl] = useState("")
+  const [facebookurl,setfacebookurl] = useState("")
+
+ const saveaccounts =()=>{
+    if(instaurl.includes("https://www.instagram.com/") && githuburl.includes("https://github.com/") && linkdinurl.includes("https://www.linkedin.com/") && facebookurl.includes("https://www.facebook.com/")){
+      toast.success("hiii")
+      const socialAccount = {instaurl,githuburl,linkdinurl,facebookurl}
+      //console.log(socialAccount)
+      localStorage.setItem("SOCIALMEDIA",JSON.stringify(socialAccount))
+
+    }else{
+      toast.error("umhh")
+    }
+ }
+
 
   return (
     <>
@@ -67,14 +84,14 @@ const Setting = () => {
       <div className='setting-box'>
            <span className='setting-heading'>link social media</span>
            <div className='user-set-box socialmedia'>
-              <span><i class="ri-github-fill"></i> <input type='text' className='seting-in'></input></span> 
-              <span><i class="ri-linkedin-box-fill"></i> <input type='text' className='seting-in'></input></span>
-              <span><i class="ri-instagram-fill"></i> <input type='text' className='seting-in'></input></span> 
-              <span><i class="ri-facebook-box-fill"></i> <input type='text' className='seting-in'></input></span>    
+              <span><i class="ri-github-fill"></i> <input type='text' className='seting-in' value={githuburl}  onChange={(e)=>setgithuburl(e.target.value)}></input></span> 
+              <span><i class="ri-linkedin-box-fill"></i> <input type='text' className='seting-in' value={linkdinurl}  onChange={(e)=>setlinkdinurl(e.target.value)}></input></span>
+              <span><i class="ri-instagram-fill"></i> <input type='text' className='seting-in' value={instaurl} onChange={(e)=>setinstaurl(e.target.value)}></input></span> 
+              <span><i class="ri-facebook-box-fill"></i> <input type='text' className='seting-in' value={facebookurl} onChange={(e)=>setfacebookurl(e.target.value)}></input></span>    
 
            </div>
            <div className='save-btn-div'>
-           <button className='job-btn save-btn'>save</button>
+           <button className='job-btn save-btn' onClick={()=>saveaccounts()}>save</button>
            </div>
       </div>
     
