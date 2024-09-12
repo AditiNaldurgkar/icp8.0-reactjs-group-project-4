@@ -5,10 +5,11 @@
     color: white;
     background-color: #9f9ffa;
     font-weight: bold;
-    height: 20px;
+    height: 15px;
     padding: 10px 20px;
     margin: 10px;
     border-radius: 13px;
+    margin-bottom: 6px;
 
 }
 .discover-button:hover{
@@ -16,8 +17,8 @@
   background-color: rgb(50, 50, 210);
 }
 .newscard {
-    width: 400px;
-    height: 400px;
+    width: 380px;
+    height: 380px;
     border-radius: 8px;
     background-color: white;
     display: flex;
@@ -41,7 +42,7 @@
     margin-bottom: 0px;}
   .title {
     color: black;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-top: 5px;
     margin: 15px;
     text-align: start;
@@ -49,7 +50,7 @@
   }
   .caption {
     color: black;
-    font-size: 18px;
+    font-size: 17px;
     margin: 5px;
     text-align: start;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
