@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import "./Home.css";
 import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/Footer/Footer';
-import job from './img/job.webp';
+import job from './main-img.jpg';
 import { toast } from 'react-hot-toast';
 
 const highDemandJobs = [
