@@ -146,23 +146,6 @@ h3 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.view-news-button-container {
-  text-align: center;
-}
-
-.view-news-button {
-  height: 40px;
-  width: 150px;
-  border-radius: 10px;
-  border: none;
-  margin-top: 10px;
-  background-color: #7676FA;
-  color: #fff;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
 .view-news-button:hover {
   background-color: #4444ed;
 }
