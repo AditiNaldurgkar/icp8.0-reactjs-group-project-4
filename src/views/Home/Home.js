@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import "./Home.css";
 import Footer from '../../components/Footer/Footer';
-import job from './img.png';
+import job from './hi-img.png';
 import { toast } from 'react-hot-toast';
-import { highDemandJobs,newsArticles,FAQ } from '../../config/homeData';
+import { highDemandJobs, newsArticles,FAQ} from '../../config/homeData';
 
 
 function Home() {
@@ -35,7 +35,7 @@ function Home() {
         </div>
       </div>
 
-      <div className='high-demand-jobs'>
+      <div>
         <h3>High-Demand Jobs..</h3>
         <div className='job-list'>
           {highDemandJobs.map((job, index) => (
@@ -75,9 +75,10 @@ function Home() {
           ))}
         </div>
       </div>
-<div className='show'>
-  
-</div>
+      
+      <div className='show'>
+
+      </div>
 
 
       <Footer />
