@@ -7,7 +7,7 @@ function ViewPost() {
   return (
     <div>
       <Sidebar />
-      <div className='heading'>
+      <div className='view-post-heading'>
         <h2>View Job Post</h2>
       </div>
 
