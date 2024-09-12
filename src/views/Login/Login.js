@@ -3,38 +3,33 @@ import './Login.css'
 import userimg from './user.png'
 import passwordimg from './padlock.png'
 import IMG from './img.PNG'
-function Login() {
-	const [loginData, setLoginData] = useState({
-        email: "",
-        password: "",
-      });
+import toast , {Toaster}from "react-hot-toast";
+const Login=()=>
+ {
+	const [username, setUsername] = useState('');
+	const [password , setPassword] = useState('');
     
-      const handleInputChange = (e) => {
-        const { name, value } = e.target;
-        setLoginData({ ...loginData, [name]: value });
-      };
+      const handleLogin = () => {
+        const storeData =localStorage.getItem(username);
     
-      const handleLogin = (e) => {
-        e.preventDefault();
-    
-        const storedUserData = JSON.parse(localStorage.getItem("userData"));
-    
-        if (storedUserData) {
-          if (
-            storedUserData.email === loginData.email &&
-            storedUserData.password === loginData.password
-          ) {
-            console.log("Login successful!");
-          } else {
-            console.log("Invalid email or password.");
+        if (storeData)
+		 {
+			const userData = JSON.parse(storeData);
+          if (userData.password === password)       
+		 {
+            toast.success('Login successful !');
           }
-        } else {
-          console.log("No user data found. Please sign up first.");
+		   else {
+           toast.error('Incorrect password');
+          }
+        } 
+		else {
+         toast.error('User not found !')
         }
       };
   return (
     <>
-    <div className="main-container">
+    <div className="login-main-container">
 		<div className="left-container">
 			<div className="welcome-heading">
 				<h1>
@@ -47,9 +42,9 @@ function Login() {
 					Login to access  information
 				</h6>
 			</div>
-			<form onSubmit={handleLogin}>
+			<form>
 				<div>
-					<label className="text-feild">Email</label>
+					<label className="text-feild">Username</label>
 					<div className="input-with-icon">
 						<img
 							src={userimg}
@@ -60,9 +55,9 @@ function Login() {
 						       name="email" 
 						       id="email"
 							    className="email" 
-								placeholder="Type your email" 
-								value={loginData.email}
-                                onChange={handleInputChange}/>
+								placeholder="Type your username" 
+								value={username}
+                                onChange={(e)=> setUsername(e.target.value)}/>
 					</div>
 				</div>
 				<div>
@@ -78,15 +73,16 @@ function Login() {
 						   id="passw" 
 						   className="passw" 
 						   placeholder="Type your password"
-						   value={loginData.password}
-                           onChange={handleInputChange} />
+						   value={password}
+                           onChange={(e)=> setPassword(e.target.value)} />
 
 				</div>
 				</div>
-				<div className="text">
+				<div className="forgot-text">
 					Forgot password ?
 				</div>
-				<button type="submit" className="login-btn">Login</button>
+				<button type="submit" className="login-btn" onClick={handleLogin}>Login</button>
+				<Toaster/>
 			</form>
 			<div className="last-line">
 				Don't have an account ?        Sign up
