@@ -17,7 +17,7 @@ const Form = () => {
     const [keyskill, setkeyskill] = useState('');
     const [linkedIn, setLinkedIn] = useState('');
     const [file, setFile] = useState('');
-    const [gender, setGender] = useState('male')
+    const [gender, setGender] = useState('')
 
     function Add() {
 
@@ -117,6 +117,11 @@ const Form = () => {
                                 required
                                 onChange={(e) => { setkeyskill(e.target.value) }} />
                         </div>
+
+                        <div className="input-gup">
+                            <label for="exper">Expertise</label>
+                            <input type="text" id="exper" className="input" required placeholder="Expertise" onChange={(e) => { setExpertise(e.target.value) }} />
+                        </div>
                     </div>
 
 
@@ -143,15 +148,18 @@ const Form = () => {
                         </div>
 
                         <div className="input-gup">
-                            <label>Selected Gender</label>
+                            <label>Selected Gender </label>
 
                             <input type="radio" name="gender" value="male" 
                             onChange={(e) => {
-                                    if (e.target.checked) {
+                                    if (e.target.checked) 
+                                    {
                                         setGender(e.target.value)
                                     }
                                 }}
-                            checked={gender === "male"} />Male
+                            checked={gender ==="male"} />Male
+
+                            <br/>
                             
 
                             <input type="radio" name="gender" value="female"
@@ -160,7 +168,7 @@ const Form = () => {
                                         setGender(e.target.value)
                                     }
                                 }}
-                            checked={gender === "female"} />Female
+                            checked={gender ==="female"} />Female
                             
                         </div>
 
@@ -185,11 +193,6 @@ const Form = () => {
                                 placeholder="Enter Job Title"
                                 required
                                 onChange={(e) => { setJob(e.target.value) }} />
-                        </div>
-
-                        <div className="input-gup">
-                            <label for="exper">Expertise</label>
-                            <input type="text" id="exper" className="input" required placeholder="Expertise" onChange={(e) => { setExpertise(e.target.value) }} />
                         </div>
 
                         <div className="input-gup">
