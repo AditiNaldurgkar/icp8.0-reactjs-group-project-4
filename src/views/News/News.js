@@ -41,6 +41,7 @@ function News() {
     <div className="maindiv">
        <Sidebar/>
       <h1 className="heading">News</h1>
+      <div className='mainc'>
       <div className='container'>
       {newsData.map((item, index) => (
         <Display
@@ -51,6 +52,10 @@ function News() {
           url2={item.url2}
         />
       ))}
+      </div>
+      <div className='trends'>
+      hiowtdtdd
+      </div>
       </div>
     </div>
   );
