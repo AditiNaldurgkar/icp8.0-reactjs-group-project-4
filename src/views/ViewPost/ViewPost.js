@@ -11,14 +11,30 @@ function ViewPost() {
     setpostData(savedJobDetails);
   },[]);
 
-  
+  const handleRemove = (index) => {
+    const updatedPostData = postData.filter((_,i)=> i !== index);
+    localStorage.setItem("postData", JSON.stringify(updatedPostData));
+    setpostData(updatedPostData);
+  };
+
+
   return (
     <div>
-      <Sidebar />
+      {/* <Sidebar /> */}
       <div className='view-post-heading'>
         <h2>View Job Post</h2>
       </div>
-
+      {postData.map((post, index)=>{
+        const{jobTitle, jobDescription, employmentType, } = post;
+        return(
+          <ViewJobCards
+          index={index}
+          jobTitle={jobTitle}
+          jobDescription={jobDescription}
+          employmentType={employmentType}
+          onRemove={handleRemove}/>
+        )
+      })}
     </div>
   )
 }

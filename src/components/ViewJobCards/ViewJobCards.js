@@ -17,7 +17,7 @@ function EmploymentType({employmentType}){
         "internship":"🎓"
     }
 
-    const formattedEmpType = employmentType.carAt(0).toUpperCase() + employmentType.slice(1).toLowerCase();
+    const formattedEmpType = employmentType.charAt(0).toUpperCase() + employmentType.slice(1).toLowerCase();
 
     return(
         <div>
@@ -31,7 +31,7 @@ function EmploymentType({employmentType}){
 
 
 
-function ViewJobCards({jobTitle, jobDescription ,location, employmentType, salaryMin, salaryMax, applicationDeadline, companyName, onRemove }) {
+function ViewJobCards({index, jobTitle, jobDescription ,location, employmentType, salaryMin, salaryMax, applicationDeadline, companyName, onRemove }) {
   return (
     <div className='job-post-cards'>
         
