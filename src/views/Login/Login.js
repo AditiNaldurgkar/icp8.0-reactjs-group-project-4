@@ -36,7 +36,7 @@ function Login() {
     <>
     <div className="main-container">
 		<div className="left-container">
-			<div className="heading">
+			<div className="welcome-heading">
 				<h1>
 					Welcome back !!!!
 				</h1>
