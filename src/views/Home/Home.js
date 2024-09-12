@@ -39,7 +39,7 @@ function Home() {
   }, []);
 
   return (
-    <div className='main'>
+    <div>
       <Navbar />
       <div className='content-container'>
         <div className='content'>
