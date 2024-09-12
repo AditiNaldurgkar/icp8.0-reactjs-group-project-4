@@ -1,52 +1,75 @@
 form{
-    border: 1px solid yellow;
-    width: 60%;
+    /* border: 2px solid rgb(0, 255, 68); */
+    width: 80%;
     display: block;
     margin: auto;
+    margin-bottom: 2vw;
 }
 
 .frm-holder{
-    border: 1px solid red;
-    width: 80%;
+    box-shadow: 0px 0px 5px gray;
+    width: 60%;
+    padding: 1vw;
     margin: auto;
     margin-top: 1vw;
     margin-bottom: 1vw;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.profile{
+    /* border: 1px solid black; */
+    width: 50%;
+    /* text-align: center; */
+    /* padding: 1vw; */
+    
 }
 
 .fileupload{
     width: 50%;
-    height: 20%;
+    height: 22%;
     border-radius: 50%;
-    border: 1px solid red;
-    margin: 1vw;
+    border: 1px solid gray;
+    margin-top:1vw ;
+    margin-left: 4vw;
+    
 }
 
 label{
     display: block;
     width: 100%;
-    
 }
 
 .input-gup{
     display: block;
-    width: 100%;
+    width: 150%;
     margin: 1vw;
     /* border: 1px solid rgb(238, 255, 0); */
+    
 }
 
 .input, textarea {
-    width: 60%;
+    width: 50%;
     padding: .2vw;
     border-radius: 5px;
+    /* border: 1px solid red; */
     
 }
 
 .btn{
+    width: 60%;
     padding: 1vw;
     display: block;
-    margin: auto;
+    /* margin: auto; */
     border-radius: 5px;
     border: none;
+    background-color: #7676FA;
+    color: whitesmoke;
+    cursor: pointer;
 }
+
+.center{
+    text-align: center;
+}
+
