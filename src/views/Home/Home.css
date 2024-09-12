@@ -42,17 +42,27 @@ body {
 }
 
 .buttons {
-  margin-top: 10px;
+  margin: 10px;
+  gap: 5px;
 }
+
 
 .buttons button {
   height: 40px;
-  width: 100px;
-  border-radius: 10px;
-  border: none;
-  background-color: #7676FA;
-  color: #fff;
-  margin: 10px;
+    width: 200px;
+    background-color:#6969ffc7;
+    border: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-top: 4px;
+    margin-left: 10px;
+    color: whitesmoke;
+         &:hover{
+            background-color: #2a2acc;
+         }
 }
 
 .buttons button:hover {
