@@ -27,3 +27,29 @@ code {
     monospace;
 }
 
+/* Dark Theme */
+.dark-theme {
+  background-color: black;
+  color: white;
+}
+
+/* White Theme */
+.white-theme {
+  background-color: white;
+  color: black;
+}
+
+.liner-text{
+  display:inline;
+  background:linear-gradient(to left,#002aff,#0ce3ff);
+  color: transparent;
+  background-clip: text;
+}
+
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+

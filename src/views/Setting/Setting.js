@@ -26,18 +26,6 @@ const Setting = () => {
              <div className='setting-user-name'>@sarthak</div>
         </span>
       </div>
-      <div className='setting-box'>
-           <span className='setting-heading'>theme</span>
-           <div className='them-btn-container'>
-             <span className='seting-name'> <i class="ri-moon-clear-fill"></i> Dark mode</span>
-                  <div>
-                     <label className="switch">
-                     <input type="checkbox"></input>
-                     <span className="slider round"></span>
-                    </label>
-                  </div>
-           </div>
-      </div>
 
       
       <div className='setting-box'>
@@ -50,20 +38,6 @@ const Setting = () => {
              <div className='seting-name' onClick={()=>{setpopup(true)
               setopration("chng-passs")
              }}><i class="ri-key-2-fill"></i> change password  <i class="ri-arrow-drop-right-line"></i></div>
-           </div>
-      </div>
-
-
-      <div className='setting-box'>
-           <span className='setting-heading'>notification</span>
-           <div className='them-btn-container'>
-             <span className='seting-name'> <i class="ri-notification-fill"></i> notification</span>
-                  <div>
-                     <label className="switch">
-                     <input type="checkbox"></input>
-                     <span className="slider round"></span>
-                    </label>
-                  </div>
            </div>
       </div>
 
