@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from "prop-types"
 import "./ViewJobCards.css"
 
 function removePost(index) {
@@ -9,17 +10,17 @@ function removePost(index) {
     window.location.reload()
 }
 
-function EmploymentType({employmentType}){
+function EmploymentType({ employmentType }) {
     const EMPTYPE_EMOJIS = {
-        "full-time":"⏱️",
-        "part-time":"⌛",
-        "contract":"🗒️",
-        "internship":"🎓"
+        "full-time": "⏱️",
+        "part-time": "⌛",
+        "contract": "🗒️",
+        "internship": "🎓"
     }
 
     const formattedEmpType = employmentType.charAt(0).toUpperCase() + employmentType.slice(1).toLowerCase();
 
-    return(
+    return (
         <div>
             <span className='emp-type-emoji'>
                 {EMPTYPE_EMOJIS[employmentType]}
@@ -31,27 +32,59 @@ function EmploymentType({employmentType}){
 
 
 
-function ViewJobCards({index, jobTitle, jobDescription ,location, employmentType, salaryMin, salaryMax, applicationDeadline, companyName, onRemove }) {
-  return (
-    <div className='job-post-cards'>
-        
-        <div>
-            <h2 className='job-post-title'>
-                {jobTitle}
-            </h2>
-            <p className='job-post-decription'>
-                {jobDescription}
-            </p>
-            <EmploymentType  employmentType={employmentType}/>
+function ViewJobCards({ index,
+    jobTitle,
+    jobDescription,
+    location,
+    employmentType,
+    salaryMin,
+    salaryMax,
+    applicationDeadline,
+    companyName,
+    onRemove
+}) {
+    return (
+        <div className='job-post-cards'>
+
+            <div className='comp-name-cont'>
+                <span className='job-intial-logo'>{companyName.charAt(0)}</span>
+                <h2 className='comp-name'>{companyName}
+                    <div className='job-location'>📍{location} </div>
+                </h2>
+            </div>
+
+            <div className='post-content'>
+                <div className='title-content'>
+                    <h4 className='job-post-title'>
+                        {jobTitle}
+                    </h4>
+                    <p className='job-post-decription'>
+                        {jobDescription}
+                    </p>
+                </div>
+                <div className='employmentType'>
+                    <EmploymentType employmentType={employmentType}
+                    />
+                </div>
+
+                <div className='salary-cont'>
+                    <div><b>Min-salary:</b> {salaryMin}</div>
+                    <div><b>Max-salary:</b> {salaryMax}</div>
+                </div>
+                <div>
+                    <div><b>Application Deadline:</b> {applicationDeadline}</div>
+                </div>
+            </div>
+
             <button className='rmv-btn'
-            onClick={()=>{
-                onRemove(index);
-            }}>
+                onClick={() => {
+                    onRemove(index);
+                }}>
                 Remove
             </button>
+
         </div>
-    </div>
-  ) 
+    )
 }
 
 export default ViewJobCards

@@ -20,18 +20,23 @@ function ViewPost() {
 
   return (
     <div>
-      {/* <Sidebar /> */}
+      <Sidebar />
       <div className='view-post-heading'>
         <h2>View Job Post</h2>
       </div>
       {postData.map((post, index)=>{
-        const{jobTitle, jobDescription, employmentType, } = post;
+        const{jobTitle, jobDescription ,location, employmentType, salaryMin, salaryMax, applicationDeadline, companyName,} = post;
         return(
           <ViewJobCards
           index={index}
+          companyName={companyName}
           jobTitle={jobTitle}
           jobDescription={jobDescription}
+          location={location}
           employmentType={employmentType}
+          salaryMin={salaryMin}
+          salaryMax={salaryMax}
+          applicationDeadline={applicationDeadline}
           onRemove={handleRemove}/>
         )
       })}
