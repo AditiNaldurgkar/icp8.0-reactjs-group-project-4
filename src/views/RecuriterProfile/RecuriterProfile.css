@@ -1,11 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 
-.main{
+.main {
     width: 100%;
     /* border: 3px solid red; */
     height: 100vh;
@@ -13,7 +13,7 @@
     margin: 1vw;
 }
 
-.frm-heading{
+.frm-heading {
     width: 38%;
     /* margin: auto; */
     margin-left: 26vw;
@@ -21,18 +21,18 @@
     /* border: 1px solid red; */
 }
 
-.liner-text{
+.liner-text {
     font-size: 2.7vw;
     font-weight: 700;
     /* border: 1px solid yellow; */
     margin-bottom: .2vw;
 }
 
-.sub-heading{
+.sub-heading {
     font-size: 1.2vw;
 }
 
-.form{
+.form {
     /* width: 100%; */
     margin-bottom: 1vw;
     /* border: 2px solid red; */

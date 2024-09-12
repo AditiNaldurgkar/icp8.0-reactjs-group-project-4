@@ -2,9 +2,9 @@ import React from "react";
 import './RecuriterProfile.css';
 import Form from '../.././components/Form/Form.js';
 
-const RecuriterProfile = ()=>{
+const RecuriterProfile = () => {
 
-    return(
+    return (
         <>
             <div className="main">
                 <div className="frm-heading">
@@ -13,12 +13,12 @@ const RecuriterProfile = ()=>{
                 </div>
 
                 <div className="form">
-                    <Form/>
+                    <Form />
                 </div>
             </div>
         </>
     )
-    
+
 }
 
 export default RecuriterProfile;
