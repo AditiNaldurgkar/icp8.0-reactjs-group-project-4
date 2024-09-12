@@ -16,7 +16,7 @@ function Navbar() {
           <Link to="/news" className="navbar-link">News</Link>
         </li>
         <li className="navbar-item">
-          <Link to="/profile" className="navbar-link">Recuriter-Profile</Link>
+          <Link to="/profile" className="navbar-link">Recuriter Dashboard</Link>
         </li>
         <li className="navbar-item">
           <Link to="/viewpost" className="navbar-link">Post</Link>
@@ -25,7 +25,7 @@ function Navbar() {
           <Link to="/userprofile" className="navbar-link">My-Profile</Link>
         </li>
         <li className="navbar-item">
-          <Link to="/setting" className="navbar-link">Setting</Link>
+          <Link to="/setting" className="navbar-link">Settings</Link>
         </li>
       </ul>
     </div>
