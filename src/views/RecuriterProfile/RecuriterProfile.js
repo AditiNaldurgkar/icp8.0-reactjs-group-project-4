@@ -13,7 +13,7 @@ const RecuriterProfile = ()=>{
                 </div>
 
                 <div className="form">
-                        <Form/>
+                    <Form/>
                 </div>
             </div>
         </>

@@ -8,12 +8,14 @@
 .main{
     /* border: 3px solid red; */
     height: 100vh;
+    background-color: whitesmoke;
 }
 
 .heading{
-    width: 35%;
-    margin: auto;
-    margin-top: 1vw;
+    width: 38%;
+    /* margin: auto; */
+    margin-left: 26vw;
+    margin-top: .5vw;
     /* border: 1px solid red; */
 }
 
@@ -21,7 +23,7 @@
     font-size: 2.7vw;
     font-weight: 700;
     /* border: 1px solid yellow; */
-    margin-bottom: 1vw;
+    margin-bottom: .2vw;
 }
 
 .sub-heading{
