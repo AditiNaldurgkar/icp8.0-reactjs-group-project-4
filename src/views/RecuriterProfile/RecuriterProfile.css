@@ -6,12 +6,13 @@
 
 
 .main{
+    width: 100%;
     /* border: 3px solid red; */
     height: 100vh;
     background-color: whitesmoke;
 }
 
-.heading{
+.frm-heading{
     width: 38%;
     /* margin: auto; */
     margin-left: 26vw;
@@ -28,4 +29,10 @@
 
 .sub-heading{
     font-size: 1.2vw;
+}
+
+.form{
+    /* width: 100%; */
+    margin-bottom: 1vw;
+    /* border: 2px solid red; */
 }
