@@ -70,7 +70,6 @@ function ViewJobCards({ index,
                         <button className='read-more-btn' onClick={toggleDescription}>
                             {isExpanded?"Read Less":"Read More"}
                         </button>
-                        {/* {jobDescription} */}
                     </p>
                 </div>
                 <div className='employmentType'>

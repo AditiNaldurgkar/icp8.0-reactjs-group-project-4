@@ -66,10 +66,28 @@ padding-left: 5px;
 .rmv-btn{
     margin: 0 30px 10px 20px;
     font-size: 20px;
-    padding: 8px;
+    padding: 8px 15px;
     border-radius: 50px;
     cursor: pointer;
     background-color: #ee3060e1;
   color: aliceblue;
   border: none;
+}
+.rmv-btn:hover{
+    background-color: #f40742e1;
+}
+
+@media screen and (max-width:500px) {
+    .job-post-cards{
+        border: none;
+        box-shadow: 0 0 10px 0;
+        width: 80%;
+        margin: 30px auto;
+        position: relative;
+        border-radius: 10px;
+        padding: 10px;
+    }
+    .employmentType{
+        font-size: 15px;
+    }
 }
