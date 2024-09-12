@@ -10,7 +10,8 @@ const Setting = () => {
 
   const [popup,setpopup] = useState(false)
   const [opration , setopration] = useState(``)
-  const [serchresultNumber,setSerchresultNumber] = useState(18)
+  const serchNum = localStorage.getItem("RESULTNUMBER")
+  const [serchresultNumber,setSerchresultNumber] = useState(serchNum || 18)
 
   return (
     <>
@@ -46,7 +47,17 @@ const Setting = () => {
            <div className='them-btn-container'>
              <span className='seting-name'> <i class="ri-notification-fill"></i> result no.</span>
                   <div>
-                      <input type='number' className='serhces-res-box'  value={serchresultNumber} ></input>
+                      <input type='number' className='serhces-res-box'  value={serchresultNumber} onChange={(e)=>{setSerchresultNumber(e.target.value)}} ></input>
+                      <span className='savebtn' onClick={()=>{
+                          if(serchresultNumber<0 || serchresultNumber >20){
+                            toast.error('value must be between 10 to 20')
+                            setSerchresultNumber(18)
+                          }else{
+                            localStorage.setItem("RESULTNUMBER",serchresultNumber)
+                            setSerchresultNumber(serchresultNumber)
+                            toast.success("saved")
+                          }
+                      }}>save</span>
                   </div>
            </div>
       </div>
@@ -59,6 +70,7 @@ const Setting = () => {
               { opration === "chng-passs" ? <Passpopup/> : <Profilepopup/>}
         <span className='close-popup' onClick={()=>{setpopup(false)}}><i class="ri-close-line"></i></span>
         </div>:null}
+        <div className='Show'></div>
     </div>
   </>
   )

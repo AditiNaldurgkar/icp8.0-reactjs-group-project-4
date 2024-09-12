@@ -75,7 +75,7 @@
     margin-top: 3vh;
     margin-left: 20px;
     gap: 40px;
-    white-space: nowrap;
+    flex-wrap: wrap;
 }
 .seting-name{
     font-size: 1.3em;
@@ -138,8 +138,33 @@
 }
 
 
+.savebtn{
+    display:inline-block;
+    width: 50px;
+    height: 25px;
+    background-color: #65d2fa;
+    margin-left: 3vw;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+          &:hover{
+            background-color: #42a3c7;
+          }
 
+}
 
+.Show{
+    height: 60vh;
+    width: 50vw;
+    position:fixed;
+    background:linear-gradient(#65d2fa77,#d345f075);
+    filter:blur(100px) ;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+    pointer-events: all;
+    z-index: -1;
+}
 
 @media screen and (max-width:500px) {
   .setting-container{
