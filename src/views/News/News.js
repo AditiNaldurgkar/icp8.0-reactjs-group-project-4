@@ -2,6 +2,7 @@ import React from 'react';
 import './News.css'; 
 import Display from '../../components/News/newscards'; 
 import Sidebar from "./../../components/Sidebar/Sidebar"
+import { Trends } from '../../components/News/newscards';
 
 
 const newsData = [{
@@ -55,6 +56,8 @@ function News() {
       </div>
       <div className='trends'>
       <span className='headtrends'>Technology trends for 2025</span>
+      <br/>
+        <Trends/>
       </div>
       </div>
     </div>

@@ -19,5 +19,12 @@ function Display({ headline, caption, url ,url2}) {
     </div>
   );
 }
-
+function Trends(){
+  return(
+    <div>
+      hello
+    </div>
+  )
+}
+export {Trends};
 export default Display;
