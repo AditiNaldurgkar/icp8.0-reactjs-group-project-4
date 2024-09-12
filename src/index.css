@@ -27,17 +27,6 @@ code {
     monospace;
 }
 
-/* Dark Theme */
-.dark-theme {
-  background-color: black;
-  color: white;
-}
-
-/* White Theme */
-.white-theme {
-  background-color: white;
-  color: black;
-}
 
 .liner-text{
   display:inline;
