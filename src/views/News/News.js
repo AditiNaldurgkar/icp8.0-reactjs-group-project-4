@@ -1,6 +1,8 @@
 import React from 'react';
 import './News.css'; 
 import Display from '../../components/News/newscards'; 
+import Sidebar from "./../../components/Sidebar/Sidebar"
+
 
 const newsData = [{
   url: 'https://img.freepik.com/free-photo/hiring-career-employment-human-resources-concept_53876-121273.jpg?uid=R160163945&ga=GA1.1.1856927002.1722677193&semt=ais_hybrid',
@@ -37,6 +39,7 @@ const newsData = [{
 function News() {
   return (
     <div className="maindiv">
+       <Sidebar/>
       <h1 className="heading">News</h1>
       <div className='container'>
       {newsData.map((item, index) => (
