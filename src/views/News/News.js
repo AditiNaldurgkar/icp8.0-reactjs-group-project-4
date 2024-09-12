@@ -54,7 +54,7 @@ function News() {
       ))}
       </div>
       <div className='trends'>
-      hiowtdtdd
+      <span className='headtrends'>Technology trends for 2025</span>
       </div>
       </div>
     </div>
