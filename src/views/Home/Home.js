@@ -3,7 +3,7 @@ import "./Home.css";
 import Footer from '../../components/Footer/Footer';
 import job from './hi-img.png';
 import { toast } from 'react-hot-toast';
-import { highDemandJobs,topCompanies ,newsArticles,FAQ} from '../../config/homeData';
+import { highDemandJobs,topCompanies ,newsArticles,feedbacks,FAQ} from '../../config/homeData';
 
 
 function Home() {
@@ -70,6 +70,23 @@ function Home() {
               <p>{news.description}</p>
               <span className='news-date'>{news.date}</span>
             </article>
+          ))}
+        </div>
+      </div>
+
+      <div className='feedback-section'>
+        <h3>What Our Users Are Saying</h3>
+        <div className='feedback-list'>
+        {feedbacks.map((feedback, index) => (
+          <div key={index} className='feedback-item'>
+            <h4>{feedback.name}</h4>
+            <p>{feedback.comment}</p>
+            <div className='rating'>
+              {[...Array(5)].map((_, i) => (
+                <span key={i} className={`star ${i < feedback.rating ? 'filled' : ''}`}>⭐</span>
+              ))}
+            </div>
+          </div>
           ))}
         </div>
       </div>

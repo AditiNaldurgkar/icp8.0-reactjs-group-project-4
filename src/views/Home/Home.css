@@ -210,6 +210,68 @@ h3 {
   }
 }
 
+.feedback-section {
+  padding: 2rem;
+}
+
+.feedback-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; 
+  margin: 20px 0;
+}
+
+.feedback-item {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 1rem;
+  flex: 1;
+  min-width: 200px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feedback-item img {
+  max-width: 100%;
+  height: 90px;
+  width: 90px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.feedback-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.feedback-item h4 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.feedback-item p {
+  margin: 0.5rem 0;
+}
+
+.rating {
+  display: flex;
+  justify-content: center;
+  gap: 0.25rem;
+  margin-top: 0.5rem;
+}
+
+.star {
+  font-size: 1.5rem;
+  color: #ddd;
+}
+
+.star.filled {
+  color: #ffcc00;
+}
+
+
+
 .faq-section {
   padding: 2rem;
 }

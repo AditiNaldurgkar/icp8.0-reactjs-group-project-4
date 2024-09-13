@@ -50,6 +50,29 @@ const highDemandJobs = [
     { title: 'How to Ace a Job Interview', description: 'Get tips and tricks on how to prepare for and succeed in your next job interview.', date: 'August 10, 2024' },
     { title: 'Remote Work: The Future of Employment', description: 'Learn about the rise of remote work and what it means for the future of employment across various industries.', date: 'September 15, 2024' }
   ];
+
+  const feedbacks =[
+  { 
+    name: 'John Doe', 
+    comment: 'Great platform! The job search features are very helpful and user-friendly.', 
+    rating: 5
+  },
+  { 
+    name: 'Jane Smith', 
+    comment: 'I found my dream job through this site. The application process was smooth and efficient.', 
+    rating: 4 
+  },
+  { 
+    name: 'Alice Johnson', 
+    comment: 'The resources and articles provided are top-notch. I feel well-prepared for interviews.', 
+    rating: 5 
+  },
+  { 
+    name: 'Bob Brown', 
+    comment: 'The site is easy to navigate, but I wish there were more job listings in my field.', 
+    rating: 3 
+  }
+]
   
   const FAQ = [
     { head: 'How do I create an account?', description: 'To create an account, click the "Sign Up" button on the top right of the homepage. Enter your email, create a password, and complete your profile with relevant information.' },
@@ -60,4 +83,4 @@ const highDemandJobs = [
     { head: 'How can I contact support?', description: 'For any issues or inquiries, you can contact our support team by using the "Contact Us" on our website.' }
   ];
   
-  export {highDemandJobs,topCompanies ,newsArticles,FAQ}
+  export {highDemandJobs,topCompanies ,newsArticles,feedbacks,FAQ}
