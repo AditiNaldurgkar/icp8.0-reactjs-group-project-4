@@ -60,9 +60,10 @@ body {
     margin-top: 4px;
     margin-left: 10px;
     color: whitesmoke;
-         &:hover{
-            background-color: #2a2acc;
-         }
+}
+
+.buttons button:hover{
+  background-color: #2a2acc;
 }
 
 .buttons button:hover {
