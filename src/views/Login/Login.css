@@ -1,229 +1,132 @@
-.login-main-container
-{
-    width: 800px;
-    height: 600px;
+.login-main-container {
     display: flex;
-    margin: 30px auto;
-    border: 0.5px solid rgb(79, 7, 79);
+    flex-wrap: wrap;
+    margin: 20px auto;
+    border: 0.5px solid rgb(6, 6, 6);
     border-radius: 30px;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    min-height: 400px;
 }
-.left-container
-{
-    width: 400px;
-    padding: 10px 50px;
-    
+
+.left-container, .right-container {
+    box-sizing: border-box;
 }
-.welcome-heading
-{
-    font-size: 25px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: auto;
+
+.left-container {
+    flex: 1;
+    padding: 20px;
+    max-width: 50%;
+}
+
+.right-container {
+    flex: 1;
+    background-color: #dab5e5;
+    border-radius: 20px;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.welcome-heading {
+    font-size: 2vw;
+    margin-bottom: 1rem;
     text-align: center;
 }
-.welcome-heading h1
-{
-    font-size: 25px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+
+.welcome-heading h1 {
+    font-size: 2vw;
 }
-.welcome-heading h3
-{
-    font-size: 20px;
+
+.welcome-heading h3 {
+    font-size: 1.5vw;
 }
-.welcome-heading h6
-{
-    font-size: 15px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+
+.welcome-heading h6 {
+    font-size: 1vw;
 }
-.text-feild
-{
-    font-size: 20px;
-    margin: 10px 0px;
-    font-weight: bolder;
+
+.text-feild {
+    font-size: 1.2vw;
+    font-weight: bold;
+    margin: 1rem 0;
 }
+
 .input-with-icon {
     position: relative;
     display: flex;
     align-items: center;
-  }
-  
-  .input-with-icon img.icon {
+}
+
+.input-with-icon img.icon {
     position: absolute;
     left: 10px;
-    width: 24px; 
-    height: 20px;
-  }
-  
-.user-img
-{
-    height: 20px;
-    width: 50px;
+    width: 2vw;
+    height: 2vw;
 }
-.user-container
-{
-    display: flex;
-}
-.email
-{
-    font-size: 15px;
-    margin: 20px 0px;
+
+.email, .passw {
+    font-size: 1vw;
+    margin: 1rem 0;
     border-radius: 20px;
-    width: 200px;
-    height: 30px;
+    width: calc(100% - 60px);
+    height: 2.5rem;
     border: none;
     border-bottom: 1px solid purple;
-    padding: 0px 40px;
+    padding: 0 2rem;
 }
-.passw
-{
-    font-size: 15px;
-    margin: 20px 0px;
-    border-radius: 20px;
-    width: 200px;
-    height: 30px;
-    border: none;
-    border-bottom: 1px solid purple;
-    padding: 0px 40px;
-}
-.login-btn
-{
-    font-size: 20px;
-    width: 280px;
-    height: 40px;
+
+.login-btn {
+    font-size: 1.2vw;
+    width: 100%;
+    max-width: 280px;
+    height: 3rem;
     border-radius: 30px;
     background-color: #dab5e5;
     color: white;
     border: 0.5px solid rgb(79, 7, 79);
-    font-weight: bolder;
-    padding: 5px 0px;
+    font-weight: bold;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    cursor: pointer;
 }
-.right-container
-{
-    width:400px;
-    background-color: #dab5e5;
-    border-radius: 20px;
+
+.forgot-text {
+    text-align: center;
+    margin: 0.5rem 0;
 }
-.right-container image
-{
-    
-    height: 340px;
-    margin: 300px 50px;
+
+.last-line {
+    text-align: center;
+    margin-top: 1rem;
 }
-.forgot-text
-{
-    margin-left: 90px;
-    margin-top: 10px;
-    margin-bottom: 30px;
+
+input:focus, button:focus {
+    outline: none;
 }
-.last-line
-{
-    margin-top: 30px;
-}
-@media screen and (max-width: 500px)
-{
-    .login-main-container
-{
-    width: 500px;
-    height: 400px;
-    display: flex;
-    margin: 30px auto;
-    border: 0.5px solid rgb(79, 7, 79);
-    border-radius: 10px;
-    flex-wrap: wrap;
-}
-.left-container
-{
-    width: 150px;
-    padding: 10px 20px;
-}
-.right-container
-{
-    width:200px;
-    background-color: #dab5e5;
-    border-radius: 10px;
-    display: flex;
-    flex-wrap: wrap;
-}.welcome-heading h1
-{
-    font-size: 10px;
-}
-.welcome-heading h3
-{
-    font-size: 10px;
-}
-.welcome-heading h6{
-    font-size: 10px;
-}
-.text-feild
-{
-    font-size: 10px;
-    margin: 20px 0px;
-    font-weight: bolder;
-    color: rgb(44, 6, 80);
-}
-.input-with-icon {
-    position: relative;
-    display: flex;
-    align-items: center;
-  }
-  
-  .input-with-icon img.icon {
-    position: absolute;
-    left: 5px;
-    width: 10px; 
-    height: 5px;
-  }
-  .email
-{
-    font-size: 8px;
-    margin: 5px 0px;
-    border-radius: 10px;
-    width: 120px;
-    height: 20px;
-    border: none;
-    border-bottom: 1px solid purple;
-    padding: 10px 20px;
-}
-.passw
-{
-    font-size: 8px;
-    margin: 5px 0px;
-    border-radius: 10px;
-    width: 120px;
-    height: 20px;
-    border: none;
-    border-bottom: 1px solid purple;
-    padding: 10px 20px;
-}
-image
-{
-    width: 150px;
-    height: 200px;
-    margin: 70px;
-}
-.login-btn
-{
-    font-size: 10px;
-    width: 100px;
-    height: 15px;
-    border-radius: 7px;
-    background-color: #dab5e5;
-    color: white;
-    border: 0.5px solid rgb(79, 7, 79);
-}
-.forgot-text
-{
-    margin-left: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 10px;
-}
-.last-line
-{
-    margin-top: 10px;
-    font-size: 10px;
-    margin-left: 10px;
-}
+
+@supports (display: grid) {
+    /* Optional: CSS Grid for better layout control in modern browsers */
+    .login-main-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .left-container, .right-container {
+        max-width: none;
+    }
+    .login-btn
+    {
+        width: 150px;
+        height: 40px;
+    }
 }
