@@ -1,11 +1,13 @@
 import React from 'react';
 import "./newscard.css"
 
+
+
 function Display({ headline, caption, url ,url2}) {
     console.log("hie")
     console.log(url2)
   return (
-    
+    <div className='mainpgcontainer'>
     <div className="newscard">
       <img className="cardimg" src={url} alt={headline} />
       <p className="title">{headline}</p>
@@ -14,7 +16,15 @@ function Display({ headline, caption, url ,url2}) {
           Discover more
           </a>
     </div>
+    </div>
   );
 }
-
+function Trends(){
+  return(
+    <div>
+      hello
+    </div>
+  )
+}
+export {Trends};
 export default Display;
