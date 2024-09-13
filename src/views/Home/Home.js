@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react';
 import "./Home.css";
 import Footer from '../../components/Footer/Footer';
+import logo from './logo.png';
 import job from './hi-img.png';
 import { toast } from 'react-hot-toast';
-import { highDemandJobs, newsArticles,FAQ} from '../../config/homeData';
+import { highDemandJobs,topCompanies ,newsArticles,feedbacks,FAQ} from '../../config/homeData';
 
 
 function Home() {
@@ -17,6 +18,9 @@ function Home() {
 
   return (
     <div>
+      <div className='logo'>
+        <img src={logo} alt='logo' />
+      </div>
       <div className='content-container'>
         <div className='content'>
           <h1 className='liner-text'>Empower Your Future -</h1>
@@ -48,6 +52,19 @@ function Home() {
         </div>
       </div>
 
+      <div>
+            <h3>Top Companies</h3>
+            <div className='company-list'>
+                {topCompanies.map((company, index) => (
+                    <div key={index} className='company-item'>
+                        <img src={company.logoSrc} alt={company.alt} className='company-img' />
+                        <h4>{company.name}</h4>
+                        <p>{company.description}</p>
+                    </div>
+                ))}
+            </div>
+        </div>
+
       <div className='news-section'>
         <h3>Latest News</h3>
         <div className='news-list'>
@@ -57,6 +74,21 @@ function Home() {
               <p>{news.description}</p>
               <span className='news-date'>{news.date}</span>
             </article>
+          ))}
+        </div>
+      </div>
+
+      <div className='feedback-section'>
+        <h3>What Our Users Are Saying</h3>
+        <div className='feedback-list'>
+        {feedbacks.map((feedback, index) => (
+          <div key={index} className='feedback-item'>
+            <h4>{feedback.name}</h4>
+            <p>{feedback.comment}</p>
+            <div className='rating'>
+             {feedback.rating}
+            </div>
+          </div>
           ))}
         </div>
       </div>
