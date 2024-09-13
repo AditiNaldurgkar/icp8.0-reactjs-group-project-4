@@ -16,7 +16,7 @@ const Form = () => {
     const [desc, setDecriptions] = useState('');
     const [keyskill, setkeyskill] = useState('');
     const [linkedIn, setLinkedIn] = useState('');
-    const [file, setFile] = useState('');
+    // const [file, setFile] = useState('');
     const [gender, setGender] = useState('')
 
     function Add() {
@@ -36,7 +36,7 @@ const Form = () => {
             job,
             keyskill,
             linkedIn,
-            file,
+            // file,
             gender
         }
 
@@ -55,7 +55,7 @@ const Form = () => {
         setMobile('');
         setDecriptions('');
         setCompany('');
-        setFile('');
+        // setFile('');
         setJob('');
         setkeyskill('');
         setLinkedIn('');
@@ -93,7 +93,7 @@ const Form = () => {
 
                         <div className="input-gup">
                             <label for="exp">Recuriter's Exp.</label>
-                            <input type="text" id="exp" className="input-field" placeholder="Enter Recuriter Experiance" required onChange={(e) => { setExperiance(e.target.value) }} />
+                            <input type="number" id="exp" className="input-field" placeholder="Enter Recuriter Experiance" required onChange={(e) => { setExperiance(e.target.value) }} />
                         </div>
 
                         <div className="input-gup">
@@ -123,6 +123,7 @@ const Form = () => {
                             <input type="text" id="exper" className="input-field" required placeholder="Expertise" onChange={(e) => { setExpertise(e.target.value) }} />
                         </div>
 
+                        
                         <div className="input-gup">
                             <label for="textarea">Company Descriptions </label>
                             <textarea
@@ -196,6 +197,11 @@ const Form = () => {
                                 onChange={(e) => { setMobile(e.target.value) }} />
                         </div>
 
+                        <div className="input-gup">
+                            <label for="company">Company Name</label>
+                            <input type="text" id="company" className="input-field" placeholder="Enter Company Name" required onChange={(e) => { setCompany(e.target.value) }} />
+                        </div>
+
 
                         <div className="input-gup">
                             <label for="job">Job Title</label>
@@ -207,7 +213,7 @@ const Form = () => {
                                 required
                                 onChange={(e) => { setJob(e.target.value) }} />
                         </div>
-                        
+
                         <div className="input-gup center">
                             <button className="btn" onClick={Add}>Add Details</button>
                         </div>

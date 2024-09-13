@@ -32,15 +32,15 @@ form {
     /* text-align: center; */
 }
 
-.fileupload {
+/* .fileupload {
     width: 10vw;
     height: 20vh;
     border-radius: 50%;
     border: 1px solid gray;
-    /* margin-top: -1vw; */
+    margin-top: -1vw;
     margin-left: 4vw;
 
-}
+} */
 
 label {
     display: block;
