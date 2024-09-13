@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import "./Home.css";
 import Footer from '../../components/Footer/Footer';
+import logo from './logo.png';
 import job from './hi-img.png';
 import { toast } from 'react-hot-toast';
 import { highDemandJobs,topCompanies ,newsArticles,feedbacks,FAQ} from '../../config/homeData';
@@ -17,6 +18,9 @@ function Home() {
 
   return (
     <div>
+      <div className='logo'>
+        <img src={logo} alt='logo' />
+      </div>
       <div className='content-container'>
         <div className='content'>
           <h1 className='liner-text'>Empower Your Future -</h1>
