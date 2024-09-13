@@ -55,22 +55,22 @@ const highDemandJobs = [
   { 
     name: 'John Doe', 
     comment: 'Great platform! The job search features are very helpful and user-friendly.', 
-    rating: 5
+    rating: '⭐⭐⭐⭐⭐'
   },
   { 
     name: 'Jane Smith', 
-    comment: 'I found my dream job through this site. The application process was smooth and efficient.', 
-    rating: 4 
+    comment: 'I found my dream job through this site.Application process was smooth and efficient.', 
+    rating: '⭐⭐⭐⭐' 
   },
   { 
     name: 'Alice Johnson', 
     comment: 'The resources and articles provided are top-notch. I feel well-prepared for interviews.', 
-    rating: 5 
+    rating: '⭐⭐⭐⭐⭐'
   },
   { 
     name: 'Bob Brown', 
     comment: 'The site is easy to navigate, but I wish there were more job listings in my field.', 
-    rating: 3 
+    rating: '⭐⭐⭐' 
   }
 ]
   

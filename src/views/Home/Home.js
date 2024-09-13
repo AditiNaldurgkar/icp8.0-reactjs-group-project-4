@@ -82,9 +82,7 @@ function Home() {
             <h4>{feedback.name}</h4>
             <p>{feedback.comment}</p>
             <div className='rating'>
-              {[...Array(5)].map((_, i) => (
-                <span key={i} className={`star ${i < feedback.rating ? 'filled' : ''}`}>⭐</span>
-              ))}
+             {feedback.rating}
             </div>
           </div>
           ))}
