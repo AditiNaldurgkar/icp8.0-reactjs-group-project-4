@@ -10,14 +10,14 @@
     /* border: 3px solid red; */
     height: 100vh;
     background-color: whitesmoke;
-    margin: 1vw;
+    /* margin: 1vw; */
 }
 
 .frm-heading {
     width: 38%;
     /* margin: auto; */
     margin-left: 26vw;
-    margin-top: .5vw;
+    /* margin-top: .5vw; */
     /* border: 1px solid red; */
 }
 
@@ -35,5 +35,5 @@
 .form {
     /* width: 100%; */
     margin-bottom: 1vw;
-    /* border: 2px solid red; */
+    /* border: 2px solid rgb(162, 255, 0); */
 }
