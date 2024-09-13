@@ -12,12 +12,13 @@ const Search = () => {
   const [jobTittle, setjobTittle] = useState('')
   const [jobs, setjobs] = useState([])
 
+  const serchNum = localStorage.getItem("RESULTNUMBER") || 18
 
   const searchJob = async (jobname) => {
     if(!jobname)return(toast.error('please enter job tittle..'))
       
     jobname = jobname.replace(" ", "%20")
-    const URL = `https://api.adzuna.com/v1/api/jobs/gb/search/1?app_id=02117e2a&app_key=b73e530e58b3da362a5bfe0f0ce5f79e&results_per_page=18&what=${jobname}&where=london&content-type=application/json`
+    const URL = `https://api.adzuna.com/v1/api/jobs/gb/search/1?app_id=02117e2a&app_key=b73e530e58b3da362a5bfe0f0ce5f79e&results_per_page=${serchNum}&what=${jobname}&where=london&content-type=application/json`
 
     let tid = toast.loading('loading.....')
 
@@ -75,6 +76,7 @@ const Search = () => {
          ))}
          </div>
       </div>
+      <div className='Show'></div>
     </div>
   )
 }

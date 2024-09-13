@@ -62,6 +62,7 @@ function Jobinfo() {
       <button className="apply-btn" onClick={()=>{savejob(result)}}>apply now</button>
       <span className='note'><i class="ri-alarm-warning-fill"> </i> please read all information before apply.</span>
     </div>
+    <div className='Show'></div>
   </>
   )
 }

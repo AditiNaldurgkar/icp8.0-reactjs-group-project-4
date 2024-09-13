@@ -1,4 +1,4 @@
-.main-container
+.login-main-container
 {
     width: 800px;
     height: 600px;
@@ -9,7 +9,7 @@
 }
 .left-container
 {
-    width: 300px;
+    width: 400px;
     padding: 10px 50px;
     
 }
@@ -111,9 +111,9 @@
     height: 340px;
     margin: 150px 50px;
 }
-.text
+.forgot-text
 {
-    margin-left: 130px;
+    margin-left: 90px;
     margin-top: 10px;
     margin-bottom: 30px;
 }
