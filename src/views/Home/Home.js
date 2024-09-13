@@ -18,9 +18,6 @@ function Home() {
 
   return (
     <div>
-      <div className='logo'>
-        <img src={logo} alt='logo' />
-      </div>
       <div className='content-container'>
         <div className='content'>
           <h1 className='liner-text'>Empower Your Future -</h1>
