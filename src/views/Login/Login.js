@@ -26,6 +26,8 @@ const Login=()=>
 		else {
          toast.error('User not found !')
         }
+		const LoginUser = { username, password };
+        localStorage.setItem(username, JSON.stringify(LoginUser));
       };
   return (
     <>
