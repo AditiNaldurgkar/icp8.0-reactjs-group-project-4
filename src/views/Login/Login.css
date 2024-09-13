@@ -101,15 +101,15 @@
 }
 .right-container
 {
-    width:500px;
+    width:400px;
     background-color: #dab5e5;
     border-radius: 20px;
 }
-.image
+.right-container image
 {
-    width: 300px;
+    
     height: 340px;
-    margin: 150px 50px;
+    margin: 300px 50px;
 }
 .forgot-text
 {
@@ -120,4 +120,110 @@
 .last-line
 {
     margin-top: 30px;
+}
+@media screen and (max-width: 500px)
+{
+    .login-main-container
+{
+    width: 500px;
+    height: 400px;
+    display: flex;
+    margin: 30px auto;
+    border: 0.5px solid rgb(79, 7, 79);
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+.left-container
+{
+    width: 150px;
+    padding: 10px 20px;
+}
+.right-container
+{
+    width:200px;
+    background-color: #dab5e5;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}.welcome-heading h1
+{
+    font-size: 10px;
+}
+.welcome-heading h3
+{
+    font-size: 10px;
+}
+.welcome-heading h6{
+    font-size: 10px;
+}
+.text-feild
+{
+    font-size: 10px;
+    margin: 20px 0px;
+    font-weight: bolder;
+    color: rgb(44, 6, 80);
+}
+.input-with-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .input-with-icon img.icon {
+    position: absolute;
+    left: 5px;
+    width: 10px; 
+    height: 5px;
+  }
+  .email
+{
+    font-size: 8px;
+    margin: 5px 0px;
+    border-radius: 10px;
+    width: 120px;
+    height: 20px;
+    border: none;
+    border-bottom: 1px solid purple;
+    padding: 10px 20px;
+}
+.passw
+{
+    font-size: 8px;
+    margin: 5px 0px;
+    border-radius: 10px;
+    width: 120px;
+    height: 20px;
+    border: none;
+    border-bottom: 1px solid purple;
+    padding: 10px 20px;
+}
+image
+{
+    width: 150px;
+    height: 200px;
+    margin: 70px;
+}
+.login-btn
+{
+    font-size: 10px;
+    width: 100px;
+    height: 15px;
+    border-radius: 7px;
+    background-color: #dab5e5;
+    color: white;
+    border: 0.5px solid rgb(79, 7, 79);
+}
+.forgot-text
+{
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 10px;
+}
+.last-line
+{
+    margin-top: 10px;
+    font-size: 10px;
+    margin-left: 10px;
+}
 }
