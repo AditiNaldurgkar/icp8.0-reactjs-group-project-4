@@ -3,7 +3,7 @@ import "./Home.css";
 import Footer from '../../components/Footer/Footer';
 import job from './hi-img.png';
 import { toast } from 'react-hot-toast';
-import { highDemandJobs, newsArticles,FAQ} from '../../config/homeData';
+import { highDemandJobs,topCompanies ,newsArticles,FAQ} from '../../config/homeData';
 
 
 function Home() {
@@ -47,6 +47,19 @@ function Home() {
           ))}
         </div>
       </div>
+
+      <div>
+            <h3>Top Companies</h3>
+            <div className='company-list'>
+                {topCompanies.map((company, index) => (
+                    <div key={index} className='company-item'>
+                        <img src={company.logoSrc} alt={company.alt} className='company-img' />
+                        <h4>{company.name}</h4>
+                        <p>{company.description}</p>
+                    </div>
+                ))}
+            </div>
+        </div>
 
       <div className='news-section'>
         <h3>Latest News</h3>
