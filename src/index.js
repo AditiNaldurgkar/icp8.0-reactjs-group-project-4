@@ -6,6 +6,7 @@ import Search from './views/Search/Search';
 import JobInfo from  './views/JobInfo/JobInfo';
 import News from './views/News/News';
 import Login from './views/Login/Login';
+import SignUp from './views/SignUp/SignUp';
 import Setting from './views/Setting/Setting';
 import RecuriterProfile from './views/RecuriterProfile/RecuriterProfile';
 import AddPost from './views/AddPost/AddPost';
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
   {
     path: "/login",
     element: <Login />,
+  },
+  {
+    path: "/SignUp",
+    element: <SignUp/>,
   },
   {
     path: "/setting",

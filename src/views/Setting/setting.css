@@ -75,7 +75,7 @@
     margin-top: 3vh;
     margin-left: 20px;
     gap: 40px;
-    white-space: nowrap;
+    flex-wrap: wrap;
 }
 .seting-name{
     font-size: 1.3em;
@@ -138,7 +138,65 @@
 }
 
 
+.savebtn{
+    display:inline-block;
+    width: 50px;
+    height: 25px;
+    background-color: #6969ffc7;
+    margin-left: 3vw;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+          &:hover{
+            background-color: #3757ca;
+          }
 
+}
+
+.Show{
+    height: 60vh;
+    width: 50vw;
+    position:fixed;
+    background:linear-gradient(#65d2fa77,#d345f075);
+    filter:blur(100px) ;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+    pointer-events: all;
+    z-index: -1;
+}
+
+.socialmedia{
+    display: flex;
+    align-items:start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.socialmedia span{
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+
+.socialmedia span i{
+    font-size: 29px;
+    display: inline-block;
+    text-align: center;
+    margin-left: 15px;
+}
+
+.save-btn-div{
+    height: 15vh;
+    width: 100vw;
+    position: relative;
+}
+.save-btn{
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%,-50%);
+}
 
 
 @media screen and (max-width:500px) {
