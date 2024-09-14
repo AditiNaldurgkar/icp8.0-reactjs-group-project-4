@@ -66,26 +66,26 @@
 
 @media (max-width: 768px) {
   .navbar {
-    flex-direction: column; /* Stack navbar elements vertically on smaller screens */
-    align-items: center; /* Center items horizontally */
+    flex-direction: column; 
+    align-items: center;
   }
 
   .navbar-list {
-    flex-direction: column; /* Stack list items vertically */
-    width: 100%; /* Full width of the navbar */
-    align-items: center; /* Center items horizontally */
+    flex-direction: column; 
+    width: 100%; 
+    align-items: center; 
     margin-top: 10px;
   }
 
   .navbar-list.active {
-    display: flex; /* Show the list when menu is active */
+    display: flex; 
   }
 
   .navbar-item {
-    margin: 10px 0; /* Vertical spacing between items */
+    margin: 10px 0; 
   }
 
   .navbar-toggle {
-    display: block; /* Show the toggle button on small screens */
+    display: block; 
   }
 }
