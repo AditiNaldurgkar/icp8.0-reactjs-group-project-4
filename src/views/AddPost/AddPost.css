@@ -88,6 +88,10 @@ label {
   }
 
   .job-post-card {
-    padding-bottom: px;
+    padding: 30px 0;
+  }
+
+  label{
+    font-size: 15px;
   }
 }
