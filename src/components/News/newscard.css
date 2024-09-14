@@ -4,18 +4,16 @@
     text-decoration: none;
     color: white;
     background-color: #9f9ffa;
-    font-weight: bold;
-    height: 35px;
-    padding: 10px 16px;
-    padding-top: 8px;
+    height: 18px;
+    border:none;
     margin: 10px;
-    border-radius: 10px;
-    margin-bottom: 6px;
+    padding: 10px 25px;
+    border-radius: 2px;
 
 }
 .discover-button:hover{
-  border-radius: 10px;
-  background-color: rgb(50, 50, 210);
+  border-radius: 5px;
+  background-color: #2a2acc;
 }
 .newscard {
     width: 380px;
