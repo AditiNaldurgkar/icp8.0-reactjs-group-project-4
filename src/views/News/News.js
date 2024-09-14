@@ -40,6 +40,22 @@ const trends=[{
   name : "Turning AI into decision-making agents",
   imgurl : "https://cdn-icons-png.flaticon.com/128/8055/8055576.png",
   info :"Agentic AI to emerge within the next two to three years — with capabilities that go beyond tasks like summarising information to actually taking actions on behalf of individualsRather than presenting users with options, they will be able to choose the option that is optimal for the user if given permission."
+},{
+  name:"Moving to post-quantum cryptography",
+  imgurl:"",
+  info :"Post-quantum cryptography will become a concern in just two to three years. IT leaders will soon need to replace every piece or encryption with a post-quantum algorithm unbreakable by classical or quantum computing."
+},{
+  name :"Tools defending against disinformation",
+  imgurl:"",
+  info:"Generative AI could allow bad actors to create synthetic media, such as fake videos, voices, and images that impersonate people or organisations. Disinformation security tools will help organisations identify deepfakes or detect synthetic media by assessing truth and tracking the spread of disinformation."
+},{
+  name:"Exploring energy-efficient computing",
+  imgurl:"",
+  info:"Organisations may soon begin moving energy-intensive algorithms to green cloud providers, rewrite algorithms to consume less energy, or more closely monitor energy use for generative AI. Additional technologies like optical, neuromorphic, and DNA storage could create vast efficiency improvements"
+},{
+  name:"Enhancing reality with spatial computing",
+  imgurl:"",
+  info:"Spatial computing brings the physical and digital realms together into a single, unified 3D space through devices such as augmented reality headsets. Alvarez said devices and applications are being developed that could support just-in-time contextualisation for decision making in places like the manufacturing shop floor."
 }]
 
 function News() {
