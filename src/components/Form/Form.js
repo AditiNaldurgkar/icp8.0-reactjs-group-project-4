@@ -66,7 +66,7 @@ const Form = () => {
 
     return (
         <>
-            <form onSubmit>
+            <form className="frm-main">
                 <div className="frm-holder">
 
                     <div className="profile">
