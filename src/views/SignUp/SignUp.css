@@ -48,8 +48,6 @@
     font-size: 2vw;
 }
 
-
-
 .field-text {
     font-size: 1.2vw;
     font-weight: bold;
@@ -93,8 +91,6 @@
     cursor: pointer;
 }
 
-
-
 .last-line {
     text-align: center;
     margin-top: 1rem;
@@ -103,8 +99,6 @@
 input:focus, button:focus {
     outline: none;
 }
-
-
 
 .text-feild1{
     font-size: 60px;
@@ -128,8 +122,6 @@ input:focus, button:focus {
     
   
   }
-
-
 
 .select {
     padding: 10px;
@@ -162,9 +154,7 @@ select:focus {
 
 .group-form {
     margin-bottom: 12px;
-    
-  
-  }
+    }
   
   .group-form  label {
     display: block;
@@ -173,7 +163,7 @@ select:focus {
     font-size: 25px;
   }
   
-  .group-form  input,
+  
   .group-form  select {
     width: 70%;
     padding: 8px;
@@ -183,19 +173,7 @@ select:focus {
     font-size: 25px;
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-@supports (display: grid) {
+  @supports (display: grid) {
     .signup-main-container {
         display: grid;
         grid-template-columns: 1fr 1fr;

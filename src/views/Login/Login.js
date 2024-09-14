@@ -4,6 +4,8 @@ import userimg from './user.png'
 import passwordimg from './padlock.png'
 import IMG from './img.PNG'
 import toast , {Toaster}from "react-hot-toast";
+import Navbar from './../../components/Navbar/Navbar'
+import Footer from './../../components/Footer/Footer'
 const Login=()=>
  {
 	const [username, setUsername] = useState('');
@@ -29,8 +31,10 @@ const Login=()=>
 		const LoginUser = { username, password };
         localStorage.setItem(username, JSON.stringify(LoginUser));
       };
+
   return (
     <>
+	<Navbar/>
     <div className="login-main-container">
 		<div className="left-container">
 			<div className="welcome-heading">
@@ -94,6 +98,7 @@ const Login=()=>
 			<img src={IMG} className="image" />
 		</div>
       </div>
+	  <Footer/>
     </>
   )
 }
