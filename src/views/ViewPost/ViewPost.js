@@ -4,15 +4,15 @@ import Sidebar from '../../components/Sidebar/Sidebar';
 import ViewJobCards from '../../components/ViewJobCards/ViewJobCards';
 
 function ViewPost() {
-  const [postData,setpostData] = useState([]);
+  const [postData, setpostData] = useState([]);
 
-  useEffect(()=>{
-    const savedJobDetails = JSON.parse(localStorage.getItem("postData"))||[];
+  useEffect(() => {
+    const savedJobDetails = JSON.parse(localStorage.getItem("postData")) || [];
     setpostData(savedJobDetails);
-  },[]);
+  }, []);
 
   const handleRemove = (index) => {
-    const updatedPostData = postData.filter((_,i)=> i !== index);
+    const updatedPostData = postData.filter((_, i) => i !== index);
     localStorage.setItem("postData", JSON.stringify(updatedPostData));
     setpostData(updatedPostData);
   };
@@ -24,22 +24,25 @@ function ViewPost() {
       <div className='view-post-heading'>
         <h2>View Job Post</h2>
       </div>
-      {postData.map((post, index)=>{
-        const{jobTitle, jobDescription ,location, employmentType, salaryMin, salaryMax, applicationDeadline, companyName,} = post;
-        return(
+      {postData.map((post, index) => {
+        const { jobTitle, jobDescription, location, employmentType, salaryMin, salaryMax, applicationDeadline, companyName, } = post;
+        return (
           <ViewJobCards
-          index={index}
-          companyName={companyName}
-          jobTitle={jobTitle}
-          jobDescription={jobDescription}
-          location={location}
-          employmentType={employmentType}
-          salaryMin={salaryMin}
-          salaryMax={salaryMax}
-          applicationDeadline={applicationDeadline}
-          onRemove={handleRemove}/>
+            index={index}
+            companyName={companyName}
+            jobTitle={jobTitle}
+            jobDescription={jobDescription}
+            location={location}
+            employmentType={employmentType}
+            salaryMin={salaryMin}
+            salaryMax={salaryMax}
+            applicationDeadline={applicationDeadline}
+            onRemove={handleRemove} />
         )
       })}
+      <div className='Show'>
+
+      </div>
     </div>
   )
 }

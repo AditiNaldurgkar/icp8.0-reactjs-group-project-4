@@ -169,7 +169,11 @@ function Add() {
                     </form>
                 </div>
             </div>
+            <div className='Show'>
+
+      </div>
         </div>    
+        
             );
 };
 
