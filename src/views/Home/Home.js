@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import "./Home.css";
 import Footer from '../../components/Footer/Footer';
+import Navbar from '../../components/Navbar/Navbar';
 import logo from './logo.png';
 import job from './hi-img.png';
 import { toast } from 'react-hot-toast';
@@ -18,6 +19,7 @@ function Home() {
 
   return (
     <div>
+      <Navbar />
       <div className='content-container'>
         <div className='content'>
           <h1 className='liner-text'>Empower Your Future -</h1>
