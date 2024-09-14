@@ -4,6 +4,9 @@ import userimg from './user.png'
 import passwordimg from './padlock.png'
 import IMG from './img.PNG'
 import toast , {Toaster}from "react-hot-toast";
+import {Link} from 'react-router-dom';
+import Navbar from './../../components/Navbar/Navbar'
+import Footer from './../../components/Footer/Footer'
 
 const Login=()=>
  {
@@ -33,7 +36,7 @@ const Login=()=>
 
   return (
     <>
-	
+	<Navbar/>
     <div className="login-main-container">
 		<div className="left-container">
 			<div className="welcome-heading">
