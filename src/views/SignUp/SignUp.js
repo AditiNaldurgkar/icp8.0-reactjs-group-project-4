@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import toast, { Toaster } from 'react-hot-toast';
 import './SignUp.css';
-import IMG from './signup-img.png'
+import IMG from './Signup4.png';
 
 const Signup = () => {
     const [role, setRole] = useState('Job Seeker');
@@ -12,16 +12,62 @@ const Signup = () => {
     const [jobRole, setJobRole] = useState('');
     const [companyName, setCompanyName] = useState('');
 
-    const handleSignup = () => {
+    const isUsernameValid = (username) => {
+        const validUsernamePattern = /^[a-zA-Z0-9_]+$/;
+        return validUsernamePattern.test(username);
+    };
+
+    const isEmailValid = (email) => {
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailPattern.test(email);
+    };
+
+    const handleSignup = (e) => {
+        e.preventDefault();
+
+        if (!isUsernameValid(username)) {
+            toast.error('Username can only contain letters, numbers, and underscores ❤️');
+            return;
+        }
+
+        if (!isEmailValid(email)) {
+            toast.error('Please enter a valid email address ❤️');
+            return;
+        }
+
+        if (password.length < 6) {
+            toast.error('Password must be at least 6 characters long ❤️');
+            return;
+        }
+
         if (password !== confirmPassword) {
-            toast.error('Password do not match ❤️');
+            toast.error('Passwords do not match ❤️');
+            return;
+        }
+
+        const existingUsers = JSON.parse(localStorage.getItem('users')) || [];
+
+        const isUsernameTaken = existingUsers.some(user => user.username === username);
+        if (isUsernameTaken) {
+            toast.error('Username already taken ❤️');
             return;
         }
 
         const userData = { username, email, password, role, jobRole, companyName };
-        localStorage.setItem(username, JSON.stringify(userData));
-        toast.success(`${role.charAt(0).toUpperCase() + role.slice(1)} Signed up successfully 💚`);
-    };
+        existingUsers.push(userData);
+        localStorage.setItem('users', JSON.stringify(existingUsers));
+
+        toast.success(`${role.charAt(0).toUpperCase() + role.slice(1)} signed up successfully 💚`);
+
+
+    setUsername('');
+    setEmail('');
+    setPassword('');
+    setConfirmPassword('');
+    setJobRole('');
+    setCompanyName('');
+
+        };
 
     return (
         
