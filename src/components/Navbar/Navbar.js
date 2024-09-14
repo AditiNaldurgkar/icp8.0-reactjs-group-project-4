@@ -6,7 +6,7 @@ function Navbar() {
   return (
     <div className="navbar">
       <div className="logo"> 
-        <b><i>Hier-Me..</i></b>
+        <b><i>HM</i></b>
       </div>
       <ul className="navbar-list">
         <li className="navbar-item">
