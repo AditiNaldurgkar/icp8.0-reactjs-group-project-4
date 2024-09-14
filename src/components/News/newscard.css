@@ -61,16 +61,22 @@
     padding: 5px;
     border-radius: 5px;
     display: flex;
+    flex-direction: column;
+    cursor: pointer;
   }
   .add-info{
-    display: none;
+    margin: 10px;
   }
   .icont{
     height: 50px;
     margin: 5px;
+    width: 100px;
+    display: block;
+    margin: 3px auto;
   }
   .trendhead{
     margin: 2px;
     font-family:sans-serif;
     margin-top: 10px;
+    text-align: center;
   }
