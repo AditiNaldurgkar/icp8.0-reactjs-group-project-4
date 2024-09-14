@@ -4,6 +4,9 @@ import userimg from './user.png'
 import passwordimg from './padlock.png'
 import IMG from './img.PNG'
 import toast , {Toaster}from "react-hot-toast";
+import {Link} from 'react-router-dom';
+import Navbar from './../../components/Navbar/Navbar'
+import Footer from './../../components/Footer/Footer'
 const Login=()=>
  {
 	const [username, setUsername] = useState('');
@@ -31,10 +34,11 @@ const Login=()=>
       };
   return (
     <>
+	<Navbar/>
     <div className="login-main-container">
 		<div className="left-container">
 			<div className="welcome-heading">
-				<h1>
+				<h1 className="liner-text">
 					Welcome back !!!!
 				</h1>
 				<h3>
@@ -81,19 +85,22 @@ const Login=()=>
 				</div>
 				</div>
 				<div className="forgot-text">
-					Forgot password ?
+				<Link to='/setting'>Forgot password ?</Link>
 				</div>
 				<button type="submit" className="login-btn" onClick={handleLogin}>Login</button>
 				<Toaster/>
 			</form>
 			<div className="last-line">
-				Don't have an account ?        Sign up
+				Don't have an account ?        <Link to='/signup'>Sign up</Link>
 			</div>
 		</div>
 		<div className="right-container">
 			<img src={IMG} className="image" />
 		</div>
       </div>
+	  <div className="show">
+	  </div>
+	  <Footer/>
     </>
   )
 }
