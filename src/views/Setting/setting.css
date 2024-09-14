@@ -212,6 +212,10 @@
     gap: 20px;
     white-space: nowrap;
 }
+
+.user-set-box {
+    margin-left: 0;
+}
  
 
 }
