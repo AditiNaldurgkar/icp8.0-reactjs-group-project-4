@@ -1,6 +1,7 @@
 .frm-main {
     /* border: 1px solid rgb(0, 255, 68); */
     width: 80%;
+    
     /* display: block; */
     /* height: 80px; */
     margin: auto;
@@ -10,6 +11,7 @@
 .frm-holder {
     box-shadow: 0px 0px 5px gray;
     width: 60%;
+    
     /* height: 350px; */
     padding: .1vw;
     margin: auto;
@@ -69,7 +71,7 @@ input[type="radio"] {
     padding: .2vw;
     /* border-radius: 5px; */
     font-size: 1.2vw;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 /* .profile,.right{
@@ -98,6 +100,10 @@ input[type="radio"] {
     background-color: #6969ffc7;
     color: whitesmoke;
     cursor: pointer;
+}
+
+.textArea{
+    width: 10vw;
 }
 
 .btn:hover {
@@ -159,6 +165,10 @@ input[type="radio"] {
     .profile,
     .right {
         height: 53vh;
+    }
+
+    .textArea{
+        width: 5vw;
     }
 }
 

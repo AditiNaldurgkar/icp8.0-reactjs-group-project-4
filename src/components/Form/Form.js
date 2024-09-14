@@ -127,7 +127,7 @@ const Form = () => {
                         <div className="input-gup">
                             <label for="text">Company Descriptions </label>
                             <textarea 
-                                rows={4}
+                                // rows={4}
                                 className="textArea"
                                 id="text"
                                 placeholder="Enter Details Of Company..."
