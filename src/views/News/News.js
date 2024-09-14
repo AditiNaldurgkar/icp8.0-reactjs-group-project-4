@@ -36,6 +36,11 @@ const newsData = [{
   caption:"74 percent increase in consolidated net profit",
   url2:"https://www.businesstoday.in/latest/corporate/story/tata-sons-sees-74-surge-in-consolidated-net-profit-at-rs-49000-crore-aviation-business-narrows-loss-in-fy24-444884-2024-09-07"
 }];
+const trends=[{
+  name : "Turning AI into decision-making agents",
+  imgurl : "https://cdn-icons-png.flaticon.com/128/8055/8055576.png",
+  info :"Agentic AI to emerge within the next two to three years — with capabilities that go beyond tasks like summarising information to actually taking actions on behalf of individualsRather than presenting users with options, they will be able to choose the option that is optimal for the user if given permission."
+}]
 
 function News() {
   return (
@@ -56,8 +61,14 @@ function News() {
       </div>
       <div className='trends'>
       <span className='headtrends'>Technology trends for 2025</span>
-      <br/>
-        <Trends/>
+      <br/>{ trends.map((trend, ind) => (
+        <Trends
+          key={ind}
+          name={trend.name}
+          imgurl={trend.imgurl}
+          info={trend.info}
+          />
+      ))}
       </div>
       </div>
     </div>

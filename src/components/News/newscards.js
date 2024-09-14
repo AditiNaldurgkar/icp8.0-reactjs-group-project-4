@@ -19,10 +19,13 @@ function Display({ headline, caption, url ,url2}) {
     </div>
   );
 }
-function Trends(){
+
+function Trends({name,imgurl,info}){
   return(
-    <div>
-      hello
+    <div className='trend-card'>
+      <img src={imgurl}></img>
+      <span>{name}</span>
+      <p>{info}</p>
     </div>
   )
 }
