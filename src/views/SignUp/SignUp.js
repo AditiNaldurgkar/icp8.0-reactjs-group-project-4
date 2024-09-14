@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import toast, { Toaster } from 'react-hot-toast';
 import './SignUp.css';
 import IMG from './Signup4.png';
+import Navbar from './../../components/Navbar/Navbar'
+import Footer from './../../components/Footer/Footer'
 
 const Signup = () => {
     const [role, setRole] = useState('Job Seeker');
@@ -70,6 +72,8 @@ const Signup = () => {
         };
 
         return (
+            <>
+            <Navbar/>
             <div className="signup-main-container">
                 <div className="left-side">
                 <div className="welcome-text">
@@ -193,6 +197,8 @@ const Signup = () => {
     
           </div>
         </div>
+        <Footer/>
+        </>
         );
     };
     
