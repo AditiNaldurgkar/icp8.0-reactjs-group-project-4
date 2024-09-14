@@ -66,12 +66,13 @@
     display: flex;
     flex-direction: column;
     cursor: pointer;
+    margin-top: 15px;
   }
   .add-info{
     margin: 10px;
   }
   .icont{
-    height: 50px;
+    height: 55px;
     margin: 5px;
     width: 100px;
     display: block;
