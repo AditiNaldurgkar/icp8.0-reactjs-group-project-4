@@ -22,7 +22,7 @@
 
 .right-container {
     flex: 1;
-    background-color: #dab5e5;
+    background-color: #6969ffc7;
     border-radius: 20px;
     max-width: 50%;
     display: flex;
@@ -57,7 +57,7 @@
 .text-feild {
     font-size: 1.2vw;
     font-weight: bold;
-    margin: 1rem 0;
+    margin: 1rem 0.8rem;;
 }
 
 .input-with-icon {
@@ -68,19 +68,19 @@
 
 .input-with-icon img.icon {
     position: absolute;
-    left: 10px;
+    left: 15px;
     width: 2vw;
     height: 2vw;
 }
 
 .email, .passw {
     font-size: 1vw;
-    margin: 1rem 0;
-    border-radius: 20px;
+    margin: 1rem 1.5rem;
+    border-radius: 3px;
     width: calc(100% - 60px);
     height: 2.5rem;
     border: none;
-    border-bottom: 1px solid purple;
+    border-bottom: 1px solid #6969ffc7;
     padding: 0 2rem;
 }
 
@@ -90,9 +90,9 @@
     max-width: 280px;
     height: 3rem;
     border-radius: 30px;
-    background-color: #dab5e5;
+    background-color: #6969ffc7;
     color: white;
-    border: 0.5px solid rgb(79, 7, 79);
+    border: 0.5px solid #6969ffc7;
     font-weight: bold;
     padding: 0.5rem;
     margin-top: 1rem;
@@ -102,6 +102,7 @@
 .forgot-text {
     text-align: center;
     margin: 0.5rem 0;
+    color: #6969ffc7;
 }
 
 .last-line {
@@ -114,7 +115,6 @@ input:focus, button:focus {
 }
 
 @supports (display: grid) {
-    /* Optional: CSS Grid for better layout control in modern browsers */
     .login-main-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -128,5 +128,35 @@ input:focus, button:focus {
     {
         width: 150px;
         height: 40px;
+    }
+}
+@media screen and (max-width:500px)
+{
+    .login-btn
+    {
+        width: 100px;
+        height: 30px;
+        margin-top: 0.5rem;
+        margin-left: 1rem;
+    }
+    .text-feild
+    {
+        margin: 0.5rem 1.5rem;
+        font-size: 2.0vw;
+    }
+    .input-with-icon img.icon {
+        position: absolute;
+        left: 30px;
+        width: 2vw;
+        height: 2vw;
+    }
+    .forgot-text 
+    {
+        font-size: 2.0vw;
+    }
+    .last-line {
+        text-align: center;
+        margin-top: 0.5rem;
+        font-size: 2.0vw;
     }
 }
