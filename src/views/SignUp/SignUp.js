@@ -69,63 +69,131 @@ const Signup = () => {
 
         };
 
-    return (
-        
-        <div className="signup-container">
-
-       <img src={IMG} className="image" />
-    <div className="form-group">
-             <label>Select Role</label>
-             <select value={role} onChange={(e) => setRole(e.target.value)}>
-                 <option value="Job Seeker">Job Seeker</option>
-                 <option value="recruiter">Recruiter</option>
-             </select>
-         </div>
-         <div className="form-group">
-             <label>Username </label>
-             <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} />
-         </div>
-         <div className="form-group">
-             <label>Email</label>
-             <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
-         </div>
-         {role === 'recruiter' && (
-             <>
-                 <div className="form-group">
-                     <label>Job Role Vacancy</label>
-                     <input type="text" value={jobRole} onChange={(e) => setJobRole(e.target.value)} />
-                 </div>
-                 <div className="form-group">
-                     <label>Company Name</label>
-                     <input type="text" value={companyName} onChange={(e) => setCompanyName(e.target.value)} />
-                 </div>
-             </>
-         )}
-         {role === 'Job Seeker' && (
-             <div className="form-group">
-                 <label>Job Role Needed</label>
-                 <input type="text" value={jobRole} onChange={(e) => setJobRole(e.target.value)} />
-             </div>
-         )}
-         <div className="form-group">
-             <label>Password 🔒</label>
-             <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
-         </div>
-         <div className="form-group">
-             <label>Confirm Password 🔒</label>
-             <input type="password" value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} />
-         </div>
-         <button onClick={handleSignup} className="btn-signup">Register</button>
-
-         
-         <h2>Existing User? <button className='Navigate-btn'>Login</button></h2>
-
-
-     <Toaster />
-     
-     </div>
-     
- );
-};
-
-export default Signup;
+        return (
+            <div className="signup-main-container">
+                <div className="left-side">
+                <div className="welcome-text">
+                <h1 className="linear-text">
+                        Register Now ✨
+                    </h1>
+                    </div>
+                <form onSubmit={handleSignup}>
+                    <div className="group-form">
+                    <div className='field-text'>
+                    <label className="field-text">Select Role</label>
+    
+                    
+                        <select className="select" value={role} onChange={(e) => setRole(e.target.value)}>
+                            <option   value="Job Seeker">Job Seeker</option>
+                            <option   value="Recruiter">Recruiter</option>
+                        </select>
+                        </div>
+                    </div>
+    
+                    <div className="group-form">
+                        <label  className="text-feild">Username</label>
+                        
+                        <input
+                            type="text"
+                            className="Information" 
+                            value={username}
+                            onChange={(e) => setUsername(e.target.value)}
+                            required
+                        />
+                        
+                    </div>
+                    <div className="group-form">
+                        <label  className="text-feild">Email</label>
+                        
+                        <input
+                            type="email"
+                            className="Information" 
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                            required
+                        />
+                        
+                    </div>
+                    {role === 'Recruiter' && (
+                        <>
+                            <div className="group-form">
+                                <label  className="text-feild">Job Role Vacancy</label>
+                                
+                                <input
+                                    type="text"
+                                    className="Information" 
+                                    value={jobRole}
+                                    onChange={(e) => setJobRole(e.target.value)}
+                                    required
+                                />
+                            
+                            </div>
+                            <div className="group-form">
+                                <label  className="text-feild">Company Name</label>
+                              
+                                <input
+                                    type="text"
+                                    className="Information" 
+                                    value={companyName}
+                                    onChange={(e) => setCompanyName(e.target.value)}
+                                    required
+                                />
+                                
+                            </div>
+                        </>
+                    )}
+                    {role === 'Job Seeker' && (
+                        <div className="group-form">
+                            <label  className="text-feild">Job Role Needed</label>
+                           
+                            <input
+                                type="text"
+                                className="Information" 
+                                value={jobRole}
+                                onChange={(e) => setJobRole(e.target.value)}
+                            />
+                        
+                        </div>
+                    )}
+                    <div className="group-form">
+                        <label  className="text-feild">Password 🔒</label>  
+                                                                              
+                        <input
+                            type="password"
+                            className="Information" 
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)}
+                            required
+                        />
+                        
+                   </div>
+                    <div className="group-form">
+                        <label  className="text-feild">Confirm Password 🔒</label>
+                      
+                        <input
+                            type="password"
+                            className="Information" 
+                            value={confirmPassword}
+                            onChange={(e) => setConfirmPassword(e.target.value)}
+                            required
+                        />
+                      
+                    </div>
+                    <button type="submit" className="signup-btn">Register</button>
+                    <h2>Existing User? <button className='signup-btn' onClick={() => window.location.href = '/Login'}>Login</button></h2>
+                </form>
+                <Toaster />
+                
+            </div>
+            
+            <div className="right-side">
+            <img src={IMG} className="signup-img" />
+        </div>
+        <div className='Reflection'>
+    
+          </div>
+        </div>
+        );
+    };
+    
+    export default Signup;
