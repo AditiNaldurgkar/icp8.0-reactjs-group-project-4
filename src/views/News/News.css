@@ -20,13 +20,14 @@
 }
 .trends{
     background-color: whitesmoke;
-        height: 800px;
+        height: fit-content;
         border: 1px solid gray;
         margin: 10px;
-        border-radius: 15px;
+        border-radius: 10px;
         position: relative;
         padding: 10px;
         margin-left: 4%;
+        
 }
 .headtrends{
     position: absolute;
@@ -39,4 +40,9 @@
     margin-left: 18%;
     color: #9f9ffa;
     margin-bottom: 5px;
+}
+.trendcardcontainer{
+    display: flex;
+    margin-top: 10px;
+    padding: 10px;
 }
