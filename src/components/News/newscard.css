@@ -7,6 +7,7 @@
     height: 18px;
     border:none;
     margin: 10px;
+    margin-bottom: 10px;
     padding: 10px 25px;
     border-radius: 2px;
 
@@ -17,7 +18,7 @@
 }
 .newscard {
     width: 360px;
-    height: 350px;
+    height: 360px;
     border-radius: 8px;
     background-color: white;
     display: flex;
@@ -45,6 +46,7 @@
     font-size: 1.3rem;
     margin-top: 5px;
     margin: 10px;
+    margin-left: 5%;
     text-align: start;
     font-weight: bold; 
   }
@@ -52,6 +54,7 @@
     color: black;
     font-size: 17px;
     margin: 5px;
+    margin-left: 5%;
     text-align: start;
     font-family: Arial, Helvetica, sans-serif;
   }
@@ -78,7 +81,7 @@
     margin: 5px;
     width: 100px;
     display: block;
-    margin: 3px auto;
+    margin: 5px auto;
   }
   .trendhead{
     margin: 2px;
