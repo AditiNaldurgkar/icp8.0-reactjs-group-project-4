@@ -58,8 +58,10 @@
   .trend-card{
     height: fit-content;
     background-color: white;
+    width: 300px;
     margin: 10px;
     padding: 5px;
+    margin-left: 50px;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
