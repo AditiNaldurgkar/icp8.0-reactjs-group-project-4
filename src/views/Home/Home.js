@@ -26,10 +26,6 @@ function Home() {
           <p className='intro-paragraph'>
             Discover a wide range of job opportunities and resources designed to help you achieve your career goals. Whether you’re looking for a new position or want to enhance your skills, we provide tools and guidance to support your journey. Start exploring today and take the first step towards a brighter future.
           </p>
-          <div className='buttons'>
-            <button type='button'>Login</button>
-            <button type='button'>Sign up</button>
-          </div>
         </div>
 
         <div className='content-img'>
