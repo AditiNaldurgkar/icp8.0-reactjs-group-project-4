@@ -6,7 +6,7 @@ body {
 .content-container {
   display: flex; 
   align-items: center; 
-  padding: 16px;
+  padding: 16 0px;
 }
 
 .content-img {
