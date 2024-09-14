@@ -42,11 +42,6 @@ label {
   font-size: 14px;
 }
 
-textarea {
-  resize: vertical;
-  height: 100px;
-}
-
 .inline-label {
   display: flex;
   align-items: center;
