@@ -67,6 +67,9 @@
     cursor: pointer;
     margin-top: 20px;
   }
+  .trend-card:hover{
+    transform: scaleY(1.1);
+  }
   .add-info{
     margin: 10px;
   }
