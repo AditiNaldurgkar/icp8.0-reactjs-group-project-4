@@ -21,7 +21,7 @@ form {
 }
 
 .profile {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 50%;
     /* height: 80vh; */
     padding: .2vw;
@@ -93,9 +93,13 @@ input[type="radio"] {
     border-radius: 50px;
     border: none;
     font-size: 1.3vw;
-    background-color: #7676FA;
+    background-color: #6969ffc7;
     color: whitesmoke;
     cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #3757ca;
 }
 
 .btn-holder {
