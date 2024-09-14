@@ -3,7 +3,9 @@ import 'Profilecard.css';
 
 const Profilecard=()=>{
     return(
-        
+        <div className="note-card">
+            
+        </div>
     );
 }
 

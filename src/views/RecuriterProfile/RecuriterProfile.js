@@ -8,15 +8,14 @@ const RecuriterProfile = () => {
 
     return (
         <>
-
             <div className="main">
                 <Sidebar />
                 <div className="frm-heading">
-                    <p className="liner-text">Profile settings</p>
+                    <p className="liner-text main-heading">Profile settings</p>
                     <p className="sub-heading">You can set perferref display name,create your profile URL and Manage other personal settings.</p>
                 </div>
 
-                <div className="form">
+                <div className="frm">
                     <Form />
                 </div>
 

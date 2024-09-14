@@ -66,7 +66,7 @@ const Form = () => {
 
     return (
         <>
-            <form onSubmit>
+            <form className="frm-main">
                 <div className="frm-holder">
 
                     <div className="profile">
@@ -125,11 +125,11 @@ const Form = () => {
 
                         
                         <div className="input-gup">
-                            <label for="textarea">Company Descriptions </label>
-                            <textarea
-                                cols={10}
-                                rows={5}
-                                id="textarea"
+                            <label for="text">Company Descriptions </label>
+                            <textarea 
+                                // rows={4}
+                                className="textArea"
+                                id="text"
                                 placeholder="Enter Details Of Company..."
                                 required
                                 onChange={(e) => { setDecriptions(e.target.value) }}>
