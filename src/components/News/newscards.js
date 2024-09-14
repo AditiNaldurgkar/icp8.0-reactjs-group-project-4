@@ -1,5 +1,6 @@
 import React from 'react';
 import "./newscard.css"
+import { useState } from 'react';
 
 
 
@@ -19,12 +20,22 @@ function Display({ headline, caption, url ,url2}) {
     </div>
   );
 }
-function Trends(){
-  return(
-    <div>
-      hello
+
+function Trends({ name, imgurl, info }) {
+  const [isVisible, setIsVisible] = useState(false);
+
+  const toggleDisplay = () => {
+    setIsVisible(prevState => !prevState);
+  };
+
+  return (
+    <div className='trend-card' onClick={toggleDisplay}>
+      <img src={imgurl} className='icont' alt="trend-icon" />
+      <div className='trendhead'>{name}</div>
+      {isVisible && <p className='add-info'><hr/>{info}</p>}
+     
     </div>
-  )
+  );
 }
 export {Trends};
 export default Display;

@@ -1,19 +1,20 @@
-.maindiv{
+.maindivn{
     margin: 0px;
     padding: 0px;
     background-color: whitesmoke;
    
 }
-.heading{
+.headingn{
     text-align: center;
-    color: #7676FA;
-    font-size: 100px;
-
+    font-size: 80px;
+    background:linear-gradient(to left,#002aff,#0ce3ff);
+    color: transparent;
+    background-clip: text;
 }
-.mainc{
+.maincn{
 display: flex;
 }
-.container{
+.containern{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -29,12 +30,14 @@ display: flex;
     margin: 10px;
 border-radius: 15px;
 position: relative;
+padding: 10px;
 }
 .headtrends{
     position: absolute;
     padding-left: 18%;
-    margin-top: 5px;
+    margin-top: 10px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: large;
+    margin-bottom: 5px;
 }
