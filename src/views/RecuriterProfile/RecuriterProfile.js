@@ -16,7 +16,7 @@ const RecuriterProfile = () => {
                     <p className="sub-heading">You can set perferref display name,create your profile URL and Manage other personal settings.</p>
                 </div>
 
-                <div className="form">
+                <div className="frm">
                     <Form />
                 </div>
 

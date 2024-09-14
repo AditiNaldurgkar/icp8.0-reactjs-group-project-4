@@ -7,8 +7,8 @@
 
 .main {
     width: 100%;
-    /* border: 3px solid red; */
-    height: 100vh;
+    border: 3px solid red;
+    /* height: 100vh; */
     /* background-color: whitesmoke; */
     /* margin: 1vw; */
 }
@@ -32,8 +32,18 @@
     font-size: 1.2vw;
 }
 
-.form {
-    /* width: 100%; */
-    margin-bottom: 1vw;
+.frm {
+    width: 100%;
+    /* margin-bottom: 0; */
+    margin: auto;
+    /* margin-bottom: 1vw; */
     /* border: 2px solid rgb(162, 255, 0); */
+}
+
+
+@media screen and (max-width:600px) {
+   .frm{
+        width: 100%;
+        height: 100%;
+   }
 }
