@@ -1,19 +1,19 @@
-.maindiv{
+.maindivn{
     margin: 0px;
     padding: 0px;
     background-color: whitesmoke;
    
 }
-.heading{
+.headingn{
     text-align: center;
     color: #7676FA;
     font-size: 100px;
 
 }
-.mainc{
+.maincn{
 display: flex;
 }
-.container{
+.containern{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

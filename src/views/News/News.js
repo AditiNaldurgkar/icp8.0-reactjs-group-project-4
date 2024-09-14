@@ -39,11 +39,11 @@ const newsData = [{
 
 function News() {
   return (
-    <div className="maindiv">
+    <div className="maindivn">
        <Sidebar/>
-      <h1 className="heading">News</h1>
-      <div className='mainc'>
-      <div className='container'>
+      <h1 className="headingn">News</h1>
+      <div className='maincn'>
+      <div className='containern'>
       {newsData.map((item, index) => (
         <Display
           key={index}
