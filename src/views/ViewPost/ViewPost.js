@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import "./ViewPost.css";
-import Sidebar from '../../components/Sidebar/Sidebar';
 import ViewJobCards from '../../components/ViewJobCards/ViewJobCards';
 import Footer from "./../../components/Footer/Footer";
 
@@ -21,7 +20,6 @@ function ViewPost() {
 
   return (
     <div>
-      <Sidebar />
       <div className='view-post-heading'>
         <h2>View Job Post</h2>
       </div>
