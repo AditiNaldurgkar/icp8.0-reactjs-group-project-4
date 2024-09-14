@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import "./AddPost.css"
 import toast, { Toaster } from 'react-hot-toast';
 import Sidebar from '../../components/Sidebar/Sidebar';
+import Footer from "./../../components/Footer/Footer"
 
 function Add() {
     const [jobTitle, setJobTitle] = useState("");
@@ -14,7 +15,7 @@ function Add() {
     const [companyName, setCompanyName] = useState("");
 
     const addPost = () => {
-        
+
         if (!jobTitle || !jobDescription || !employmentType || !companyName) {
             toast.error("Please fill in all required fields.");
             return;
@@ -53,9 +54,9 @@ function Add() {
         <div>
             <Sidebar />
             <div >
-            <h2 className=' add-post-heading'>Add Job Post</h2>
+                <h2 className=' add-post-heading'>Add Job Post</h2>
             </div>
-            
+
             <div className="job-post-container">
                 <div className="job-post-card">
                     <form>
@@ -85,7 +86,7 @@ function Add() {
 
                         <label>Location</label>
                         <input
-                        className='post-input'
+                            className='post-input'
                             type="text"
                             name="location"
                             value={location}
@@ -96,7 +97,7 @@ function Add() {
 
                         <label>Employment Type</label>
                         <select
-                        className='post-input'
+                            className='post-input'
                             name="employmentType"
                             value={employmentType}
                             onChange={(e) => {
@@ -115,7 +116,7 @@ function Add() {
                         <label>Salary Range</label>
                         <div className="salary-range">
                             <input
-                            className='post-input'
+                                className='post-input'
                                 type="number"
                                 name="salaryMin"
                                 value={salaryMin}
@@ -126,7 +127,7 @@ function Add() {
                             />
                             <span>-</span>
                             <input
-                            className='post-input'
+                                className='post-input'
                                 type="number"
                                 name="salaryMax"
                                 value={salaryMax}
@@ -139,7 +140,7 @@ function Add() {
 
                         <label>Application Deadline</label>
                         <input
-                        className='post-input'
+                            className='post-input'
                             type="date"
                             name="applicationDeadline"
                             value={applicationDeadline}
@@ -150,7 +151,7 @@ function Add() {
 
                         <label>Company Name</label>
                         <input
-                        className='post-input'
+                            className='post-input'
                             type="text"
                             name="companyName"
                             value={companyName}
@@ -171,10 +172,11 @@ function Add() {
             </div>
             <div className='Show'>
 
-      </div>
-        </div>    
-        
-            );
+            </div>
+            <Footer/>
+        </div>
+
+    );
 };
 
-            export default Add;
+export default Add;
