@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import "./AddPost.css"
 import toast, { Toaster } from 'react-hot-toast';
-import Sidebar from '../../components/Sidebar/Sidebar';
 import Footer from "./../../components/Footer/Footer";
 
 function Add() {
@@ -52,7 +51,6 @@ function Add() {
 
     return (
         <div>
-            <Sidebar />
             <div >
                 <h2 className=' add-post-heading'>Add Job Post</h2>
             </div>
