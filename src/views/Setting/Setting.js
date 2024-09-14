@@ -19,13 +19,13 @@ const Setting = () => {
 
  const saveaccounts =()=>{
     if(instaurl.includes("https://www.instagram.com/") && githuburl.includes("https://github.com/") && linkdinurl.includes("https://www.linkedin.com/") && facebookurl.includes("https://www.facebook.com/")){
-      toast.success("hiii")
+      toast.success("saved successfully")
       const socialAccount = {instaurl,githuburl,linkdinurl,facebookurl}
       //console.log(socialAccount)
       localStorage.setItem("SOCIALMEDIA",JSON.stringify(socialAccount))
 
     }else{
-      toast.error("umhh")
+      toast.error("please enter valid url")
     }
  }
 

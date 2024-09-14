@@ -1,0 +1,21 @@
+.img1{
+  height: 200px;
+  width: 200px;
+  left: 20px;
+  top: 20px;
+  position: absolute;
+}
+.container{
+  position:relative;
+    height:40rem;
+    width:90rem;
+    margin-right: 50px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; ;
+    margin: 20px 70px;
+    
+}
+.username{
+  color: black;
+}

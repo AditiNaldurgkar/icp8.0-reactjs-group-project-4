@@ -66,7 +66,7 @@ const Form = () => {
 
     return (
         <>
-            <form onSubmit>
+            <form className="frm-main">
                 <div className="frm-holder">
 
                     <div className="profile">
@@ -82,22 +82,22 @@ const Form = () => {
                         </input> */}
 
                         <div className="input-gup">
-                            <label for="degre">Degress Obtained</label>
+                            <label for="degre" className="input-label">Degress Obtained</label>
                             <input type="text" id="degre" className="input-field" placeholder="Enter Degree" required onChange={(e) => { setDegree(e.target.value) }} />
                         </div>
 
                         <div className="input-gup">
-                            <label for="institude">Institutions Attended</label>
+                            <label for="institude" className="input-label">Institutions Attended</label>
                             <input type="text" id="institude" className="input-field" placeholder="Enter Institutions Attended" required onChange={(e) => { setInstitude(e.target.value) }} />
                         </div>
 
-                        <div className="input-gup">
-                            <label for="exp">Recuriter's Exp.</label>
+                        <div className="input-gup" >
+                            <label for="exp" className="input-label">Recuriter's Exp.</label>
                             <input type="number" id="exp" className="input-field" placeholder="Enter Recuriter Experiance" required onChange={(e) => { setExperiance(e.target.value) }} />
                         </div>
 
                         <div className="input-gup">
-                            <label for="link">LinkedIn Profile</label>
+                            <label for="link" className="input-label">LinkedIn Profile</label>
                             <input
                                 type="text"
                                 id="link"
@@ -108,7 +108,7 @@ const Form = () => {
                         </div>
 
                         <div className="input-gup">
-                            <label for="skill">Enter Key Skills</label>
+                            <label for="skill" className="input-label">Enter Key Skills</label>
                             <input
                                 type="text"
                                 id="skill"
@@ -119,17 +119,17 @@ const Form = () => {
                         </div>
 
                         <div className="input-gup">
-                            <label for="exper">Expertise</label>
+                            <label for="exper" className="input-label">Expertise</label>
                             <input type="text" id="exper" className="input-field" required placeholder="Expertise" onChange={(e) => { setExpertise(e.target.value) }} />
                         </div>
 
                         
                         <div className="input-gup">
-                            <label for="textarea">Company Descriptions </label>
-                            <textarea
-                                cols={10}
-                                rows={5}
-                                id="textarea"
+                            <label for="text" className="input-label">Company Descriptions </label>
+                            <textarea 
+                                // rows={4}
+                                className="textArea"
+                                id="text"
                                 placeholder="Enter Details Of Company..."
                                 required
                                 onChange={(e) => { setDecriptions(e.target.value) }}>
@@ -142,7 +142,7 @@ const Form = () => {
                     <div className="right">
 
                         <div className="input-gup">
-                            <label for="name">Full Name</label>
+                            <label for="name" className="input-label">Full Name</label>
                             <input type="text" id="name"
                                 className="input-field"
                                 placeholder="e.g John Hardi"
@@ -151,7 +151,7 @@ const Form = () => {
                         </div>
 
                         <div className="input-gup">
-                            <label for="email">Email</label>
+                            <label for="email" className="input-label">Email</label>
                             <input
                                 type="email"
                                 id="email"
@@ -162,7 +162,7 @@ const Form = () => {
                         </div>
 
                         <div className="input-gup">
-                            <label>Selected Gender </label>
+                            <label className="input-label">Selected Gender </label>
 
                             <input type="radio" name="gender" value="male" 
                             onChange={(e) => {
@@ -187,7 +187,7 @@ const Form = () => {
                         </div>
 
                         <div className="input-gup">
-                            <label for="number">Mobile No.</label>
+                            <label for="number" className="input-label">Mobile No.</label>
                             <input
                                 type="number"
                                 id="number"
@@ -198,13 +198,13 @@ const Form = () => {
                         </div>
 
                         <div className="input-gup">
-                            <label for="company">Company Name</label>
+                            <label for="company" className="input-label">Company Name</label>
                             <input type="text" id="company" className="input-field" placeholder="Enter Company Name" required onChange={(e) => { setCompany(e.target.value) }} />
                         </div>
 
 
                         <div className="input-gup">
-                            <label for="job">Job Title</label>
+                            <label for="job" className="input-label">Job Title</label>
                             <input
                                 type="text"
                                 id="job"
