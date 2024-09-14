@@ -100,7 +100,9 @@ const Login=()=>
 			<img src={IMG} className="image" />
 		</div>
       </div>
-	  
+	  <div className="show">
+	  </div>
+	  <Footer/>
     </>
   )
 }
