@@ -89,7 +89,7 @@ input[type="radio"] {
     padding: 1vw;
     display: block;
     /* margin: auto; */
-    border-radius: 50px;
+    border-radius: 4px;
     border: none;
     font-size: 1.3vw;
     background-color: #6969ffc7;
