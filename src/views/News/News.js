@@ -93,6 +93,10 @@ function News() {
       ))}
       </div>
       </div>
+      <div>
+        <h3 className='heading-skills'>Skills in demand</h3>
+      </div>
+
       </div>
     </div>
   );
