@@ -50,9 +50,9 @@ label {
 
 .input-gup {
     /* display: block; */
-    width: 150%;
+    width: 90%;
     margin: 1vw;
-    /* border: 1px solid rgb(238, 255, 0); */
+    border: 1px solid rgb(238, 255, 0);
 }
 
 input[type="radio"] {
@@ -75,7 +75,7 @@ input[type="radio"] {
 
 .input-field,
 #text {
-    width: 50%;
+    width: 100%;
     padding: .2vw;
     border-radius: 5px;
     font-size: 1.2vw;

@@ -128,7 +128,7 @@ const Form = () => {
                             <label for="text">Company Descriptions </label>
                             <textarea 
                                 rows={4}
-                                className="resize"
+                                className="textArea"
                                 id="text"
                                 placeholder="Enter Details Of Company..."
                                 required
