@@ -23,9 +23,9 @@ function Display({ headline, caption, url ,url2}) {
 function Trends({name,imgurl,info}){
   return(
     <div className='trend-card'>
-      <img src={imgurl}></img>
-      <span>{name}</span>
-      <p>{info}</p>
+      <img src={imgurl} className='icont'></img>
+      <div className='trendhead'>{name}</div>
+      <p className='add-info'>{info}</p>
     </div>
   )
 }
