@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Sidebar from '../../components/Sidebar/Sidebar'
-import './Search.css'
+import './search.css'
 import { jobNames } from '../../config/searchData'
 import axios from 'axios'
 import toast from 'react-hot-toast'
