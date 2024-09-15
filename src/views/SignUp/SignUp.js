@@ -98,6 +98,7 @@ const Signup = () => {
                         <label  className="text-feild">Username</label>
                         
                         <input
+                        placeholder='Enter your username'
                             type="text"
                             className="Information" 
                             value={username}
@@ -110,6 +111,7 @@ const Signup = () => {
                         <label  className="text-feild">Email</label>
                         
                         <input
+                        placeholder='Enter your email'
                             type="email"
                             className="Information" 
                             value={email}
@@ -124,6 +126,7 @@ const Signup = () => {
                                 <label  className="text-feild">Job Role Vacancy</label>
                                 
                                 <input
+                                placeholder='Enter job role vacancy'
                                     type="text"
                                     className="Information" 
                                     value={jobRole}
@@ -136,6 +139,7 @@ const Signup = () => {
                                 <label  className="text-feild">Company Name</label>
                               
                                 <input
+                                placeholder='Enter your company name'
                                     type="text"
                                     className="Information" 
                                     value={companyName}
@@ -151,6 +155,7 @@ const Signup = () => {
                             <label  className="text-feild">Job Role Needed</label>
                            
                             <input
+                            placeholder='Enter job role need'
                                 type="text"
                                 className="Information" 
                                 value={jobRole}
@@ -163,6 +168,7 @@ const Signup = () => {
                         <label  className="text-feild">Password 🔒</label>  
                                                                               
                         <input
+                        placeholder='Enter the password'
                             type="password"
                             className="Information" 
                             value={password}
@@ -175,6 +181,7 @@ const Signup = () => {
                         <label  className="text-feild">Confirm Password 🔒</label>
                       
                         <input
+                        placeholder='Re-enter the password'
                             type="password"
                             className="Information" 
                             value={confirmPassword}
