@@ -13,9 +13,10 @@ const Footer = () => {
         <div className="footer-column">
           <h3 className="footer-heading">Follow Us</h3>
           <div className="footer-social-media">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="footer-link">Facebook</a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="footer-link">Twitter</a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="footer-link">Instagram</a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="footer-link"><i className="ri-facebook-circle-fill"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="footer-link"><i className="ri-twitter-fill"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="footer-link"><i className="ri-instagram-fill"></i></a>
+            
           </div>
         </div>
         <div className="footer-column">

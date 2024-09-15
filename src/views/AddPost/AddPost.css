@@ -8,7 +8,6 @@
   background-clip: text;
 }
 
-
 .job-post-container {
   display: flex;
   justify-content: center;
@@ -23,6 +22,7 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.877);
   max-width: 600px;
   width: 100%;
+  background-color: aliceblue;
 }
 
 label {
@@ -40,6 +40,7 @@ label {
   border-radius: 5px;
   box-sizing: border-box;
   font-size: 14px;
+  resize: none;
 }
 
 .inline-label {
@@ -80,7 +81,6 @@ label {
   background-color: #8484f4e1;
   color: #333;
 }
-
 
 @media screen and (max-width:500px) {
   .job-post-container {
