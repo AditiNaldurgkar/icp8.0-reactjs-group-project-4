@@ -93,8 +93,7 @@ function News() {
       ))}
       </div>
       <div className='trends'>
-      <span className='headtrends'>Technology trends for 2025</span>
-      <br/><br/>
+      <h3 className='headtrends'>Technology trends for 2025</h3>
       <div className='trendcardcontainer'>
       { trends.map((trend, ind) => (
         <Trends
