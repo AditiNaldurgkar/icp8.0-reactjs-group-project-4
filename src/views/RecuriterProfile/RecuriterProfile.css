@@ -44,6 +44,16 @@
 @media screen and (max-width:600px) {
     
     .frm-heading {
-        margin-left: 18vw;
+        margin-left: 10vw;
+    }
+
+    .main-heading{
+        font-size: 5vw;
+        margin-top: 1vh;
+    }
+
+    .sub-heading{
+        font-size: 2vw;
+        width: 128%;
     }
 }

@@ -136,13 +136,16 @@ input[type="radio"] {
 
     
     .frm-holder {
-        width: 80%;
+        width: 100%;
        flex-direction: column;
+       align-items: center;
     }
 
     .input-gup{
         width: 100%;
-
+        /* padding: 1vw; */
+        margin: auto;
+        margin-top:2vw ;
         /* border: 1px solid red; */
     }
 
@@ -152,7 +155,8 @@ input[type="radio"] {
 
     .input-field{
         padding: 1vw;
-        width: 90%;
+        font-size: 2vw;
+        width: 95%;
     }
 
     .btn{
@@ -162,7 +166,13 @@ input[type="radio"] {
     
 
     input[type="radio"] {
-        height: 1vw;
+       
+        font-size: 2vw;
+    }
+
+    #text{
+        /* font-size: 2vw; */
+        width: 94%;
     }
 
 }
