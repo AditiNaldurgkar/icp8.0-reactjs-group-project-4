@@ -138,3 +138,37 @@
     }
 
   }
+  @media screen and (max-width:420px ){
+    .trend-card{
+      height: 100px;
+      width:200px;
+    }
+    .newscard{
+      width: 300px;
+      height: 310px;
+      margin: 25px;
+    }
+    .cardimg{
+      height: 135px;
+    }
+    .trendhead{
+      font-weight: bold;
+    }
+    .trend-card{
+      height: 120px;
+      width: 220px;
+      margin: 20px;
+    }
+    .title{
+      font-size: 1.2em;
+      text-align: center;
+    }
+    .caption{
+      font-size: 14px;
+    }
+    .discover-button{
+      padding: 8px 22px;
+      height: 15px;
+      padding-bottom: 9px;
+    }
+  }

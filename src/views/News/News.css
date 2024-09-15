@@ -106,3 +106,20 @@
         padding: 3px;
     }
 }
+@media screen and (max-width:420px ){
+    .headingn{
+        font-size: 40px;
+    }
+    .trendcardcontainer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px;
+        padding: 3px;
+    }
+    .tech-grid {
+        display: flex;
+        flex-direction: row;
+        margin-right: 25%;
+      }
+}
