@@ -40,9 +40,9 @@ function ViewPost() {
             onRemove={handleRemove} />
         )
       })}
-      {/* <div className='Show'>
+      <div className='Show'>
 
-      </div> */}
+      </div>
     </div>
   )
 }
