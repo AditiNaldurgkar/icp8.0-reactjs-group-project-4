@@ -50,7 +50,7 @@ function Add() {
     };
 
     return (
-        <div>
+        <div className='ctnt'>
             <Sidebar />
             <div >
                 <h2 className=' add-post-heading'>Add Job Post</h2>
