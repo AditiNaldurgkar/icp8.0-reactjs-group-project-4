@@ -60,12 +60,7 @@
     align-items: center;
 }
 
-.input-with-icon img.icon {
-    position: absolute;
-    left: 10px;
-    width: 2vw;
-    height: 2vw;
-}
+
 
 .Information {
     font-size: 1vw;
@@ -199,5 +194,122 @@ select:focus {
     {
         width: 100px;
         height: 30px;
+    }
+}
+
+/* Default Styles (For large screens, 1000px and above) */
+.signup-main-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px auto;
+    border: 3px solid #000066;
+    border-radius: 30px;
+    width: 1000px;
+    height: 920px;
+    padding: 1px;
+    color: #000066;
+}
+
+.left-side {
+    flex: 1;
+    padding: 20px;
+    max-width: 70%;
+}
+
+.right-side {
+    flex: 1;
+    height: 920px;
+    background-color: #6969ffc7;
+    border-radius: 20px;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-side image {
+    max-width: 80%;
+    height: auto;
+    border-radius: 20px;
+    padding: 2px;
+}
+
+.Information {
+    font-size: 1vw;
+    margin: 1rem 1.5rem;
+    border-radius: 3px;
+    width: calc(100% - 60px);
+    height: 2.5rem;
+    border: none;
+    border-bottom: 1px solid #6969ffc7;
+    padding: 0 2rem;
+}
+
+.signup-btn {
+    font-size: 1.2vw;
+    width: 30%;
+    height: 10%;
+    border-radius: 10px;
+    background-color: #6969ffc7;
+    color: white;
+    border: 0.5px solid #6969ffc7;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Media Query for Medium Devices (Tablets, 600px - 999px) */
+@media (max-width: 999px) {
+    .signup-main-container {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .left-side, .right-side {
+        max-width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .Information {
+        font-size: 1.2rem;
+        width: 100%;
+    }
+
+    .signup-btn {
+        font-size: 1.5rem;
+        width: 40%;
+    }
+}
+
+/* Media Query for Small Devices (Mobile, up to 599px) */
+@media (max-width: 599px) {
+    .signup-main-container {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        padding: 15px;
+        border: 2px solid #000066;
+    }
+
+    .left-side, .right-side {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .Information {
+        font-size: 1.5rem;
+        width: 100%;
+    }
+
+    .signup-btn {
+        font-size: 1.8rem;
+        width: 60%;
+        padding: 10px;
+    }
+
+    .welcome-text {
+        font-size: 20px;
     }
 }
