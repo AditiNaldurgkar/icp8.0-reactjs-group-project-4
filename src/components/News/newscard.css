@@ -75,6 +75,7 @@
   }
   .add-info{
     margin: 10px;
+    text-align: left;
   }
   .icont{
     height: 55px;
@@ -87,5 +88,6 @@
     margin: 2px;
     font-family:sans-serif;
     margin-top: 10px;
+    font-weight: bold;
     text-align: center;
   }
