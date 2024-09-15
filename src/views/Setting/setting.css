@@ -212,6 +212,8 @@
     gap: 20px;
     white-space: nowrap;
 }
- 
+.socialmedia{
+    margin-left: 0;
+}
 
 }

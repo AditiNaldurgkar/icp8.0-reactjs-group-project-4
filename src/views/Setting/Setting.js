@@ -1,12 +1,21 @@
 import React, { useEffect, useState } from 'react'
 import Sidebar from '../../components/Sidebar/Sidebar'
-import './setting.css'
+import './Setting.css'
 import BoyProfileImg from './boy-profile-pic.svg'
 import './toggle.css'
 import { Passpopup ,Profilepopup} from '../../components/popup/Popup'
 import toast from 'react-hot-toast'
 
+
+
 const Setting = () => {
+
+  useEffect(()=>{
+     if(! JSON.parse(localStorage.getItem('LOGINUSER'))){
+      toast.error("login is required...")
+       window.location.href('/')
+     }
+  },[])
 
   const [popup,setpopup] = useState(false)
   const [opration , setopration] = useState(``)
@@ -16,6 +25,9 @@ const Setting = () => {
   const [instaurl,setinstaurl] = useState("")
   const [linkdinurl,setlinkdinurl] = useState("")
   const [facebookurl,setfacebookurl] = useState("")
+  
+  const USER =  JSON.parse(localStorage.getItem("LOGINUSER"))
+
 
  const saveaccounts =()=>{
     if(instaurl.includes("https://www.instagram.com/") && githuburl.includes("https://github.com/") && linkdinurl.includes("https://www.linkedin.com/") && facebookurl.includes("https://www.facebook.com/")){
@@ -40,8 +52,8 @@ const Setting = () => {
              <img src={BoyProfileImg}></img>
           </span>
         <span className='user-info'>
-             <div>Sarthak Navale<i class="ri-arrow-right-s-line"></i></div>
-             <div className='setting-user-name'>@sarthak</div>
+             <div>{USER.email}<i class="ri-arrow-right-s-line"></i></div>
+             <div className='setting-user-name'>@{USER.username}</div>
         </span>
       </div>
 
@@ -84,10 +96,10 @@ const Setting = () => {
       <div className='setting-box'>
            <span className='setting-heading'>link social media</span>
            <div className='user-set-box socialmedia'>
-              <span><i class="ri-github-fill"></i> <input type='text' className='seting-in' value={githuburl}  onChange={(e)=>setgithuburl(e.target.value)}></input></span> 
-              <span><i class="ri-linkedin-box-fill"></i> <input type='text' className='seting-in' value={linkdinurl}  onChange={(e)=>setlinkdinurl(e.target.value)}></input></span>
-              <span><i class="ri-instagram-fill"></i> <input type='text' className='seting-in' value={instaurl} onChange={(e)=>setinstaurl(e.target.value)}></input></span> 
-              <span><i class="ri-facebook-box-fill"></i> <input type='text' className='seting-in' value={facebookurl} onChange={(e)=>setfacebookurl(e.target.value)}></input></span>    
+              <span><i class="ri-github-fill"></i> <input type='text' className='seting-in' value={githuburl} placeholder='enter your github profile url'  onChange={(e)=>setgithuburl(e.target.value)}></input></span> 
+              <span><i class="ri-linkedin-box-fill"></i> <input type='text' className='seting-in' value={linkdinurl} placeholder='enter your linkdin profile url' onChange={(e)=>setlinkdinurl(e.target.value)}></input></span>
+              <span><i class="ri-instagram-fill"></i> <input type='text' className='seting-in' value={instaurl} placeholder='enter your instagram profile url' onChange={(e)=>setinstaurl(e.target.value)}></input></span> 
+              <span><i class="ri-facebook-box-fill"></i> <input type='text' className='seting-in' value={facebookurl} placeholder='enter your facebook profile url' onChange={(e)=>setfacebookurl(e.target.value)}></input></span>    
 
            </div>
            <div className='save-btn-div'>
@@ -96,11 +108,15 @@ const Setting = () => {
       </div>
     
       <div className='setting-box'>
-            <span className='log-out'><i class="ri-arrow-left-fill"></i> log out</span>
+            <span className='log-out' onClick={()=>{
+              window.location.href="/"
+               localStorage.removeItem("LOGINUSER")
+
+            }}><i class="ri-arrow-left-fill"></i> log out</span>
       </div>
 
           {popup ? <div className='overlay'>
-              { opration === "chng-passs" ? <Passpopup/> : <Profilepopup/>}
+              { opration === "chng-passs" ? <Passpopup user={USER} popUp={setpopup}/> : <Profilepopup user={USER} popUp={setpopup}/>}
         <span className='close-popup' onClick={()=>{setpopup(false)}}><i class="ri-close-line"></i></span>
         </div>:null}
         <div className='Show'></div>

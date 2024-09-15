@@ -1,5 +1,5 @@
 import React from 'react'
-import './jobcard.css'
+import './Jobcard.css'
 import { Link } from 'react-router-dom'
 
 const Jobcard = ({jobInfo}) => {
