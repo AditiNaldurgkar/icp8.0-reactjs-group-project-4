@@ -203,6 +203,15 @@ h3 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+.news-title{
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.news-des{
+  text-align: left;
+}
+
 .view-news-button:hover {
   background-color: #4444ed;
 }
@@ -216,6 +225,15 @@ h3 {
 .feedback-section {
   padding: 2rem;
   margin-right: 50px;
+}
+
+.fb-name{
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.fb-des{
+  text-align: left;
 }
 
 .feedback-list {

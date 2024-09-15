@@ -21,7 +21,7 @@ function Home() {
       <div className='main'>
         <div className='content-container'>
           <div className='content'>
-            <h1 className='liner-text'>Empower Your Future -</h1>
+            <h1 className='liner-text'>Empower Your Future </h1>
             <h4>Explore Jobs, Apply, and Advance</h4>
             <p className='intro-paragraph'>
               Discover a wide range of job opportunities and resources designed to help you achieve your career goals. Whether you’re looking for a new position or want to enhance your skills, we provide tools and guidance to support your journey. Start exploring today and take the first step towards a brighter future.
@@ -64,8 +64,8 @@ function Home() {
           <div className='news-list'>
             {newsArticles.map((news, index) => (
               <article key={index} className='news-item'>
-                <h4>{news.title}</h4>
-                <p>{news.description}</p>
+                <h4 className='news-title'>{news.title}</h4>
+                <p className='news-des'>{news.description}</p>
                 <span className='news-date'>{news.date}</span>
               </article>
             ))}
@@ -77,8 +77,8 @@ function Home() {
           <div className='feedback-list'>
             {feedbacks.map((feedback, index) => (
               <div key={index} className='feedback-item'>
-                <h4>{feedback.name}</h4>
-                <p>{feedback.comment}</p>
+                <h4 fb-name>{feedback.name}</h4>
+                <p fb-des>{feedback.comment}</p>
                 <div className='rating'>
                   {feedback.rating}
                 </div>
