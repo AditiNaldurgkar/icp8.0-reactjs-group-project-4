@@ -91,3 +91,16 @@
     font-weight: bold;
     text-align: center;
   }
+  @media screen and (min-width: 830px) and (max-width: 950px) {
+    .trendhead{
+      font-weight: 500;
+    }
+    .newscard{
+      width: 330px;
+      height: 330px;
+      margin: 10px;
+    }
+    .cardimg{
+      height: 150px;
+    }
+  }
