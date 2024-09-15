@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import './Login.css'
 import userimg from './user.png'
 import passwordimg from './padlock.png'
@@ -21,6 +21,8 @@ const Login=()=>
 		{
               toast.success("Login succesfully !")
 			  localStorage.setItem("LOGINUSER" , JSON.stringify({...user,index}));
+			  const date= new Date().getDate()
+			  localStorage.setItem("storedate",date)
 			  navigate("/search")
 		}
 		else
@@ -29,7 +31,22 @@ const Login=()=>
 		}
 	   }) 	   
       };
+	  const autologIn=()=>{
+		const LOGINUSER =JSON.parse(localStorage.getItem("LOGINUSER"))|| [];
+		let currentDate = new Date().getDate()
+		
+		 if(LOGINUSER){
+			let storedate=localStorage.getItem("storedate");
+		  let  sessionTime = Math.abs(currentDate-storedate)
+					   if(sessionTime<=1){
+						toast.success("Try to auto login")
+						navigate("/search")
 
+					}
+		 }
+		
+		}
+		autologIn();
   return (
     <>
 	<Navbar/>
