@@ -59,7 +59,7 @@
     font-family: Arial, Helvetica, sans-serif;
   }
   .trend-card{
-    height: fit-content;
+    height: 150px;
     background-color: white;
     width: 300px;
     margin: 10px;
@@ -103,4 +103,38 @@
     .cardimg{
       height: 150px;
     }
+    .trend-card{
+      margin-top: 5px;
+      height: 160px;
+    }
+  }
+  @media screen and (min-width: 680px) and (max-width: 830px){
+    .newscard{
+      width: 300px;
+      height: 310px;
+      margin: 10px;
+    }
+    .cardimg{
+      height: 135px;
+    }
+    .trendhead{
+      font-weight: bold;
+    }
+    .trend-card{
+      height: 120px;
+      width: 220px;
+    }
+    .title{
+      font-size: 1.2em;
+      text-align: center;
+    }
+    .caption{
+      font-size: 14px;
+    }
+    .discover-button{
+      padding: 8px 22px;
+      height: 15px;
+      padding-bottom: 9px;
+    }
+
   }
