@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import "./Popup.css"
+import "./popup.css"
 import toast from 'react-hot-toast'
 
 
