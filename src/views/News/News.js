@@ -68,10 +68,10 @@ const skills=[
   {name:"Cybersecurity",logo:"https://cdn-icons-png.flaticon.com/128/2092/2092663.png"},
   { name:"Cloud",logo:"https://img.freepik.com/premium-photo/cloud-computing-technology-concept-futuristic-illustration-isolated-white-background_660230-76062.jpg?uid=R160163945&ga=GA1.1.1856927002.1722677193&semt=ais_hybrid"},
   {name :"Blockchain" ,logo:"https://cdn-icons-png.flaticon.com/128/2152/2152539.png"},
-  {name:"Leadership",logo:""},
-  {name :"Communication",logo:""},
-  {name:"Problem solving",logo:""},
-  {name:"UI/UX",logo:""},
+  {name:"Leadership",logo:"https://img.freepik.com/free-vector/follow-leader-concept-illustration_114360-10886.jpg?uid=R160163945&ga=GA1.1.1856927002.1722677193&semt=ais_hybrid"},
+  {name :"Communication",logo:"https://img.freepik.com/free-vector/hand-drawn-business-communication-concept_23-2149171107.jpg?uid=R160163945&ga=GA1.1.1856927002.1722677193&semt=ais_hybrid"},
+  {name:"Problem solving",logo:"https://img.freepik.com/free-vector/problem-solving-labyrinth-concept-illustration_114360-2041.jpg?uid=R160163945&ga=GA1.1.1856927002.1722677193&semt=ais_hybrid"},
+  {name:"UI/UX",logo:"https://cdn-icons-png.flaticon.com/128/7858/7858975.png"},
 ]
 
 
