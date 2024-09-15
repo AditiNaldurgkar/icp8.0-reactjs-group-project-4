@@ -150,17 +150,18 @@ input[type="radio"] {
     }
 
     .input-label{
-       font-size: 2vw;
+       font-size: 3vw;
     }
 
     .input-field{
         padding: 1vw;
-        font-size: 2vw;
+        font-size: 3vw;
         width: 95%;
     }
 
     .btn{
         width: 100%;
+        margin: 1vw;
         /* height: 0.8vh; */
     }
     
@@ -171,7 +172,7 @@ input[type="radio"] {
     }
 
     #text{
-        /* font-size: 2vw; */
+        font-size: 3vw;
         width: 94%;
     }
 
