@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import "./ViewPost.css";
 import Sidebar from '../../components/Sidebar/Sidebar';
 import ViewJobCards from '../../components/ViewJobCards/ViewJobCards';
+import serchimg from "./../Search/searchImg.png"
 
 function ViewPost() {
   const [postData, setpostData] = useState([]);
@@ -24,7 +25,8 @@ function ViewPost() {
       <div className='view-post-heading'>
         <h2>View Job Post</h2>
       </div>
-      {postData.map((post, index) => {
+      {postData.length > 0 ?(
+      postData.map((post, index) => {
         const { jobTitle, jobDescription, location, employmentType, salaryMin, salaryMax, applicationDeadline, companyName, } = post;
         return (
           <ViewJobCards
@@ -38,8 +40,13 @@ function ViewPost() {
             salaryMax={salaryMax}
             applicationDeadline={applicationDeadline}
             onRemove={handleRemove} />
-        )
-      })}
+        );
+      })
+    ):(
+      <div className='search-img-container'>
+        <img src={serchimg} alt="searching img"></img>
+      </div>
+    )}
       <div className='Show'>
 
       </div>
