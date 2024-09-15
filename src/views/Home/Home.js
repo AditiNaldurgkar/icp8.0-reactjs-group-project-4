@@ -4,7 +4,7 @@ import Footer from '../../components/Footer/Footer';
 import Navbar from '../../components/Navbar/Navbar';
 import job from './hi-img.png';
 import { toast } from 'react-hot-toast';
-import { highDemandJobs, topCompanies, newsArticles, feedbacks, FAQ } from '../../config/homeData';
+import { highDemandJobs, topCompanies, newsArticles, feedbacks} from '../../config/homeData';
 
 function Home() {
   useEffect(() => {
@@ -86,21 +86,9 @@ function Home() {
             ))}
           </div>
         </div>
-
-        <div className='faq-section'>
-          <h3>Frequently Asked Questions..</h3>
-          <div className='faq-list'>
-            {FAQ.map((item, index) => (
-              <div key={index} className='faq-item'>
-                <h4>{item.head}</h4>
-                <p>{item.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <div className='Show'></div>
       </div>
+
+      <div className='Show'></div>
 
       <Footer />
     </div>
