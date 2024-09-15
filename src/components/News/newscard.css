@@ -59,7 +59,7 @@
     font-family: Arial, Helvetica, sans-serif;
   }
   .trend-card{
-    height: 150px;
+    height: fit-content;
     background-color: white;
     width: 300px;
     margin: 10px;
