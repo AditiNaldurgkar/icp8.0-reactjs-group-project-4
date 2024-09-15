@@ -62,9 +62,9 @@ const trends=[{
   info:"Though it will take between three and ten years, polyfunctional robots that can perform multiple functions, rather than being limited to a single task, are expected to become part of everyday life. By 2030, Alvarez said 80% of humans could be engaging with smart polyfunctional robots on a daily basis."
 }]
 const technologies=[
-  { name: 'React', logo: 'path/to/react-logo.png' },
-  { name: 'Vue', logo: 'path/to/vue-logo.png' },
-  { name: 'Angular', logo: 'path/to/angular-logo.png' },
+  { name: 'Python', logo: 'https://cdn-icons-png.flaticon.com/128/5968/5968350.png' },
+  { name: 'Javascript', logo: 'https://cdn-icons-png.flaticon.com/128/5968/5968292.png' },
+  { name: 'React', logo: 'https://t3.ftcdn.net/jpg/03/04/97/12/240_F_304971233_mQ4xlfnBGSszgzJPYzQnZtWI04ZNmuuP.jpg' },
 ]
 
 
