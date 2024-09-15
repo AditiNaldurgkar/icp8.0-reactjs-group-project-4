@@ -9,7 +9,7 @@
     width: 100%;
     /* border: 3px solid red; */
     /* height: 100vh; */
-    /* margin: 1vw; */
+    margin: auto;
 }
 
 .frm-heading {
@@ -45,5 +45,15 @@
     
     .frm-heading {
         margin-left: 10vw;
+    }
+
+    .main-heading{
+        font-size: 5vw;
+        margin-top: 1vh;
+    }
+
+    .sub-heading{
+        font-size: 2.5vw;
+        width: 200%;
     }
 }
