@@ -61,6 +61,12 @@ const trends=[{
   imgurl:"https://cdn-icons-png.flaticon.com/128/6584/6584942.png",
   info:"Though it will take between three and ten years, polyfunctional robots that can perform multiple functions, rather than being limited to a single task, are expected to become part of everyday life. By 2030, Alvarez said 80% of humans could be engaging with smart polyfunctional robots on a daily basis."
 }]
+const technologies=[
+  { name: 'React', logo: 'path/to/react-logo.png' },
+  { name: 'Vue', logo: 'path/to/vue-logo.png' },
+  { name: 'Angular', logo: 'path/to/angular-logo.png' },
+]
+
 
 function News() {
   return (
@@ -95,9 +101,16 @@ function News() {
       </div>
       <div>
         <h3 className='heading-skills'>Skills in demand</h3>
-      </div>
-
-      </div>
+        <div className='tech-grid'>
+            {technologies.map((tech, index) => (
+              <div key={index} className='tech-card'>
+                <img src={tech.logo} alt={`${tech.name} logo`} className='tech-logo' />
+                <p className='tech-name'>{tech.name}</p>
+              </div>
+               ))}
+          </div>
+          </div>
+          </div>
     </div>
   );
 }
