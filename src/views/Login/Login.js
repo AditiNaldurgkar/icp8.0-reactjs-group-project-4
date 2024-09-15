@@ -32,6 +32,7 @@ const Login=()=>
 		const LoginUser = { username, password };
         localStorage.setItem(username, JSON.stringify(LoginUser));
       };
+
   return (
     <>
 	<Navbar/>

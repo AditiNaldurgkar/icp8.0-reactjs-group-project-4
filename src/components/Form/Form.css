@@ -1,19 +1,22 @@
-form {
+.frm-main {
     /* border: 1px solid rgb(0, 255, 68); */
     width: 80%;
-    display: block;
+    
+    /* display: block; */
     /* height: 80px; */
     margin: auto;
     margin-bottom: 2vw;
-}
+} 
 
 .frm-holder {
     box-shadow: 0px 0px 5px gray;
     width: 60%;
+    
+    /* height: 350px; */
     padding: .1vw;
     margin: auto;
     margin-top: 1vw;
-    margin-bottom: 1vw;
+    /* margin-bottom: 1vw; */
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -23,7 +26,7 @@ form {
 .profile {
     /* border: 1px solid black; */
     width: 50%;
-    height: 80vh;
+    /* height: 850vh; */
     padding: .2vw;
     /* border-radius: 5px; */
     font-size: 1.2vw;
@@ -42,7 +45,7 @@ form {
 
 } */
 
-label {
+.input-label {
     display: block;
     width: 100%;
     font-size: 1.3vw;
@@ -50,8 +53,9 @@ label {
 
 .input-gup {
     /* display: block; */
-    width: 150%;
+    width: 90%;
     margin: 1vw;
+    /* height: 3vh; */
     /* border: 1px solid rgb(238, 255, 0); */
 }
 
@@ -62,7 +66,8 @@ input[type="radio"] {
 
 .right {
     width: 50%;
-    height: 80vh;
+    
+    /* height: 580vh; */
     padding: .2vw;
     /* border-radius: 5px; */
     font-size: 1.2vw;
@@ -74,25 +79,35 @@ input[type="radio"] {
 } */
 
 .input-field,
-textarea {
-    width: 50%;
+#text {
+    width: 100%;
     padding: .2vw;
     border-radius: 5px;
     font-size: 1.2vw;
     border: 1px solid gray;
 }
 
+
+
 .btn {
     width: 17vw;
     padding: 1vw;
     display: block;
     /* margin: auto; */
-    border-radius: 50px;
+    border-radius: 4px;
     border: none;
     font-size: 1.3vw;
-    background-color: #7676FA;
+    background-color: #6969ffc7;
     color: whitesmoke;
     cursor: pointer;
+}
+
+.textArea{
+    width: 10vw;
+}
+
+.btn:hover {
+    background-color: #3757ca;
 }
 
 .btn-holder {
@@ -104,14 +119,24 @@ textarea {
     text-align: center;
 }
 
+.input-field[type=number]::-webkit-inner-spin-button,
+.input-field[type=number]::-webkit-outer-spin-button  {
+    -webkit-appearance: none;
+}
 
 /*small Device*/
 @media screen and (max-width:600px) {
     .fileupload {
         width: 7vw;
-        height: 7vh;
+        /* height: 7vh; */
         /* margin-top: -150vw; */
         margin-left: 8vw;
+    }
+
+    
+    .frm-holder {
+        width: 100%;
+        /* height: 500px; */
     }
 
     input[type="radio"] {
@@ -120,7 +145,7 @@ textarea {
 
     .profile,
     .right {
-        height: 53vh;
+        height: 42vh;
     }
 }
 
@@ -140,6 +165,10 @@ textarea {
     .profile,
     .right {
         height: 53vh;
+    }
+
+    .textArea{
+        width: 5vw;
     }
 }
 
