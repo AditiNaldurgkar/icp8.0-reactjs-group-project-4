@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import "./AddPost.css"
 import toast, { Toaster } from 'react-hot-toast';
 import Sidebar from '../../components/Sidebar/Sidebar';
+import addPostImg from "./add-job-img.png"
 
 function Add() {
     const [jobTitle, setJobTitle] = useState("");
@@ -50,13 +51,18 @@ function Add() {
     };
 
     return (
-        <div>
+        <div className='ctnt'>
             <Sidebar />
             <div >
                 <h2 className=' add-post-heading'>Add Job Post</h2>
             </div>
 
             <div className="job-post-container">
+
+                <div >
+                    <img src={addPostImg} alt='addPostImg' className='add-post-img' />
+                </div>
+
                 <div className="job-post-card">
                     <form>
                         <label>Job Title</label>
