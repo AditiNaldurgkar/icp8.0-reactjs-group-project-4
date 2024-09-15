@@ -61,6 +61,19 @@ const trends=[{
   imgurl:"https://cdn-icons-png.flaticon.com/128/6584/6584942.png",
   info:"Though it will take between three and ten years, polyfunctional robots that can perform multiple functions, rather than being limited to a single task, are expected to become part of everyday life. By 2030, Alvarez said 80% of humans could be engaging with smart polyfunctional robots on a daily basis."
 }]
+const skills=[
+  { name: 'Python', logo: 'https://cdn-icons-png.flaticon.com/128/5968/5968350.png' },
+  { name: 'Javascript', logo: 'https://cdn-icons-png.flaticon.com/128/5968/5968292.png' },
+  { name: 'React', logo: 'https://t3.ftcdn.net/jpg/03/04/97/12/240_F_304971233_mQ4xlfnBGSszgzJPYzQnZtWI04ZNmuuP.jpg' },
+  {name:"Cybersecurity",logo:"https://cdn-icons-png.flaticon.com/128/2092/2092663.png"},
+  { name:"Cloud",logo:"https://img.freepik.com/premium-photo/cloud-computing-technology-concept-futuristic-illustration-isolated-white-background_660230-76062.jpg?uid=R160163945&ga=GA1.1.1856927002.1722677193&semt=ais_hybrid"},
+  {name :"Blockchain" ,logo:"https://cdn-icons-png.flaticon.com/128/2152/2152539.png"},
+  {name:"Leadership",logo:"https://img.freepik.com/free-vector/follow-leader-concept-illustration_114360-10886.jpg?uid=R160163945&ga=GA1.1.1856927002.1722677193&semt=ais_hybrid"},
+  {name :"Communication",logo:"https://img.freepik.com/free-vector/hand-drawn-business-communication-concept_23-2149171107.jpg?uid=R160163945&ga=GA1.1.1856927002.1722677193&semt=ais_hybrid"},
+  {name:"Problem solving",logo:"https://img.freepik.com/free-vector/problem-solving-labyrinth-concept-illustration_114360-2041.jpg?uid=R160163945&ga=GA1.1.1856927002.1722677193&semt=ais_hybrid"},
+  {name:"UI/UX",logo:"https://cdn-icons-png.flaticon.com/128/7858/7858975.png"},
+]
+
 
 function News() {
   return (
@@ -80,8 +93,7 @@ function News() {
       ))}
       </div>
       <div className='trends'>
-      <span className='headtrends'>Technology trends for 2025</span>
-      <br/><br/>
+      <h3 className='headtrends'>Technology trends for 2025</h3>
       <div className='trendcardcontainer'>
       { trends.map((trend, ind) => (
         <Trends
@@ -95,9 +107,16 @@ function News() {
       </div>
       <div>
         <h3 className='heading-skills'>Skills in demand</h3>
-      </div>
-
-      </div>
+        <div className='tech-grid'>
+            {skills.map((skill, index) => (
+              <div key={index} className='tech-card'>
+                <img src={skill.logo} alt={`${skill.name} logo`} className='tech-logo' />
+                <p className='tech-name'>{skill.name}</p>
+              </div>
+               ))}
+          </div>
+          </div>
+          </div>
     </div>
   );
 }
