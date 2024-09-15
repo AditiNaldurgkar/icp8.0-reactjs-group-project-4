@@ -79,9 +79,9 @@
   .icont{
     height: 55px;
     margin: 5px;
-    width: 100px;
     display: block;
     margin: 5px auto;
+    object-fit: cover;
   }
   .trendhead{
     margin: 2px;
