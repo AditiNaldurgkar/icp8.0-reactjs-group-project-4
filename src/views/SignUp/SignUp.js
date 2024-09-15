@@ -184,7 +184,8 @@ const Signup = () => {
                       
                     </div>
                     <button type="submit" className="signup-btn">Register</button>
-                    <h2>Existing User? <button className='signup-btn' onClick={() => window.location.href = '/Login'}>Login</button></h2>
+
+                    <h2 className='Existing-user'>Existing User? <button className='signup-btn' onClick={() => window.location.href = '/Login'}>Login</button></h2>
                 </form>
                 <Toaster />
                 
