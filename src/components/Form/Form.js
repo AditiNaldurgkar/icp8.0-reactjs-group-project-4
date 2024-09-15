@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import './Form.css';
-import toast from "react-hot-toast";
+// import toast from "react-hot-toast";
+import { ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 const Form = () => {
 
@@ -20,46 +22,74 @@ const Form = () => {
     const [gender, setGender] = useState('')
 
     function Add() {
+        if (name == " " || email == " " || degree == "" || institude == "" || exp == "" || mno == "" || expertise == " " || desc == " " || company == " " || job == " " || keyskill == " " || linkedIn == " " || gender == " ") {
 
-        const items = JSON.parse(localStorage.getItem("items")) || [];
-
-        const itmsobj = {
-            name,
-            email,
-            degree,
-            institude,
-            exp,
-            mno,
-            expertise,
-            desc,
-            company,
-            job,
-            keyskill,
-            linkedIn,
-            // file,
-            gender
+            // toast.success("Please Enter All Details in Form");
+            toast.warn('Please Enter All Details', {
+                position: "top-center",
+                autoClose: 3000,
+                hideProgressBar: true,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "light",
+                // transition: "Zoom",
+            });
         }
+        else {
 
-        items.push(itmsobj);
+            const items = JSON.parse(localStorage.getItem("items")) || [];
 
-        localStorage.setItem("items", JSON.stringify(items));
+            const itmsobj = {
+                name,
+                email,
+                degree,
+                institude,
+                exp,
+                mno,
+                expertise,
+                desc,
+                company,
+                job,
+                keyskill,
+                linkedIn,
+                // file,
+                gender
+            }
 
-        toast.success("Note Added Successfully!");
+            items.push(itmsobj);
 
-        setName('');
-        setEmail('');
-        setDegree('');
-        setInstitude('');
-        setExperiance('');
-        setExpertise('');
-        setMobile('');
-        setDecriptions('');
-        setCompany('');
-        // setFile('');
-        setJob('');
-        setkeyskill('');
-        setLinkedIn('');
-        setGender('');
+            localStorage.setItem("items", JSON.stringify(items));
+
+            toast.success("Note Added Successfully!", {
+                position: "top-center",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "light",
+                transition: "Slide",
+            });
+
+            setName('');
+            setEmail('');
+            setDegree('');
+            setInstitude('');
+            setExperiance('');
+            setExpertise('');
+            setMobile('');
+            setDecriptions('');
+            setCompany('');
+            // setFile('');
+            setJob('');
+            setkeyskill('');
+            setLinkedIn('');
+            setGender('');
+
+        }
     }
 
 
@@ -123,10 +153,10 @@ const Form = () => {
                             <input type="text" id="exper" className="input-field" required placeholder="Expertise" onChange={(e) => { setExpertise(e.target.value) }} />
                         </div>
 
-                        
+
                         <div className="input-gup">
                             <label for="text" className="input-label">Company Descriptions </label>
-                            <textarea 
+                            <textarea
                                 // rows={4}
                                 className="textArea"
                                 id="text"
@@ -164,17 +194,16 @@ const Form = () => {
                         <div className="input-gup">
                             <label className="input-label">Selected Gender </label>
 
-                            <input type="radio" name="gender" value="male" 
-                            onChange={(e) => {
-                                    if (e.target.checked) 
-                                    {
+                            <input type="radio" name="gender" value="male"
+                                onChange={(e) => {
+                                    if (e.target.checked) {
                                         setGender(e.target.value)
                                     }
                                 }}
-                            checked={gender ==="male"} />Male
+                                checked={gender === "male"} />Male
 
-                            <br/>
-                            
+                            <br />
+
 
                             <input type="radio" name="gender" value="female"
                                 onChange={(e) => {
@@ -182,8 +211,8 @@ const Form = () => {
                                         setGender(e.target.value)
                                     }
                                 }}
-                            checked={gender ==="female"} />Female
-                            
+                                checked={gender === "female"} />Female
+
                         </div>
 
                         <div className="input-gup">
@@ -221,7 +250,7 @@ const Form = () => {
                 </div>
             </form>
 
-
+            <ToastContainer />
         </>
     )
 
