@@ -11,7 +11,6 @@
 .frm-holder {
     box-shadow: 0px 0px 5px gray;
     width: 60%;
-    
     /* height: 350px; */
     padding: .1vw;
     margin: auto;
@@ -126,27 +125,58 @@ input[type="radio"] {
 
 /*small Device*/
 @media screen and (max-width:600px) {
+
     .fileupload {
         width: 7vw;
         /* height: 7vh; */
         /* margin-top: -150vw; */
         margin-left: 8vw;
+        /* border: 1px solid red; */
     }
 
     
     .frm-holder {
         width: 100%;
-        /* height: 500px; */
+       flex-direction: column;
+       align-items: center;
     }
+
+    .input-gup{
+        width: 100%;
+        /* padding: 1vw; */
+        margin: auto;
+        margin-top:2vw ;
+        /* border: 1px solid red; */
+    }
+
+    .input-label{
+       font-size: 3vw;
+    }
+
+    .input-field{
+        padding: 1vw;
+        font-size: 3vw;
+        width: 95%;
+    }
+
+    .btn{
+        width: 100%;
+        margin: 1vw;
+        font-size: 3vw;
+        /* height: 0.8vh; */
+    }
+    
 
     input[type="radio"] {
-        height: 1vw;
+       
+        font-size: 2vw;
     }
 
-    .profile,
-    .right {
-        height: 42vh;
+    #text{
+        font-size: 3vw;
+        width: 94%;
     }
+
 }
 
 /*Normal Device*/
