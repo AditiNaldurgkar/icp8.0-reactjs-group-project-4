@@ -53,7 +53,10 @@
 .welcome-heading h6 {
     font-size: 1vw;
 }
-
+.text-margin
+{
+    margin: 1.5rem 0rem;
+}
 .text-feild {
     font-size: 1.2vw;
     font-weight: bold;
@@ -89,7 +92,7 @@
     width: 100%;
     max-width: 280px;
     height: 3rem;
-    border-radius: 30px;
+    border-radius: 10px;
     background-color: #6969ffc7;
     color: white;
     border: 0.5px solid #6969ffc7;
@@ -97,6 +100,7 @@
     padding: 0.5rem;
     margin-top: 1rem;
     cursor: pointer;
+    margin-left: 5rem;
 }
 
 .forgot-text {

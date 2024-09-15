@@ -37,5 +37,6 @@ function Trends({ name, imgurl, info }) {
     </div>
   );
 }
+
 export {Trends};
 export default Display;
