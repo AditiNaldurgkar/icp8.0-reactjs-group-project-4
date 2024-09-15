@@ -64,14 +64,14 @@ const Form = () => {
 
             toast.success("Note Added Successfully!", {
                 position: "top-center",
-                autoClose: 5000,
-                hideProgressBar: false,
+                autoClose: 3000,
+                hideProgressBar: true,
                 closeOnClick: true,
                 pauseOnHover: true,
                 draggable: true,
                 progress: undefined,
                 theme: "light",
-                transition: "Slide",
+                // transition: 'Zoom',
             });
 
             setName('');
