@@ -80,13 +80,4 @@ const highDemandJobs = [
   }
 ]
   
-  const FAQ = [
-    { head: 'How do I create an account?', description: 'To create an account, click the "Sign Up" button on the top right of the homepage. Enter your email, create a password, and complete your profile with relevant information.' },
-    { head: 'How do I search for jobs?', description: 'Use the search bar on the homepage to enter keywords and select your desired location. You can filter results by job type, salary, and more.' },
-    { head: 'How do I apply for a job?', description: 'Once you find a job you’re interested in, click the "Apply" button on the job listing. You will need to upload your resume and cover letter if required.' },
-    { head: 'How can employers post a job?', description: 'Employers can post jobs by clicking on the "Post Job" button. Fill out the job details, requirements, and company information, and then publish the listing.' },
-    { head: 'What should I do if I forget my password?', description: 'Click the "Forgot Password" link on the login page. Follow the instructions to reset your password via email.' },
-    { head: 'How can I contact support?', description: 'For any issues or inquiries, you can contact our support team by using the "Contact Us" on our website.' }
-  ];
-  
-  export {highDemandJobs,topCompanies ,newsArticles,feedbacks,FAQ}
+  export {highDemandJobs,topCompanies ,newsArticles,feedbacks}
