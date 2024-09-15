@@ -65,6 +65,9 @@ const technologies=[
   { name: 'Python', logo: 'https://cdn-icons-png.flaticon.com/128/5968/5968350.png' },
   { name: 'Javascript', logo: 'https://cdn-icons-png.flaticon.com/128/5968/5968292.png' },
   { name: 'React', logo: 'https://t3.ftcdn.net/jpg/03/04/97/12/240_F_304971233_mQ4xlfnBGSszgzJPYzQnZtWI04ZNmuuP.jpg' },
+  {name:"Cybersecurity",logo:"https://cdn-icons-png.flaticon.com/128/2092/2092663.png"},
+  { name:"Cloud",logo:"https://img.freepik.com/premium-photo/cloud-computing-technology-concept-futuristic-illustration-isolated-white-background_660230-76062.jpg?uid=R160163945&ga=GA1.1.1856927002.1722677193&semt=ais_hybrid"},
+  {name :"Blockchain" ,logo:"https://cdn-icons-png.flaticon.com/128/2152/2152539.png"}
 ]
 
 
