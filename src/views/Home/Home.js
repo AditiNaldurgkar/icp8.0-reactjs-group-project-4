@@ -18,7 +18,7 @@ function Home() {
   return (
     <div>
       <Navbar />
-      <div className='main'>
+      <div className='box'>
         <div className='content-container'>
           <div className='content'>
             <h1 className='liner-text'>Empower Your Future </h1>
@@ -77,6 +77,7 @@ function Home() {
           <div className='feedback-list'>
             {feedbacks.map((feedback, index) => (
               <div key={index} className='feedback-item'>
+                <img src={feedback.imgSrc} alt={feedback.alt} className='feedback-img' />
                 <h4 fb-name>{feedback.name}</h4>
                 <p fb-des>{feedback.comment}</p>
                 <div className='rating'>

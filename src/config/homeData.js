@@ -7,7 +7,12 @@ import google from "./Images/google.png";
 import microsoft from "./Images/microsoft.png";
 import social from "./Images/social.png";
 import apple from "./Images/apple-logo.png";
-import mobile from "./Images/mobile.png"
+import mobile from "./Images/mobile.png";
+import arav from "./Images/arav.jpg";
+import arjun from "./Images/arjun.png";
+import isha from "./Images/isha.jpg";
+import sneha from "./Images/sneha.jpg";
+
 const highDemandJobs = [
     { imgSrc: computer, alt: 'Software Engineer', title: 'Software Engineer', description: 'Software Engineers design, develop, and maintain software applications and systems. They work on coding, testing, and debugging to ensure software is functional, reliable, and user-friendly.' },
     { imgSrc: dataScience, alt: 'Data Scientist', title: 'Data Scientist', description: 'Data Scientists analyze complex data sets to help organizations make data-driven decisions. They use statistical methods, machine learning, and data visualization to uncover insights and trends from data.' },
@@ -59,25 +64,30 @@ const highDemandJobs = [
 
   const feedbacks =[
   { 
+    img: arav, alt: 'Aarav',
     name: 'Aarav Sharma', 
     comment: 'Great platform! The job search features are very helpful and user-friendly.', 
     rating: '⭐⭐⭐⭐⭐'
   },
   { 
+    img: isha, alt: 'Isha',
     name: 'Isha Patel', 
     comment: 'I found my dream job through this site.Application process was smooth and efficient.', 
     rating: '⭐⭐⭐⭐' 
   },
   { 
+    img: arjun,
+    alt: 'Arjun',
     name: 'Arjun Gupta', 
     comment: 'The resources and articles provided are top-notch. I feel well-prepared for interviews.', 
     rating: '⭐⭐⭐⭐⭐'
   },
   { 
+    img: sneha, alt: 'Sneha',
     name: 'Sneha Joshi', 
     comment: 'The site is easy to navigate, but I wish there were more job listings in my field.', 
     rating: '⭐⭐⭐' 
   }
 ]
   
-  export {highDemandJobs,topCompanies ,newsArticles,feedbacks}
+  export {highDemandJobs,topCompanies,newsArticles,feedbacks}
