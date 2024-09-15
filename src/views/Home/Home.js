@@ -77,7 +77,7 @@ function Home() {
           <div className='feedback-list'>
             {feedbacks.map((feedback, index) => (
               <div key={index} className='feedback-item'>
-                <img src={feedback.imgSrc} alt={feedback.alt} className='feedback-img' />
+                <img src={feedback.img} alt={feedback.alt} className='feedback-img' />
                 <h4 fb-name>{feedback.name}</h4>
                 <p fb-des>{feedback.comment}</p>
                 <div className='rating'>

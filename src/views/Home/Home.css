@@ -260,6 +260,7 @@ h3 {
   width: 90px;
   align-items: center;
   margin-bottom: 10px;
+  border-radius: 50%;
 }
 
 .feedback-item:hover {

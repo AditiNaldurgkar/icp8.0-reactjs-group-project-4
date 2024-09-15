@@ -70,7 +70,7 @@ const highDemandJobs = [
     rating: '⭐⭐⭐⭐⭐'
   },
   { 
-    img: isha, alt: 'Isha',
+    img: sneha, alt: 'Isha',
     name: 'Isha Patel', 
     comment: 'I found my dream job through this site.Application process was smooth and efficient.', 
     rating: '⭐⭐⭐⭐' 
@@ -83,7 +83,7 @@ const highDemandJobs = [
     rating: '⭐⭐⭐⭐⭐'
   },
   { 
-    img: sneha, alt: 'Sneha',
+    img: isha, alt: 'Sneha',
     name: 'Sneha Joshi', 
     comment: 'The site is easy to navigate, but I wish there were more job listings in my field.', 
     rating: '⭐⭐⭐' 
