@@ -42,10 +42,10 @@ const Login=()=>
 				<h1 className="liner-text">
 					Welcome back !!!!
 				</h1>
-				<h3>
+				<h3 className="text-margin">
 					Have an account ?
 				</h3>
-				<h6>
+				<h6 className="text-margin">
 					Login to access  information
 				</h6>
 			</div>
