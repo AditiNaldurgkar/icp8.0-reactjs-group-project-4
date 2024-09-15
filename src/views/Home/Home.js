@@ -52,8 +52,8 @@ function Home() {
             {topCompanies.map((company, index) => (
               <div key={index} className='company-item'>
                 <img src={company.logoSrc} alt={company.alt} className='company-img' />
-                <h4>{company.name}</h4>
-                <p>{company.description}</p>
+                <h4 className='company-title'>{company.name}</h4>
+                <p className='company-des'>{company.description}</p>
               </div>
             ))}
           </div>
