@@ -201,7 +201,7 @@
 
 @media screen and (max-width:500px) {
   .setting-container{
-    margin-left: 0px;
+    margin-left: 20px;
     width: 100vw;
     overflow-x: hidden;
     margin-bottom: 15vh;
@@ -211,6 +211,9 @@
     margin-left: 10px;
     gap: 20px;
     white-space: nowrap;
+}
+.socialmedia{
+    margin-left: 0;
 }
 
 

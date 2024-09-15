@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Sidebar from '../../components/Sidebar/Sidebar'
-import './search.css'
+import './Search.css'
 import { jobNames } from '../../config/searchData'
 import axios from 'axios'
 import toast from 'react-hot-toast'
@@ -9,6 +9,13 @@ import Jobcard from '../../components/Jobcard/Jobcard'
 
 const Search = () => {
 
+  useEffect(()=>{
+    if(! JSON.parse(localStorage.getItem('LOGINUSER'))){
+      window.location.href="/"
+      toast.error("login is required...",{duration: 7000})
+    }
+ },[])
+  
   const [jobTittle, setjobTittle] = useState('')
   const [jobs, setjobs] = useState([])
 

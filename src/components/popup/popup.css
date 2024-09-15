@@ -1,6 +1,6 @@
 
 .pop-body{
-    height: 50vh;
+    height: 60vh;
     width:50vw;
     background-color: #9d9b9bb0;
     display: flex;
@@ -27,6 +27,11 @@
 .chng-note{
     margin-top: 10px;
     text-align: justify;
+}
+
+.popup-text{
+    font-size: 1.3em;
+    margin: 4vh 0;
 }
 
 @media screen and (max-width:500px) {
