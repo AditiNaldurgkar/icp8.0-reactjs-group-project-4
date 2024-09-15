@@ -39,8 +39,8 @@ function Home() {
             {highDemandJobs.map((job, index) => (
               <div key={index} className='job-item'>
                 <img src={job.imgSrc} alt={job.alt} className='job-img' />
-                <h4>{job.title}</h4>
-                <p>{job.description}</p>
+                <h4 className='job-title'>{job.title} </h4>
+                <p className='job-des'>{job.description}</p>
               </div>
             ))}
           </div>
