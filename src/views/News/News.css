@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     background-color: whitesmoke;
+    margin-left: 30px;
    
 }
 .headingn{
@@ -30,22 +31,95 @@
         
 }
 .headtrends{
-    position: absolute;
-    padding-left: 16%;
     margin-top: 10px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: large;
     font-size: 40px;
-    margin-left: 18%;
-    color: #9f9ffa;
-    margin-bottom: 5px;
+    text-align: center;
+    background:linear-gradient(to left,#002aff,#0ce3ff);
+    color: transparent;
+    background-clip: text;
 }
 .trendcardcontainer{
     display: flex;
     margin-top: 10px;
-    padding: 10px;
+    padding: 5px;
 }
 .heading-skills{
     text-align: center;
+    background:linear-gradient(to left,#002aff,#0ce3ff);
+    color: transparent;
+    background-clip: text;
+}
+
+.tech-grid {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-left: 100px;
+    margin-top: 20px;
+  }
+  
+  .tech-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px 40px;
+    margin: 20px;
+    height: fit-content;
+    width: 150px;
+    background: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .tech-logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+  
+  .tech-name {
+    font-size: 17px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+  @media screen and (max-width: 1216px) {
+    .tech-grid{
+        justify-content: space-between;
+    }
+}
+@media screen and (min-width: 100px) and (max-width: 830px){
+    .headingn{
+        font-size: 65px;
+    }
+    .trendcardcontainer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 10px;
+        padding: 3px;
+    }
+}
+@media screen and (max-width:420px ){
+    .headingn{
+        font-size: 40px;
+    }
+    .trendcardcontainer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px;
+        padding: 3px;
+    }
+    .tech-grid {
+        display: flex;
+        flex-direction: row;
+        margin-right: 25%;
+      }
 }
