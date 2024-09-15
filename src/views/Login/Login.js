@@ -16,11 +16,11 @@ const Login=()=>
       const handleLogin = () => {
         const storeData =JSON.parse(localStorage.getItem("users"))|| [];
        console.log(storeData)
-       storeData.forEach((user)=>{
+       storeData.forEach((user,index)=>{
 		if(user.username == username && user.password == password)
 		{
               toast.success("Login succesfully !")
-			  localStorage.setItem("LOGINUSER" , JSON.stringify(user));
+			  localStorage.setItem("LOGINUSER" , JSON.stringify({...user,index}));
 			  navigate("/search")
 		}
 		else
@@ -96,7 +96,7 @@ const Login=()=>
 			<img src={IMG} className="image" />
 		</div>
       </div>
-	  <div className="show">
+	  <div className="Show">
 	  </div>
 	  <Footer/>
     </>
