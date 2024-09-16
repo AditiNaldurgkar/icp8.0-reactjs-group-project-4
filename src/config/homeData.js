@@ -10,8 +10,8 @@ import apple from "./Images/apple-logo.png";
 import mobile from "./Images/mobile.png";
 import arav from "./Images/arav.jpg";
 import arjun from "./Images/arjun.png";
-import isha from "./Images/isha.jpg";
-import sneha from "./Images/sneha.jpg";
+import isha from "./Images/isha.jpeg";
+import sneha from "./Images/sneha.jpeg";
 
 const highDemandJobs = [
     { imgSrc: computer, alt: 'Software Engineer', title: 'Software Engineer', description: 'Software Engineers design, develop, and maintain software applications and systems. They work on coding, testing, and debugging to ensure software is functional, reliable, and user-friendly.' },
@@ -56,10 +56,10 @@ const highDemandJobs = [
 
   
   const newsArticles = [
-    { title: 'New Job Trends for 2024', description: 'Explore the latest job market trends for 2024 and how they might affect your career planning.', date: 'September 1, 2024' },
-    { title: 'Top Skills in Demand', description: 'Find out which skills are most sought after by employers in today’s job market.', date: 'August 25, 2024' },
-    { title: 'How to Ace a Job Interview', description: 'Get tips and tricks on how to prepare for and succeed in your next job interview.', date: 'August 10, 2024' },
-    { title: 'Remote Work: The Future of Employment', description: 'Learn about the rise of remote work and what it means for the future of employment across various industries.', date: 'September 15, 2024' }
+    { img:'https://img.freepik.com/premium-photo/jobs-with-wooden-colorfull-cubes_488220-3036.jpg?w=996',title:'New Job Trends for 2024', description: 'Explore the latest job market trends for 2024 and how they might affect your career planning.', date: 'September 1, 2024' },
+    { img:'https://img.freepik.com/free-photo/scene-with-business-person-working-futuristic-office-job_23-2151003709.jpg?t=st=1726455187~exp=1726458787~hmac=80224f20675f1608428b36db0592818c62dde06f1dd458394001901c745b30dd&w=996',title: 'Top Skills in Demand', description: 'Find out which skills are most sought after by employers in today’s job market.', date: 'August 25, 2024' },
+    { img:'https://img.freepik.com/free-photo/happy-male-candidate-greeting-member-human-resource-team-job-interview-office_637285-6567.jpg?t=st=1726454870~exp=1726458470~hmac=d24929ea66cf7c8a8b37bddd441e667459d992e7d9d5ba8a2703ca34370a8f47&w=996',title: 'How to Ace a Job Interview', description: 'Get tips and tricks on how to prepare for and succeed in your next job interview.', date: 'August 10, 2024' },
+    { img:'https://img.freepik.com/free-photo/hr-representatives-positively-greeting-female-job-candidate_1163-4702.jpg?t=st=1726455042~exp=1726458642~hmac=a61485c1874ecc4ec874cc1630f7f4a8deeb3cfad09aa171f0b0c3e68f0de047&w=996',title: 'Remote Work: The Future of Employment', description: 'Learn about the rise of remote work and what it means for the future of employment across various industries.', date: 'September 15, 2024' }
   ];
 
   const feedbacks =[
@@ -70,7 +70,7 @@ const highDemandJobs = [
     rating: '⭐⭐⭐⭐⭐'
   },
   { 
-    img: sneha, alt: 'Isha',
+    img: isha, alt: 'Isha',
     name: 'Isha Patel', 
     comment: 'I found my dream job through this site.Application process was smooth and efficient.', 
     rating: '⭐⭐⭐⭐' 
@@ -83,7 +83,7 @@ const highDemandJobs = [
     rating: '⭐⭐⭐⭐⭐'
   },
   { 
-    img: isha, alt: 'Sneha',
+    img: sneha, alt: 'Sneha',
     name: 'Sneha Joshi', 
     comment: 'The site is easy to navigate, but I wish there were more job listings in my field.', 
     rating: '⭐⭐⭐' 

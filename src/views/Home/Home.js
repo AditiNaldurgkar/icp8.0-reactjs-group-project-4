@@ -64,6 +64,7 @@ function Home() {
           <div className='news-list'>
             {newsArticles.map((news, index) => (
               <article key={index} className='news-item'>
+                <img src={news.img} alt={news.alt} className='news-img' />
                 <h4 className='news-title'>{news.title}</h4>
                 <p className='news-des'>{news.description}</p>
                 <span className='news-date'>{news.date}</span>
