@@ -188,9 +188,12 @@ input[type="radio"] {
 
     #text {
         font-size: 3vw;
-        width: 94%;
+        width: 100%;
     }
 
+    .frm-main{
+        margin-bottom: 15vw;
+    }
 }
 
 /*Normal Device*/

@@ -101,76 +101,6 @@ const Form = () => {
             <form className="frm-main">
                 <div className="frm-holder">
 
-                    <div className="left">
-
-                        {/* <input type="file"
-                            className="fileupload"
-                            accept="image/png,image/jpeg"
-                            onChange={(e) => {
-                                setFile(e.target.files[0]);
-                            }
-                            }
-                            required >
-                        </input> */}
-
-                        <div className="input-gup">
-                            <label for="degre" className="input-label">Degress Obtained</label>
-                            <input type="text" id="degre" className="input-field" placeholder="Enter Degree" required onChange={(e) => { setDegree(e.target.value) }} />
-                        </div>
-
-                        <div className="input-gup">
-                            <label for="institude" className="input-label">Institutions Attended</label>
-                            <input type="text" id="institude" className="input-field" placeholder="Enter Institutions Attended" required onChange={(e) => { setInstitude(e.target.value) }} />
-                        </div>
-
-                        <div className="input-gup" >
-                            <label for="exp" className="input-label">Recuriter's Exp.</label>
-                            <input type="number" id="exp" className="input-field" placeholder="Enter Recuriter Experiance" required onChange={(e) => { setExperiance(e.target.value) }} />
-                        </div>
-
-                        <div className="input-gup">
-                            <label for="link" className="input-label">LinkedIn Profile</label>
-                            <input
-                                type="text"
-                                id="link"
-                                className="input-field"
-                                placeholder="Enter Link Of Profile"
-                                required
-                                onChange={(e) => { setLinkedIn(e.target.value) }} />
-                        </div>
-
-                        <div className="input-gup">
-                            <label for="skill" className="input-label">Enter Key Skills</label>
-                            <input
-                                type="text"
-                                id="skill"
-                                className="input-field"
-                                placeholder="Enter Skills"
-                                required
-                                onChange={(e) => { setkeyskill(e.target.value) }} />
-                        </div>
-
-                        <div className="input-gup">
-                            <label for="exper" className="input-label">Expertise</label>
-                            <input type="text" id="exper" className="input-field" required placeholder="Expertise" onChange={(e) => { setExpertise(e.target.value) }} />
-                        </div>
-
-
-                        <div className="input-gup">
-                            <label for="text" className="input-label">Company Descriptions </label>
-                            <textarea
-                                // rows={4}
-                                className="textArea"
-                                id="text"
-                                placeholder="Enter Details Of Company..."
-                                required
-                                onChange={(e) => { setDecriptions(e.target.value) }}>
-
-                            </textarea>
-                        </div>
-                    </div>
-
-
                     <div className="right">
 
                         <div className="input-gup">
@@ -243,6 +173,65 @@ const Form = () => {
                                 placeholder="Enter Job Title"
                                 required
                                 onChange={(e) => { setJob(e.target.value) }} />
+                        </div>
+                    </div>
+
+                    <div className="left">
+
+                        <div className="input-gup">
+                            <label for="degre" className="input-label">Degress Obtained</label>
+                            <input type="text" id="degre" className="input-field" placeholder="Enter Degree" required onChange={(e) => { setDegree(e.target.value) }} />
+                        </div>
+
+                        <div className="input-gup">
+                            <label for="institude" className="input-label">Institutions Attended</label>
+                            <input type="text" id="institude" className="input-field" placeholder="Enter Institutions Attended" required onChange={(e) => { setInstitude(e.target.value) }} />
+                        </div>
+
+                        <div className="input-gup" >
+                            <label for="exp" className="input-label">Recuriter's Exp.</label>
+                            <input type="number" id="exp" className="input-field" placeholder="Enter Recuriter Experiance" required onChange={(e) => { setExperiance(e.target.value) }} />
+                        </div>
+
+                        <div className="input-gup">
+                            <label for="link" className="input-label">LinkedIn Profile</label>
+                            <input
+                                type="text"
+                                id="link"
+                                className="input-field"
+                                placeholder="Enter Link Of Profile"
+                                required
+                                onChange={(e) => { setLinkedIn(e.target.value) }} />
+                        </div>
+
+                        <div className="input-gup">
+                            <label for="skill" className="input-label">Enter Key Skills</label>
+                            <input
+                                type="text"
+                                id="skill"
+                                className="input-field"
+                                placeholder="Enter Skills"
+                                required
+                                onChange={(e) => { setkeyskill(e.target.value) }} />
+                        </div>
+
+                        <div className="input-gup">
+                            <label for="exper" className="input-label">Expertise</label>
+                            <input type="text" id="exper" className="input-field" required placeholder="Expertise" onChange={(e) => { setExpertise(e.target.value) }} />
+                        </div>
+
+
+                        <div className="input-gup">
+                            <label for="text" className="input-label">Company Descriptions </label>
+                            <textarea
+                                // rows={4}
+                                className="textArea"
+                                id="text"
+                                placeholder="Enter Details Of Company..."
+                                required
+                                onChange={(e) => { setDecriptions(e.target.value) }}>
+
+                            </textarea>
                         </div>
 
                         <div className="btn-gup center">
