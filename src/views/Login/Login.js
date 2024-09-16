@@ -13,7 +13,7 @@ const Login=()=>
 	const [password , setPassword] = useState('');
     
 	const navigate=useNavigate();
-	const handleLogin = () => {
+	/*const handleLogin = () => {
 		const storeData = JSON.parse(localStorage.getItem("users")) || [];
 		let userFound = false; 
 	  
@@ -25,6 +25,28 @@ const Login=()=>
 			userFound = true;
 			return;
 		  }
+		});
+	  
+		if (!userFound) {
+		  toast.error("User not found");
+		}
+	  };
+	  */
+	  const handleLogin = () => {
+		const storeData = JSON.parse(localStorage.getItem("users")) || [];
+		const userFound = storeData.some((user, index) => {
+		  if (user.username === username && user.password === password) {
+			toast.success("Login successfully!");
+			localStorage.setItem("LOGINUSER", JSON.stringify({ ...user, index }));
+			
+			if (user.role === 'Job Seeker') {
+			  navigate("/search"); 
+			} else if (user.role === 'Recruiter') {
+			  navigate("/profile");
+			} 
+			return true;
+		  }
+		  return false;
 		});
 	  
 		if (!userFound) {
