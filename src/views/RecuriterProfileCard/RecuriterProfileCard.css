@@ -7,6 +7,10 @@
     padding: 30px;
 }
 
+.recr-profile-heading{
+    text-align: center;
+}
+
 .recruiter-profile-img{
     height: 200px;
 }
@@ -15,6 +19,8 @@
     margin: 10px;
     font-size: 20px;
     display: flex;
+    justify-content: space-between !important;
+    padding-left: 5%;
 }
 
 .prfle-name{
@@ -23,12 +29,16 @@
     font-size: 20px;
 }
 
-.dtls-left{
+/* .dtls-left{
     margin: 0 50px;
 }
 .dtls-right{
     margin: 0 80px;
+} */
+.dtls-right{
+    margin-left: 120px;
 }
+
 
 .dtls{
     margin: 30px 0;
@@ -37,4 +47,24 @@
 .lnkdintxt{
     text-decoration: none;
     color: black;
+}
+.no-data{
+    margin-top: 20%;
+}
+
+@media screen and (max-width:500px) {
+    .dtl-container{
+        display: flex;
+        flex-direction: column;
+        margin: 40px 20px 40px 20px;
+    }
+    .p-img-cont{
+        text-align: center;
+    }
+    .recruiter-profile-details{
+        font-size: 15px;
+    }
+    .dtls-right{
+        margin-left: 10%;
+    }
 }

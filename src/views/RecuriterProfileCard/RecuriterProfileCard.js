@@ -14,7 +14,7 @@ function RecuriterProfileCard() {
     return (
         <div>
             <Sidebar />
-            <div className='view-post-heading'>
+            <div className='view-post-heading recr-profile-heading'>
                 <h2>Recruiter Profile</h2>
             </div>
 
@@ -25,7 +25,7 @@ function RecuriterProfileCard() {
             ) : (
                 items.map((profile, index) => (
                     <div key={index} className='dtl-container'>
-                        <div>
+                        <div className='p-img-cont'>
                             <img
                                 src={UserProfileimg}
                                 className='recruiter-profile-img'
@@ -39,12 +39,12 @@ function RecuriterProfileCard() {
 
                             <div className='dtls-left'>
 
-                                <div className='dtls'><b>Email:</b> {profile.email}</div>
-                                <div className='dtls'><b>Mobile No:</b> {profile.mno}</div>
-                                <div className='dtls'><b>Gender:</b> {profile.gender}</div>
-                                <div className='dtls'><b>Degree:</b> {profile.degree}</div>
-                                <div className='dtls'><b>Institute:</b> {profile.institute}</div>
-                                <div className='dtls'><b>Experience:</b> {profile.exp} years</div>
+                                <p className='dtls'><b>Email:</b> {profile.email}</p>
+                                <p className='dtls'><b>Mobile No:</b> {profile.mno}</p>
+                                <p className='dtls'><b>Gender:</b> {profile.gender}</p>
+                                <p className='dtls'><b>Degree:</b> {profile.degree}</p>
+                                <p className='dtls'><b>Institute:</b> {profile.institude}</p>
+                                <p className='dtls'><b>Experience:</b> {profile.exp} years</p>
                             </div>
 
 
