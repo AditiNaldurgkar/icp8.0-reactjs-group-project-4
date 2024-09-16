@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# Project Name : **Hire me- Job Portal**  
+ 
+### Hire Me is a job portal designed to connect job seekers with potential employers. The platform allows users to create profiles, search for jobs, and apply directly, while employers can post job openings and manage applications.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Home Page](./home-page.PNG)
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Features]
+- [Technologies Used]
+- [Installation]
+- [Contribution]
+- [Contact]
+- [Hosting Link]
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- User Authentication:  <br>Sign up, log in, and log out functionalities for both job seekers and employers.
+- Profile Management: <br>Users can create and edit their profiles.
+- Job Search: <br>Browse or search for jobs by location, title, or company.
+- Job Application: <br>Submit applications directly through the platform.
+- Responsive Design: <br>Optimized for both desktop and mobile users.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies Used
 
-### `npm test`
+**1. HTML** <br>
+**2. CSS**  <br>
+**3. React JS**  <br>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `npm run build`
+1. Clone the repository:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   git clone https://github.com/swaroopatarkase/icp8.0-reactjs-group-project-4
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Install dependencies <br>
+  npm install
 
-### `npm run eject`
+3. Start application <br>
+  npm start
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. Open your browser and go to http://localhost:3000.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Contribution
 
-## Learn More
+![GitHub Activity Graph](https://github.com/swaroopatarkase/icp8.0-reactjs-group-project-4)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Contact
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Phone no :8999733751
 
-### Code Splitting
+## Hosting Link
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The project is hosted on Netlify (https://hiree-meh.netlify.app/).
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
