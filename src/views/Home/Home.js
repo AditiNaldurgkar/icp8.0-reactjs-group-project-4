@@ -47,7 +47,7 @@ function Home() {
         </div>
 
         <div>
-          <h3>Top Companies</h3>
+          <h3>Top Companies..</h3>
           <div className='company-list'>
             {topCompanies.map((company, index) => (
               <div key={index} className='company-item'>
@@ -60,7 +60,7 @@ function Home() {
         </div>
 
         <div className='news-section'>
-          <h3>Latest News</h3>
+          <h3>Latest News..</h3>
           <div className='news-list'>
             {newsArticles.map((news, index) => (
               <article key={index} className='news-item'>
@@ -74,7 +74,7 @@ function Home() {
         </div>
 
         <div className='feedback-section'>
-          <h3>What Our Users Are Saying</h3>
+          <h3>What Our Users Are Saying..?</h3>
           <div className='feedback-list'>
             {feedbacks.map((feedback, index) => (
               <div key={index} className='feedback-item'>
