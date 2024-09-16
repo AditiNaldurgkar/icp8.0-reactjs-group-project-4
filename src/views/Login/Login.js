@@ -15,20 +15,19 @@ const Login=()=>
 	const navigate=useNavigate();
 	const handleLogin = () => {
 		const storeData = JSON.parse(localStorage.getItem("users")) || [];
-		let userFound = false; // Flag to track if a user was found
+		let userFound = false; 
 	  
 		storeData.forEach((user, index) => {
 		  if (user.username === username && user.password === password) {
 			toast.success("Login successfully!");
 			localStorage.setItem("LOGINUSER", JSON.stringify({ ...user, index }));
 			navigate("/search");
-			userFound = true; // Set flag to true if user is found
+			userFound = true;
 			return;
 		  }
 		});
 	  
 		if (!userFound) {
-		  // Only show error after checking all users
 		  toast.error("User not found");
 		}
 	  };
