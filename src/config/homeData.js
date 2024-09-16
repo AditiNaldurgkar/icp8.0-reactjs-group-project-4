@@ -65,7 +65,7 @@ const highDemandJobs = [
   const feedbacks =[
   { 
     img: arav, alt: 'Aarav',
-    name: '', 
+    name: 'Aarav Sharma', 
     comment: 'Great platform! The job search features are very helpful and user-friendly.', 
     rating: '⭐⭐⭐⭐⭐'
   },
