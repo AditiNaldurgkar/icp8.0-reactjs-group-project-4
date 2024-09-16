@@ -1,10 +1,40 @@
 .dtl-container{
-    border: solid;
-    margin: 30px 50px 40px 80px;
+    border: none;
+    box-shadow: 0 0 10px 0;
+    margin: 40px 180px 40px 200px;
     border-radius: 10px;
     display: flex;
+    padding: 30px;
 }
 
 .recruiter-profile-img{
     height: 200px;
+}
+
+.recruiter-profile-details{
+    margin: 10px;
+    font-size: 20px;
+    display: flex;
+}
+
+.prfle-name{
+    text-align: center;
+    color: #7d19f8;
+    font-size: 20px;
+}
+
+.dtls-left{
+    margin: 0 50px;
+}
+.dtls-right{
+    margin: 0 80px;
+}
+
+.dtls{
+    margin: 30px 0;
+}
+
+.lnkdintxt{
+    text-decoration: none;
+    color: black;
 }
