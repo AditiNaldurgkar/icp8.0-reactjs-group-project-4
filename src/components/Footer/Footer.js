@@ -1,11 +1,12 @@
 import React from 'react';
 import './Footer.css';
+import logo from '../Navbar/logo.png';
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="logo"> 
-          <b><i>Hire-Me</i></b>
+      <img src={logo} alt="Logo" />
         </div>
       <div className="footer-container">
       
@@ -45,7 +46,7 @@ const Footer = () => {
       </div>
 
       <div className="footer-bottom">
-        <p className="footer-copyright">© 2024 Hire-Me. All rights reserved.</p>
+        <p className="footer-copyright">© 2024 . All rights reserved.</p>
         <ul className="footer-legal">
           <li><a href="/privacy-policy" className="footer-link">Privacy Policy</a></li>
           <li><a href="/terms-of-service" className="footer-link">Terms of Service</a></li>
