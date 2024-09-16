@@ -14,23 +14,23 @@
     border: none;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; ;
-    margin: 20px 70px;
-    
+    margin: 20px 70px; 
 }
-.line{
-  width: 1px; 
-  height: 640px; 
-  background-color: grey; 
-  margin-left: 250px;
+.verticalline{
+ width: 1px;
+ position: absolute;
+ height: 200px;
+ background-color: black;
+ left: 20%;
   }
   .jobs{
     background-image: linear-gradient( 109.6deg,  rgba(177,173,219,1) 11.2%, rgba(245,226,226,1) 91.1% );
-    height: 100px;
+    height: 400px;
     width: 900px;
     position: absolute;
     padding: 10px;
     border-radius: 10px;
-    margin-left: 270px;
+    margin-left: 310px;
     overflow-y: scroll;
     bottom: 20px;
   }
@@ -38,8 +38,8 @@
     height:0 ;
   }
   .head4{
-    left: 18%;
-    bottom:150px ;
+    margin-left: 310px;
+    bottom:450px ;
     font-size: 20px;
     color: #310066;
     position: absolute;
@@ -49,8 +49,26 @@
     font-family: "Poppins", sans-serif;
   font-weight: 700;
 }
-span{
+.title{
   color: #310066;
     font-family: "Poppins", sans-serif;
-    font-weight: 700;
+    font-weight: 600;
+    margin-right: 50px;
+    text-align: left;
+}
+.username{
+ margin-left:310px;
+margin-top: 20px;
+position: absolute;
+font-size: 40px;
+color: #310066;
+font-family: "Poppins", sans-serif;
+}
+.useremail{
+  margin-left:310px;
+  margin-top: 80px;
+  position: absolute;
+  font-size: 20px;
+  color: #310066;
+  font-family: "Poppins", sans-serif;
 }
