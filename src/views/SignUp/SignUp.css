@@ -1,31 +1,38 @@
 .left-side, .right-side {
     box-sizing: border-box;
 }
+
 .welcome-text {
     font-size: 15px;
     margin-bottom: 1rem;
     text-align: center;
 }
+
 .field-text {
     font-size: 10px;
     font-weight: bold;
     margin: 10px;
 }
+
 .input-with-icon {
     position: relative;
     display: flex;
     align-items: center;
 }
+
 .last-line {
     text-align: center;
     margin-top: 1rem;
 }
+
 input:focus, button:focus {
     outline: none;
 }
+
 .text-feild1{
     font-size: 40px;
 }
+
 .Reflection{
     height: 60vh;
     width: 80vw;
@@ -38,10 +45,11 @@ input:focus, button:focus {
     pointer-events: all;
     z-index: -1;
 }
+
 .form-group1 {
     margin-bottom: 12px;
-    
 }
+
 .select {
     padding: 5px;
     background-color:#ccccff;
@@ -51,63 +59,71 @@ input:focus, button:focus {
     font-size: 10px;
     font-weight: bold;
 }
+
 select:focus {
     outline: none;
     border-color: #000066;
 }
+
 .signup-img{
     height: 500px;
     width: 500px;
 }
+
 .linear-text{
     display:inline;
     background:linear-gradient(to left,#002aff,#0ce3ff);
     color: transparent;
     background-clip: text;
 }
+
 .group-form {
     margin-bottom: 5px;
 }
-   .group-form  label {
+
+.group-form  label {
     display: block;
     margin-bottom: 1px;
     font-weight: bold;
     font-size: 20px;
-  }
+}
   
-  .group-form  input,
-  .group-form  select {
+.group-form  input,
+.group-form  select {
     width: 70%;
     padding: 8px;
     box-sizing: border-box;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 15px;
-  }
+}
 
 .Existing-user{
     margin-top: 10px;
 }
 
 @supports (display: grid) {
-    .signup-main-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 10px;
-    }
+    
+.signup-main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
 
-    .left-side, .right-side {
-        max-width: none;
-    }
-    .login-btn
-    {
-        width: 100px;
-        height: 30px;
-    }
+.left-side, .right-side {
+    max-width: none;
+}
+
+.login-btn
+{
+    width: 100px;
+    height: 30px;
+}
+
 }
 
  /* Default Styles (For large screens, 1000px and above) */
- .signup-main-container {
+.signup-main-container {
     display: flex;
     flex-wrap: wrap;
     margin: 10px auto;
@@ -167,20 +183,21 @@ select:focus {
 }
 
 @supports (display: grid) {
-    .signup-main-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 10px;
-    }
+.signup-main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
 
-    .left-side, .right-side {
-        max-width: none;
-    }
-    .login-btn
-    {
-        width: 100px;
-        height: 30px;
-    }
+.left-side, .right-side {
+    max-width: none;
+}
+
+.login-btn {
+    width: 100px;
+    height: 30px;
+}
+
 }
 
 /* Media Query for Medium Devices (Tablets, 600px - 999px) */
@@ -195,7 +212,7 @@ select:focus {
     .left-side, .right-side {
         max-width: 100%;
         height: auto;
-        padding: 10px;
+        padding: 5px;
     }
 
     .Information {
@@ -205,37 +222,73 @@ select:focus {
 
     .signup-btn {
         font-size: 1.5rem;
-        width: 40%;
+        width: 80%;
     }
+
+    .signup-img{
+        height: 400px;
+        width: 400px;
+    }
+
 }
 
 /* Media Query for Small Devices (Mobile, up to 599px) */
 @media (max-width: 599px) {
     .signup-main-container {
-        width: 100%;
+        
+        width: 80%;
         height: auto;
         flex-direction: column;
-        padding: 15px;
+        padding: 25px;
         border: 2px solid #000066;
     }
 
     .left-side, .right-side {
         max-width: 100%;
-        padding: 10px;
+        padding: 5px;
     }
 
     .Information {
-        font-size: 1.5rem;
+        font-size: 1rem;
         width: 100%;
     }
 
     .signup-btn {
-        font-size: 1.8rem;
+        font-size: 1.2rem;
         width: 60%;
-        padding: 10px;
+        padding: 5px;
     }
 
     .welcome-text {
-        font-size: 20px;
+        text-align: center;
+        font-size: 15px;
     }
-}
+
+   .right-side{
+    display: none;
+    }
+    
+    .left-side {
+    max-width: 100%;
+    }
+
+    .group-form  select {
+    width: 100%;
+    padding: 5px;
+    font-size: 15px;
+  }
+
+   .group-form  input {
+    width: 100%;
+    font-size: 15px;
+  }
+  
+  .Existing-user{
+    font-size: 20px;
+  }
+
+  .linear-text{
+    font-size: 22px;
+  }
+  
+  }
