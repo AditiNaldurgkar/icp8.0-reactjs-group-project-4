@@ -12,6 +12,7 @@ import RecuriterProfile from './views/RecuriterProfile/RecuriterProfile';
 import AddPost from './views/AddPost/AddPost';
 import ViewPost from './views/ViewPost/ViewPost';
 import UserProfile from './views/UserProfile/UserProfile';
+import RecuriterProfileCard from './views/RecuriterProfileCard/RecuriterProfileCard';
 import 'remixicon/fonts/remixicon.css'
 import { Toaster } from 'react-hot-toast';
 
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
   {
     path: "/login",
     element: <Login />,
+  },
+  {
+    path: "/recuiter-profile-card",
+    element: <RecuriterProfileCard />,
   },
   {
     path: "/SignUp",

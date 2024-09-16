@@ -4,9 +4,10 @@ import "./Navbar.css";
 
 function Navbar() {
   return (
+    <div>
     <div className="navbar">
       <div className="logo"> 
-        <b><i>HM</i></b>
+        <b><i>Hire-Me</i></b>
       </div>
       <ul className="navbar-list">
         <li className="navbar-item">
@@ -20,7 +21,12 @@ function Navbar() {
         </li>
       </ul>
     </div>
-    
+    <div class="side_bar" id="side-bar">
+    <Link to="/" className="navbar-link">Home</Link>
+    <Link to="/signup" className="navbar-link">Sign-up</Link>
+    <Link to="/login" className="navbar-link">Login</Link>
+    </div>
+    </div>
   )
 }
 
