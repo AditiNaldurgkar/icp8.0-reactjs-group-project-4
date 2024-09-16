@@ -102,7 +102,7 @@ const Login=()=>
 				<div className="forgot-text">
 				<Link to='/setting'>Forgot password ?</Link>
 				</div>
-				<button className="login-btn" onClick={handleLogin}>Login</button>
+				<button className="login-btn" onClick={()=>{handleLogin()}}>Login</button>
 				<Toaster/>
 			</div>
 			<div className="last-line">
