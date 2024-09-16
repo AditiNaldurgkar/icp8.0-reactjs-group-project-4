@@ -147,9 +147,9 @@ select:focus {
 
 .linear-text{
     display:inline;
-    background:#000066;
+    background:linear-gradient(to left,#002aff,#0ce3ff);
     color: transparent;
-    background-Clip: text;
+    background-clip: text;
 }
 
 
