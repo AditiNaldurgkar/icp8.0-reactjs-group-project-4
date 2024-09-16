@@ -4,12 +4,34 @@
   align-items: center;
   padding: 10px 20px;
   background-color: #7676FA;
+  height: 50px;
 }
 
 .logo {
-  color: white;
-  font-size: 24px;
+  display: flex;
+  align-items: center;
+  font-family: Arial, sans-serif; 
 }
+
+.logo img {
+  width: 25khi 0px; 
+  height: 100px; 
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.logo b {
+  font-size: 20px;
+  color: #333; 
+  margin: 0;
+  padding: 0;
+}
+
+.logo i {
+  color: white; 
+}
+
 
 .navbar-list {
   display: flex;

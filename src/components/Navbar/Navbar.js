@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
+import logo from "./logo.png"
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,7 +14,7 @@ function Navbar() {
     <div>
       <div className="navbar">
         <div className="logo"> 
-          <b><i>Hire-Me</i></b>
+        <img src={logo} alt="Logo" />
         </div>
         <button className="menu-toggle" aria-label="Toggle menu" onClick={handleMenuToggle}>
           ☰

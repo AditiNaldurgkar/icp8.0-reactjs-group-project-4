@@ -31,7 +31,7 @@ const Footer = () => {
           <h3 className="footer-heading">Contact Us</h3>
           <p className="footer-text">Ground Floor, Tower 1, Pune IT Park, Kharadi, Pune, Maharashtra 411014, India</p>
           <p className="footer-text">Phone: (123) 456-7890</p>
-          <p className="footer-text">Email: job@gmail.com</p>
+          <p className="footer-text">Email: hireme@gmail.com</p>
         </div>
 
         <div className="footer-column">
