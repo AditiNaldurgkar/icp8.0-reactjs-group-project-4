@@ -1,6 +1,6 @@
 .footer {
     background-color: #7676FA;
-    color: black;
+    color: white;
     padding: 20px 0;
     text-align: center;
   }
@@ -30,7 +30,7 @@
   
   .footer-link {
     display: block;
-    color: black;
+    color: white;
     text-decoration: none;
     margin: 5px 0;
   }
