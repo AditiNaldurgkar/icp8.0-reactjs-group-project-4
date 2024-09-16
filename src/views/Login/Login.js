@@ -13,40 +13,25 @@ const Login=()=>
 	const [password , setPassword] = useState('');
     
 	const navigate=useNavigate();
-      const handleLogin = () => {
-        const storeData =JSON.parse(localStorage.getItem("users"))|| [];
-       console.log(storeData)
-       storeData.forEach((user,index)=>{
-		if(user.username == username && user.password == password)
-		{
-              toast.success("Login succesfully !")
-			  localStorage.setItem("LOGINUSER" , JSON.stringify({...user,index}));
-			  const date= new Date().getDate()
-			  localStorage.setItem("storedate",date)
-			  navigate("/search")
+	const handleLogin = () => {
+		const storeData = JSON.parse(localStorage.getItem("users")) || [];
+		let userFound = false; 
+	  
+		storeData.forEach((user, index) => {
+		  if (user.username === username && user.password === password) {
+			toast.success("Login successfully!");
+			localStorage.setItem("LOGINUSER", JSON.stringify({ ...user, index }));
+			navigate("/search");
+			userFound = true;
+			return;
+		  }
+		});
+	  
+		if (!userFound) {
+		  toast.error("User not found");
 		}
-		else
-		{
-			toast.error(" User not found")
-		}
-	   }) 	   
-      };
-	  const autologIn=()=>{
-		const LOGINUSER =JSON.parse(localStorage.getItem("LOGINUSER"))|| [];
-		let currentDate = new Date().getDate()
+	  };
 		
-		 if(LOGINUSER){
-			let storedate=localStorage.getItem("storedate");
-		  let  sessionTime = Math.abs(currentDate-storedate)
-					   if(sessionTime<=1){
-						toast.success("Try to auto login")
-						navigate("/search")
-
-					}
-		 }
-		
-		}
-		autologIn();
   return (
     <>
 	<Navbar/>

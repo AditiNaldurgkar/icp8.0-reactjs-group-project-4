@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="footer-container">
         <div className="footer-column">
           <h3 className="footer-heading">Contact Us</h3>
-          <p className="footer-text">123 Main Street, Anytown, USA</p>
+          <p className="footer-text">Ground Floor, Tower 1,Pune IT Park,Kharadi, Pune,Maharashtra 411014,India</p>
           <p className="footer-text">Phone: (123) 456-7890</p>
           <p className="footer-text">Email: job@gmail.com</p>
         </div>
