@@ -3,6 +3,8 @@ import './Form.css';
 // import toast from "react-hot-toast";
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
+import { Link } from "react-router-dom";
+import ReacuriterProfileCard from "../../views/RecuriterProfileCard/RecuriterProfileCard.js";
 
 const Form = () => {
 
@@ -99,7 +101,7 @@ const Form = () => {
             <form className="frm-main">
                 <div className="frm-holder">
 
-                    <div className="profile">
+                    <div className="left">
 
                         {/* <input type="file"
                             className="fileupload"
@@ -243,11 +245,17 @@ const Form = () => {
                                 onChange={(e) => { setJob(e.target.value) }} />
                         </div>
 
-                        <div className="input-gup center">
+                        <div className="btn-gup center">
                             <button className="btn" onClick={Add}>Add Details</button>
+
+                            <Link to="/recuiter-profile-card">
+                                <button className="btn" >Show Profile</button>
+                            </Link>
                         </div>
                     </div>
                 </div>
+
+
             </form>
 
             <ToastContainer />
