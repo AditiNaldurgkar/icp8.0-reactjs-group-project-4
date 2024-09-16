@@ -2,13 +2,13 @@
  
 ### Hire Me is a job portal designed to connect job seekers with potential employers. The platform allows users to create profiles, search for jobs, and apply directly, while employers can post job openings and manage applications.
 
+![Home Page](./home-page.PNG)
 
 ## Table of Contents
 
 - [Features]
 - [Technologies Used]
 - [Installation]
-- [Home page]
 - [Contribution]
 - [Contact]
 - [Hosting Link]
@@ -35,17 +35,16 @@
    git clone https://github.com/swaroopatarkase/icp8.0-reactjs-group-project-4
 
 
-2. Install dependencies
-npm install
+2. Install dependencies <br>
+  npm install
 
-3. Start application
+3. Start application <br>
 
-npm start
+  npm start
 
 4. Open your browser and go to http://localhost:3000.
 
-## Home page
-![Home Page](./home-page.PNG)
+
 
 ## Contribution
 
