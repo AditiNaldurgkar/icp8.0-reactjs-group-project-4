@@ -95,3 +95,44 @@ font-family: "Poppins", sans-serif;
   margin-top: 20px;
   font-size: 20px;
 }
+.img0{
+   height: 20px;
+   margin-left: 30px;
+  
+}
+.img2{
+  height: 20px;
+  margin-left: 30px;
+  
+}
+.img3{
+  height: 20px;
+  margin-left: 30px;
+ 
+}
+.img4{
+  height: 40px;
+  position: absolute;
+  margin-left:555px ;
+  top: 30px;
+}
+.socialmedia{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  margin-top: 250px;
+}
+.url1{
+  margin-left: 60px;
+  position: absolute;
+}
+.url2{
+  margin-left: 60px;
+  position: absolute;
+  top: 40px;
+}
+.url3{
+  margin-left: 60px;
+  position: absolute;
+  top: 80px;
+}

@@ -22,16 +22,22 @@ useEffect(()=>{
 },[])*/
 
 const USER=JSON.parse(localStorage.getItem("LOGINUSER"))||[];
-
+const SOCIALMEDIA=JSON.parse(localStorage.getItem("SOCIALMEDIA"))||[];
   return (
     
     <div className='container'>
         <img src={UserProfileimg} className='img1'/>
         <h4 className='head4'>Your Applied Jobs:</h4>
         <span className='userdetails'>
-        <div className='username'><b>Hello {USER.username}!</b></div>
+        <div className='username'><b>Hello {USER.username}!</b></div> <img src={wave} className='img4'/> 
         <div className='useremail'>{USER.email}</div>
         <div className='jobrole'><b>JOB ROLE : </b>{USER.jobRole}</div>
+        <div className='socialmedia'>
+        <img src={linkedinimg} className='img0'/><p className='url1'>{SOCIALMEDIA.linkdinurl}</p>
+        <img src={githubimg} className='img2'/><p className='url2'>{SOCIALMEDIA.githuburl}</p>
+        <img src={facebookimg} className='img3'/><p className='url3'>{SOCIALMEDIA.facebookurl}</p>
+         
+        </div>
         </span>
         
        {
@@ -46,7 +52,7 @@ const USER=JSON.parse(localStorage.getItem("LOGINUSER"))||[];
                <span className='jobdetails'>Job Description : </span><span className='description'>{description}</span>
                <br></br>
                <br></br>
-               <span className='company'><b>Company name :</b> </span>{company.dispay_name}
+               <span className='company'><b>Company name :</b> </span>{company.display_name}
                <br></br>
                <br></br>
                <span className='salary'><b>Maximum Salary : </b></span>{salary_max}
