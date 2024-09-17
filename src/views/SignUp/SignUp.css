@@ -182,12 +182,40 @@ select:focus {
     }
 }
 
-      
+/* Media Query for Medium Devices (Tablets, 600px - 999px) */
+@media (max-width: 999px) {
+    .signup-main-container {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .left-side, .right-side {
+        max-width: 100%;
+        height: auto;
+        padding: 5px;
+    }
+
+    .Information {
+        font-size: 1.2rem;
+        width: 100%;
+    }
+
+    .signup-btn {
+        font-size: 1.5rem;
+        width: 25%;
+    }
+
+    .signup-img {
+        height: 400px;
+        width: 400px;
+    }
+}
 
 /* Media Query for Small Devices (Mobile, up to 599px) */
 @media (max-width: 599px) {
     .signup-main-container {
-        
         width: 80%;
         height: auto;
         flex-direction: column;
@@ -195,9 +223,12 @@ select:focus {
         border: 2px solid #000066;
     }
 
-    .left-side, .right-side {
+    .left-side {
         max-width: 100%;
-        padding: 5px;
+    }
+
+    .right-side {
+        display: none;
     }
 
     .Information {
@@ -207,40 +238,19 @@ select:focus {
 
     .signup-btn {
         font-size: 1.2rem;
-        width: 60%;
+        width: 35%;
         padding: 5px;
     }
 
-    .welcome-text {
-        text-align: center;
+    .group-form select, .group-form input {
+        width: 100%;
         font-size: 15px;
     }
 
-   .right-side{
-    display: none;
+    .linear-text {
+        font-size: 22px;
     }
+}
+
+        
     
-    .left-side {
-    max-width: 100%;
-    }
-
-    .group-form  select {
-    width: 100%;
-    padding: 5px;
-    font-size: 15px;
-  }
-
-   .group-form  input {
-    width: 100%;
-    font-size: 15px;
-  }
-  
-  .Existing-user{
-    font-size: 20px;
-  }
-
-  .linear-text{
-    font-size: 22px;
-  }
-  
-  }
