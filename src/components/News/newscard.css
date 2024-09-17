@@ -105,7 +105,8 @@
     }
     .trend-card{
       margin-top: 5px;
-      height: 160px;
+      height: fit-content;
+      margin-bottom: 20px;
     }
   }
   @media screen and (min-width: 680px) and (max-width: 830px){
@@ -121,9 +122,10 @@
       font-weight: bold;
     }
     .trend-card{
-      height: 120px;
+      height: fit-content;
       width: 220px;
     }
+    
     .title{
       font-size: 1.2em;
       text-align: center;
@@ -155,7 +157,7 @@
       font-weight: bold;
     }
     .trend-card{
-      height: 120px;
+      height: fit-content;
       width: 220px;
       margin: 20px;
     }
