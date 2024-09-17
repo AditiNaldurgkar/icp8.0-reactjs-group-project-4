@@ -106,25 +106,9 @@ select:focus {
 }
    
 
-@supports (display: grid) {
-    
-.signup-main-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-}
 
-.left-side, .right-side {
-    max-width: none;
-}
 
-.login-btn
-{
-    width: 100px;
-    height: 30px;
-}
 
-}
 
  /* Default Styles (For large screens, 1000px and above) */
 .signup-main-container {
