@@ -48,10 +48,16 @@
     color: #310066;
     font-family: "Poppins", sans-serif;
   font-weight: 700;
+  font-size: 20px;
+ 
+}
+.description{
+  font-size: 20px;
 }
 .titles{
   color: #310066;
-  
+  font-size: 20px;
+
   
 }
 .username{
@@ -77,12 +83,15 @@ font-family: "Poppins", sans-serif;
   font-family: "Poppins", sans-serif;
   margin-top: 110px;
   position: absolute;
+  font-size: 20px;
 }
 .company{
   color: #310066;
   margin-top: 20px;
+  font-size: 20px;
 }
 .salary{
   color: #310066;
   margin-top: 20px;
+  font-size: 20px;
 }
