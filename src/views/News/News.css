@@ -101,9 +101,13 @@
     .trendcardcontainer{
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
         margin-top: 10px;
         padding: 3px;
+    }
+    .tech-grid{
+        justify-content: center;
+        margin: 20px;
     }
 }
 @media screen and (max-width:420px ){
