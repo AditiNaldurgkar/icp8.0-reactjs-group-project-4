@@ -1,7 +1,9 @@
-.left-side, .right-side {
+/* Universal box-sizing for left and right sides */
+.left-side, .right-side { 
     box-sizing: border-box;
 }
 
+/* Styles for welcome text and other elements */
 .welcome-text {
     font-size: 15px;
     margin-bottom: 1rem;
@@ -29,7 +31,7 @@ input:focus, button:focus {
     outline: none;
 }
 
-.text-feild1{
+.text-feild1 {
     font-size: 40px;
 }
 
