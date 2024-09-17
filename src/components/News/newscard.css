@@ -121,7 +121,7 @@
       font-weight: bold;
     }
     .trend-card{
-      height: 120px;
+      height: fit-content;
       width: 220px;
     }
     .title{
@@ -155,7 +155,7 @@
       font-weight: bold;
     }
     .trend-card{
-      height: 120px;
+      height: fit-content;
       width: 220px;
       margin: 20px;
     }
