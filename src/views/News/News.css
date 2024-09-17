@@ -94,7 +94,7 @@
         justify-content: space-between;
     }
 }
-@media screen and (min-width: 100px) and (max-width: 830px){
+@media screen and (min-width: 421px) and (max-width: 830px){
     .headingn{
         font-size: 65px;
     }
@@ -124,6 +124,7 @@
     .tech-grid {
         display: flex;
         flex-direction: row;
-        margin-right: 25%;
+        margin:20px;
+        justify-content: center;
       }
 }
