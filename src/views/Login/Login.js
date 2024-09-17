@@ -13,25 +13,6 @@ const Login=()=>
 	const [password , setPassword] = useState('');
     
 	const navigate=useNavigate();
-	/*const handleLogin = () => {
-		const storeData = JSON.parse(localStorage.getItem("users")) || [];
-		let userFound = false; 
-	  
-		storeData.forEach((user, index) => {
-		  if (user.username === username && user.password === password) {
-			toast.success("Login successfully!");
-			localStorage.setItem("LOGINUSER", JSON.stringify({ ...user, index }));
-			navigate("/search");
-			userFound = true;
-			return;
-		  }
-		});
-	  
-		if (!userFound) {
-		  toast.error("User not found");
-		}
-	  };
-	  */
 	  const handleLogin = () => {
 		const storeData = JSON.parse(localStorage.getItem("users")) || [];
 		const userFound = storeData.some((user, index) => {
@@ -105,9 +86,6 @@ const Login=()=>
                            onChange={(e)=> setPassword(e.target.value)} />
 
 				</div>
-				</div>
-				<div className="forgot-text">
-				<Link to='/setting'>Forgot password ?</Link>
 				</div>
 				<button className="login-btn" onClick={()=>{handleLogin()}}>Login</button>
 				<Toaster/>
