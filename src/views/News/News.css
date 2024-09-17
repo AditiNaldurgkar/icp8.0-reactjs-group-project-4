@@ -93,6 +93,9 @@
     .tech-grid{
         justify-content: space-between;
     }
+    .trendcardcontainer{
+        padding-bottom: 10px;
+    }
 }
 @media screen and (min-width: 421px) and (max-width: 830px){
     .headingn{

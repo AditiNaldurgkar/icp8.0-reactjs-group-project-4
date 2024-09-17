@@ -106,6 +106,7 @@
     .trend-card{
       margin-top: 5px;
       height: fit-content;
+      margin-bottom: 5px;
     }
   }
   @media screen and (min-width: 680px) and (max-width: 830px){
