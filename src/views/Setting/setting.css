@@ -27,7 +27,7 @@
     display: block;
     height:100%;
     width: 60px;
-    background-color: red;
+    background-color: #acabab;
     border-radius: 50%;
     overflow: hidden;
 }
@@ -35,7 +35,8 @@
 .setting-profile-pic img{
     height: 100%;
     width: 100%;
-    object-fit: fill;
+    object-fit:contain;
+    scale: 1.5;
 }
 
 .user-info{
