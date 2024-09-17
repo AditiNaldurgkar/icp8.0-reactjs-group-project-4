@@ -35,15 +35,16 @@ input:focus, button:focus {
     font-size: 40px;
 }
 
-.Reflection{
+
+.Reflection {
     height: 60vh;
     width: 80vw;
-    position:fixed;
-    background:linear-gradient(#65d2fa77,#d345f075);
-    filter:blur(100px) ;
+    position: fixed;
+    background: linear-gradient(#65d2fa77, #d345f075);
+    filter: blur(100px);
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     pointer-events: all;
     z-index: -1;
 }
@@ -54,7 +55,7 @@ input:focus, button:focus {
 
 .select {
     padding: 5px;
-    background-color:#ccccff;
+    background-color: #ccccff;
     color: #000066;
     border: 2px solid #000066;
     border-radius: 5px;
@@ -67,14 +68,14 @@ select:focus {
     border-color: #000066;
 }
 
-.signup-img{
+.signup-img {
     height: 500px;
     width: 500px;
 }
 
-.linear-text{
-    display:inline;
-    background:linear-gradient(to left,#002aff,#0ce3ff);
+.linear-text {
+    display: inline;
+    background: linear-gradient(to left, #002aff, #0ce3ff);
     color: transparent;
     background-clip: text;
 }
@@ -83,15 +84,15 @@ select:focus {
     margin-bottom: 5px;
 }
 
-.group-form  label {
+.group-form label {
     display: block;
     margin-bottom: 1px;
     font-weight: bold;
     font-size: 20px;
 }
-  
-.group-form  input,
-.group-form  select {
+
+.group-form input,
+.group-form select {
     width: 70%;
     padding: 8px;
     box-sizing: border-box;
@@ -100,9 +101,10 @@ select:focus {
     font-size: 15px;
 }
 
-.Existing-user{
+.Existing-user {
     margin-top: 10px;
 }
+   
 
 @supports (display: grid) {
     
