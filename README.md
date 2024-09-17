@@ -1,6 +1,6 @@
 # Project Name : **Career Connect- Job Portal**  
  
-### Hire Me is a job portal designed to connect job seekers with potential employers. The platform allows users to create profiles, search for jobs, and apply directly, while employers can post job openings and manage applications.
+### Career Connect is a job portal designed to connect job seekers with potential employers. The platform allows users to create profiles, search for jobs, and apply directly, while employers can post job openings and manage applications.
 
 ![Home Page](./home-page-img.PNG)
 
