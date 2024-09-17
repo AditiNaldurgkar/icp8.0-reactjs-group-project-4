@@ -36,7 +36,7 @@ const USER=JSON.parse(localStorage.getItem("LOGINUSER"))||[];
         
        {
         appliedjobs.map((appliedjob)=>{
-          const{title,description,company}=appliedjob;
+          const{title,description,company,salary_max}=appliedjob;
              return(
               
               <div className='jobs'> 
@@ -46,8 +46,13 @@ const USER=JSON.parse(localStorage.getItem("LOGINUSER"))||[];
                <span className='jobdetails'>Job Description : </span> {description}
                <br></br>
                <br></br>
-               <span className='company'><b>Company name :</b> </span>{SALARY_MAX}
-               <span className='company'><b>Company name :</b> </span>{.display_name}
+               <span className='company'><b>Company name :</b> </span>{company.dispay_name}
+               <br></br>
+               <br></br>
+               <span className='salary'><b>Maximum Salary : </b></span>{salary_max}
+               <br></br>
+               <br></br>
+               <span className='salary'><b>Minimum Salary : </b></span>{salary_max}
               </div>
              )
 })
