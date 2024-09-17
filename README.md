@@ -25,8 +25,8 @@
 
 **1. HTML** <br>
 **2. CSS**  <br>
-**3. React JS**  <br>
-
+**3. React JS**  <br><br>
+**API used- [https://developer.adzuna.com/]**
 ## Installation
 
 1. Clone the repository:
@@ -47,7 +47,7 @@
 
 ## Contribution
 
-![GitHub Activity Graph](https://github.com/swaroopatarkase/icp8.0-reactjs-group-project-4)
+<img src="https://contrib.rocks/image?repo=swaroopatarkase/icp8.0-reactjs-group-project-4">
 
 ## Contact
 
@@ -55,6 +55,6 @@ Phone no :8999733751
 
 ## Hosting Link
 
-The project is hosted on Netlify (https://hiree-meh.netlify.app/).
+The project is hosted on Netlify [https://career-connect-job-portal.netlify.app/].
 
 
