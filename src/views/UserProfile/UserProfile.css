@@ -136,3 +136,71 @@ font-family: "Poppins", sans-serif;
   position: absolute;
   top: 80px;
 }
+
+
+
+@media only screen and (max-width: 600px) {
+  .img1 {
+    height: 100px;
+    width: 100px;
+    left: 20px;
+    top: 10px;
+  }
+
+  .container {
+    height: 38rem;
+    width: 26rem;
+    margin-right: 20px;
+    margin: 10px 20px;
+  }
+
+  .verticalline {
+    height: 400px;
+    left: 10%;
+    display: none;
+  }
+
+  .jobs {
+    height: 270px;
+    width: 385px;
+    margin-left: 10px;
+    padding: 5px;
+    bottom: 10px;
+  }
+
+  .head4 {
+    margin-left: 10px;
+    font-size: 20px;
+    bottom: 300px;
+  }
+
+
+
+
+  .useremail,
+  .jobrole {
+    font-size: 16px;
+    margin-left: 130px;
+  }
+  .username{
+     font-size: 30px;
+     margin-left: 130px;
+     top: 10px;
+  }
+
+  .img4 {
+    height: 25px;
+    margin-left: 300px;
+    top: 40px;
+  }
+
+  .socialmedia {
+    margin-top: 150px;
+  }
+
+  .url1,
+  .url2,
+  .url3 {
+    margin-left: 60px;
+  }
+}
