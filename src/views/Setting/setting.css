@@ -167,20 +167,20 @@
     z-index: -1;
 }
 
-.socialmedia{
+.socialmedias{
     display: flex;
     align-items:start;
     gap: 20px;
     flex-wrap: wrap;
 }
 
-.socialmedia span{
+.socialmedias span{
     display: flex;
     align-items: center;
     gap: 2vw;
 }
 
-.socialmedia span i{
+.socialmedias span i{
     font-size: 29px;
     display: inline-block;
     text-align: center;
