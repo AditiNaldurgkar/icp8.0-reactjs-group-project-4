@@ -31,6 +31,7 @@ const USER=JSON.parse(localStorage.getItem("LOGINUSER"))||[];
         <span className='userdetails'>
         <div className='username'><b>Hello {USER.username}!</b></div>
         <div className='useremail'>{USER.email}</div>
+        <div className='jobrole'><b>JOB ROLE : </b>{USER.jobRole}</div>
         </span>
         
        {
