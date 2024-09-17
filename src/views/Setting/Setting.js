@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import Sidebar from '../../components/Sidebar/Sidebar'
 import './setting.css'
-import BoyProfileImg from './boy-profile-pic.svg'
+import BoyProfileImg from './user.svg'
 import './toggle.css'
 import { Passpopup ,Profilepopup} from '../../components/popup/Popup'
 import toast from 'react-hot-toast'
-
 
 
 const Setting = () => {
