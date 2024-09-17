@@ -114,6 +114,9 @@
     .headingn{
         font-size: 40px;
     }
+    .trends{
+        margin-left: 8%;
+    }
     .trendcardcontainer{
         display: flex;
         flex-wrap: wrap;
