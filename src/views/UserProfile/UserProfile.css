@@ -49,12 +49,10 @@
     font-family: "Poppins", sans-serif;
   font-weight: 700;
 }
-.title{
+.titles{
   color: #310066;
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    margin-right: 50px;
-    text-align: left;
+  
+  
 }
 .username{
  margin-left:310px;
@@ -79,4 +77,8 @@ font-family: "Poppins", sans-serif;
   font-family: "Poppins", sans-serif;
   margin-top: 110px;
   position: absolute;
+}
+.company{
+  color: #310066;
+  margin-top: 20px;
 }
