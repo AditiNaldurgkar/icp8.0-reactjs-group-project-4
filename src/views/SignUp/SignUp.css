@@ -176,7 +176,8 @@ select:focus {
 }
 
 .signup-btn:hover{
-    background-color: #2a2acc;}
+    background-color: #2a2acc;
+}
 
 
 /* Media Query for Extra Large Devices (1200px and above) */
