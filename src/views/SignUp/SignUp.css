@@ -100,9 +100,18 @@ select:focus {
     border-radius: 4px;
     font-size: 15px;
 }
+.group-form select{
+    border-bottom: 1px solid #6969ffc7;
+}
+.group-form input{
+    border-bottom: 1px solid #6969ffc7;
+}
+
 
 .Existing-user {
     margin-top: 10px;
+    
+    font-size: 18px;
 }
    
 /* Default Styles (For large screens, 1000px and above) */
