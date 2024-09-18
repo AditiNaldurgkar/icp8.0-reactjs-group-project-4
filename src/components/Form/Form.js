@@ -240,7 +240,7 @@ const Form = () => {
                     <div className="btn-gup center">
                         <button className="btn" onClick={Add}>Add Details</button>
 
-                        <Link to="/recuiter-profile-card">
+                        <Link to="/recuiter-profile-card" className="linktag">
                             <button className="btn" >Show Profile</button>
                         </Link>
                     </div>

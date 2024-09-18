@@ -91,8 +91,15 @@ input[type="radio"] {
 }
 
 .btn-gup{
+    display: flex;
+    width: 100%;
     /* margin: 1vw; */
     /* border: 1px solid red; */
+}
+
+.linktag{
+    display: block;
+    width: 100%;
 }
 
 .textArea {
@@ -104,10 +111,10 @@ input[type="radio"] {
     background-color: #3757ca;
 }
 
-.btn-holder {
+/* .btn-holder {
     display: block;
     width: 100%;
-}
+} */
 
 .center {
     text-align: center;
