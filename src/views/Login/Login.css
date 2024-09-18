@@ -118,7 +118,7 @@ button:focus {
     outline: none;
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:599px) {
     .login-main-container {
         margin: 50px auto;
         max-width: 300px;
