@@ -65,7 +65,7 @@
 margin-top: 20px;
 position: absolute;
 font-size: 40px;
-color: #310066;
+color: black;
 font-family: "Poppins", sans-serif;
 }
 .useremail{
@@ -73,12 +73,12 @@ font-family: "Poppins", sans-serif;
   margin-top: 80px;
   position: absolute;
   font-size: 20px;
-  color: #310066;
+  color:black;
   font-family: "Poppins", sans-serif;
 }
 .jobrole{
   margin-left: 310px;
-  color: #310066;
+  color: black;
   font-size: 20px;
   font-family: "Poppins", sans-serif;
   margin-top: 110px;
@@ -86,12 +86,12 @@ font-family: "Poppins", sans-serif;
   font-size: 20px;
 }
 .company{
-  color: #310066;
+  color: black;
   margin-top: 20px;
   font-size: 20px;
 }
 .salary{
-  color: #310066;
+  color:black;
   margin-top: 20px;
   font-size: 20px;
 }

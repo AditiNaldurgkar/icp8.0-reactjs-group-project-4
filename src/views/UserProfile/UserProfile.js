@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState , useRef } from 'react'
 import '../UserProfile/UserProfile.css'
 import UserProfileimg from '../../views/UserProfile/userprofileimg.png'
 import linkedinimg from '../../views/UserProfile/linkedinimg.png'
@@ -15,21 +15,22 @@ function UserProfile() {
   setappliedjobs(appliedjobs);
  }, []);
  
- /*const[user,setuserdetails] = useState([])
-useEffect(()=>{
-  const userDetails=JSON.parse(localStorage.getItem("LOGINUSER"))||[];
-  setuserdetails(userDetails);
-},[])*/
-
+const inputRef = useRef(null);
+const handleImgClick = () =>{
+  inputRef.current.click();
+} 
 const USER=JSON.parse(localStorage.getItem("LOGINUSER"))||[];
 const SOCIALMEDIA=JSON.parse(localStorage.getItem("SOCIALMEDIA"))||[];
   return (
     
     <div className='container'>
+      <div onClick={handleImgClick}>
+      <input type='file'ref={inputRef} onChange={handleImgChange} style={{display:"none"}}></input>
         <img src={UserProfileimg} className='img1'/>
+      </div>
         <h4 className='head4'>Your Applied Jobs:</h4>
         <span className='userdetails'>
-        <div className='username'><b>Hello {USER.username}!</b></div> <img src={wave} className='img4'/> 
+        <div className='username'><b>Hello {USER.username}!</b></div> 
         <div className='useremail'>{USER.email}</div>
         <div className='jobrole'><b>JOB ROLE : </b>{USER.jobRole}</div>
         <div className='socialmedia'>
@@ -41,10 +42,9 @@ const SOCIALMEDIA=JSON.parse(localStorage.getItem("SOCIALMEDIA"))||[];
         </span>
         
        {
-        appliedjobs.map((appliedjob)=>{
-          const{title,description,company,salary_max,salary_min,location}=appliedjob;
+        appliedjobs.map((appliedjobs)=>{
+          const{title,description,company,salary_max,salary_min,location}=appliedjobs;
              return(
-              
               <div className='jobs'> 
               <span className='titles'><b>Title :</b>  </span>{title}
                <br></br>
