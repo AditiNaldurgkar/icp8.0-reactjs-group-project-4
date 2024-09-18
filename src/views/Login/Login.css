@@ -93,9 +93,9 @@
 
 .login-button {
     font-size: 1.2vw;
-    width: 100%;
+    width: 50%;
     max-width: 280px;
-    height: 4rem;
+    height: 3rem;
     border-radius: 10px;
     background-color: #6969ffc7;
     color: white;
