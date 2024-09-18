@@ -4,7 +4,6 @@ import './Form.css';
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import { Link } from "react-router-dom";
-import ReacuriterProfileCard from "../../views/RecuriterProfileCard/RecuriterProfileCard.js";
 
 const Form = () => {
 
@@ -20,7 +19,6 @@ const Form = () => {
     const [desc, setDecriptions] = useState('');
     const [keyskill, setkeyskill] = useState('');
     const [linkedIn, setLinkedIn] = useState('');
-    // const [file, setFile] = useState('');
     const [gender, setGender] = useState('')
 
     function Add() {
@@ -56,7 +54,6 @@ const Form = () => {
                 job,
                 keyskill,
                 linkedIn,
-                // file,
                 gender
             }
 
@@ -100,151 +97,154 @@ const Form = () => {
         <>
             <form className="frm-main">
                 <div className="frm-holder">
+                    <div className="frm-content">
 
-                    <div className="right">
+                        <div className="right">
 
-                        <div className="input-gup">
-                            <label for="name" className="input-label">Full Name</label>
-                            <input type="text" id="name"
-                                className="input-field"
-                                placeholder="e.g John Hardi"
-                                required
-                                onChange={(e) => { setName(e.target.value) }} />
+                            <div className="input-gup">
+                                <label for="name" className="input-label">Full Name</label>
+                                <input type="text" id="name"
+                                    className="input-field"
+                                    placeholder="e.g John Hardi"
+                                    required
+                                    onChange={(e) => { setName(e.target.value) }} />
+                            </div>
+
+                            <div className="input-gup">
+                                <label for="email" className="input-label">Email</label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    className="input-field"
+                                    placeholder="Email id"
+                                    required
+                                    onChange={(e) => { setEmail(e.target.value) }} />
+                            </div>
+
+                            <div className="input-gup">
+                                <label className="input-label">Selected Gender </label>
+
+                                <input type="radio" name="gender" value="male"
+                                    onChange={(e) => {
+                                        if (e.target.checked) {
+                                            setGender(e.target.value)
+                                        }
+                                    }}
+                                    checked={gender === "male"} /><span className="radio-font">Male</span>
+
+                                <br />
+
+
+                                <input type="radio" name="gender" value="female"
+                                    onChange={(e) => {
+                                        if (e.target.checked) {
+                                            setGender(e.target.value)
+                                        }
+                                    }}
+                                    checked={gender === "female"} /><span className="radio-font">Female</span>
+
+                            </div>
+
+                            <div className="input-gup">
+                                <label for="number" className="input-label">Mobile No.</label>
+                                <input
+                                    type="number"
+                                    id="number"
+                                    className="input-field"
+                                    placeholder="+91 1254976843"
+                                    required
+                                    onChange={(e) => { setMobile(e.target.value) }} />
+
+                            </div>
+
+                            <div className="input-gup">
+                                <label for="company" className="input-label">Company Name</label>
+                                <input type="text" id="company" className="input-field" placeholder="Enter Company Name" required onChange={(e) => { setCompany(e.target.value) }} />
+                            </div>
+
+
+                            <div className="input-gup">
+                                <label for="job" className="input-label">Job Title</label>
+                                <input
+                                    type="text"
+                                    id="job"
+                                    className="input-field"
+                                    placeholder="Enter Job Title"
+                                    required
+                                    onChange={(e) => { setJob(e.target.value) }} />
+                            </div>
+
+
+                            <div className="input-gup">
+                                <label for="degre" className="input-label">Degress Obtained</label>
+                                <input type="text" id="degre" className="input-field" placeholder="Enter Degree" required onChange={(e) => { setDegree(e.target.value) }} />
+                            </div>
                         </div>
 
-                        <div className="input-gup">
-                            <label for="email" className="input-label">Email</label>
-                            <input
-                                type="email"
-                                id="email"
-                                className="input-field"
-                                placeholder="Email id"
-                                required
-                                onChange={(e) => { setEmail(e.target.value) }} />
+                        <div className="left">
+
+                            <div className="input-gup">
+                                <label for="institude" className="input-label">Institutions Attended</label>
+                                <input type="text" id="institude" className="input-field" placeholder="Enter Institutions Attended" required onChange={(e) => { setInstitude(e.target.value) }} />
+                            </div>
+
+                            <div className="input-gup" >
+                                <label for="exp" className="input-label">Recuriter's Exp.</label>
+                                <input type="number" id="exp" className="input-field" placeholder="Enter Recuriter Experiance" required onChange={(e) => { setExperiance(e.target.value) }} />
+                            </div>
+
+                            <div className="input-gup">
+                                <label for="link" className="input-label">LinkedIn Profile</label>
+                                <input
+                                    type="text"
+                                    id="link"
+                                    className="input-field"
+                                    placeholder="Enter Link Of Profile"
+                                    required
+                                    onChange={(e) => { setLinkedIn(e.target.value) }} />
+                            </div>
+
+                            <div className="input-gup">
+                                <label for="skill" className="input-label">Enter Key Skills</label>
+                                <input
+                                    type="text"
+                                    id="skill"
+                                    className="input-field"
+                                    placeholder="Enter Skills"
+                                    required
+                                    onChange={(e) => { setkeyskill(e.target.value) }} />
+                            </div>
+
+                            <div className="input-gup">
+                                <label for="exper" className="input-label">Expertise</label>
+                                <input type="text" id="exper" className="input-field" required placeholder="Expertise" onChange={(e) => { setExpertise(e.target.value) }} />
+                            </div>
+
+
+                            <div className="input-gup">
+                                <label for="text" className="input-label">Company Descriptions </label>
+                                <textarea
+                                    // rows={4}
+                                    className="textArea"
+                                    id="text"
+                                    placeholder="Enter Details Of Company..."
+                                    required
+                                    onChange={(e) => { setDecriptions(e.target.value) }}>
+
+                                </textarea>
+                            </div>
                         </div>
 
-                        <div className="input-gup">
-                            <label className="input-label">Selected Gender </label>
-
-                            <input type="radio" name="gender" value="male"
-                                onChange={(e) => {
-                                    if (e.target.checked) {
-                                        setGender(e.target.value)
-                                    }
-                                }}
-                                checked={gender === "male"} />Male
-
-                            <br />
-
-
-                            <input type="radio" name="gender" value="female"
-                                onChange={(e) => {
-                                    if (e.target.checked) {
-                                        setGender(e.target.value)
-                                    }
-                                }}
-                                checked={gender === "female"} />Female
-
-                        </div>
-
-                        <div className="input-gup">
-                            <label for="number" className="input-label">Mobile No.</label>
-                            <input
-                                type="number"
-                                id="number"
-                                className="input-field"
-                                placeholder="+91 1254976843"
-                                required
-                                onChange={(e) => { setMobile(e.target.value) }} />
-                        </div>
-
-                        <div className="input-gup">
-                            <label for="company" className="input-label">Company Name</label>
-                            <input type="text" id="company" className="input-field" placeholder="Enter Company Name" required onChange={(e) => { setCompany(e.target.value) }} />
-                        </div>
-
-
-                        <div className="input-gup">
-                            <label for="job" className="input-label">Job Title</label>
-                            <input
-                                type="text"
-                                id="job"
-                                className="input-field"
-                                placeholder="Enter Job Title"
-                                required
-                                onChange={(e) => { setJob(e.target.value) }} />
-                        </div>
                     </div>
 
-                    <div className="left">
+                    <div className="btn-gup center">
+                        <button className="btn" onClick={Add}>Add Details</button>
 
-                        <div className="input-gup">
-                            <label for="degre" className="input-label">Degress Obtained</label>
-                            <input type="text" id="degre" className="input-field" placeholder="Enter Degree" required onChange={(e) => { setDegree(e.target.value) }} />
-                        </div>
-
-                        <div className="input-gup">
-                            <label for="institude" className="input-label">Institutions Attended</label>
-                            <input type="text" id="institude" className="input-field" placeholder="Enter Institutions Attended" required onChange={(e) => { setInstitude(e.target.value) }} />
-                        </div>
-
-                        <div className="input-gup" >
-                            <label for="exp" className="input-label">Recuriter's Exp.</label>
-                            <input type="number" id="exp" className="input-field" placeholder="Enter Recuriter Experiance" required onChange={(e) => { setExperiance(e.target.value) }} />
-                        </div>
-
-                        <div className="input-gup">
-                            <label for="link" className="input-label">LinkedIn Profile</label>
-                            <input
-                                type="text"
-                                id="link"
-                                className="input-field"
-                                placeholder="Enter Link Of Profile"
-                                required
-                                onChange={(e) => { setLinkedIn(e.target.value) }} />
-                        </div>
-
-                        <div className="input-gup">
-                            <label for="skill" className="input-label">Enter Key Skills</label>
-                            <input
-                                type="text"
-                                id="skill"
-                                className="input-field"
-                                placeholder="Enter Skills"
-                                required
-                                onChange={(e) => { setkeyskill(e.target.value) }} />
-                        </div>
-
-                        <div className="input-gup">
-                            <label for="exper" className="input-label">Expertise</label>
-                            <input type="text" id="exper" className="input-field" required placeholder="Expertise" onChange={(e) => { setExpertise(e.target.value) }} />
-                        </div>
-
-
-                        <div className="input-gup">
-                            <label for="text" className="input-label">Company Descriptions </label>
-                            <textarea
-                                // rows={4}
-                                className="textArea"
-                                id="text"
-                                placeholder="Enter Details Of Company..."
-                                required
-                                onChange={(e) => { setDecriptions(e.target.value) }}>
-
-                            </textarea>
-                        </div>
-
-                        <div className="btn-gup center">
-                            <button className="btn" onClick={Add}>Add Details</button>
-
-                            <Link to="/recuiter-profile-card">
-                                <button className="btn" >Show Profile</button>
-                            </Link>
-                        </div>
+                        <Link to="/recuiter-profile-card">
+                            <button className="btn" >Show Profile</button>
+                        </Link>
                     </div>
                 </div>
-
-
             </form>
 
             <ToastContainer />
