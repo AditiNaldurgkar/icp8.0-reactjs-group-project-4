@@ -12,7 +12,7 @@ import RecuriterProfile from './views/RecuriterProfile/RecuriterProfile';
 import AddPost from './views/AddPost/AddPost';
 import ViewPost from './views/ViewPost/ViewPost';
 import UserProfile from './views/UserProfile/UserProfile';
-import User from './views/Users/Users';
+import Users from './views/Users/Users';
 import RecuriterProfileCard from './views/RecuriterProfileCard/RecuriterProfileCard';
 import 'remixicon/fonts/remixicon.css'
 import { Toaster } from 'react-hot-toast';
