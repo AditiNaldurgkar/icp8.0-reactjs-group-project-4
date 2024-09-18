@@ -74,7 +74,10 @@ const Search = () => {
         </div>
         <div className='job-types-container'>
           {jobNames.map((jobTitle, index) => (
-            <span className='job-titles' key={index} onClick={() => { setjobTittle(jobTitle) }}>{jobTitle} <i className="ri-arrow-right-up-line"></i></span>
+            <span className='job-titles' key={index} onClick={() => { 
+              setjobTittle(jobTitle) 
+              searchJob(jobTitle)
+             }}>{jobTitle} <i className="ri-arrow-right-up-line"></i></span>
           ))}
         </div>
         <div className='cards-cobtainer'>

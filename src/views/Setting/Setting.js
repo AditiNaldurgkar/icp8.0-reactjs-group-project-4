@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import Sidebar from '../../components/Sidebar/Sidebar'
 import './setting.css'
-import BoyProfileImg from './boy-profile-pic.svg'
+import BoyProfileImg from './user.svg'
 import './toggle.css'
 import { Passpopup ,Profilepopup} from '../../components/popup/Popup'
 import toast from 'react-hot-toast'
-
 
 
 const Setting = () => {
@@ -95,7 +94,7 @@ const Setting = () => {
             
       <div className='setting-box'>
            <span className='setting-heading'>link social media</span>
-           <div className='user-set-box socialmedia'>
+           <div className='user-set-box socialmedias'>
               <span><i class="ri-github-fill"></i> <input type='text' className='seting-in' value={githuburl} placeholder='enter your github profile url'  onChange={(e)=>setgithuburl(e.target.value)}></input></span> 
               <span><i class="ri-linkedin-box-fill"></i> <input type='text' className='seting-in' value={linkdinurl} placeholder='enter your linkdin profile url' onChange={(e)=>setlinkdinurl(e.target.value)}></input></span>
               <span><i class="ri-instagram-fill"></i> <input type='text' className='seting-in' value={instaurl} placeholder='enter your instagram profile url' onChange={(e)=>setinstaurl(e.target.value)}></input></span> 
