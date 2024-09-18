@@ -22,6 +22,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin: 1vw;
 }
 
 .left {
@@ -89,10 +90,10 @@ input[type="radio"] {
 
 }
 
-/* .btn-gup{
-    padding:0;
-    border: 1px solid red;
-} */
+.btn-gup{
+    /* margin: 1vw; */
+    /* border: 1px solid red; */
+}
 
 .textArea {
     width: 10vw;
@@ -213,7 +214,7 @@ input[type="radio"] {
 
     .left,
     .right {
-        height: 53vh;
+        height: 60vh;
     }
 
     .btn{
@@ -250,7 +251,7 @@ input[type="radio"] {
 
     .left,
     .right {
-        height: 60vh;
+        height: 65vh;
     }
 
 }
@@ -274,7 +275,7 @@ input[type="radio"] {
 
     .left,
     .right {
-        height: 63vh;
+        height: 68vh;
     }
 
     .btn {
