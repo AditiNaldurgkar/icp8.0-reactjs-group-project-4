@@ -87,7 +87,7 @@ const Login=()=>
 
 				</div>
 				</div>
-				<button className="login-btn" onClick={()=>{handleLogin()}}>Login</button>
+				<button className="login-button" onClick={()=>{handleLogin()}}>Login</button>
 				<Toaster/>
 			</div>
 			<div className="last-line">
