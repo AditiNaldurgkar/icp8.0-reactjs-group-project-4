@@ -5,7 +5,7 @@ import axios from 'axios'
 import toast from 'react-hot-toast'
 import serchImg from "./serch.png"
 import Usercard from '../../components/Usercard/Usercard'
-
+import Msgicon from '../../components/Msgicon/Msgicon'
 
 const Users = () => {
 
@@ -42,6 +42,7 @@ const Users = () => {
                        ))
                 }
              </div>
+            <Msgicon/>
        </div>
     </>
   )
