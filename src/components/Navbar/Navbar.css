@@ -1,3 +1,8 @@
+body {
+  margin: 0; 
+  padding-top: 50px; 
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -5,6 +10,11 @@
   padding: 10px 20px;
   background-color: #7676FA;
   height: 50px;
+  position: fixed; 
+  top: 0;          
+  left: 0;         
+  width: 100%;     
+  z-index: 1000; 
 }
 
 .logo {
