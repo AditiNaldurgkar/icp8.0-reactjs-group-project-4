@@ -35,13 +35,6 @@
     font-size: 20px;
     color: black;
   }
-  .jobdetails{
-    color: black;
-    font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-size: 20px;
- 
-}
 .username{
  margin-left:90px;
  font-size: 40px;
@@ -66,16 +59,6 @@
   margin-top: 150px;
   font-size: 20px;
   position: absolute;
-}
-.company{
-  color: black;
-  margin-top: 20px;
-  font-size: 20px;
-}
-.salary{
-  color:black;
-  margin-top: 20px;
-  font-size: 20px;
 }
 .img0{
    height: 20px;
@@ -134,14 +117,99 @@
 
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
 
-}
+  .img1 {
+    height: 120px;
+    width: 120px;
+    margin-left: 5px;
+    margin-top: 3px;
+  }
 
+  .container {
+    height: 39rem;
+    width: 97%;
+    margin: 5px 0;
+    box-shadow: none;
+    
+  }
 
+  .job-container {
+    height: 250px;
+    width: 98%;
+    overflow-y: scroll;
+    
+  }
 
+  .verticalliness {
+    visibility: hidden;
+  }
 
+  .head4 {
+    margin-left: 15px;
+    bottom: 350px;
+    font-size: 20px;
+    margin-top: 200px;
+  }
 
+  .username {
+    margin-left: 15px;
+    font-size: 22px;
+    margin-top: 15px;
+  }
 
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .useremail {
+    margin-left: 15px;
+    margin-top: 50px;
+    font-size: 18px;
+  }
+
+  .jobrole {
+    margin-left: 15px;
+    margin-top: 80px;
+    font-size: 19px;
+  }
+
+  .img0, .img2, .img3 {
+    height: 22px;
+    margin-left: 10px;
+    margin-top:15px ;
+  }
+  .img5{
+    height: 28px;
+    margin-left: 10px;
+    margin-top:25px ;
+  }
+
+  .img4 {
+    height: 25px;
+    margin-left: 250px;
+    top: 15px;
+  }
+
+  .socialmedia {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .url1 {
+    margin-left: 50px;
+    margin-top: 15px;
+  }
+
+  .url2 {
+    margin-left: 50px;
+    margin-top: 15px;
+  }
+
+  .url3 {
+    margin-left: 50px;
+    margin-top: 15px;
+  }
+
+  .url5 {
+    margin-left: 50px;
+    margin-top: 15px;
+  }
+
 }

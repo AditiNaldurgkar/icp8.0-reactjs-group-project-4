@@ -20,7 +20,7 @@ function UserProfile() {
   const SOCIALMEDIA = JSON.parse(localStorage.getItem('SOCIALMEDIA')) || {};
   return (
     <div className='container'>
-       <Sidebar />
+         <Sidebar />
       <img src={UserProfileimg} className='img1' alt='User Profile' />
       <div className='socialmedia'>
           <img src={linkedinimg} className='img0' alt='LinkedIn' /><p className='url1' >{SOCIALMEDIA.linkdinurl || 'N/A'}</p>
@@ -28,7 +28,7 @@ function UserProfile() {
           <img src={facebookimg} className='img3' alt='Facebook' /><p className='url3'>{SOCIALMEDIA.facebookurl }</p>  
           <img src={Instagramimg} className='img5' alt='Facebook' /><p className='url5'>{SOCIALMEDIA.instaurl || 'N/A'}</p>  
        </div>
-      <span className='username'><b>Hello {USER.username || 'User'}!</b></span> 
+      <span className='username'><b>Hello {USER.username || 'User'}!👋</b></span> 
       <span className='useremail'>{USER.email || 'No email found'}</span>
       <span className='jobrole'><b>JOB ROLE: </b>{USER.jobRole || 'Not specified'}</span>
       <h4 className='head4'><b>Your Applied Jobs:</b></h4>
@@ -54,7 +54,6 @@ function UserProfile() {
         <p>No jobs applied yet.</p>
       )}
       </div>
-      
       <div className="verticalliness"></div>
       <div className='Show'></div>
     </div>
