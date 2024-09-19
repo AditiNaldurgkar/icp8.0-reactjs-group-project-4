@@ -3,18 +3,15 @@
   height: 200px;
   width: 200px;
   margin-left: 20px;
-  margin-top: 10px;
-  
+  margin-top: 10px; 
 }
 .container{
     height:40rem;
     width:90rem;
-    margin-right: 50px;
-    border: none;
     border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; ;
-    margin: 20px 70px; 
-    overflow-y: scroll;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+    margin-left:70px; 
+    margin-bottom: 30px;
 }
 .job-container{
   height: 380px;
@@ -26,7 +23,7 @@
  height: 640px;
  background-color: black;
  left: 23%;
- top: 3%;
+ top: 7%;
  position: absolute;
   }
   .head4{
@@ -61,58 +58,32 @@
   position: absolute;
 }
 .img0{
-   height: 20px;
+   height: 30px;
    margin-left: 30px;
-   
+   margin-top: 20px;
   
 }
 .img2{
-  height: 20px;
+  height: 30px;
   margin-left: 30px;
   margin-top: 20px;
   
 }
 .img3{
-  height: 20px;
+  height: 30px;
   margin-left: 30px;
   margin-top: 20px;
 }
 .img5{
-  height: 25px;
+  height: 35px;
   margin-left: 30px;
   margin-top: 20px;
-}
-.img4{
-  height: 40px;
-  position: absolute;
-  margin-left:555px ;
-  top: 30px;
 }
 .socialmedia{
   position: absolute;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
-}
-.url1{
-  margin-left: 60px;
-  position: absolute;
-}
-.url2{
-  margin-left: 60px;
-  position: absolute;
-  top: 40px;
-
-}
-.url3{
-  margin-left: 60px;
-  position: absolute;
-  top: 80px;
-}
-.url5{
-  margin-left: 60px;
-  position: absolute;
-  top: 123px;
 }
 
 
@@ -122,94 +93,62 @@
   .img1 {
     height: 120px;
     width: 120px;
-    margin-left: 5px;
-    margin-top: 3px;
+    margin-left: 10px;
+    margin-top: 30px;
   }
 
   .container {
-    height: 39rem;
-    width: 97%;
-    margin: 5px 0;
-    box-shadow: none;
-    
+    height: 35rem;
+    width: 410px;
+    margin-left: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+    overflow-y: scroll;
   }
 
   .job-container {
-    height: 250px;
-    width: 98%;
+    height: 300px;
     overflow-y: scroll;
-    
   }
 
   .verticalliness {
-    visibility: hidden;
+    visibility: hidden; 
   }
 
   .head4 {
-    margin-left: 15px;
-    bottom: 350px;
-    font-size: 20px;
-    margin-top: 200px;
+    margin-left: 10px;
+    font-size: 16px;
+    margin-top: 60px;
   }
 
   .username {
-    margin-left: 15px;
-    font-size: 22px;
-    margin-top: 15px;
+    margin-left: 10px;
+    font-size: 20px;
   }
 
   .useremail {
-    margin-left: 15px;
-    margin-top: 50px;
-    font-size: 18px;
+    margin-left: 10px;
+    margin-top: 75px;
+    font-size: 16px;
+    
   }
 
   .jobrole {
+    margin-left: 10px;
+    margin-top: 110px;
+    font-size: 16px;
+
+  }
+
+  .img0, .img2, .img3, .img5 {
+    height: 20px;
     margin-left: 15px;
-    margin-top: 80px;
-    font-size: 19px;
-  }
-
-  .img0, .img2, .img3 {
-    height: 22px;
-    margin-left: 10px;
-    margin-top:15px ;
-  }
-  .img5{
-    height: 28px;
-    margin-left: 10px;
-    margin-top:25px ;
-  }
-
-  .img4 {
-    height: 25px;
-    margin-left: 250px;
-    top: 15px;
+    margin-top: 10px;
   }
 
   .socialmedia {
     display: flex;
-    flex-direction: column;
-  }
-
-  .url1 {
-    margin-left: 50px;
-    margin-top: 15px;
-  }
-
-  .url2 {
-    margin-left: 50px;
-    margin-top: 15px;
-  }
-
-  .url3 {
-    margin-left: 50px;
-    margin-top: 15px;
-  }
-
-  .url5 {
-    margin-left: 50px;
-    margin-top: 15px;
+    flex-direction: row;
+    margin-left: 10px;
   }
 
 }

@@ -17,16 +17,28 @@ function UserProfile() {
   }, []);
 
   const USER = JSON.parse(localStorage.getItem('LOGINUSER')) || {};
-  const SOCIALMEDIA = JSON.parse(localStorage.getItem('SOCIALMEDIA')) || {};
+  const SOCIALMEDIA = JSON.parse(localStorage.getItem('SOCIALMEDIA')) || {
+  };
+  
   return (
     <div className='container'>
-         <Sidebar />
+       <Sidebar/>
       <img src={UserProfileimg} className='img1' alt='User Profile' />
       <div className='socialmedia'>
-          <img src={linkedinimg} className='img0' alt='LinkedIn' /><p className='url1' >{SOCIALMEDIA.linkdinurl || 'N/A'}</p>
-          <img src={githubimg} className='img2' alt='GitHub' /><p className='url2'>{SOCIALMEDIA.githuburl || 'N/A'}</p>
-          <img src={facebookimg} className='img3' alt='Facebook' /><p className='url3'>{SOCIALMEDIA.facebookurl }</p>  
-          <img src={Instagramimg} className='img5' alt='Facebook' /><p className='url5'>{SOCIALMEDIA.instaurl || 'N/A'}</p>  
+
+       <a href={SOCIALMEDIA.linkedinurl || '#'} target='_blank' rel='noopener noreferrer'>
+          <img src={linkedinimg} className='img0' alt='LinkedIn' /></a>
+        
+
+        <a href={SOCIALMEDIA.githuburl || ''} target='_blank' rel='noopener noreferrer'>
+          <img src={githubimg} className='img2' alt='GitHub' /> </a>
+
+        <a href={SOCIALMEDIA.facebookurl || '#'} target='_blank' rel='noopener noreferrer'>
+          <img src={facebookimg} className='img3' alt='Facebook' /></a>
+       
+        <a href={SOCIALMEDIA.instaurl || '#'} target='_blank' rel='noopener noreferrer'>
+          <img src={Instagramimg} className='img5' alt='Instagram' /></a>
+     
        </div>
       <span className='username'><b>Hello {USER.username || 'User'}!👋</b></span> 
       <span className='useremail'>{USER.email || 'No email found'}</span>
@@ -47,7 +59,6 @@ function UserProfile() {
            company={company}
            location={location}/>
            </div>
-           
           );
         })
       ) : (
