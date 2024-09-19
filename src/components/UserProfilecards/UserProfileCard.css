@@ -35,4 +35,26 @@
     }
   
   }
+
+
+  @media only screen and (min-width: 600px) and (max-width: 1024px) {
+
+    .JobCard {
+      display: flex;
+      flex-direction: column;
+      margin-left: 20px;
+      width: 600px;
+      height: auto;
+      background-image: linear-gradient(109.6deg, rgba(177,173,219,1) 11.2%, rgba(245,226,226,1) 91.1%);
+      border-radius: 12px;
+      padding: 15px;
+      margin-top: 15px;
+      overflow-y: visible;
+    }
+  
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  
+  }
   
