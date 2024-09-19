@@ -10,14 +10,15 @@ const randonJobname =()=>{
 
 const Usercard = ({user}) => {
 
-    const userCircle =({url,first_name,last_name,dob,location,gender})=>{
+    const userCircle =({url,first_name,last_name,dob,location,gender,role})=>{
        let USERCIRCLE = JSON.parse(localStorage.getItem("USERCIRCLE")) || []
-         USERCIRCLE.unshift({url,first_name,last_name,dob,location,gender})
+         USERCIRCLE.unshift({url,first_name,last_name,dob,location,gender,role})
           localStorage.setItem("USERCIRCLE",JSON.stringify(USERCIRCLE)) 
           toast.success(`successfully add in your circle..`)
     }
 
     const {dob,cell,email,gender,name,login,phone,picture,location} = user
+    let role = randonJobname()
   return (
     <div className='user-info-card'>
        <div className='user-card-top'>
@@ -26,7 +27,7 @@ const Usercard = ({user}) => {
           </div>
           <div className='card-user-info'>
              <span className='user-card-name'>{`${name.first} ${name.last} .`}<span className='user-card-username'>@{login.username}</span></span>
-             <span className='job-info'>{randonJobname()}</span>
+             <span className='job-info'>{role}</span>
           </div>
        </div>
        <div className='user-card-bottom'>
@@ -43,7 +44,8 @@ const Usercard = ({user}) => {
                    last_name:name.last,
                    dob:dob.age-10,
                    location:location.city,
-                   gender:gender
+                   gender:gender,
+                   role:role
                  })
               }}>add to circle</button>
            </div>
