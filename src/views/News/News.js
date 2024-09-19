@@ -117,6 +117,7 @@ function News() {
           </div>
           </div>
           </div>
+          <div className='Show'></div>
     </div>
   );
 }
