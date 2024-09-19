@@ -16,7 +16,7 @@ import Users from './views/Users/Users';
 import RecuriterProfileCard from './views/RecuriterProfileCard/RecuriterProfileCard';
 import 'remixicon/fonts/remixicon.css'
 import { Toaster } from 'react-hot-toast';
-
+import Chat from './views/Chat/Chat';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 const router = createBrowserRouter([
@@ -75,6 +75,9 @@ const router = createBrowserRouter([
   {
     path: "*",
     element: <h1>404 Not Found</h1>,
+  },{
+    path:'chat',
+    element:<Chat/>
   }
 ]);
 
