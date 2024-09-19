@@ -100,9 +100,18 @@ select:focus {
     border-radius: 4px;
     font-size: 15px;
 }
+.group-form select{
+    border-bottom: 1px solid #6969ffc7;
+}
+.group-form input{
+    border-bottom: 1px solid #6969ffc7;
+}
+
 
 .Existing-user {
     margin-top: 10px;
+    font-size: 18px;
+    color: rgb(23, 23, 23);
 }
    
 /* Default Styles (For large screens, 1000px and above) */
@@ -163,7 +172,13 @@ select:focus {
     border: 0.5px solid #6969ffc7;
     font-weight: bold;
     cursor: pointer;
+     
 }
+
+.signup-btn:hover{
+    background-color: #2a2acc;
+}
+
 
 /* Media Query for Extra Large Devices (1200px and above) */
 @media (max-width: 1200px) {
