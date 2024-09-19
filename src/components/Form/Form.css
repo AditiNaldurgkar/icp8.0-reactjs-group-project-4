@@ -11,15 +11,18 @@
 .frm-holder {
     box-shadow: 0px 0px 5px gray;
     width: 60%;
-    /* height: 350px; */
     padding: .1vw;
     margin: auto;
     margin-top: 1vw;
-    /* margin-bottom: 1vw; */
+    border-radius: 5px;
+}
+
+.frm-content{
+    padding: .1vw;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    border-radius: 5px;
+    margin: 1vw;
 }
 
 .left {
@@ -33,16 +36,6 @@
     /* margin-top: 1vw; */
     /* text-align: center; */
 }
-
-/* .fileupload {
-    width: 10vw;
-    height: 20vh;
-    border-radius: 50%;
-    border: 1px solid gray;
-    margin-top: -1vw;
-    margin-left: 4vw;
-
-} */
 
 .input-label {
     display: block;
@@ -58,23 +51,15 @@
     /* border: 1px solid rgb(238, 255, 0); */
 }
 
-.btn-gup {
-    display: flex;
-}
-
 input[type="radio"] {
-    margin: 1vw;
+    margin: 0.5vw;
 
 }
 
 .right {
     width: 50%;
-
-    /* height: 580vh; */
     padding: .2vw;
-    /* border-radius: 5px; */
     font-size: 1.2vw;
-    /* border: 1px solid red; */
 }
 
 /* .profile,.right{
@@ -93,34 +78,43 @@ input[type="radio"] {
 
 
 .btn {
-    width: 10vw;
+    width: 95%;
     padding: 1vw;
-    /* display: block; */
-    /* margin: auto; */
     border-radius: 4px;
     border: none;
     font-size: 1.3vw;
     background-color: #6969ffc7;
     color: whitesmoke;
     cursor: pointer;
-    margin: 1vw;
+    margin: 5px;
 
 }
 
+.btn-gup{
+    display: flex;
+    width: 100%;
+    /* margin: 1vw; */
+    /* border: 1px solid red; */
+}
 
+.linktag{
+    display: block;
+    width: 100%;
+}
 
 .textArea {
     width: 10vw;
+    height: 15vh;
 }
 
 .btn:hover {
     background-color: #3757ca;
 }
 
-.btn-holder {
+/* .btn-holder {
     display: block;
     width: 100%;
-}
+} */
 
 .center {
     text-align: center;
@@ -133,17 +127,12 @@ input[type="radio"] {
 
 /*small Device*/
 @media screen and (max-width:600px) {
-
-    .fileupload {
-        width: 7vw;
-        /* height: 7vh; */
-        /* margin-top: -150vw; */
-        margin-left: 8vw;
-        /* border: 1px solid red; */
+    .frm-holder{
+        width: 100%;
     }
+   
 
-
-    .frm-holder {
+    .frm-content {
         width: 100%;
         flex-direction: column;
         align-items: center;
@@ -163,28 +152,33 @@ input[type="radio"] {
 
     .input-field {
         padding: 1vw;
-        font-size: 3vw;
-        width: 95%;
+        font-size: 2.5vw;
+        width: 100%;
     }
 
     .btn-gup{
         display: block;
         margin-top: 1vh;
+        width: 53%;
+        margin: auto;
     }
 
     .btn {
-        width: 100%;
-       
+        width: 95%;
         margin: 1vw;
-        font-size: 3vw;
+        font-size: 2.5vw;
         /* height: 0.8vh; */
     }
 
+    /* input[type="radio"] {
+        height: 10vw;
+        width: 20vw;
+    } */
 
-    input[type="radio"] {
-
-        font-size: 2vw;
+    .radio-font{
+        font-size: 3vw;
     }
+
 
     #text {
         font-size: 3vw;
@@ -217,20 +211,26 @@ input[type="radio"] {
 
 
     input[type="radio"] {
-        height: 1vh;
+        height: 1.5vw;
     }
+
+    .radio-font{
+        font-size: 1.5vw;
+    }
+
 
     .left,
     .right {
-        height: 53vh;
+        height: 60vh;
     }
 
     .btn{
-        font-size: 1.4vw;
+        font-size: 1.5vw;
     }
 
     .textArea {
         width: 5vw;
+        height: 11vh;
     }
 }
 
@@ -258,7 +258,7 @@ input[type="radio"] {
 
     .left,
     .right {
-        height: 60vh;
+        height: 65vh;
     }
 
 }
@@ -282,7 +282,7 @@ input[type="radio"] {
 
     .left,
     .right {
-        height: 75vh;
+        height: 68vh;
     }
 
     .btn {
