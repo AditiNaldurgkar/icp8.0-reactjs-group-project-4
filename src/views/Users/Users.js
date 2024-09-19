@@ -4,6 +4,8 @@ import "./User.css"
 import axios from 'axios'
 import toast from 'react-hot-toast'
 import serchImg from "./serch.png"
+import Usercard from '../../components/Usercard/Usercard'
+
 
 const Users = () => {
 
@@ -35,8 +37,8 @@ const Users = () => {
             <h1 className='liner-text user-heading'>create a circle</h1>
              <div className='users-div'>
                 {users.length==0?<span className='user-serch-img'><img src={serchImg}></img></span>:
-                       users.map(()=>(
-                        
+                       users.map((user ,index)=>(
+                            <Usercard index={index} user={user}/>
                        ))
                 }
              </div>
