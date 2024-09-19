@@ -17,7 +17,7 @@ const Usercard = ({user}) => {
              <img src={picture.medium}></img>
           </div>
           <div className='card-user-info'>
-             <span>{`${name.first} ${name.last}`}</span>
+             <span className='user-card-name'>{`${name.first} ${name.last} .`}<span className='user-card-username'>@{login.username}</span></span>
              <span>{randonJobname()}</span>
           </div>
        </div>

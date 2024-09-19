@@ -2,22 +2,25 @@
 .user-info-card{
     height: 200px;
     width: 400px;
-    background-color: red;
     margin:4vh 1.2vw;
+    overflow: hidden;
+    border-radius: 4px;
+    background: white;
+    color: black;
+     box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
 }
 
 .user-card-top{
     height: 120px;
     width: 100%;
-    background-color: green;
     display: flex;
-    align-items: center;
+    padding:1vh 1vw;
 }
 
 .usercard-image{
-    height: 80px;
-    width: 80px;
-    background-color: red;
+    height: 70px;
+    width: 70px;
     border-radius: 50%;
     overflow: hidden;
 }
@@ -31,7 +34,17 @@
 .card-user-info{
     width: calc(100% - 80px);
     height: 100%;
-    background-color: blue  ;
     display: flex;
     flex-direction: column;
+    margin-left:9px ;
+}
+
+.user-card-name{
+    font-size: 1.4em;
+}
+
+.user-card-username{
+    font-size: 0.6em;
+    color: gray;
+    line-height: 1;
 }
