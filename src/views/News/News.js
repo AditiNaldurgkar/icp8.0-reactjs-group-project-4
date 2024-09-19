@@ -79,7 +79,8 @@ function News() {
   return (
     <div className="maindivn">
        <Sidebar/>
-      <h1 className="headingn">News</h1>
+      <h1 className="headingn">Tech & Talent</h1>
+      <h4 className='headcap'> Key Trends, Skills, and News for the Job Market</h4>
       <div className='maincn'>
       <div className='containern'>
       {newsData.map((item, index) => (
