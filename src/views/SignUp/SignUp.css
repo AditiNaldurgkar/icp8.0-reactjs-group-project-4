@@ -163,9 +163,9 @@ select:focus {
 }
 
 .signup-btn {
-    font-size: 1.2vw;
+    font-size: 1.4vw;
     width: 30%;
-    height: 30%;
+    
     border-radius: 10px;
     background-color: #6969ffc7;
     color: white;
@@ -192,8 +192,8 @@ select:focus {
     }
 
     .signup-btn {
-        font-size: 1.5rem;
-        width: 40%;
+        font-size: 1.6rem;
+        width: 33%;
     }
 }
 
@@ -203,7 +203,8 @@ select:focus {
         width: 90%;
         height: auto;
         flex-direction: column;
-        padding: 20px;
+        padding: 5px;
+        
     }
 
     .left-side, .right-side {
@@ -218,8 +219,8 @@ select:focus {
     }
 
     .signup-btn {
-        font-size: 1.5rem;
-        width: 25%;
+        font-size: 1.7rem;
+        width: 22%;
     }
 
     .signup-img {
@@ -252,8 +253,8 @@ select:focus {
     }
 
     .signup-btn {
-        font-size: 1.2rem;
-        width: 35%;
+        font-size: 1.4rem;
+        width: 30%;
         padding: 5px;
     }
 
