@@ -24,6 +24,10 @@ body {
   .content-img{
     display: none;
   }
+
+  .intro-paragraph{
+    margin-right: 40px;
+  }
 }
 
 .content-img img {

@@ -91,11 +91,11 @@
     padding: 0 2rem;
 }
 
-.login-btn {
+.login-button {
     font-size: 1.2vw;
-    width: 100%;
+    width: 50%;
     max-width: 280px;
-    height: 4rem;
+    height: 3rem;
     border-radius: 10px;
     background-color: #6969ffc7;
     color: white;
@@ -118,7 +118,7 @@ button:focus {
     outline: none;
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:599px) {
     .login-main-container {
         margin: 50px auto;
         max-width: 300px;
@@ -171,7 +171,7 @@ button:focus {
         max-width: 90%;
     }
 
-    .login-btn {
+    .login-button {
         width: 100px;
         height: 30px;
         margin-top: 0.5rem;
