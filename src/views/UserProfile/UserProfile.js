@@ -18,10 +18,9 @@ function UserProfile() {
 
   const USER = JSON.parse(localStorage.getItem('LOGINUSER')) || {};
   const SOCIALMEDIA = JSON.parse(localStorage.getItem('SOCIALMEDIA')) || {};
-   
-  
   return (
     <div className='container'>
+       <Sidebar />
       <img src={UserProfileimg} className='img1' alt='User Profile' />
       <div className='socialmedia'>
           <img src={linkedinimg} className='img0' alt='LinkedIn' /><p className='url1' >{SOCIALMEDIA.linkdinurl || 'N/A'}</p>
@@ -55,7 +54,7 @@ function UserProfile() {
         <p>No jobs applied yet.</p>
       )}
       </div>
-      <Sidebar/>
+      
       <div className="verticalliness"></div>
       <div className='Show'></div>
     </div>
