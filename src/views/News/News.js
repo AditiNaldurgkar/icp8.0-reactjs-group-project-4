@@ -62,16 +62,16 @@ const trends=[{
   info:"Though it will take between three and ten years, polyfunctional robots that can perform multiple functions, rather than being limited to a single task, are expected to become part of everyday life. By 2030, Alvarez said 80% of humans could be engaging with smart polyfunctional robots on a daily basis."
 }]
 const skills=[
-  { name: 'Python', logo: 'https://cdn-icons-png.flaticon.com/128/5968/5968350.png',comp:"hello" },
-  { name: 'Javascript', logo: 'https://cdn-icons-png.flaticon.com/128/5968/5968292.png' },
-  { name: 'React', logo: 'https://t3.ftcdn.net/jpg/03/04/97/12/240_F_304971233_mQ4xlfnBGSszgzJPYzQnZtWI04ZNmuuP.jpg' },
-  {name:"Cybersecurity",logo:"https://cdn-icons-png.flaticon.com/128/2092/2092663.png"},
-  { name:"Cloud",logo:"https://img.freepik.com/premium-photo/cloud-computing-technology-concept-futuristic-illustration-isolated-white-background_660230-76062.jpg?uid=R160163945&ga=GA1.1.1856927002.1722677193&semt=ais_hybrid"},
-  {name :"Blockchain" ,logo:"https://cdn-icons-png.flaticon.com/128/2152/2152539.png"},
-  {name:"Leadership",logo:"https://img.freepik.com/free-vector/follow-leader-concept-illustration_114360-10886.jpg?uid=R160163945&ga=GA1.1.1856927002.1722677193&semt=ais_hybrid"},
-  {name :"Communication",logo:"https://img.freepik.com/free-vector/hand-drawn-business-communication-concept_23-2149171107.jpg?uid=R160163945&ga=GA1.1.1856927002.1722677193&semt=ais_hybrid"},
-  {name:"Problem solving",logo:"https://img.freepik.com/free-vector/problem-solving-labyrinth-concept-illustration_114360-2041.jpg?uid=R160163945&ga=GA1.1.1856927002.1722677193&semt=ais_hybrid"},
-  {name:"UI/UX",logo:"https://cdn-icons-png.flaticon.com/128/7858/7858975.png"},
+  { name: 'Python', logo: 'https://cdn-icons-png.flaticon.com/128/5968/5968350.png',comp:"NASA,Google,Uber" },
+  { name: 'Javascript', logo: 'https://cdn-icons-png.flaticon.com/128/5968/5968292.png',comp:"Microsoft,Netflix,Amazon" },
+  { name: 'React', logo: 'https://t3.ftcdn.net/jpg/03/04/97/12/240_F_304971233_mQ4xlfnBGSszgzJPYzQnZtWI04ZNmuuP.jpg',comp:"Airbnb,Facebook,Twitter" },
+  {name:"Cybersecurity",logo:"https://cdn-icons-png.flaticon.com/128/2092/2092663.png",comp:"Deolitte,Pwc,NSA"},
+  { name:"Cloud",logo:"https://img.freepik.com/premium-photo/cloud-computing-technology-concept-futuristic-illustration-isolated-white-background_660230-76062.jpg?uid=R160163945&ga=GA1.1.1856927002.1722677193&semt=ais_hybrid",comp:"AWS,IBM,Oracle"},
+  {name :"Blockchain" ,logo:"https://cdn-icons-png.flaticon.com/128/2152/2152539.png",comp:"IBM,Accenture,Coinbase"},
+  {name:"Leadership",logo:"https://img.freepik.com/free-vector/follow-leader-concept-illustration_114360-10886.jpg?uid=R160163945&ga=GA1.1.1856927002.1722677193&semt=ais_hybrid",comp:"Google,Amazon,Deolitte"},
+  {name :"Communication",logo:"https://img.freepik.com/free-vector/hand-drawn-business-communication-concept_23-2149171107.jpg?uid=R160163945&ga=GA1.1.1856927002.1722677193&semt=ais_hybrid",comp:"Google,Salesforce,Deolitte"},
+  {name:"Problem solving",logo:"https://img.freepik.com/free-vector/problem-solving-labyrinth-concept-illustration_114360-2041.jpg?uid=R160163945&ga=GA1.1.1856927002.1722677193&semt=ais_hybrid",comp:"Microsoft,IBM,Google"},
+  {name:"UI/UX",logo:"https://cdn-icons-png.flaticon.com/128/7858/7858975.png",comp:"Apple,Adobe,Spotify"},
 ]
 
 
@@ -113,7 +113,7 @@ function News() {
               <div key={index} className='tech-card'>
                 <img src={skill.logo} alt={`${skill.name} logo`} className='tech-logo' />
                 <p className='tech-name'>{skill.name}</p>
-                <p>{skill.comp}</p>
+                <p className='techemp'>Employers:{skill.comp}</p>
               </div>
                ))}
           </div>
