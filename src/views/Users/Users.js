@@ -5,11 +5,10 @@ import axios from 'axios'
 import toast from 'react-hot-toast'
 import serchImg from "./serch.png"
 import Usercard from '../../components/Usercard/Usercard'
-import Msgicon from '../../components/Msgicon/Msgicon'
 
 const Users = () => {
 
-  const URL = `https://randomuser.me/api/?results=10&nat=IN`
+  const URL = `https://randomuser.me/api/?results=20&nat=IN`
   const [users,setuser]= useState([]) 
 
 
@@ -34,7 +33,7 @@ const Users = () => {
     <>
        <Sidebar/>
        <div className='user-container'>
-            <h1 className='liner-text user-heading'>create a circle</h1>
+            <h1 className='liner-text user-heading'>create your circle</h1>
              <div className='users-div'>
                 {users.length==0?<span className='user-serch-img'><img src={serchImg}></img></span>:
                        users.map((user ,index)=>(
@@ -42,7 +41,7 @@ const Users = () => {
                        ))
                 }
              </div>
-            <Msgicon/>
+             <div className='Show'></div>
        </div>
     </>
   )

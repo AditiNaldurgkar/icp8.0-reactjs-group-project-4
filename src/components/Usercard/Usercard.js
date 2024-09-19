@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Usercard.css"
 import { jobNames } from '../../config/searchData'
+import toast from 'react-hot-toast'
 
 const randonJobname =()=>{
      return jobNames[Math.floor(Math.random()*jobNames.length)]
@@ -8,6 +9,13 @@ const randonJobname =()=>{
 
 
 const Usercard = ({user}) => {
+
+    const userCircle =({url,first_name,last_name,dob,location,gender})=>{
+       let USERCIRCLE = JSON.parse(localStorage.getItem("USERCIRCLE")) || []
+         USERCIRCLE.unshift({url,first_name,last_name,dob,location,gender})
+          localStorage.setItem("USERCIRCLE",JSON.stringify(USERCIRCLE)) 
+          toast.success(`successfully add in your circle..`)
+    }
 
     const {dob,cell,email,gender,name,login,phone,picture,location} = user
   return (
@@ -28,7 +36,16 @@ const Usercard = ({user}) => {
              <span>{gender == "male" ? <i class="ri-men-fill"></i> : <i class="ri-women-fill"></i>}</span>
           </div>
            <div className='card-btn-container'>
-              <button className='job-btn'>add to circle</button>
+              <button className='job-btn' onClick={()=>{
+                 userCircle({
+                   url:picture.medium,
+                   first_name:name.first,
+                   last_name:name.last,
+                   dob:dob.age-10,
+                   location:location.city,
+                   gender:gender
+                 })
+              }}>add to circle</button>
            </div>
        </div>
     </div>
