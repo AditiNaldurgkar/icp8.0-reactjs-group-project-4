@@ -104,6 +104,11 @@
     text-align: start;
     padding: 3px;
   }
+  .youtubev{
+    margin: 20px auto;
+    border-radius: 10px;
+    display: block;
+  }
   @media screen and (max-width: 1216px) {
     .tech-grid{
         justify-content: space-between;
