@@ -1,9 +1,12 @@
 import React from 'react'
 import "./Chatprofile.css"
 
-const Chatprofile = ({user}) => {
+const Chatprofile = ({user,setUser,  chatscreen}) => {
   return (
-     <div className='chat-container'>
+     <div className='chat-container' onClick={()=>{
+      setUser(user)
+      chatscreen(true)
+      }}>
           <div className='user-pic usercard-image'>
              <img src={user.url}></img>
           </div>

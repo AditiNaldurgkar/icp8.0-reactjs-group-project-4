@@ -5,7 +5,7 @@
 }
 
 .all-chats{
-    width: 80vw;
+    width: 50vw;
     display: flex;
     flex-direction: column;
 }
