@@ -3,18 +3,15 @@
   height: 200px;
   width: 200px;
   margin-left: 20px;
-  margin-top: 10px;
-  
+  margin-top: 10px; 
 }
 .container{
     height:40rem;
     width:90rem;
-    margin-right: 50px;
-    border: none;
     border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; ;
-    margin: 20px 70px; 
-    overflow-y: scroll;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+    margin-left:70px; 
+    margin-bottom: 30px;
 }
 .job-container{
   height: 380px;
@@ -26,7 +23,7 @@
  height: 640px;
  background-color: black;
  left: 23%;
- top: 3%;
+ top: 7%;
  position: absolute;
   }
   .head4{
@@ -61,58 +58,37 @@
   position: absolute;
 }
 .img0{
-   height: 20px;
+   height: 30px;
    margin-left: 30px;
-   
+   margin-top: 20px;
   
 }
 .img2{
-  height: 20px;
+  height: 30px;
   margin-left: 30px;
   margin-top: 20px;
   
 }
 .img3{
-  height: 20px;
+  height: 30px;
   margin-left: 30px;
   margin-top: 20px;
 }
 .img5{
-  height: 25px;
+  height: 35px;
   margin-left: 30px;
   margin-top: 20px;
-}
-.img4{
-  height: 40px;
-  position: absolute;
-  margin-left:555px ;
-  top: 30px;
 }
 .socialmedia{
   position: absolute;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
-}
-.url1{
-  margin-left: 60px;
-  position: absolute;
-}
-.url2{
-  margin-left: 60px;
-  position: absolute;
-  top: 40px;
-
-}
-.url3{
-  margin-left: 60px;
-  position: absolute;
-  top: 80px;
-}
-.url5{
-  margin-left: 60px;
-  position: absolute;
-  top: 123px;
+  width: 260px;
+  height: 70px;
+  margin-left: 10px;
+  border-radius: 20px;
+  background-image: linear-gradient(109.6deg, rgba(177,173,219,1) 11.2%, rgba(245,226,226,1) 91.1%);
 }
 
 
@@ -122,94 +98,137 @@
   .img1 {
     height: 120px;
     width: 120px;
-    margin-left: 5px;
-    margin-top: 3px;
+    margin-left: 10px;
+    margin-top: 30px;
   }
 
   .container {
-    height: 39rem;
-    width: 97%;
-    margin: 5px 0;
-    box-shadow: none;
-    
+    height: 35rem;
+    width: 410px;
+    margin-left: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+    overflow-y: scroll;
   }
 
   .job-container {
-    height: 250px;
-    width: 98%;
+    height: 300px;
     overflow-y: scroll;
-    
   }
 
   .verticalliness {
-    visibility: hidden;
+    visibility: hidden; 
   }
 
   .head4 {
-    margin-left: 15px;
-    bottom: 350px;
-    font-size: 20px;
-    margin-top: 200px;
+    margin-left: 10px;
+    font-size: 16px;
+    margin-top: 60px;
   }
 
   .username {
-    margin-left: 15px;
-    font-size: 22px;
-    margin-top: 15px;
+    margin-left: 10px;
+    font-size: 20px;
   }
 
   .useremail {
-    margin-left: 15px;
-    margin-top: 50px;
-    font-size: 18px;
+    margin-left: 10px;
+    margin-top: 75px;
+    font-size: 16px;
+    
   }
 
   .jobrole {
+    margin-left: 10px;
+    margin-top: 110px;
+    font-size: 16px;
+
+  }
+
+  .img0, .img2, .img3, .img5 {
+    height: 20px;
     margin-left: 15px;
-    margin-top: 80px;
-    font-size: 19px;
-  }
-
-  .img0, .img2, .img3 {
-    height: 22px;
-    margin-left: 10px;
-    margin-top:15px ;
-  }
-  .img5{
-    height: 28px;
-    margin-left: 10px;
-    margin-top:25px ;
-  }
-
-  .img4 {
-    height: 25px;
-    margin-left: 250px;
-    top: 15px;
+    margin-top: 10px;
   }
 
   .socialmedia {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    margin-left: 10px;
+    width: 150px;
+    height: 40px;
   }
 
-  .url1 {
+}
+
+
+
+
+
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+
+  .img1 {
+    height: 140px;
+    width: 140px;
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+
+  .container {
+    height: 39rem;
+    width: 700px;
+    margin-left: 70px;
+    margin-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 10px;
+  }
+
+  .job-container {
+    height: 320px;
+    overflow-y: scroll;
+    margin-top: 2px;
+  }
+
+  .verticalliness {
+    height: 450px;
+    left: 18%;
+    top: 5%;
+    visibility: hidden;
+  }
+
+  .head4 {
+    margin-top: 100px;
+    margin-left: 10px; /* Added margin-left */
+  }
+
+  .username {
     margin-left: 50px;
-    margin-top: 15px;
+    font-size: 28px;
+    margin-top: 25px;
   }
 
-  .url2 {
+  .useremail {
     margin-left: 50px;
-    margin-top: 15px;
+    margin-top: 70px;
+    font-size: 16px;
   }
 
-  .url3 {
+  .jobrole {
     margin-left: 50px;
-    margin-top: 15px;
+    margin-top: 110px;
+    font-size: 16px;
   }
 
-  .url5 {
-    margin-left: 50px;
-    margin-top: 15px;
+  .img0, .img2, .img3, .img5 {
+    height: 22px;
+    margin-left: 15px;
+    margin-top: 12px;
   }
 
+  .socialmedia {
+    display: flex;
+    flex-direction: row;
+    margin-left: 15px;
+    width: 160px;
+    height: 50px;
+  }
 }
