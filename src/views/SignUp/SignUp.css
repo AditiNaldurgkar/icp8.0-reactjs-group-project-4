@@ -100,9 +100,18 @@ select:focus {
     border-radius: 4px;
     font-size: 15px;
 }
+.group-form select{
+    border-bottom: 1px solid #6969ffc7;
+}
+.group-form input{
+    border-bottom: 1px solid #6969ffc7;
+}
+
 
 .Existing-user {
     margin-top: 10px;
+    font-size: 18px;
+    color: rgb(23, 23, 23);
 }
    
 /* Default Styles (For large screens, 1000px and above) */
@@ -154,16 +163,22 @@ select:focus {
 }
 
 .signup-btn {
-    font-size: 1.2vw;
+    font-size: 1.3vw;
     width: 30%;
-    height: 30%;
+    
     border-radius: 10px;
     background-color: #6969ffc7;
     color: white;
     border: 0.5px solid #6969ffc7;
     font-weight: bold;
     cursor: pointer;
+     
 }
+
+.signup-btn:hover{
+    background-color: #2a2acc;
+}
+
 
 /* Media Query for Extra Large Devices (1200px and above) */
 @media (max-width: 1200px) {
@@ -177,8 +192,8 @@ select:focus {
     }
 
     .signup-btn {
-        font-size: 1.5rem;
-        width: 40%;
+        font-size: 1.6rem;
+        width: 33%;
     }
 }
 
@@ -188,7 +203,8 @@ select:focus {
         width: 90%;
         height: auto;
         flex-direction: column;
-        padding: 20px;
+        padding: 5px;
+        
     }
 
     .left-side, .right-side {
@@ -203,8 +219,8 @@ select:focus {
     }
 
     .signup-btn {
-        font-size: 1.5rem;
-        width: 25%;
+        font-size: 1.7rem;
+        width: 22%;
     }
 
     .signup-img {
@@ -237,8 +253,8 @@ select:focus {
     }
 
     .signup-btn {
-        font-size: 1.2rem;
-        width: 35%;
+        font-size: 1.4rem;
+        width: 30%;
         padding: 5px;
     }
 
