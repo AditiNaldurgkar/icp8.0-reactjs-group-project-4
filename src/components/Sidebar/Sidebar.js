@@ -14,6 +14,7 @@ const Sidebar = () => {
       {LOGINUSER.role ==="Job Seeker" ?
       <ul className='icon-list'>
         <Link to="/users" className='link'><li className='sidebar-iteams'><i class="ri-group-line"></i></li></Link>
+        <Link to="/chat" className='link'><li className='sidebar-iteams'><i class="ri-chat-3-line"></i></li></Link>
         <Link to="/search" className='link'><li className='sidebar-iteams'><i className="ri-search-eye-line"></i></li></Link>
         <Link to="/news" className='link'>  <li className='sidebar-iteams'><i class="ri-newspaper-fill"></i></li></Link>
         <Link to="/userprofile" className='link'> <li className='sidebar-iteams'><i className="ri-account-circle-line"></i></li> </Link>

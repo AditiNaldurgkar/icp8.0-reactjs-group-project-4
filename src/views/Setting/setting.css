@@ -122,7 +122,7 @@
     position: absolute;
     top: 0;
     left: -10%;
-    background-color: #e0e0e0c0;
+    background-color: #e0e0e01d;
     backdrop-filter: blur(4px);
     display: flex;
     align-items: center;
