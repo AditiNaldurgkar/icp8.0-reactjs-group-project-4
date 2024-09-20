@@ -43,7 +43,7 @@ function Jobinfo() {
     <div className='jobs-info-container'>
       <Link to='/search' className='link'><span className='back-btn'><i class="ri-arrow-left-line"></i></span></Link>
       <div className='job-tittle-info'>
-        <h2 className='liner-text job-tittle'>{result.company.display_name}</h2>
+        <h2 className='liner-text job-tittle'>{result.company.display_name}</h2><br/>
         <span>#{result.category.tag}</span>
       </div>
       <div className='job-discription-info'>
@@ -52,10 +52,10 @@ function Jobinfo() {
       <div className='company-info'>
         <h4 className='liner-text'>know more</h4>
         <div className='job-all-info'>
-          <span className='info-text'><i class="ri-map-pin-add-fill"></i> Location : {result.location.area[0]}</span>
-          <span className='info-text'><i class="ri-time-fill"></i> Add on : {getaddDate(result.created)}</span>
-          <span className="job-info"><i class="ri-currency-fill"></i> MIN-SALARAY : {result.salary_min} $</span>
-          <span className="job-info"><i className="ri-arrow-right-up-line"></i> MAX-SALARAY : {result.salary_max} $</span>
+          <span className='job-info'><i class="ri-map-pin-add-fill"></i> Location : {result.location.area[0]}</span><br/>
+          <span className='job-info'><i class="ri-time-fill"></i> Add on : {getaddDate(result.created)}</span><br/>
+          <span className="job-info"><i class="ri-currency-fill"></i> MIN-SALARAY : {result.salary_min} $</span><br/>
+          <span className="job-info"><i className="ri-arrow-right-up-line"></i> MAX-SALARAY : {result.salary_max} $</span><br/>
           <span className='job-info'><a target='__blank' href={`${result.redirect_url}`}>check more</a></span>
         </div>
       </div>
