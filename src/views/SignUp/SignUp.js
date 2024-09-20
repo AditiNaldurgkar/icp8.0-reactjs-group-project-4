@@ -74,6 +74,7 @@ const Signup = () => {
         return (
             <>
             <Navbar/>
+            <br></br>
             <div className="signup-main-container">
                 <div className="left-side">
                 <div className="welcome-text">
