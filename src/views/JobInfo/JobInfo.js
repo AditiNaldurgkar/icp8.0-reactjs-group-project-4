@@ -43,7 +43,7 @@ function Jobinfo() {
     <div className='jobs-info-container'>
       <Link to='/search' className='link'><span className='back-btn'><i class="ri-arrow-left-line"></i></span></Link>
       <div className='job-tittle-info'>
-        <h2 className='liner-text job-tittle'>{result.company.display_name}</h2>
+        <h2 className='liner-text job-tittle'>{result.company.display_name}</h2><br/>
         <span>#{result.category.tag}</span>
       </div>
       <div className='job-discription-info'>
