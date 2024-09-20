@@ -38,6 +38,7 @@ const Login=()=>
   return (
     <>
 	<Navbar/>
+	<br></br>
     <div className="login-main-container">
 		<div className="left-container">
 			<div className="welcome-heading">
