@@ -1,14 +1,24 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import "./Chatscreen.css"
-import axios from 'axios'
-import { json } from 'react-router-dom'
+import { Usermsg ,Recmsg } from '../MsgStyles/Msgstyle'
 
 
 
 const Chatscreen = ({ user, chatscreen }) => {
 
 
+  const [Message ,setmsg] =useState("send message..")
+  const [chat,setchat] = useState([])
 
+ const handleinput =(e)=>{
+   setmsg(e.target.value)
+ }
+
+  const addmessages =()=>{
+      setchat([...chat,{Message}])
+      console.log(chat)
+         setmsg('')
+  }
 
   return (
     <div className='main-chat-container'>
@@ -24,13 +34,23 @@ const Chatscreen = ({ user, chatscreen }) => {
           </div>
 
         </div>
-        <div className='main-chat-div'></div>
+        <div className='main-chat-div'>
+            {/*add chaing here.....*/ }
+             
+             {chat.map((msg,index)=>(
+                <Usermsg/>
+             ))}
+            
+        </div>
         <div className='input-div'>
           <input
             className='search-input'
-            type='text'>
+            type='text'
+            value={Message}
+            onChange={handleinput}
+            >
           </input>
-          <button className='send-btn search-btn' ><i class="ri-send-plane-fill"></i></button>
+          <button className='send-btn search-btn' disabled={!Message.trim()} onClick={addmessages} ><i class="ri-send-plane-fill"></i></button>
         </div>
       </div>
       <div className='Show'></div>
