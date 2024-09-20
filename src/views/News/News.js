@@ -119,6 +119,11 @@ function News() {
           </div>
           </div>
           </div>
+          <br/>
+          <h3 className='heading-skills'>Insights from Pioneers of Progress</h3>
+          <h4 className='headcap'>"If you make listening and observation your occupation, you will gain much more than you can by talk.”</h4>
+          <iframe className='youtubev' width="865" height="480" src="https://www.youtube.com/embed/7m4zQpf3Ouo?si=W5xOwTTyaeiANcs8&amp;start=23" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe className='youtubev' width="865" height="480" src="https://www.youtube.com/embed/vacGRuHDtO0?si=rayQXcnliSG71I1F&amp;start=23" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           <div className='Show'></div>
     </div>
   );
