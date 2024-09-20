@@ -118,7 +118,7 @@
     }
     
 }
-@media screen and (min-width: 421px) and (max-width: 830px){
+@media screen and (min-width: 421px) and (max-width: 900px){
     .headingn{
         font-size: 65px;
     }
@@ -132,6 +132,10 @@
     .tech-grid{
         justify-content: center;
         margin: 20px;
+    }
+    .youtubev{
+        height: 400px ;
+        width: 650px;
     }
 }
 @media screen and (max-width:420px ){
@@ -154,4 +158,8 @@
         margin:20px;
         justify-content: center;
       }
+      .youtubev{
+        height: 400px ;
+        width: 350px;
+    }
 }
