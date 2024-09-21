@@ -1,18 +1,18 @@
 import React from 'react'
 import "./Msgstyles.css"
 
-const Usermsg = () => {
+const Usermsg = ({text}) => {
   return (
     <div className='user-msg-container'>
-              <span className='user-msg'>hii hehlo</span>
+              <span className='user-msg'>{text}</span>
     </div>
   )
 }
 
 
-const Recmsg =()=>{
+const Recmsg =({text})=>{
     <div className='rec-msg-container'>
-               <span className='rec-msg'>hiii how are you what are doing for leaving  kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk</span>
+               <span className='rec-msg'>{text}</span>
     </div>
 }
 

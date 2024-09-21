@@ -1,24 +1,38 @@
 import React, { useEffect, useState } from 'react'
 import "./Chatscreen.css"
 import { Usermsg ,Recmsg } from '../MsgStyles/Msgstyle'
-
+import { ANSWERS } from '../../config/ChatsData'
 
 
 const Chatscreen = ({ user, chatscreen }) => {
 
 
-  const [Message ,setmsg] =useState("send message..")
+  const [Message ,setmsg] =useState("")
   const [chat,setchat] = useState([])
 
  const handleinput =(e)=>{
    setmsg(e.target.value)
  }
 
-  const addmessages =()=>{
-      setchat([...chat,{Message}])
+  const addmessages =(msg,type)=>{
+      setchat(prevChat => [...prevChat, { Message: msg, sender: type }])
       console.log(chat)
          setmsg('')
+        
   }
+
+
+    const answer =()=>{
+      let reply = ""
+       let answers = ANSWERS.filter(ans=>ans.que.includes(Message))[0]
+       if(answers){
+         reply= answers.reply
+       }else{
+        reply="love you darling.."
+       }
+      addmessages(reply,"reciever")
+    }
+
 
   return (
     <div className='main-chat-container'>
@@ -37,9 +51,13 @@ const Chatscreen = ({ user, chatscreen }) => {
         <div className='main-chat-div'>
             {/*add chaing here.....*/ }
              
-             {chat.map((msg,index)=>(
-                <Usermsg/>
-             ))}
+              {
+                 chat.map((msg,index)=>(
+                  <>
+                  {msg.sender=== "user" ? <Usermsg text={msg.Message} key={index}/> : <Recmsg key={index} text={msg.Message}/>}
+                  </>
+              ))
+              }
             
         </div>
         <div className='input-div'>
@@ -50,7 +68,9 @@ const Chatscreen = ({ user, chatscreen }) => {
             onChange={handleinput}
             >
           </input>
-          <button className='send-btn search-btn' disabled={!Message.trim()} onClick={addmessages} ><i class="ri-send-plane-fill"></i></button>
+          <button className='send-btn search-btn' disabled={!Message.trim()} onClick={()=>{addmessages(Message,"user")
+            answer()
+          }} ><i class="ri-send-plane-fill"></i></button>
         </div>
       </div>
       <div className='Show'></div>
