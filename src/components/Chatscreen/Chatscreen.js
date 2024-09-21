@@ -28,7 +28,7 @@ const Chatscreen = ({ user, chatscreen }) => {
        if(answers){
          reply= answers.reply
        }else{
-        reply="love you darling.."
+        reply="hey i cant find any thing..."
        }
       addmessages(reply,"reciever")
     }
