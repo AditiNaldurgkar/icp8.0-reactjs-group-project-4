@@ -75,6 +75,7 @@ function Add() {
                                 setJobTitle(e.target.value);
                             }}
                             required
+                            placeholder='Web-Developer'
                         />
 
 
@@ -87,6 +88,7 @@ function Add() {
                                 setJobDescription(e.target.value);
                             }}
                             required
+                            placeholder='about job title'
                         />
 
                         <label>Location</label>
@@ -98,6 +100,7 @@ function Add() {
                             onChange={(e) => {
                                 setLocation(e.target.value);
                             }}
+                            placeholder='Pune'
                         />
 
                         <label>Employment Type</label>
@@ -164,6 +167,7 @@ function Add() {
                                 setCompanyName(e.target.value);
                             }}
                             required
+                            placeholder='Road To Code'
                         />
 
                         <button
