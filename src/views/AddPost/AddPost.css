@@ -17,10 +17,11 @@
 }
 
 .add-post-img{
-  height: 70%;
-  width: 70%;
+  height: 90%;
+  width: 62%;
   margin-left: 50px;
   margin-top: 5px;
+  object-fit: cover;
 }
 
 .job-post-card {
@@ -29,8 +30,7 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.877);
   max-width: 600px;
   width: 100%;
-  background-color: aliceblue;
-  height: 400px !important;
+  height: 430px !important;
   overflow: hidden;
   overflow-y: scroll;
   margin-left: -170px;
@@ -49,6 +49,7 @@ label {
   padding: 10px;
   margin-bottom: 20px;
   border: 1px solid #ccc;
+  border-bottom: 1px solid #6969ffc7;
   border-radius: 5px;
   box-sizing: border-box;
   font-size: 14px;
