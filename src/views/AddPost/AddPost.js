@@ -59,7 +59,7 @@ function Add() {
 
             <div className="job-post-container">
 
-                <div >
+                <div className='img-cont'>
                     <img src={addPostImg} alt='addPostImg' className='add-post-img' />
                 </div>
 
