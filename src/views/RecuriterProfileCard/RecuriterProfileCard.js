@@ -46,26 +46,29 @@ function RecuriterProfileCard() {
 
                             <p className='dtls'><img src={MailImg} className='dtl-img' /><a href={`mailto:${profile.email}`} className='clickable-info'>{profile.email}</a></p>
                         </div>
+                        
 
-                        <div className='recruiter-profile-details'>
-                            <hr></hr>
-                            <div className='dtls-left'>
+                        <div className='recruiter-profile-details-cont'>
 
+                            <div className='dtl-head'> {profile.company}</div>
 
-                                <p className='dtls'><b>Gender:</b> {profile.gender}</p>
-                                <p className='dtls'><b>Degree:</b> {profile.degree}</p>
-                                <p className='dtls'><b>Institute:</b> {profile.institude}</p>
-                                <p className='dtls'><b>Experience:</b> {profile.exp} years</p>
-                                <div className='dtls'><b>Description:</b> {profile.desc}</div>
-                            </div>
+                            <div className='recruiter-profile-details'>
 
+                                <div className='dtls-left'>
 
-                            <div className='dtls-right'>
-                                <div className='dtls'><b>Expertise:</b> {profile.expertise}</div>
-                                <div className='dtls'><b>Company:</b> {profile.company}</div>
-                                <div className='dtls'><b>Job:</b> {profile.job}</div>
-                                <div className='dtls'><b>Key Skill:</b> {profile.keyskill}</div>
+                                    <p className='dtls'><b>Gender:</b> {profile.gender}</p>
+                                    <p className='dtls'><b>Degree:</b> {profile.degree}</p>
+                                    <p className='dtls'><b>Institute:</b> {profile.institude}</p>
+                                    <div className='dtls'><b>Description:</b> {profile.desc}</div>
+                                </div>
 
+                                <div className='dtls-right'>
+                                    <div className='dtls'><b>Expertise:</b> {profile.expertise}</div>
+                                    <div className='dtls'><b>Job:</b> {profile.job}</div>
+                                    <div className='dtls'><b>Key Skill:</b> {profile.keyskill}</div>
+                                    <p className='dtls'><b>Experience:</b> {profile.exp} years</p>
+
+                                </div>
                             </div>
                         </div>
                     </div>
