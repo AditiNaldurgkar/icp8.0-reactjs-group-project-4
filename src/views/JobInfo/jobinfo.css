@@ -140,7 +140,7 @@
 
 .job-discription-info {
   margin: 15px 0;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.5;
   color: #555;
 }
@@ -161,10 +161,15 @@
   color: #333;
 }
 
-.jobs-info {
-  font-size: 40px;
-  margin: 5px;
-  padding: 9px;
+.job-all-info{
+  margin-top: 10px;
+}
+
+.card-info {
+  font-size: 20px;
+  color: #333;
+  margin-top: 100px;
+  margin-bottom: 10px;
 }
 
 .apply{
