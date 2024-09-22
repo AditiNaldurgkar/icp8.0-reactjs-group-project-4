@@ -113,3 +113,13 @@ label {
     font-size: 15px;
   }
 }
+
+/* Tablets Devices  */
+@media screen and (min-width: 501px) and (max-width: 992px){
+  .add-post-img{
+   display: none;
+  }
+  .job-post-container {
+    padding-left: 250px;
+  }
+}
