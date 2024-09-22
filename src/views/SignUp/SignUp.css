@@ -147,6 +147,7 @@ select:focus {
 .right-side image {
     max-width: 80%;
     height: auto;
+    object-fit: contain;
     border-radius: 20px;
     padding: 2px;
 }
@@ -193,7 +194,7 @@ select:focus {
 
     .signup-btn {
         font-size: 1.6rem;
-        width: 33%;
+        width: 25%;
     }
 }
 
@@ -253,8 +254,8 @@ select:focus {
     }
 
     .signup-btn {
-        font-size: 1.4rem;
-        width: 34%;
+        font-size: 1.3rem;
+        width: 37%;
         padding: 5px;
     }
 
