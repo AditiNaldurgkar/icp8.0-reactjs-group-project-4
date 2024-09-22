@@ -152,26 +152,29 @@ input[type="radio"] {
     }
 
     .input-label {
-        font-size: 3vw;
+        font-size: 3.3vw;
     }
 
     .input-field {
         padding: 1vw;
-        font-size: 2.5vw;
+        height: 3vh;
+        font-size: 3vw;
         width: 95%;
     }
 
     .btn-gup{
         display: block;
         margin-top: 1vh;
-        width: 53%;
+        width: 95%;
         margin: auto;
+        /* padding: 1vw; */
     }
 
     .btn {
         width: 95%;
         margin: 1vw;
         font-size: 2.5vw;
+        padding: 1vw;
         /* height: 0.8vh; */
     }
 

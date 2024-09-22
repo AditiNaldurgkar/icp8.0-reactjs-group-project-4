@@ -66,7 +66,7 @@ const Form = () => {
             e.preventDefault();
             setIsLoading(true);
 
-            await new Promise(res => setTimeout(res, 4000));
+            await new Promise(res => setTimeout(res, 3000));
 
             setIsLoading(false);
 
