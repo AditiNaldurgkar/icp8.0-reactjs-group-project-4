@@ -61,7 +61,9 @@ function Jobinfo() {
           <span className='job-info'><a target='__blank' href={`${result.redirect_url}`}>check more</a></span>
         </div>
       </div>
-      <button className="apply-btn" onClick={()=>{savejob(result)}}>Apply Now</button>
+    </div>
+    <div className='apply'>  
+      <button className="apply-btn" onClick={()=>{savejob(result)}}>Apply Now</button><br/>
       <span className='note'><i class="ri-alarm-warning-fill"> </i> please read all information before apply.</span>
     </div>
     <div className='Show'></div>
@@ -69,4 +71,4 @@ function Jobinfo() {
   )
 }
 
-export default Jobinfo
+export default Jobinfo 
