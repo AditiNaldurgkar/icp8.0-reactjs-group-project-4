@@ -40,8 +40,10 @@ function Jobinfo() {
 
   return (<>
     <Sidebar />
+    <div className='back-arrow'>
+    <Link to='/search' className='link'><span className='back-btn'><i class="ri-arrow-left-line"></i></span></Link>
+    </div>
     <div className='jobs-info-container'>
-      <Link to='/search' className='link'><span className='back-btn'><i class="ri-arrow-left-line"></i></span></Link>
       <div className='job-tittle-info'>
         <h2 className='liner-text job-tittle'>{result.company.display_name}</h2><br/>
         <span>#{result.category.tag}</span>
@@ -59,7 +61,7 @@ function Jobinfo() {
           <span className='job-info'><a target='__blank' href={`${result.redirect_url}`}>check more</a></span>
         </div>
       </div>
-      <button className="apply-btn" onClick={()=>{savejob(result)}}>apply now</button>
+      <button className="apply-btn" onClick={()=>{savejob(result)}}>Apply Now</button>
       <span className='note'><i class="ri-alarm-warning-fill"> </i> please read all information before apply.</span>
     </div>
     <div className='Show'></div>

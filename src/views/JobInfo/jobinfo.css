@@ -116,6 +116,11 @@
   color: #333;
 }
 
+.back-arrow{
+  margin-left: 55px;
+  margin-top: 0px;
+}
+
 .back-btn {
   font-size: 20px;
   margin-bottom: 20px;
@@ -158,7 +163,8 @@
 
 .jobs-info {
   font-size: 40px;
-  margin: 5px 0;
+  margin: 5px;
+  padding: 9px;
 }
 
 .apply-btn {
