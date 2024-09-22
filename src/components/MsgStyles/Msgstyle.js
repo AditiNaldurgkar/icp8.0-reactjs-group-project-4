@@ -11,9 +11,11 @@ const Usermsg = ({text}) => {
 
 
 const Recmsg =({text})=>{
-    <div className='rec-msg-container'>
+    return(
+      <div className='rec-msg-container'>
                <span className='rec-msg'>{text}</span>
     </div>
+    )
 }
 
 export {Usermsg,Recmsg}
