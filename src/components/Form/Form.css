@@ -13,7 +13,7 @@
     width: 60%;
     padding: .1vw;
     margin: auto;
-    margin-top: 1vw;
+    /* margin-top: 1vw; */
     border-radius: 5px;
 }
 
@@ -174,7 +174,8 @@ input[type="radio"] {
         width: 95%;
         margin: 1vw;
         font-size: 2.5vw;
-        padding: 1vw;
+        padding: 10px 5px;
+
         /* height: 0.8vh; */
     }
 
@@ -200,13 +201,9 @@ input[type="radio"] {
 
 /*Normal Device*/
 @media screen and (min-width:601px) and (max-width:768px) {
-    .fileupload {
-        width: 8vw;
-        height: 8vh;
-        /* margin-top: 10vw; */
-        margin-left: 7vw;
-    }
-
+   .frm-holder{
+    width: 80%;
+   }
     .input-label {
         font-size: 1.8vw;
     }
@@ -229,7 +226,7 @@ input[type="radio"] {
 
     .left,
     .right {
-        height: 60vh;
+        height: 55vh;
     }
 
     .btn{
