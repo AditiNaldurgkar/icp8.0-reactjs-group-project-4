@@ -1,70 +1,178 @@
-.dtl-container{
-    border: none;
-    box-shadow: 0 0 10px 0;
-    margin: 40px 180px 40px 200px;
-    border-radius: 10px;
+.dtl-container {
+    background:transparent;
+    box-shadow: 0 0 10px 0 rgba(11, 7, 7, 0.585);
+    margin: 40px 180px;
+    border-radius: 20px;
     display: flex;
-    padding: 30px;
+    flex-direction: row;
+    padding: 40px;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+    align-items: center;
 }
 
-.recr-profile-heading{
+.dtl-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.2);
+}
+
+.recr-profile-heading {
     text-align: center;
+    color: #4a4ae3;
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 20px;
 }
 
-.recruiter-profile-img{
-    height: 200px;
+.recruiter-profile-img {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    border: 6px solid #4a4ae3;
+    object-fit: cover;
+    transition: transform 0.3s ease;
 }
 
-.recruiter-profile-details{
-    margin: 10px;
+.recruiter-profile-img:hover {
+    transform: scale(1.15);
+}
+
+.prfle-name {
+    text-align: center;
+    color: #4a4ae3;
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.recruiter-profile-details {
+    margin-left: 30px;
     font-size: 20px;
     display: flex;
-    justify-content: space-between !important;
-    padding-left: 5%;
+    justify-content: space-between;
+    width: 100%;
+    color: #333;
 }
 
-.prfle-name{
-    text-align: center;
-    color: #7d19f8;
-    font-size: 20px;
+.dtls-left, .dtls-right {
+    flex: 1;
+    margin: 0 30px;
 }
 
-/* .dtls-left{
-    margin: 0 50px;
-}
-.dtls-right{
-    margin: 0 80px;
-} */
-.dtls-right{
-    margin-left: 120px;
+.dtls {
+    margin: 20px 0;
+    font-size: 18px;
+    color: #444;
+    line-height: 1.6;
 }
 
-
-.dtls{
-    margin: 30px 0;
+.dtls b {
+    color: #4a4ae3;
+    font-weight: 600;
 }
 
-.lnkdintxt{
+.clickable-info {
     text-decoration: none;
-    color: black;
-}
-.no-data{
-    margin-top: 20%;
+    color: #0073b1;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
-@media screen and (max-width:500px) {
-    .dtl-container{
-        display: flex;
+.lnkdintxt:hover {
+    color: #004e81;
+    text-decoration: underline;
+}
+
+.no-data {
+    margin-top: 20%;
+    text-align: center;
+    font-size: 24px;
+    color: #777;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 1024px) {
+    .dtl-container {
+        margin: 20px 40px;
+        padding: 30px;
+    }
+
+    .recruiter-profile-img {
+        height: 140px;
+        width: 140px;
+    }
+
+    .prfle-name {
+        font-size: 24px;
+    }
+
+    .recruiter-profile-details {
         flex-direction: column;
-        margin: 40px 20px 40px 20px;
+        font-size: 18px;
     }
-    .p-img-cont{
+
+    .dtls-left, .dtls-right {
+        margin: 20px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .dtl-container {
+        flex-direction: column;
+        align-items: center;
         text-align: center;
+        margin: 20px;
+        padding: 25px;
     }
-    .recruiter-profile-details{
-        font-size: 15px;
+
+    .recruiter-profile-img {
+        height: 120px;
+        width: 120px;
     }
-    .dtls-right{
-        margin-left: 10%;
+
+    .prfle-name {
+        font-size: 22px;
+        margin-top: 10px;
+    }
+
+    .recruiter-profile-details {
+        font-size: 16px;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .dtls-left, .dtls-right {
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    .dtls {
+        margin: 15px 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .dtl-container {
+        margin: 10px;
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .recruiter-profile-img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .prfle-name {
+        font-size: 20px;
+    }
+
+    .recruiter-profile-details {
+        font-size: 14px;
+    }
+
+    .dtls {
+        margin: 10px 0;
+        font-size: 14px;
     }
 }

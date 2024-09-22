@@ -32,19 +32,25 @@ function RecuriterProfileCard() {
                                 alt="Recruiter Profile"
                             />
                             <div className='prfle-name'>
-                                <b>Name</b><br></br> {profile.name}</div>
-                        </div>
-                        <hr />
-                        <div className='recruiter-profile-details'>
+                                 {profile.name}</div>
+                                 <br></br><hr></hr>
+                                 <p className='dtls'><b>Email:</b><a href={`mailto:${profile.email}`} className='clickable-info'>{profile.email}</a></p>
 
+                                 <p className='dtls'><b>Mobile No:</b> <a href={`tel:${profile.mno}`} className='clickable-info'>{profile.mno}</a></p>
+                                 
+                                 <div className='dtls'><b>LinkedIn:</b> <a className="clickable-info" href={profile.linkedIn} target="_blank" rel="noopener noreferrer">{profile.linkedIn}</a></div>
+                        </div>
+                        
+                        <div className='recruiter-profile-details'>
+                        <hr></hr>
                             <div className='dtls-left'>
 
-                                <p className='dtls'><b>Email:</b>{profile.email}</p>
-                                <p className='dtls'><b>Mobile No:</b>{profile.mno}</p>
+                                
                                 <p className='dtls'><b>Gender:</b> {profile.gender}</p>
                                 <p className='dtls'><b>Degree:</b> {profile.degree}</p>
                                 <p className='dtls'><b>Institute:</b> {profile.institude}</p>
                                 <p className='dtls'><b>Experience:</b> {profile.exp} years</p>
+                                <div className='dtls'><b>Description:</b> {profile.desc}</div>
                             </div>
 
 
@@ -54,7 +60,7 @@ function RecuriterProfileCard() {
                                 <div className='dtls'><b>Job:</b> {profile.job}</div>
                                 <div className='dtls'><b>Key Skill:</b> {profile.keyskill}</div>
                                 <div className='dtls'><b>LinkedIn:</b> <a className="lnkdintxt" href={profile.linkedIn} target="_blank" rel="noopener noreferrer">{profile.linkedIn}</a></div>
-                                <div className='dtls'><b>Description:</b> {profile.desc}</div>
+                                
                             </div>
                         </div>
                     </div>
