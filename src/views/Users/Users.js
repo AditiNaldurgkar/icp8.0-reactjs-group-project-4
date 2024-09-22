@@ -9,40 +9,40 @@ import Usercard from '../../components/Usercard/Usercard'
 const Users = () => {
 
   const URL = `https://randomuser.me/api/?results=20&nat=IN`
-  const [users,setuser]= useState([]) 
+  const [users, setuser] = useState([])
 
 
-  const loadusers = async ()=>{
+  const loadusers = async () => {
     try {
-      let tid= toast.loading('loding users...')
-      const responce = await  axios.request(URL) 
-       console.log(responce.data.results)
-       setuser(responce.data.results)
-       if(responce){toast.dismiss(tid)}
-      } catch (error) {
-       console.log(error)
-      }
- 
+      let tid = toast.loading('loding users...')
+      const responce = await axios.request(URL)
+      //console.log(responce.data.results)
+      setuser(responce.data.results)
+      if (responce) { toast.dismiss(tid) }
+    } catch (error) {
+      console.log(error)
+    }
+
   }
 
-  useEffect(()=>{
-  loadusers()
-  },[])
+  useEffect(() => {
+    loadusers()
+  }, [])
 
   return (
     <>
-       <Sidebar/>
-       <div className='user-container'>
-            <h1 className='liner-text user-heading'>create your circle</h1>
-             <div className='users-div'>
-                {users.length==0?<span className='user-serch-img'><img src={serchImg}></img></span>:
-                       users.map((user ,index)=>(
-                            <Usercard index={index} user={user}/>
-                       ))
-                }
-             </div>
-             <div className='Show'></div>
-       </div>
+      <Sidebar />
+      <div className='user-container'>
+        <h1 className='liner-text user-heading'>create your circle</h1>
+        <div className='users-div'>
+          {users.length == 0 ? <span className='user-serch-img'><img src={serchImg}></img></span> :
+            users.map((user, index) => (
+              <Usercard index={index} user={user} />
+            ))
+          }
+        </div>
+        <div className='Show'></div>
+      </div>
     </>
   )
 }
