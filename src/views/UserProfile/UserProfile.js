@@ -7,6 +7,7 @@ import facebookimg from '../../views/UserProfile/facebook (1).png';
 import Instagramimg from '../../views/UserProfile/instagram (2).png';
 import Sidebar from '../../components/Sidebar/Sidebar';
 import UserProfilecards from '../../components/UserProfilecards/UserProfilecards';
+import waveimg from '../../views/UserProfile/wave (1).png'
 
 function UserProfile() {
   const [appliedjobs, setAppliedJobs] = useState([]);
@@ -40,7 +41,7 @@ function UserProfile() {
           <img src={Instagramimg} className='img5' alt='Instagram' /></a>
      
        </div>
-      <span className='username'><b>Hello {USER.username || 'User'}!👋</b></span> 
+      <span className='username'><b>Hello {USER.username || 'User'}!<img src={waveimg} className='bye'/></b></span> 
       <span className='useremail'>{USER.email || 'No email found'}</span>
       <span className='jobrole'><b>JOB ROLE: </b>{USER.jobRole || 'Not specified'}</span>
       <h4 className='head4'><b>Your Applied Jobs:</b></h4>
