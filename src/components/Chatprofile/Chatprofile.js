@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Chatprofile.css"
 
-const Chatprofile = ({user,setUser,  chatscreen}) => {
+const Chatprofile = ({user,setUser, chatscreen}) => {
   return (
      <div className='chat-container' onClick={()=>{
       setUser(user)
