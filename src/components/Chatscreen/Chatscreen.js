@@ -16,9 +16,9 @@ const Chatscreen = ({ user, chatscreen }) => {
 
   const addmessages =(msg,type)=>{
       setchat(prevChat => [...prevChat, { Message: msg, sender: type }])
-      console.log(chat)
+      //console.log(chat)
          setmsg('')
-        
+
   }
 
 
@@ -44,7 +44,7 @@ const Chatscreen = ({ user, chatscreen }) => {
           </div>
           <div className='chat-open-user-info'>
             <span className='chat-open-user-name chat-name'>{`${user.first_name} ${user.last_name}`}</span>
-            <span className='user-work-info'>{user.role}</span>
+            <span className='user-work user-work-info'>{user.role}</span>
           </div>
 
         </div>

@@ -1,5 +1,5 @@
 .chats-container{
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     margin-left: 55px;
 }
@@ -14,10 +14,15 @@
 @media screen and (max-width:500px) {
     .chats-container{
         margin-left: 0px;
+        overflow: hidden;
+        margin-bottom: 10vh;
     }
     .all-chats{
         width: 100vw;
         display: flex;
         flex-direction: column;
+    }
+    .user-serch-img{
+        width: 100%;
     }
 }
