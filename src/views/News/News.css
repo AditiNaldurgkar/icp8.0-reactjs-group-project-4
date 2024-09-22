@@ -105,9 +105,17 @@
     padding: 3px;
   }
   .youtubev{
-    margin: 30px auto;
+    margin: 30px;
     border-radius: 10px;
-    display: block;
+    width: 400px;
+    height: 300px;
+  }
+  .nvideocontainer{
+    margin: 20px ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
   @media screen and (max-width: 1216px) {
     .tech-grid{
@@ -116,6 +124,12 @@
     .trendcardcontainer{
         padding-bottom: 10px;
     }
+    .youtubev{
+        margin: 20px;
+        border-radius: 10px;
+        width: 380px;
+        height: 300px;
+      }
     
 }
 @media screen and (min-width: 675px) and (max-width: 900px){
@@ -179,7 +193,8 @@
         justify-content: center;
       }
       .youtubev{
-        height: 400px ;
-        width: 350px;
+        height: 380px ;
+        width: 320px;
+        margin: 10px auto;
     }
 }
