@@ -17,7 +17,7 @@ function Home() {
 
   return (
     <div>
-      <Navbar />
+      <Navbar /><br/>
       <div className='box'>
         <div className='content-container'>
           <div className='content'>
