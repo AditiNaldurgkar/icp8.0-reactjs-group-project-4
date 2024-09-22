@@ -5,7 +5,7 @@
     border-radius: 20px;
     display: flex;
     flex-direction: row;
-    padding: 40px;
+    padding: 30px;
     position: relative;
     transition: transform 0.3s, box-shadow 0.3s;
     align-items: center;
@@ -25,11 +25,10 @@
 }
 
 .recruiter-profile-img {
-    height: 160px;
-    width: 160px;
+    height: 150px;
+    width: 150px;
     border-radius: 50%;
-    border: 6px solid #4a4ae3;
-    object-fit: cover;
+    
     transition: transform 0.3s ease;
 }
 
@@ -45,6 +44,12 @@
     margin-top: 15px;
 }
 
+.dtl-img{
+    height: 25px;
+    margin-left: -10px;
+    margin-right: 2px;
+}
+
 .recruiter-profile-details {
     margin-left: 30px;
     font-size: 20px;
@@ -52,11 +57,12 @@
     justify-content: space-between;
     width: 100%;
     color: #333;
+    text-align: left    ;
 }
 
 .dtls-left, .dtls-right {
     flex: 1;
-    margin: 0 30px;
+    margin: 0 70px;
 }
 
 .dtls {
@@ -76,11 +82,8 @@
     color: #0073b1;
     font-weight: bold;
     transition: color 0.3s;
-}
-
-.lnkdintxt:hover {
-    color: #004e81;
-    text-decoration: underline;
+    font-size: 15px;
+    position: absolute;
 }
 
 .no-data {
