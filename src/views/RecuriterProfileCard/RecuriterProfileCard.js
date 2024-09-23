@@ -39,8 +39,8 @@ function RecuriterProfileCard() {
 
                             <div className='dtls-left'>
 
-                                <p className='dtls'><b>Email:</b> {profile.email}</p>
-                                <p className='dtls'><b>Mobile No:</b> {profile.mno}</p>
+                                <p className='dtls'><b>Email:</b>{profile.email}</p>
+                                <p className='dtls'><b>Mobile No:</b>{profile.mno}</p>
                                 <p className='dtls'><b>Gender:</b> {profile.gender}</p>
                                 <p className='dtls'><b>Degree:</b> {profile.degree}</p>
                                 <p className='dtls'><b>Institute:</b> {profile.institude}</p>
