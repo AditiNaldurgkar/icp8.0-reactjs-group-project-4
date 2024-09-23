@@ -31,7 +31,7 @@ const newsData = [{
   caption: "Explore Microsoft's latest offerings in cloud computing.",
   url2 :" https://news.microsoft.com/apac/2024/04/10/microsoft-to-invest-us2-9-billion-in-ai-and-cloud-infrastructure-in-japan-while-boosting-the-nations-skills-research-and-cybersecurity/"
 },{
-  url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKVxv9yAJuGd971hsq8Pm055YVbZnXSlTx4g&s",
+  url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmwEYDg1a1zyD4qvLxoh-BugCXfctZISqi_g&s",
   headline :"Tata Sons' sees 74% surge ",
   caption:"74 percent increase in consolidated net profit",
   url2:"https://www.businesstoday.in/latest/corporate/story/tata-sons-sees-74-surge-in-consolidated-net-profit-at-rs-49000-crore-aviation-business-narrows-loss-in-fy24-444884-2024-09-07"
