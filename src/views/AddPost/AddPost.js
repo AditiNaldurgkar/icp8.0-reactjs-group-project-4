@@ -81,7 +81,7 @@ function Add() {
 
                         <label>Job Description</label>
                         <textarea
-                            className='post-input'
+                            className='post-input desc-inpt'
                             name="jobDescription"
                             value={jobDescription}
                             onChange={(e) => {

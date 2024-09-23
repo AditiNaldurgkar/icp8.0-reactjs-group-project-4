@@ -56,6 +56,10 @@ label {
   resize: none;
 }
 
+.desc-inpt{
+  height: 80px;
+}
+
 .inline-label {
   display: flex;
   align-items: center;
