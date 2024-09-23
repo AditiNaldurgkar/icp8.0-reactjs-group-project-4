@@ -19,12 +19,14 @@ const Form = () => {
     const [desc, setDecriptions] = useState('');
     const [keyskill, setkeyskill] = useState('');
     const [linkedIn, setLinkedIn] = useState('');
-    const [gender, setGender] = useState('')
+    const [gender, setGender] = useState('');
 
-    function Add() {
+    const [isLoading, setIsLoading] = useState(false);
+
+    async function Add(e) {
         if (name == " " || email == " " || degree == "" || institude == "" || exp == "" || mno == "" || expertise == " " || desc == " " || company == " " || job == " " || keyskill == " " || linkedIn == " " || gender == " ") {
 
-            // toast.success("Please Enter All Details in Form");
+
             toast.warn('Please Enter All Details', {
                 position: "top-center",
                 autoClose: 3000,
@@ -61,7 +63,14 @@ const Form = () => {
 
             localStorage.setItem("items", JSON.stringify(items));
 
-            toast.success("Note Added Successfully!", {
+            e.preventDefault();
+            setIsLoading(true);
+
+            await new Promise(res => setTimeout(res, 3000));
+
+            setIsLoading(false);
+
+            toast.success("Form Sbmitted!!", {
                 position: "top-center",
                 autoClose: 3000,
                 hideProgressBar: true,
@@ -82,7 +91,6 @@ const Form = () => {
             setMobile('');
             setDecriptions('');
             setCompany('');
-            // setFile('');
             setJob('');
             setkeyskill('');
             setLinkedIn('');
@@ -95,7 +103,7 @@ const Form = () => {
 
     return (
         <>
-            <form className="frm-main">
+            <form className="frm-main" >
                 <div className="frm-holder">
                     <div className="frm-content">
 
@@ -238,7 +246,13 @@ const Form = () => {
                     </div>
 
                     <div className="btn-gup center">
-                        <button className="btn" onClick={Add}>Add Details</button>
+                        <button
+                            className="btn"
+                            onClick={Add}
+                            disabled={isLoading} >
+                            {isLoading ? "Submitting..." : "Submit"}
+
+                        </button>
 
                         <Link to="/recuiter-profile-card" className="linktag">
                             <button className="btn" >Show Profile</button>

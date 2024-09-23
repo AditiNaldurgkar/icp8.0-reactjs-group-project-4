@@ -55,6 +55,7 @@ body {
 }
 
 .navbar-link {
+  margin-right: 5px;
   color: #f9f9f9;
   text-decoration: none;
   font-size: 18px; 
