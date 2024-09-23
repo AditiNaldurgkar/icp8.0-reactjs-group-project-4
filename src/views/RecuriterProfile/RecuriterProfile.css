@@ -13,11 +13,13 @@
 }
 
 .frm-heading {
-    width: 38%;
+    width: 46%;
     /* margin: auto; */
     margin-left: 26vw;
+    padding: 1vw 0;
     /* margin-top: .5vw; */
     /* border: 1px solid red; */
+    /* text-align: center; */
 }
 
 .main-heading{
@@ -25,6 +27,10 @@
     font-weight: 700;
     /* border: 1px solid yellow; */
     margin-bottom: .2vw;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    display: block;
 }
 
 .sub-heading {
@@ -45,6 +51,8 @@
     
     .frm-heading {
         margin-left: 10vw;
+        width: 80%;
+        /* border: 1px solid red; */
     }
 
     .main-heading{
@@ -53,7 +61,48 @@
     }
 
     .sub-heading{
-        font-size: 2.5vw;
-        width: 200%;
+        font-size: 2.8vw;
+        /* width: 200%; */
+    }
+}
+/*Normal Device*/
+@media screen and (min-width:601px) and (max-width:768px){
+    .main-heading{
+        margin-bottom: 0.8vw;
+        font-size: 5vw;
+    }
+
+    .sub-heading{
+        width: 138%;
+        margin: auto;
+        font-size: 2.1vw;
+        /* border: 1px solid red; */
+        margin-left: -46px;
+    }
+}
+
+/*Tablets Device*/
+@media screen and (min-width:769px ) and (max-width:992px){
+    .main-heading{
+        margin-bottom: 0.8vw;
+    }
+
+    .sub-heading{
+        width: 110%;
+        font-size: 1.7vw;
+        /* border: 1px solid red; */
+    }
+}
+
+
+/*Large Device*/
+@media screen and (min-width:993px ) and (max-width:1250px){
+    .main-heading{
+        margin-bottom: 1vw;
+    }
+    .sub-heading{
+        width: 110%;
+        font-size: 1.7vw;
+        /* border: 1px solid red; */
     }
 }

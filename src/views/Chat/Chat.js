@@ -11,7 +11,7 @@ const Chat = () => {
   const [chatUser ,setChtauser] = useState({})
   const [chatScreen,setchatSCreen] = useState(false)
   return (
-    <>
+    <div className='all-chats-wrap'>
     <Sidebar/>
     <div className='chats-container'>
         <h1 className='liner-text user-heading'>my circle</h1>
@@ -25,7 +25,7 @@ const Chat = () => {
       {chatScreen ? <Chatscreen user={chatUser} chatscreen={setchatSCreen} />  : null}
       <div className='Show'></div>
     </div>
-    </>
+    </div>
   )
 }
 

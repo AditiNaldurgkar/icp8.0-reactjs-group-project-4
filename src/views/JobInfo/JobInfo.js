@@ -40,8 +40,10 @@ function Jobinfo() {
 
   return (<>
     <Sidebar />
+    <div className='back-arrow'>
+    <Link to='/search' className='link'><span className='back-btn'><i class="ri-arrow-left-line"></i></span></Link>
+    </div>
     <div className='jobs-info-container'>
-      <Link to='/search' className='link'><span className='back-btn'><i class="ri-arrow-left-line"></i></span></Link>
       <div className='job-tittle-info'>
         <h2 className='liner-text job-tittle'>{result.company.display_name}</h2><br/>
         <span>#{result.category.tag}</span>
@@ -50,21 +52,24 @@ function Jobinfo() {
         {result.description}
       </div>
       <div className='company-info'>
-        <h4 className='liner-text'>know more</h4>
+        <h4 className='liner-text'>know more</h4><br/>
         <div className='job-all-info'>
-          <span className='job-info'><i class="ri-map-pin-add-fill"></i> Location : {result.location.area[0]}</span><br/>
-          <span className='job-info'><i class="ri-time-fill"></i> Add on : {getaddDate(result.created)}</span><br/>
-          <span className="job-info"><i class="ri-currency-fill"></i> MIN-SALARAY : {result.salary_min} $</span><br/>
-          <span className="job-info"><i className="ri-arrow-right-up-line"></i> MAX-SALARAY : {result.salary_max} $</span><br/>
-          <span className='job-info'><a target='__blank' href={`${result.redirect_url}`}>check more</a></span>
+          <span className='card-info'><i class="ri-map-pin-add-fill"></i> Location : {result.location.area[0]}</span><br/>
+          <span className='card-info'><i class="ri-time-fill"></i> Add on : {getaddDate(result.created)}</span><br/>
+          <span className="card-info"><i class="ri-currency-fill"></i> MIN-SALARAY : {result.salary_min} $</span><br/>
+          <span className="card-info"><i className="ri-arrow-right-up-line"></i> MAX-SALARAY : {result.salary_max} $</span><br/>
+          <span className="card-info"><i className="ri-arrow-right-up-line"></i> MAX-SALARAY : {result.salary_max} $</span><br/><br/>
+          <span className='card-info'><a target='__blank' href={`${result.redirect_url}`}>check more</a></span>
         </div>
       </div>
-      <button className="apply-btn" onClick={()=>{savejob(result)}}>apply now</button>
+      <div className='apply'>  
+      <button className="apply-btn" onClick={()=>{savejob(result)}}>Apply Now</button><br/>
       <span className='note'><i class="ri-alarm-warning-fill"> </i> please read all information before apply.</span>
+      </div>
     </div>
     <div className='Show'></div>
   </>
   )
 }
 
-export default Jobinfo
+export default Jobinfo 

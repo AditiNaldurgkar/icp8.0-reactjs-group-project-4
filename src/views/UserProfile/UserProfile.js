@@ -7,23 +7,50 @@ import facebookimg from '../../views/UserProfile/facebook (1).png';
 import Instagramimg from '../../views/UserProfile/instagram (2).png';
 import Sidebar from '../../components/Sidebar/Sidebar';
 import UserProfilecards from '../../components/UserProfilecards/UserProfilecards';
+import waveimg from '../../views/UserProfile/wave (1).png'
 
 function UserProfile() {
   const [appliedjobs, setAppliedJobs] = useState([]);
-
+  const [profilePic, setProfilePic] = useState(UserProfileimg); 
   useEffect(() => {
     const appliedJobs = JSON.parse(localStorage.getItem('appliedjobs'));
     setAppliedJobs(appliedJobs);
   }, []);
 
   const USER = JSON.parse(localStorage.getItem('LOGINUSER')) || {};
-  const SOCIALMEDIA = JSON.parse(localStorage.getItem('SOCIALMEDIA')) || {
+  const SOCIALMEDIA = JSON.parse(localStorage.getItem('SOCIALMEDIA')) || {};
+
+  const handleProfilePicUpload = (event) => {
+    const file = event.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onloadend = () => {
+        setProfilePic(reader.result); 
+      };
+      reader.readAsDataURL(file);
+    }
   };
+
+
   
   return (
     <div className='container'>
        <Sidebar/>
-      <img src={UserProfileimg} className='img1' alt='User Profile' />
+       <label htmlFor="profile-pic-upload">
+        <img
+          src={profilePic}
+          className='img1'
+          alt='User Profile'
+          style={{ cursor: 'pointer' }} 
+        />
+      </label>
+      <input
+        id="profile-pic-upload"
+        type="file"
+        accept="image/*"
+        onChange={handleProfilePicUpload}
+        style={{ display: 'none' }}
+      />
       <div className='socialmedia'>
 
        <a href={SOCIALMEDIA.linkedinurl || '#'} target='_blank' rel='noopener noreferrer'>
@@ -40,7 +67,7 @@ function UserProfile() {
           <img src={Instagramimg} className='img5' alt='Instagram' /></a>
      
        </div>
-      <span className='username'><b>Hello {USER.username || 'User'}!👋</b></span> 
+      <span className='username'><b>Hello {USER.username || 'User'}!<img src={waveimg} className='bye'/></b></span> 
       <span className='useremail'>{USER.email || 'No email found'}</span>
       <span className='jobrole'><b>JOB ROLE: </b>{USER.jobRole || 'Not specified'}</span>
       <h4 className='head4'><b>Your Applied Jobs:</b></h4>

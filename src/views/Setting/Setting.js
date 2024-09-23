@@ -110,6 +110,7 @@ const Setting = () => {
             <span className='log-out' onClick={()=>{
               window.location.href="/"
                localStorage.removeItem("LOGINUSER")
+               localStorage.removeItem("searchedJobs") 
             }}><i class="ri-arrow-left-fill"></i> log out</span>
       </div>
 
