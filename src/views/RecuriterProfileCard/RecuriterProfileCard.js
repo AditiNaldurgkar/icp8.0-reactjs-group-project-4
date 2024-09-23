@@ -4,7 +4,8 @@ import "./RecuriterProfileCard.css";
 import UserProfileimg from "./../UserProfile/userprofileimg.png";
 import PhoneImg from "./RecuriterProfileCardImgs/telephone.png";
 import MailImg from "./RecuriterProfileCardImgs/mail (1).png";
-import LnkdinImg from "./RecuriterProfileCardImgs/linkedin.png"
+import LnkdinImg from "./RecuriterProfileCardImgs/linkedin.png";
+import serchimg from "./../Search/searchImg.png"
 
 
 function RecuriterProfileCard() {
@@ -24,7 +25,8 @@ function RecuriterProfileCard() {
 
             {items.length === 0 ? (
                 <div className='no-data'>
-                    <h3>No Recruiter Profile Found</h3>
+                    <img src={serchimg} alt="searching img" className='no-dataimg'></img>
+                    <h3>No Profile card found</h3>
                 </div>
             ) : (
                 items.map((profile, index) => (
