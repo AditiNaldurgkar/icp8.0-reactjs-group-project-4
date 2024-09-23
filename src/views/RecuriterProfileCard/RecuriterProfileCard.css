@@ -133,7 +133,7 @@
 /* Media Queries */
 
 /* Desktop (up to 1440px) */
-@media screen and (max-width: 1740px) {
+@media screen and (max-width: 1840px) {
     .dtl-container {
         margin: 30px 150px;
         padding: 25px;
