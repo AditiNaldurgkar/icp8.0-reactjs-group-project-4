@@ -197,3 +197,43 @@
   font-size: 12px;
   color: #777;
 } 
+
+@media (max-width: 1168px) {
+  .jobs-info-container {
+    padding: 15px;
+    margin-left: 45px;
+  }
+
+  .job-tittle {
+    font-size: 42px;
+  }
+
+  .job-discription-info {
+    font-size: 20px;
+  }
+
+  .info-text, .job-info {
+    font-size: 12px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .jobs-info-container {
+    padding: 10px;
+    margin-left: 0px;
+    margin-bottom: 25px;
+  }
+
+  .job-tittle {
+    font-size: 40px;
+  }
+
+  .job-discription-info {
+    font-size: 20px;
+  }
+
+  .note {
+    font-size: 14px;
+  }
+}
