@@ -19,8 +19,9 @@ function RecuriterProfileCard() {
     return (
         <div>
             <Sidebar />
-            <div className='view-post-heading recr-profile-heading'>
+            <div className='recr-profile-heading'>
                 <h2>Recruiter Profile</h2>
+                <p className='add-post-sub-heading'>"View Recruiter Profiles Here!"</p>
             </div>
 
             {items.length === 0 ? (
@@ -41,14 +42,23 @@ function RecuriterProfileCard() {
                                 {profile.name}</div>
 
                             <br></br><hr></hr>
+                            <div className='clickable-info-container'>
+                                <p>
+                                    <a href={`tel:${profile.mno}`} className='clickable-info'><img src={PhoneImg} className='dtl-img' /></a>
+                                </p>
 
-                            <p className='dtls'><img src={PhoneImg} className='dtl-img' /><a href={`tel:${profile.mno}`} className='clickable-info'>+91{profile.mno}</a></p>
+                                <p>
+                                    <a className="clickable-info"  href={profile.linkedIn} target="_blank" rel="noopener noreferrer">
+                                        <img src={LnkdinImg} className='dtl-img' />
+                                    </a>
+                                </p>
 
-                            <div className='dtls'><img src={LnkdinImg} className='dtl-img' /> <a className="clickable-info" href={profile.linkedIn} target="_blank" rel="noopener noreferrer">{profile.linkedIn}</a></div>
-
-                            <p className='dtls'><img src={MailImg} className='dtl-img' /><a href={`mailto:${profile.email}`} className='clickable-info'>{profile.email}</a></p>
+                                <p>
+                                    <a href={`mailto:${profile.email}`} className='clickable-info'><img src={MailImg} className='dtl-img' /></a>
+                                    </p>
+                            </div>
                         </div>
-                        
+
 
                         <div className='recruiter-profile-details-cont'>
 

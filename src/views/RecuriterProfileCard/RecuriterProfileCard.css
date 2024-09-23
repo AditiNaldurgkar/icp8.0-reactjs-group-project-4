@@ -1,10 +1,16 @@
-.recr-profile-heading{
-    margin: -40px 0 50px 0;
-    font-size: 30px;
+.recr-profile-heading {
+    text-align: center;
+  left: 50%;
+  padding-top: 0px;
+  font-size: 30px;
+  background:linear-gradient(to left,#002aff,#0ce3ff);
+  color: transparent;
+  background-clip: text;
+  margin-top: -10px;
 }
 
 .dtl-container {
-    background:transparent;
+    background: transparent;
     box-shadow: 0 0 10px 0 rgba(11, 7, 7, 0.585);
     margin: 40px auto;
     border-radius: 20px;
@@ -21,20 +27,13 @@
     box-shadow: 0 12px 36px rgba(0, 0, 0, 0.2);
 }
 
-.p-img-cont{
+.p-img-cont {
     border-right: solid rgb(140, 140, 140);
     padding-right: 80px;
     padding-left: 30px;
 }
 
-.recr-profile-heading {
-    text-align: center;
-    color: #4a4ae3;
-    font-size: 32px;
-    font-weight: bold;
-}
-
-.recruiter-profile-details-cont{
+.recruiter-profile-details-cont {
     display: flex;
     flex-direction: column;
     padding-left: 70px;
@@ -44,7 +43,7 @@
     height: 150px;
     width: 150px;
     border-radius: 50%;
-    
+
     transition: transform 0.3s ease;
 }
 
@@ -60,10 +59,13 @@
     margin-top: 15px;
 }
 
-.dtl-img{
-    height: 25px;
-    margin-left: -150px;
-    margin-right: 2px;
+.dtl-img {
+    height: 35px;
+}
+
+.dtl-img:hover {
+    height: 40px;
+    transition: 0.5s;
 }
 
 .recruiter-profile-details {
@@ -73,15 +75,16 @@
     justify-content: space-between;
     width: 100%;
     color: #333;
-    text-align: left    ;
+    text-align: left;
 }
 
-.dtls-left, .dtls-right {
+.dtls-left,
+.dtls-right {
     flex: 1;
     margin: 0 60px;
 }
 
-.dtl-head{
+.dtl-head {
     text-align: center;
     color: #4a4ae3;
     font-weight: 600;
@@ -91,6 +94,7 @@
     margin: -10px auto 10px auto;
     padding: 5px 200px;
 }
+
 .dtls {
     margin: 20px 0;
     font-size: 18px;
@@ -103,15 +107,15 @@
     font-weight: 600;
 }
 
+.clickable-info-container {
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+    margin: 20px -10px
+}
+
 .clickable-info {
-    text-decoration: none;
-    color: #4a4ae3;
-    font-weight: bold;
-    transition: color 0.3s;
-    font-size: 15px;
-    position: absolute;
-    padding-left: 5px;
-    width: 150px;
+    margin: 10px;
 }
 
 .no-data {
@@ -122,15 +126,16 @@
     font-weight: 500;
 }
 
-.no-dataimg{
+.no-dataimg {
     height: 350px;
 }
+
 /* Media Queries */
 
 /* Desktop (up to 1440px) */
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1840px) {
     .dtl-container {
-        margin: 30px 120px;
+        margin: 30px 150px;
         padding: 25px;
     }
 
@@ -142,7 +147,8 @@
         font-size: 24px;
     }
 
-    .dtls-left, .dtls-right {
+    .dtls-left,
+    .dtls-right {
         margin: 0 40px;
     }
 }
@@ -177,7 +183,8 @@
         margin-top: 20px;
     }
 
-    .dtls-left, .dtls-right {
+    .dtls-left,
+    .dtls-right {
         margin: 0;
         padding: 10px 0;
     }
@@ -215,7 +222,8 @@
         margin: 10px 0;
     }
 
-    .dtls-left, .dtls-right {
+    .dtls-left,
+    .dtls-right {
         margin: 0;
         padding: 5px 0;
     }
@@ -224,10 +232,11 @@
 /* Small Mobile Devices (up to 500px) */
 @media screen and (max-width: 500px) {
 
-    .recr-profile-heading{
+    .recr-profile-heading {
         font-size: 25px;
         margin: -50px 0 30px 0;
     }
+
     .dtl-container {
         margin: 20px 20px 70px 20px;
         padding: 5px;
@@ -243,7 +252,7 @@
         font-size: 18px;
     }
 
-    .p-img-cont{
+    .p-img-cont {
         margin-bottom: 20px;
         margin-right: 30px;
     }
@@ -264,22 +273,24 @@
         margin-left: -30px;
     }
 
-    .dtls-right{
+    .dtls-right {
         margin-left: 10px;
     }
 
-    .dtl-head{
+    .dtl-head {
         margin: 10px 50px 10px auto;
         font-size: 25px;
         padding: 5px 70px;
         text-align: center;
     }
+
     .dtl-img {
         height: 25px;
         margin-left: -150px;
         margin-right: 2px;
     }
-    .no-dataimg{
+
+    .no-dataimg {
         height: 250px;
     }
 }
