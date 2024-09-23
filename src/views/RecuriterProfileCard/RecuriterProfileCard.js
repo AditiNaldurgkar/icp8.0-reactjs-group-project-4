@@ -19,8 +19,9 @@ function RecuriterProfileCard() {
     return (
         <div>
             <Sidebar />
-            <div className='view-post-heading recr-profile-heading'>
+            <div className='recr-profile-heading'>
                 <h2>Recruiter Profile</h2>
+                <p className='add-post-sub-heading'>"View Recruiter Profiles Here!"</p>
             </div>
 
             {items.length === 0 ? (
