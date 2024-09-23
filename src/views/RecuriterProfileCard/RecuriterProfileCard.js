@@ -41,14 +41,23 @@ function RecuriterProfileCard() {
                                 {profile.name}</div>
 
                             <br></br><hr></hr>
+                            <div className='clickable-info-container'>
+                                <p>
+                                    <a href={`tel:${profile.mno}`} className='clickable-info'><img src={PhoneImg} className='dtl-img' /></a>
+                                </p>
 
-                            <p className='dtls'><img src={PhoneImg} className='dtl-img' /><a href={`tel:${profile.mno}`} className='clickable-info'>+91{profile.mno}</a></p>
+                                <p>
+                                    <a className="clickable-info"  href={profile.linkedIn} target="_blank" rel="noopener noreferrer">
+                                        <img src={LnkdinImg} className='dtl-img' />
+                                    </a>
+                                </p>
 
-                            <div className='dtls'><img src={LnkdinImg} className='dtl-img' /> <a className="clickable-info" href={profile.linkedIn} target="_blank" rel="noopener noreferrer">{profile.linkedIn}</a></div>
-
-                            <p className='dtls'><img src={MailImg} className='dtl-img' /><a href={`mailto:${profile.email}`} className='clickable-info'>{profile.email}</a></p>
+                                <p>
+                                    <a href={`mailto:${profile.email}`} className='clickable-info'><img src={MailImg} className='dtl-img' /></a>
+                                    </p>
+                            </div>
                         </div>
-                        
+
 
                         <div className='recruiter-profile-details-cont'>
 
