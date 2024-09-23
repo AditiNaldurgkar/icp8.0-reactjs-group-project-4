@@ -1,5 +1,5 @@
 import computer from "./Images/computer.png";
-import dataScience from "./Images/data-science .png";
+import dataScience from "./Images/data.png";
 import features from "./Images/features.png";
 import product from "./Images/product.png";
 import digital from "./Images/digital-marketing.png";
