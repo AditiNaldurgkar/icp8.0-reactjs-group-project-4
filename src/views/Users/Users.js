@@ -8,7 +8,7 @@ import Usercard from '../../components/Usercard/Usercard'
 
 const Users = () => {
 
-  const URL = `https://randomuser.me/api/?results=20&nat=IN`
+  const URL = `https://randomuser.me/api/?results=25&nat=IN`
   const [users, setuser] = useState([])
 
 

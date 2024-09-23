@@ -5,9 +5,12 @@
 }
 
 .all-chats{
-    width: 50vw;
+    width: 60vw;
     display: flex;
     flex-direction: column;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 

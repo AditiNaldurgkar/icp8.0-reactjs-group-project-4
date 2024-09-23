@@ -2,13 +2,14 @@
 .chat-container{
     height: 60px;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 20px;
     display: flex;
     align-items:center;
     gap: 2vw;
     cursor: pointer;
     padding: 2vh;
-    background-color: #84d0f122;
+    background-color: #71cff822;
+    border-radius: 2px;
 }
 
 .chat-name{
