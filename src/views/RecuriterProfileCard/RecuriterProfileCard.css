@@ -1,5 +1,5 @@
 .recr-profile-heading{
-    margin: -30px 0 50px 0;
+    margin: -40px 0 50px 0;
     font-size: 30px;
 }
 
@@ -23,8 +23,8 @@
 
 .p-img-cont{
     border-right: solid rgb(140, 140, 140);
-    padding-right: 60px;
-    padding-left: 50px;
+    padding-right: 80px;
+    padding-left: 30px;
 }
 
 .recr-profile-heading {
@@ -62,7 +62,7 @@
 
 .dtl-img{
     height: 25px;
-    margin-left: -10px;
+    margin-left: -150px;
     margin-right: 2px;
 }
 
@@ -111,6 +111,7 @@
     font-size: 15px;
     position: absolute;
     padding-left: 10px;
+    width: 150px;
 }
 
 .no-data {
@@ -224,8 +225,8 @@
         margin: -50px 0 30px 0;
     }
     .dtl-container {
-        margin: 20px auto 70px auto;
-        padding: 15px;
+        margin: 20px 20px 70px 20px;
+        padding: 5px;
         flex-direction: column;
     }
 
