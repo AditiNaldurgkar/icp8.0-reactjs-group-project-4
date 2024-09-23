@@ -5,11 +5,11 @@ import logo from '../Navbar/logo.png';
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="logo"> 
-      <img src={logo} alt="Logo" />
-        </div>
+      <div className="logo">
+        <img src={logo} alt="Logo" />
+      </div>
       <div className="footer-container">
-      
+
         <div className="footer-column">
           <h3 className="footer-heading">About Us</h3>
           <p className="footer-text">
@@ -30,9 +30,22 @@ const Footer = () => {
 
         <div className="footer-column">
           <h3 className="footer-heading">Contact Us</h3>
-          <p className="footer-text">Ground Floor, Tower 1, Pune IT Park, Kharadi, Pune, Maharashtra 411014, India</p>
-          <p className="footer-text">Phone: (123) 456-7890</p>
-          <p className="footer-text">Email: hireme@gmail.com</p>
+          <p className="footer-text">
+            <a
+              href="https://www.google.com/maps/place/Ground+Floor,+Tower+1,+Pune+IT+Park,+Kharadi,+Pune,+Maharashtra+411014,+India"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ground Floor, Tower 1, Pune IT Park, Kharadi, Pune, Maharashtra 411014, India
+            </a>
+          </p>
+          <p className="footer-text">
+            <a href="tel:+11234567890">+91 8790654321</a>
+          </p>
+          <p className="footer-text">
+            <a href="mailto:hireme@gmail.com">careerconnect@gmail.com</a>
+          </p>
+
         </div>
 
         <div className="footer-column">
