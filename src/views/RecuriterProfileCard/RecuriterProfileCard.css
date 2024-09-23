@@ -1,19 +1,19 @@
 .recr-profile-heading{
-    margin: -30px 0 50px 0;
+    margin: -40px 0 50px 0;
     font-size: 30px;
 }
 
 .dtl-container {
     background:transparent;
     box-shadow: 0 0 10px 0 rgba(11, 7, 7, 0.585);
-    margin: 40px 180px;
+    margin: 40px auto;
     border-radius: 20px;
     display: flex;
     flex-direction: row;
-    padding: 30px;
     position: relative;
     transition: transform 0.3s, box-shadow 0.3s;
     align-items: center;
+    text-align: center;
 }
 
 .dtl-container:hover {
@@ -23,8 +23,8 @@
 
 .p-img-cont{
     border-right: solid rgb(140, 140, 140);
-    padding-right: 60px;
-    padding-left: 50px;
+    padding-right: 80px;
+    padding-left: 30px;
 }
 
 .recr-profile-heading {
@@ -62,7 +62,7 @@
 
 .dtl-img{
     height: 25px;
-    margin-left: -10px;
+    margin-left: -150px;
     margin-right: 2px;
 }
 
@@ -86,11 +86,9 @@
     color: #4a4ae3;
     font-weight: 600;
     font-size: 35px;
-    margin-top: -40px;
-    margin-bottom: 30px;
     border: solid;
     border-radius: 5px;
-    margin: 0 auto;
+    margin: -10px auto 10px auto;
     padding: 5px 200px;
 }
 .dtls {
@@ -107,20 +105,25 @@
 
 .clickable-info {
     text-decoration: none;
-    color: #0073b1;
+    color: #4a4ae3;
     font-weight: bold;
     transition: color 0.3s;
     font-size: 15px;
     position: absolute;
-    padding-left: 10px;
+    padding-left: 5px;
+    width: 150px;
 }
 
 .no-data {
-    margin-top: 20%;
+    margin-top: 1%;
     text-align: center;
     font-size: 24px;
     color: #777;
     font-weight: 500;
+}
+
+.no-dataimg{
+    height: 350px;
 }
 /* Media Queries */
 
@@ -226,8 +229,8 @@
         margin: -50px 0 30px 0;
     }
     .dtl-container {
-        margin: 10px;
-        padding: 15px;
+        margin: 20px 20px 70px 20px;
+        padding: 5px;
         flex-direction: column;
     }
 
@@ -242,28 +245,41 @@
 
     .p-img-cont{
         margin-bottom: 20px;
+        margin-right: 30px;
     }
 
     .recruiter-profile-details {
-        font-size: 12px;;
+        font-size: 12px;
+        display: flex;
+        flex-direction: row;
+        margin: 10px auto;
     }
 
     .dtls {
         margin: 8px 0;
-        font-size: 12px;
+        font-size: 13px;
     }
 
-    .dtls-left, .dtls-right {
-        flex: 1;
-        margin: 0 10px;
+    .dtls-left {
+        margin-left: -30px;
     }
+
+    .dtls-right{
+        margin-left: 10px;
+    }
+
     .dtl-head{
+        margin: 10px 50px 10px auto;
         font-size: 25px;
-        padding: 5px 80px;
+        padding: 5px 70px;
+        text-align: center;
     }
     .dtl-img {
         height: 25px;
         margin-left: -150px;
         margin-right: 2px;
+    }
+    .no-dataimg{
+        height: 250px;
     }
 }
