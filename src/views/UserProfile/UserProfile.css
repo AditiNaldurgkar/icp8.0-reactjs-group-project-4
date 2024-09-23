@@ -33,27 +33,27 @@
     color: black;
   }
 .username{
- margin-left:90px;
+ margin-left:310px;
  font-size: 40px;
  color: black;
  font-family: "Poppins", sans-serif;
- margin-top: 40px;
+ top: 80px;
  position: absolute;
 }
 .useremail{
-  margin-left:90px;
-  margin-top: 100px;
+  margin-left:310px;
+  top: 140px;
   font-size: 20px;
   color:black;
   font-family: "Poppins", sans-serif;
   position: absolute;
 }
 .jobrole{
-  margin-left: 90px;
+  margin-left: 310px;
   color: black;
   font-size: 20px;
   font-family: "Poppins", sans-serif;
-  margin-top: 150px;
+  top: 180px;
   font-size: 20px;
   position: absolute;
 }
@@ -79,6 +79,10 @@
   margin-left: 30px;
   margin-top: 20px;
 }
+.img1{
+       border: 3px solid purple;
+       border-radius: 100px ;
+}
 .socialmedia{
   position: absolute;
   display: flex;
@@ -88,7 +92,38 @@
   height: 70px;
   margin-left: 10px;
   border-radius: 20px;
-  background-image: linear-gradient(109.6deg, rgba(177,173,219,1) 11.2%, rgba(245,226,226,1) 91.1%);
+  background-image: linear-gradient( 100.5deg,  rgba(148,146,236,1) 17.7%, rgba(245,194,194,1) 76.1% );
+}
+.bye{
+  height: 50px;
+  animation: waving-hand 2.5s infinite;
+  transform-origin: 70% 70%;
+}
+@keyframes waving-hand{
+     0%{
+      transform:rotate(0deg);
+     }
+     10%{
+      transform:rotate(14deg);
+     }
+     20%{
+      transform:rotate(-8deg);
+     }
+     30%{
+      transform:rotate(14deg);
+     }
+     40%{
+      transform:rotate(-4.0deg);
+     }
+     50%{
+      transform:rotate(10deg);
+     }
+     60%{
+      transform:rotate(0deg);
+     }
+     100%{
+      transform:rotate(0deg);
+     }
 }
 
 
@@ -126,20 +161,20 @@
   }
 
   .username {
-    margin-left: 10px;
+    margin-left: 150px;
     font-size: 20px;
   }
 
   .useremail {
-    margin-left: 10px;
-    margin-top: 75px;
+    margin-left: 150px;
+    top: 120px;
     font-size: 16px;
     
   }
 
   .jobrole {
-    margin-left: 10px;
-    margin-top: 110px;
+    margin-left: 150px;
+    top: 150px;
     font-size: 16px;
 
   }
@@ -156,6 +191,11 @@
     margin-left: 10px;
     width: 150px;
     height: 40px;
+  }
+  .bye{
+    height: 30px;
+    animation: waving-hand 2.5s infinite;
+    transform-origin: 70% 70%;
   }
 
 }
@@ -197,24 +237,24 @@
 
   .head4 {
     margin-top: 100px;
-    margin-left: 10px; /* Added margin-left */
+    margin-left: 10px; 
   }
 
   .username {
-    margin-left: 50px;
+    margin-left: 190px;
     font-size: 28px;
-    margin-top: 25px;
+    top:60px
   }
 
   .useremail {
-    margin-left: 50px;
-    margin-top: 70px;
+    margin-left: 190px;
+    top: 110px;
     font-size: 16px;
   }
 
   .jobrole {
-    margin-left: 50px;
-    margin-top: 110px;
+    margin-left: 190px;
+    top: 150px;
     font-size: 16px;
   }
 
@@ -230,5 +270,10 @@
     margin-left: 15px;
     width: 160px;
     height: 50px;
+  }
+  .bye{
+    height: 40px;
+    animation: waving-hand 2.5s infinite;
+    transform-origin: 70% 70%;
   }
 }
