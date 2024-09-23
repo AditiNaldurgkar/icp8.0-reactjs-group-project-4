@@ -58,7 +58,7 @@ function Jobinfo() {
           <span className='card-info'><i class="ri-time-fill"></i> Add on : {getaddDate(result.created)}</span><br/>
           <span className="card-info"><i class="ri-currency-fill"></i> MIN-SALARAY : {result.salary_min} $</span><br/>
           <span className="card-info"><i className="ri-arrow-right-up-line"></i> MAX-SALARAY : {result.salary_max} $</span><br/>
-          <span className="card-info"><i className="ri-arrow-right-up-line"></i> MAX-SALARAY : {result.salary_max} $</span><br/>
+          <span className="card-info"><i className="ri-arrow-right-up-line"></i> MAX-SALARAY : {result.salary_max} $</span><br/><br/>
           <span className='card-info'><a target='__blank' href={`${result.redirect_url}`}>check more</a></span>
         </div>
       </div>
