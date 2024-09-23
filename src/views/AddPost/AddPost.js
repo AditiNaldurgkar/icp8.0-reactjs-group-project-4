@@ -55,6 +55,7 @@ function Add() {
             <Sidebar />
             <div >
                 <h2 className=' add-post-heading'>Add Job Post</h2>
+                <p className='add-post-sub-heading'>"Create and Publish Your New Job Opening"</p>
             </div>
 
             <div className="job-post-container">

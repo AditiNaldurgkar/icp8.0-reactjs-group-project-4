@@ -6,6 +6,14 @@
   background:linear-gradient(to left,#002aff,#0ce3ff);
   color: transparent;
   background-clip: text;
+  margin-top: -10px;
+}
+
+.add-post-sub-heading{
+  text-align: center;
+  color:#333;
+  font-weight: 600;
+  font-size: 18px;
 }
 
 .job-post-container {
