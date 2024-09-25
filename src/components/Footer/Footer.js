@@ -36,7 +36,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Ground Floor, Tower 1, Pune IT Park, Kharadi, Pune, Maharashtra 411014, India
+              Ground Floor,Tower 1, <br/>Pune IT Park, Kharadi, Pune, <br/>Maharashtra 411014, India
             </a>
           </p>
           <p className="footer-text">
