@@ -17,7 +17,7 @@ body {
 
 .content-img {
   flex: 1;
-  margin-right: 20px;
+  margin-right: 0px;
 }
 
 @media (max-width: 768px){
@@ -72,9 +72,8 @@ h3 {
 }
 
 .job-item {
-  background-color: transparent;
-  border: 1px solid gray; 
-  border-radius: 5px; 
+  background-color: white;
+  border-radius: 15px; 
   margin: 20px;
   padding: 10px; 
   flex: 1; 
@@ -114,9 +113,8 @@ h3 {
 }
 
 .company-item {
-  background-color: transparent;
-  border: 1px solid gray; 
-  border-radius: 5px; 
+  background-color: white;
+  border-radius: 15px; 
   margin: 20px;
   padding: 10px; 
   flex: 1; 
@@ -176,9 +174,8 @@ h3 {
 }
 
 .news-item {
-  background-color: transparent;
-  border: 1px solid gray; 
-  border-radius: 5px; 
+  background-color: white;
+  border-radius: 15px; 
   padding: 15px; 
   flex: 1;
   min-width: 200px; 
@@ -253,9 +250,8 @@ h3 {
 }
 
 .feedback-item {
-  background-color: transparent;
-  border: 1px solid gray;
-  border-radius: 5px;
+  background-color: white;
+  border-radius: 15px;
   padding: 1rem;
   flex: 1;
   min-width: 200px;
