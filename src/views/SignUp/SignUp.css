@@ -36,19 +36,6 @@ input:focus, button:focus {
 }
 
 
-.Reflection {
-    height: 60vh;
-    width: 80vw;
-    position: fixed;
-    background: linear-gradient(#65d2fa77, #d345f075);
-    filter: blur(100px);
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    pointer-events: all;
-    z-index: -1;
-}
-
 .form-group1 {
     margin-bottom: 12px;
 }
