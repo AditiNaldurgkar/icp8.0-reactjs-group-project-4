@@ -200,7 +200,7 @@ const Signup = () => {
             </div>
             
             <div className="right-side">
-            <img src={IMG} className="signup-img" />
+            <img src={IMG} />
         </div>
         <div className='Show'>
     
