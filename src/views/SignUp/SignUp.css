@@ -36,19 +36,6 @@ input:focus, button:focus {
 }
 
 
-.Reflection {
-    height: 60vh;
-    width: 80vw;
-    position: fixed;
-    background: linear-gradient(#65d2fa77, #d345f075);
-    filter: blur(100px);
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    pointer-events: all;
-    z-index: -1;
-}
-
 .form-group1 {
     margin-bottom: 12px;
 }
@@ -68,14 +55,11 @@ select:focus {
     border-color: #000066;
 }
 
-.signup-img {
-    height: 500px;
-    width: 500px;
-}
+
 
 .linear-text {
     display: inline;
-    background: linear-gradient(to left, #002aff, #0ce3ff);
+    background-color: #6969ffc7;
     color: transparent;
     background-clip: text;
 }
@@ -86,7 +70,7 @@ select:focus {
 
 .group-form label {
     display: block;
-    margin-bottom: 1px;
+    margin-bottom: 0.5px;
     font-weight: bold;
     font-size: 20px;
 }
@@ -94,17 +78,19 @@ select:focus {
 .group-form input,
 .group-form select {
     width: 70%;
-    padding: 8px;
+    padding: 5px;
     box-sizing: border-box;
     border: 1px solid #ccc;
     border-radius: 4px;
-    font-size: 15px;
+    font-size: 16px;
 }
 .group-form select{
     border-bottom: 1px solid #6969ffc7;
+    margin-bottom: 5px;
 }
 .group-form input{
     border-bottom: 1px solid #6969ffc7;
+    margin-bottom: 5px;
 }
 
 
@@ -113,6 +99,24 @@ select:focus {
     font-size: 18px;
     color: rgb(23, 23, 23);
 }
+
+.Reflection {
+    height: 60vh;
+    width: 80vw;
+    height: 60vh;
+    width: 80vw;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    }
+
+    .signup-img {
+        height: 400px;
+        width: 400px;
+    }
+
+
+
    
 /* Default Styles (For large screens, 1000px and above) */
 .signup-main-container {
@@ -121,11 +125,12 @@ select:focus {
     margin: 10px auto;
     border: 3px solid #000066;
     border-radius: 30px;
-    width: 1000px;
-    height: 900px;
-    padding: 1px;
+    width: 55%;
+    height: 860px;
+    
     color: #000066;
 }
+
 
 .left-side {
     flex: 1;
@@ -135,7 +140,7 @@ select:focus {
 
 .right-side {
     flex: 1;
-    height: 900px;
+    height: 860px;
     background-color: #6969ffc7;
     border-radius: 20px;
     max-width: 50%;
@@ -147,9 +152,8 @@ select:focus {
 .right-side image {
     max-width: 80%;
     height: auto;
-    object-fit: contain;
     border-radius: 20px;
-    padding: 2px;
+    
 }
 
 .Information {
@@ -165,8 +169,8 @@ select:focus {
 
 .signup-btn {
     font-size: 1.3vw;
-    width: 30%;
-    
+    width: 25%;
+    padding: 4px;
     border-radius: 10px;
     background-color: #6969ffc7;
     color: white;
@@ -181,21 +185,31 @@ select:focus {
 }
 
 
+.signup-img {
+    height: 400px;
+    width: 100%;
+}
+
+
+
 /* Media Query for Extra Large Devices (1200px and above) */
 @media (max-width: 1200px) {
     .signup-main-container {
-        width: 90%;
+        width: 80%;
         height: auto;
     }
-
-    .Information {
+    
+       .Information {
         font-size: 1.2rem;
     }
 
     .signup-btn {
         font-size: 1.6rem;
-        width: 30%;
+        width: 28%;
+       
     }
+
+    
 }
 
 /* Media Query for Medium Devices (Tablets, 600px - 999px) */
@@ -220,8 +234,9 @@ select:focus {
     }
 
     .signup-btn {
-        font-size: 1.7rem;
-        width: 22%;
+        font-size: 1.4rem;
+        width: 18%;
+        padding: 4px;
     }
 
     .signup-img {
@@ -255,7 +270,7 @@ select:focus {
 
     .signup-btn {
         font-size: 1.3rem;
-        width: 37%;
+        width: 34%;
         padding: 5px;
     }
 

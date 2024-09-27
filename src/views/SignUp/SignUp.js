@@ -3,7 +3,7 @@ import toast, { Toaster } from 'react-hot-toast';
 import './SignUp.css';
 import IMG from './Signup4.png';
 import Navbar from './../../components/Navbar/Navbar'
-import Footer from './../../components/Footer/Footer'
+import Footer from './../../components/Footer/Footer'          
 
 const Signup = () => {
     const [role, setRole] = useState('Job Seeker');
@@ -27,8 +27,8 @@ const Signup = () => {
     const handleSignup = (e) => {
         e.preventDefault();
 
-        if (!isUsernameValid(username)) {
-            toast.error('Username can only contain letters, numbers, and underscores ❤️');
+        if (!isUsernameValid(username)) {           
+            toast.error('Username can only contain letters, numbers, and underscores ❤️');                            
             return;
         }
 
@@ -85,7 +85,7 @@ const Signup = () => {
                 <form onSubmit={handleSignup}>
                     <div className="group-form">
                     <div className='field-text'>
-                    <label className="field-text">Select Role</label>
+                    <label className="field-text">Select Role</label>         
     
                     
                         <select className="select" value={role} onChange={(e) => setRole(e.target.value)}>
@@ -200,7 +200,7 @@ const Signup = () => {
             </div>
             
             <div className="right-side">
-            <img src={IMG} className="signup-img" />
+            <img src={IMG}  className='signup-img'/>
         </div>
         <div className='Reflection'>
     
