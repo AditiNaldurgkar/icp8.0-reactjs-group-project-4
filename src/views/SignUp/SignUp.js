@@ -200,9 +200,9 @@ const Signup = () => {
             </div>
             
             <div className="right-side">
-            <img src={IMG} />
+            <img src={IMG}  className='signup-img'/>
         </div>
-        <div className='Show'>
+        <div className='Reflection'>
     
           </div>
         </div>
