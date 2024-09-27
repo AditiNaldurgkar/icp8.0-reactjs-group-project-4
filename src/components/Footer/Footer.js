@@ -6,12 +6,12 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="logo">
-        <img src={logo} alt="Logo" />
-      </div>
+        <img src={logo} alt="Logo" /></div>
       <div className="footer-container">
 
         <div className="footer-column">
-          <h3 className="footer-heading">About Us</h3>
+          <h3 className="footer-heading">
+          </h3>
           <p className="footer-text">
             At JobPortal, our mission is to connect job seekers with their ideal career opportunities and assist employers in finding the best talent.
           </p>
@@ -36,7 +36,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Ground Floor,Tower 1, <br/>Pune IT Park, Kharadi, Pune, <br/>Maharashtra 411014, India
+              Ground Floor,Tower 1, <br />Pune IT Park, Kharadi, Pune, <br />Maharashtra 411014, India
             </a>
           </p>
           <p className="footer-text">
