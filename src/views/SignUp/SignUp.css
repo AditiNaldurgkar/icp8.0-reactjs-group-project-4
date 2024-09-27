@@ -167,7 +167,7 @@ select:focus {
 
 .signup-btn {
     font-size: 1.3vw;
-    width: 28%;
+    width: 25%;
     padding: 4px;
     border-radius: 10px;
     background-color: #6969ffc7;
@@ -203,7 +203,7 @@ select:focus {
 
     .signup-btn {
         font-size: 1.6rem;
-        width: 30%;
+        width: 28%;
        
     }
 
@@ -232,8 +232,8 @@ select:focus {
     }
 
     .signup-btn {
-        font-size: 1.7rem;
-        width: 21%;
+        font-size: 1.4rem;
+        width: 18%;
         padding: 4px;
     }
 
@@ -268,7 +268,7 @@ select:focus {
 
     .signup-btn {
         font-size: 1.3rem;
-        width: 37%;
+        width: 34%;
         padding: 5px;
     }
 
