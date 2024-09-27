@@ -65,7 +65,7 @@ const Login=()=>
 						       name="email" 
 						       id="email"
 							    className="email" 
-								placeholder="Type your username" 
+								placeholder="Enter your username" 
 								value={username}
                                 onChange={(e)=> setUsername(e.target.value)}/>
 					</div>
@@ -82,7 +82,7 @@ const Login=()=>
 					       name="password" 
 						   id="passw" 
 						   className="passw" 
-						   placeholder="Type your password"
+						   placeholder="Enter your password"
 						   value={password}
                            onChange={(e)=> setPassword(e.target.value)} />
 

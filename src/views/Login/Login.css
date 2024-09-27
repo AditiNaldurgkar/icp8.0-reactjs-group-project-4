@@ -74,7 +74,7 @@
 
 .input-with-icon img.icon {
     position: absolute;
-    left: 20px;
+    left: 30px;
     width: 2vw;
     height: 2vw;
 }
@@ -82,13 +82,13 @@
 .email,
 .passw {
     font-size: 1vw;
-    margin: 1rem 1.5rem;
+    margin: 1rem 1.7rem;
     border-radius: 3px;
     width: calc(100% - 60px);
     height: 2.5rem;
     border: none;
     border-bottom: 1px solid #6969ffc7;
-    padding: 0 2rem;
+    padding: 0 3rem;
 }
 
 .login-button {
