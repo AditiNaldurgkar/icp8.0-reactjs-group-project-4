@@ -1,19 +1,22 @@
 import React from 'react';
 import './Footer.css';
-import logo from '../Navbar/logo.png'; // Ensure the logo path is correct
+import logo from '../Navbar/logo.png';
 
 const Footer = () => {
   return (
     <footer className="footer">
 
       <div className="footer-container">
-      <div className="about-us">
-      <div className="logo">
-      <img src={logo} alt="Logo" /></div>
-        <p className="footer-text">
-          At JobPortal, our mission is to connect job seekers with their ideal career opportunities and assist employers in finding the best talent.
-        </p>
-      </div>
+        <div className="footer-column">
+          <div className="logo">
+            <img src={logo} alt="Logo" />
+            <h3 className="footer-heading"></h3> 
+          </div>
+          <p className="footer-text">
+            At JobPortal, our mission is to connect job seekers with their ideal career opportunities and assist employers in finding the best talent.
+          </p>
+        </div>
+
 
         <div className="footer-column">
           <h3 className="footer-heading">Contact Us</h3>
@@ -31,7 +34,7 @@ const Footer = () => {
               <a href="tel:+9190904500112">+91 8790654321</a>
             </span>
           </div>
-          <div className="email">
+          <div className="email-footer">
             <i className="fa-solid fa-envelope"></i>
             <span className="footer-text">
               <a href="mailto:careerconnect@gmail.com">careerconnect@gmail.com</a>
@@ -49,7 +52,7 @@ const Footer = () => {
             <li><a href="/gallery" className="footer-link">Gallery</a></li>
           </ul>
         </div>
-        
+
         <div className="footer-column">
           <h3 className="footer-heading">Follow Us</h3>
           <div className="footer-social-media">
