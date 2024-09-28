@@ -127,6 +127,7 @@ select:focus {
     border-radius: 30px;
     width: 55%;
     height: 860px;
+    margin: 70px auto;
     
     color: #000066;
 }
