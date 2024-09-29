@@ -1,7 +1,7 @@
 .login-main-container {
     display: flex;
     flex-wrap: wrap;
-    margin: 70px auto;
+    margin: 120px auto;
     border: 3px solid #000066;
     border-radius: 30px;
     width: 100%;
@@ -123,7 +123,7 @@ button:focus {
 
 @media screen and (max-width:599px) {
     .login-main-container {
-        margin: 50px auto;
+        margin: 100px auto;
         max-width: 300px;
         height: 400px;
         border: 2px solid #000066;
